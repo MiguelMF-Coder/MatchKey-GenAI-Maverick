@@ -1,0 +1,8 @@
+{
+  "python": ["py", "python3"],
+  "sql": ["postgresql", "mysql", "tsql"],
+  "docker": [],
+  "airflow": ["apache airflow"],
+  "power bi": ["powerbi", "bi"],
+  "machine learning": ["ml", "aprendizaje automatico"]
+}
