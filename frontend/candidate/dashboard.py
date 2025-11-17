@@ -1,8 +1,8 @@
 import streamlit as st
 import requests
+from utils import get_backend_url
 
-BACKEND_URL = st.secrets.get("BACKEND_URL", "http://localhost:8000")
-
+BACKEND_URL = get_backend_url()
 
 # -------------------------
 # Helpers compartidos
@@ -200,7 +200,7 @@ def render():
 
         if st.button("Ir a Llamada IA", use_container_width=True):
             st.session_state.current_page = "Llamada IA"
-            st.experimental_rerun()
+            st.rerun()
 
     with col3:
         st.markdown("#### 💼 Vacantes recomendadas")
@@ -234,7 +234,7 @@ def render():
 
         if st.button("Ver vacantes recomendadas", use_container_width=True):
             st.session_state.current_page = "Vacantes recomendadas"
-            st.experimental_rerun()
+            st.rerun()
 
     st.markdown("---")
 
@@ -325,5 +325,5 @@ def render():
                         st.session_state.selected_job_id = job_id
                         st.session_state.selected_job_title = title
                         st.session_state.current_page = "Mejora (gaps + cursos)"
-                        st.experimental_rerun()
+                        st.rerun()
                     st.markdown("---")

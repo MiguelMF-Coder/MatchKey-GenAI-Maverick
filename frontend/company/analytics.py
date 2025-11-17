@@ -1,9 +1,9 @@
 import streamlit as st
 import requests
 from statistics import mean
+from utils import get_backend_url
 
-BACKEND_URL = st.secrets.get("BACKEND_URL", "http://localhost:8000")
-
+BACKEND_URL = get_backend_url()
 
 # -------------------------
 # Helpers compartidos
@@ -198,7 +198,7 @@ def render():
         )
         if st.button("Ir a crear vacante", use_container_width=True):
             st.session_state.current_page = "Crear vacante"
-            st.experimental_rerun()
+            st.rerun()
         return
 
     # Construimos opciones para el selector

@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
+from utils import get_backend_url
 
-BACKEND_URL = st.secrets.get("BACKEND_URL", "http://localhost:8000")
+BACKEND_URL = get_backend_url()
 
 
 # -------------------------

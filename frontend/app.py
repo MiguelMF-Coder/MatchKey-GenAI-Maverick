@@ -1,5 +1,6 @@
 import streamlit as st
 from utils import apply_accenture_theme
+from utils import get_backend_url
 
 # --------- IMPORTS DE PÁGINAS POR ROL ---------
 # CANDIDATO
@@ -17,8 +18,7 @@ from company import analytics as company_analytics
 from company import co_teaching as company_co_teaching
 
 
-BACKEND_URL = st.secrets.get("BACKEND_URL", "http://localhost:8000")
-
+BACKEND_URL = get_backend_url()
 
 # -------------------------
 # Inicialización de sesión
@@ -138,7 +138,7 @@ def render_private_header():
             }
             st.session_state.role = None
             st.session_state.current_page = "Inicio"
-            st.experimental_rerun()
+            st.rerun()
 
 
 # -------------------------

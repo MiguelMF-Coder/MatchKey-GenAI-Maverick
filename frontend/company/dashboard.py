@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
+from utils import get_backend_url
 
-BACKEND_URL = st.secrets.get("BACKEND_URL", "http://localhost:8000")
+BACKEND_URL = get_backend_url()
 
 
 # -------------------------
@@ -167,7 +168,7 @@ def render():
 
         if st.button("Editar perfil de empresa", use_container_width=True):
             st.session_state.current_page = "Perfil empresa"
-            st.experimental_rerun()
+            st.rerun()
 
     with col2:
         st.markdown("#### 🌱 Perfil cultural")
@@ -251,20 +252,20 @@ def render():
         with c1:
             if st.button("➕ Crear vacante", use_container_width=True):
                 st.session_state.current_page = "Crear vacante"
-                st.experimental_rerun()
+                st.rerun()
 
         with c2:
             if st.button("📈 Analítica de talento", use_container_width=True):
                 st.session_state.current_page = "Analítica de talento"
-                st.experimental_rerun()
+                st.rerun()
 
         c3, c4 = st.columns(2)
         with c3:
             if st.button("🤝 Co-Teaching", use_container_width=True):
                 st.session_state.current_page = "Co-Teaching"
-                st.experimental_rerun()
+                st.rerun()
 
         with c4:
             if st.button("🏢 Perfil empresa", use_container_width=True):
                 st.session_state.current_page = "Perfil empresa"
-                st.experimental_rerun()
+                st.rerun()

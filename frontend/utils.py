@@ -3,7 +3,13 @@ import os
 import streamlit as st
 import requests
 
-BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+def get_backend_url() -> str:
+    url = os.environ.get("BACKEND_URL")
+    if url:
+        return url
+
+    # Fallback local
+    return "http://localhost:8000"
 
 
 def apply_accenture_theme():
@@ -120,7 +126,8 @@ def init_session_state():
 
 
 def api_get(path: str, params: dict | None = None):
-    url = f"{BACKEND_URL}{path}"
+    base_url = get_backend_url()
+    url = f"{base_url}{path}"
     try:
         res = requests.get(url, params=params, timeout=10)
         res.raise_for_status()
@@ -130,7 +137,8 @@ def api_get(path: str, params: dict | None = None):
 
 
 def api_post(path: str, json: dict | None = None):
-    url = f"{BACKEND_URL}{path}"
+    base_url = get_backend_url()
+    url = f"{base_url}{path}"
     try:
         res = requests.post(url, json=json, timeout=10)
         res.raise_for_status()
@@ -164,4 +172,4 @@ def sidebar_header():
         for key in ["role", "user_name", "candidate_id", "company_id", "recommended_jobs"]:
             if key in st.session_state:
                 del st.session_state[key]
-        st.experimental_rerun()
+        st.rerun()
