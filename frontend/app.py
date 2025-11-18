@@ -22,17 +22,12 @@ from company import co_teaching as company_co_teaching
 BACKEND_URL = get_backend_url()
 
 # -------------------------
-# RUTAS OPCIONALES DE IMÁGENES (PON TUS FOTOS/BANNERS AQUÍ)
+# RUTAS OPCIONALES DE IMÁGENES
 # -------------------------
-# Ejemplos cuando las tengas:
-# SIDEBAR_PHOTO_PATH = "static/candidate_avatar.png"
-# LOGIN_BANNER_PATH = "static/login_banner.png"
-# HOME_ILLUSTRATION_PATH = "static/home_candidate.png"
-
-SIDEBAR_PHOTO_PATH = None          # Foto en menú lateral
-LOGIN_BANNER_PATH = None           # Banner superior en pantalla de login
-HOME_ILLUSTRATION_PATH = None      # Ilustración en home candidato
-COMPANY_HOME_ILLUSTRATION_PATH = None  # Ilustración en home empresa
+SIDEBAR_PHOTO_PATH = "images/banner_barra_lateral.png"              # Foto en menú lateral
+LOGIN_BANNER_PATH = "images/banner_inicio_sesion.png"               # Banner superior en pantalla de login
+HOME_ILLUSTRATION_PATH = "images/candidate_home_illustration.png"   # Ilustración en home candidato
+COMPANY_HOME_ILLUSTRATION_PATH = "images/company_home_illustration.png"  # Ilustración en home empresa
 
 
 # -------------------------
@@ -63,6 +58,10 @@ def render_public_landing():
     st.markdown(
         """
         <style>
+        .mk-main-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;  /* centra todo el contenido (banner + hero) */
+        }
         .mk-hero {
             padding: 2.5rem 2rem 1rem 2rem;
             border-radius: 20px;
@@ -205,10 +204,6 @@ def render_login_card():
         unsafe_allow_html=True,
     )
 
-    # Banner superior (si lo configuras)
-    if LOGIN_BANNER_PATH:
-        st.image(LOGIN_BANNER_PATH, use_column_width=True)
-
     st.markdown(
         """
         <div class="mk-login-container">
@@ -350,54 +345,77 @@ def render_sidebar_navigation():
     role = st.session_state.role
 
     with st.sidebar:
-        # Estilos del sidebar
+        # Estilos del sidebar (imagen + botones)
         st.markdown(
             """
             <style>
-            .mk-sidebar-title {
-                font-size: 1.3rem;
-                font-weight: 800;
-                color: #A100FF;
-                margin-bottom: 0.2rem;
-            }
-            .mk-sidebar-sub {
-                font-size: 0.85rem;
-                opacity: 0.7;
-                margin-bottom: 0.6rem;
-            }
             .mk-sidebar-section {
-                font-size: 0.8rem;
+                font-size: 0.78rem;
                 text-transform: uppercase;
-                letter-spacing: 0.06em;
-                opacity: 0.65;
-                margin-top: 1.2rem;
-                margin-bottom: 0.3rem;
+                letter-spacing: 0.18em;
+                opacity: 0.8;
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;
+                text-align: center;
+                font-weight: 600;
             }
-            .mk-sidebar-avatar {
-                border-radius: 50%;
-                margin-top: 0.3rem;
+            .sidebar-logo-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 0.2rem;
                 margin-bottom: 0.8rem;
+            }
+
+            /* Botones de navegación (radio) en forma de pill, ocupando todo el ancho */
+            [data-testid="stSidebar"] div[role='radiogroup'] {
+                width: 100%;
+            }
+            [data-testid="stSidebar"] div[role='radiogroup'] > label {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                border-radius: 999px;
+                padding: 0.40rem 0.85rem;
+                margin-bottom: 0.28rem;
+                border: 1px solid rgba(255,255,255,0.05);
+                background: rgba(0,0,0,0.18);
+                cursor: pointer;
+            }
+            [data-testid="stSidebar"] div[role='radiogroup'] > label:hover {
+                border-color: rgba(161,0,255,0.7);
+                background: linear-gradient(90deg, rgba(161,0,255,0.35), rgba(0,0,0,0.45));
+            }
+            /* Ocultamos el círculo del radio */
+            [data-testid="stSidebar"] div[role='radiogroup'] > label > div:first-child {
+                display: none !important;
+            }
+            /* Estado seleccionado (si el navegador soporta :has) */
+            [data-testid="stSidebar"] div[role='radiogroup'] > label:has(input:checked) {
+                border-color: #A100FF;
+                background: linear-gradient(90deg, #A100FF, #4B0082);
+                box-shadow: 0 0 0 1px rgba(0,0,0,0.4);
+            }
+            [data-testid="stSidebar"] div[role='radiogroup'] > label span {
+                font-size: 0.9rem;
             }
             </style>
             """,
             unsafe_allow_html=True,
         )
 
-        st.markdown('<div class="mk-sidebar-title">⚡ MatchKey</div>', unsafe_allow_html=True)
-
-        # Foto/avatar solo si la configuras
+        # Imagen principal del sidebar como branding (sin texto)
         if SIDEBAR_PHOTO_PATH:
-            st.image(SIDEBAR_PHOTO_PATH, width=80, caption="", output_format="PNG")
+            st.markdown('<div class="sidebar-logo-container">', unsafe_allow_html=True)
+            st.image(SIDEBAR_PHOTO_PATH, use_column_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
+
+        # Navegación
+        st.markdown(
+            '<div class="mk-sidebar-section">─── NAVEGACIÓN ───</div>',
+            unsafe_allow_html=True,
+        )
 
         if role == "candidate":
-            st.markdown(
-                '<div class="mk-sidebar-sub">Portal de candidato</div>',
-                unsafe_allow_html=True,
-            )
-            st.markdown(
-                '<div class="mk-sidebar-section">Navegación</div>',
-                unsafe_allow_html=True,
-            )
             opciones = [
                 "Inicio",
                 "Mi perfil",
@@ -414,14 +432,6 @@ def render_sidebar_navigation():
                 else 0,
             )
         else:  # company
-            st.markdown(
-                '<div class="mk-sidebar-sub">Portal de empresa</div>',
-                unsafe_allow_html=True,
-            )
-            st.markdown(
-                '<div class="mk-sidebar-section">Navegación</div>',
-                unsafe_allow_html=True,
-            )
             opciones = [
                 "Inicio",
                 "Perfil empresa",
@@ -484,7 +494,7 @@ def render_candidate_portal():
             unsafe_allow_html=True,
         )
 
-        col_main, col_img = st.columns([2.2, 1])
+        col_main, col_img = st.columns([2, 1])
 
         with col_main:
             st.markdown(
@@ -510,7 +520,12 @@ def render_candidate_portal():
 
         with col_img:
             if HOME_ILLUSTRATION_PATH:
+                st.markdown(
+                    '<div style="display:flex; align-items:center; height:100%; padding-top:10px;">',
+                    unsafe_allow_html=True,
+                )
                 st.image(HOME_ILLUSTRATION_PATH, use_column_width=True)
+                st.markdown("</div>", unsafe_allow_html=True)
 
         st.markdown("")
 
@@ -599,7 +614,7 @@ def render_company_portal():
             unsafe_allow_html=True,
         )
 
-        col_main, col_img = st.columns([2.2, 1])
+        col_main, col_img = st.columns([2, 1])
 
         with col_main:
             st.markdown(
@@ -624,7 +639,12 @@ def render_company_portal():
 
         with col_img:
             if COMPANY_HOME_ILLUSTRATION_PATH:
+                st.markdown(
+                    '<div style="display:flex; align-items:center; height:100%; padding-top:10px;">',
+                    unsafe_allow_html=True,
+                )
                 st.image(COMPANY_HOME_ILLUSTRATION_PATH, use_column_width=True)
+                st.markdown("</div>", unsafe_allow_html=True)
 
         col1, col2, col3 = st.columns(3)
 
@@ -700,9 +720,25 @@ def main():
     init_session_state()
 
     if not st.session_state.auth["is_authenticated"]:
+        # Contenedor común para banner + landing, con mismo ancho
+        st.markdown('<div class="mk-main-wrapper">', unsafe_allow_html=True)
+
+        # 🔝 Banner centrado con ancho moderado
+        if LOGIN_BANNER_PATH:
+            st.markdown(
+                """
+                <div style="display:flex; justify-content:center; margin-top:0.5rem; margin-bottom:1.2rem;">
+                """,
+                unsafe_allow_html=True,
+            )
+            st.image(LOGIN_BANNER_PATH, width=780)
+            st.markdown("</div>", unsafe_allow_html=True)
+
         # Vista pública
         render_public_landing()
         render_login_card()
+
+        st.markdown("</div>", unsafe_allow_html=True)
     else:
         # Vista privada por rol
         render_private_header()
