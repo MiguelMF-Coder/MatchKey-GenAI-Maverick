@@ -1,8 +1,9 @@
 # backend/app/models/jobs.py
-from sqlalchemy import Column, Integer, String, Text, ForeignKey
+from sqlalchemy import Column, Integer, String, Text, ForeignKey, Float, Boolean, JSON
 from sqlalchemy.orm import relationship
 
 from .base import Base, TimestampMixin
+
 
 
 class Job(Base, TimestampMixin):
@@ -20,6 +21,21 @@ class Job(Base, TimestampMixin):
     is_remote_friendly = Column(Integer, nullable=True)  # 0/1
     jd_text = Column(Text, nullable=True)
     status = Column(String(50), nullable=False, default="open")  # open/closed/draft
+    area = Column(JSON)
+    category = Column(String)
+    contract_type = Column(String)
+    contract_time = Column(String)
+    salary_min = Column(Float)
+    salary_max = Column(Float)
+    salary_is_predicted = Column(Boolean)
+    experience_required = Column(String)
+    education_required = Column(String)
+    seniority = Column(String)
+    job_type = Column(String)
+    tech_stack = Column(JSON)
+    soft_skills = Column(JSON)
+    languages = Column(JSON)
+    benefits = Column(JSON)
 
     company = relationship("Company", back_populates="jobs")
     skills = relationship("JobSkill", back_populates="job", cascade="all, delete-orphan")
