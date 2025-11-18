@@ -22,6 +22,20 @@ from company import co_teaching as company_co_teaching
 BACKEND_URL = get_backend_url()
 
 # -------------------------
+# RUTAS OPCIONALES DE IMÁGENES (PON TUS FOTOS/BANNERS AQUÍ)
+# -------------------------
+# Ejemplos cuando las tengas:
+# SIDEBAR_PHOTO_PATH = "static/candidate_avatar.png"
+# LOGIN_BANNER_PATH = "static/login_banner.png"
+# HOME_ILLUSTRATION_PATH = "static/home_candidate.png"
+
+SIDEBAR_PHOTO_PATH = None          # Foto en menú lateral
+LOGIN_BANNER_PATH = None           # Banner superior en pantalla de login
+HOME_ILLUSTRATION_PATH = None      # Ilustración en home candidato
+COMPANY_HOME_ILLUSTRATION_PATH = None  # Ilustración en home empresa
+
+
+# -------------------------
 # Inicialización de sesión
 # -------------------------
 def init_session_state():
@@ -45,36 +59,111 @@ def init_session_state():
 # UI Pública (Landing)
 # -------------------------
 def render_public_landing():
-    st.markdown("### 🔑 Bienvenido a MatchKey")
+    # Estilos para hacer la landing más visual
     st.markdown(
         """
-MatchKey es un portal de empleo inteligente que conecta **personas** y **empresas** 
-no solo por skills, sino también por **valores**, **cultura** y **encaje de equipo**.
-"""
+        <style>
+        .mk-hero {
+            padding: 2.5rem 2rem 1rem 2rem;
+            border-radius: 20px;
+            background: radial-gradient(circle at top left, rgba(161,0,255,0.35), transparent),
+                        radial-gradient(circle at bottom right, rgba(0,200,255,0.25), transparent);
+            border: 1px solid rgba(255,255,255,0.06);
+            box-shadow: 0 18px 40px rgba(0,0,0,0.55);
+            margin-bottom: 1.8rem;
+        }
+        .mk-hero-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.3rem;
+        }
+        .mk-hero-subtitle {
+            font-size: 1.05rem;
+            opacity: 0.82;
+            max-width: 620px;
+        }
+        .mk-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            padding: 0.35rem 0.8rem;
+            border-radius: 999px;
+            background: rgba(161,0,255,0.18);
+            border: 1px solid rgba(161,0,255,0.4);
+            margin-bottom: 0.8rem;
+        }
+        .mk-role-card {
+            background-color: rgba(15,15,15,0.9);
+            border-radius: 16px;
+            padding: 1.2rem 1.1rem;
+            border: 1px solid rgba(255,255,255,0.06);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+        }
+        .mk-role-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+        .mk-role-list {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        """
+        <div class="mk-hero">
+            <div class="mk-pill">🟣 MatchKey · IA para talento y cultura</div>
+            <div class="mk-hero-title">Encuentra el trabajo (o el talento) que encaja de verdad contigo.</div>
+            <div class="mk-hero-subtitle">
+                MatchKey es un portal de empleo inteligente que conecta <b>personas</b> y <b>empresas</b>
+                no solo por habilidades, sino también por <b>valores</b>, <b>cultura</b> y <b>encaje de equipo</b>.
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
 
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("#### 👤 Soy Candidato")
         st.markdown(
             """
-- Sube tu **CV** una sola vez  
-- Deja que la IA detecte tus **skills**  
-- Descubre vacantes **alineadas contigo**  
-- Identifica **gaps** y recibe recomendaciones de **cursos**  
-"""
+            <div class="mk-role-card">
+                <div class="mk-role-title">👤 Soy Candidato</div>
+                <div class="mk-role-list">
+                <ul>
+                    <li>Sube tu <b>CV</b> una sola vez</li>
+                    <li>Deja que la IA detecte tus <b>skills</b></li>
+                    <li>Descubre vacantes <b>alineadas contigo</b></li>
+                    <li>Identifica <b>gaps</b> y recibe recomendaciones de <b>cursos</b></li>
+                </ul>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
         )
 
     with col2:
-        st.markdown("#### 🏢 Soy Empresa")
         st.markdown(
             """
-- Define tu **cultura** y **valores**  
-- Sube las **vacantes** (PDF / JD)  
-- Deja que el motor de matching puntúe candidatos  
-- Explora **Co-Teaching** y analíticas de talento  
-"""
+            <div class="mk-role-card">
+                <div class="mk-role-title">🏢 Soy Empresa</div>
+                <div class="mk-role-list">
+                <ul>
+                    <li>Define tu <b>cultura</b> y <b>valores</b></li>
+                    <li>Publica tus <b>vacantes</b> fácilmente</li>
+                    <li>Deja que el motor de matching puntúe candidatos</li>
+                    <li>Explora <b>Co-Teaching</b> y analíticas de talento</li>
+                </ul>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
         )
 
     st.markdown("---")
@@ -84,7 +173,53 @@ no solo por skills, sino también por **valores**, **cultura** y **encaje de equ
 # Formulario de Login (real contra backend)
 # -------------------------
 def render_login_card():
-    st.subheader("Inicia sesión para acceder a tu portal")
+    # Estilo para el formulario de login como tarjeta centrada
+    st.markdown(
+        """
+        <style>
+        .mk-login-container {
+            max-width: 520px;
+            margin: 0 auto 2.5rem auto;
+        }
+        .mk-login-title {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        .mk-login-subtitle {
+            text-align: center;
+            font-size: 0.95rem;
+            opacity: 0.7;
+            margin-bottom: 1rem;
+        }
+        .stForm {
+            background-color: rgba(15, 15, 15, 0.94);
+            border-radius: 18px;
+            padding: 1.5rem 1.4rem 1.1rem 1.4rem;
+            box-shadow: 0 16px 40px rgba(0,0,0,0.7);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # Banner superior (si lo configuras)
+    if LOGIN_BANNER_PATH:
+        st.image(LOGIN_BANNER_PATH, use_column_width=True)
+
+    st.markdown(
+        """
+        <div class="mk-login-container">
+            <div class="mk-login-title">Inicia sesión en MatchKey</div>
+            <div class="mk-login-subtitle">
+                Accede a tu portal de candidato o empresa con un solo login.
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
     with st.form("login_form", clear_on_submit=False):
         role_choice = st.radio(
@@ -147,16 +282,51 @@ def render_private_header():
     role = st.session_state.role
     email = st.session_state.auth.get("email")
 
+    st.markdown(
+        """
+        <style>
+        .mk-header {
+            padding: 0.6rem 0.4rem 0.1rem 0.4rem;
+            margin-bottom: 0.4rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .mk-header-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .mk-header-sub {
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     left, right = st.columns([3, 1])
 
     with left:
+        st.markdown('<div class="mk-header">', unsafe_allow_html=True)
         if role == "candidate":
-            st.markdown("### 👤 Portal Candidato")
+            st.markdown(
+                '<div class="mk-header-title">👤 Portal Candidato</div>',
+                unsafe_allow_html=True,
+            )
         elif role == "company":
-            st.markdown("### 🏢 Portal Empresa")
+            st.markdown(
+                '<div class="mk-header-title">🏢 Portal Empresa</div>',
+                unsafe_allow_html=True,
+            )
 
         if email:
-            st.caption(f"Conectado como: **{email}**")
+            st.markdown(
+                f'<div class="mk-header-sub">Conectado como: <b>{email}</b></div>',
+                unsafe_allow_html=True,
+            )
+        st.markdown("</div>", unsafe_allow_html=True)
 
     with right:
         if st.button("Cerrar sesión"):
@@ -180,63 +350,91 @@ def render_sidebar_navigation():
     role = st.session_state.role
 
     with st.sidebar:
-        st.markdown("## 🧭 Navegación")
+        # Estilos del sidebar
+        st.markdown(
+            """
+            <style>
+            .mk-sidebar-title {
+                font-size: 1.3rem;
+                font-weight: 800;
+                color: #A100FF;
+                margin-bottom: 0.2rem;
+            }
+            .mk-sidebar-sub {
+                font-size: 0.85rem;
+                opacity: 0.7;
+                margin-bottom: 0.6rem;
+            }
+            .mk-sidebar-section {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 0.06em;
+                opacity: 0.65;
+                margin-top: 1.2rem;
+                margin-bottom: 0.3rem;
+            }
+            .mk-sidebar-avatar {
+                border-radius: 50%;
+                margin-top: 0.3rem;
+                margin-bottom: 0.8rem;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        st.markdown('<div class="mk-sidebar-title">⚡ MatchKey</div>', unsafe_allow_html=True)
+
+        # Foto/avatar solo si la configuras
+        if SIDEBAR_PHOTO_PATH:
+            st.image(SIDEBAR_PHOTO_PATH, width=80, caption="", output_format="PNG")
+
         if role == "candidate":
+            st.markdown(
+                '<div class="mk-sidebar-sub">Portal de candidato</div>',
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                '<div class="mk-sidebar-section">Navegación</div>',
+                unsafe_allow_html=True,
+            )
+            opciones = [
+                "Inicio",
+                "Mi perfil",
+                "Llamada IA",
+                "Vacantes recomendadas",
+                "Mejora (gaps + cursos)",
+                "Dashboard",
+            ]
             page = st.radio(
                 "Secciones",
-                [
-                    "Inicio",
-                    "Mi perfil",
-                    "Llamada IA",
-                    "Vacantes recomendadas",
-                    "Mejora (gaps + cursos)",
-                    "Dashboard",  # 👈 Dashboard como página aparte
-                ],
-                index=[
-                    "Inicio",
-                    "Mi perfil",
-                    "Llamada IA",
-                    "Vacantes recomendadas",
-                    "Mejora (gaps + cursos)",
-                    "Dashboard",
-                ].index(st.session_state.current_page)
-                if st.session_state.current_page in [
-                    "Inicio",
-                    "Mi perfil",
-                    "Llamada IA",
-                    "Vacantes recomendadas",
-                    "Mejora (gaps + cursos)",
-                    "Dashboard",
-                ]
+                opciones,
+                index=opciones.index(st.session_state.current_page)
+                if st.session_state.current_page in opciones
                 else 0,
             )
         else:  # company
+            st.markdown(
+                '<div class="mk-sidebar-sub">Portal de empresa</div>',
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                '<div class="mk-sidebar-section">Navegación</div>',
+                unsafe_allow_html=True,
+            )
+            opciones = [
+                "Inicio",
+                "Perfil empresa",
+                "Crear vacante",
+                "Analítica de talento",
+                "Co-Teaching",
+                "Dashboard",
+            ]
             page = st.radio(
                 "Secciones",
-                [
-                    "Inicio",
-                    "Perfil empresa",
-                    "Crear vacante",
-                    "Analítica de talento",
-                    "Co-Teaching",
-                    "Dashboard",  # 👈 Dashboard como página aparte
-                ],
-                index=[
-                    "Inicio",
-                    "Perfil empresa",
-                    "Crear vacante",
-                    "Analítica de talento",
-                    "Co-Teaching",
-                    "Dashboard",
-                ].index(st.session_state.current_page)
-                if st.session_state.current_page in [
-                    "Inicio",
-                    "Perfil empresa",
-                    "Crear vacante",
-                    "Analítica de talento",
-                    "Co-Teaching",
-                    "Dashboard",
-                ]
+                opciones,
+                index=opciones.index(st.session_state.current_page)
+                if st.session_state.current_page in opciones
                 else 0,
             )
 
@@ -250,11 +448,100 @@ def render_candidate_portal():
     page = st.session_state.current_page
 
     if page == "Inicio":
-        st.markdown("#### 👋 Bienvenido/a a tu espacio MatchKey")
-        st.write(
-            "Desde el menú lateral puedes subir tu CV, hablar con la IA, ver vacantes recomendadas, "
-            "trabajar en tus gaps o consultar tu dashboard cuando necesites información agregada."
+        # Tarjeta de bienvenida más rica + descripción de la app + imagen
+        st.markdown(
+            """
+            <style>
+            .mk-home-card {
+                background-color: rgba(15,15,15,0.95);
+                border-radius: 18px;
+                padding: 1.5rem 1.4rem;
+                border: 1px solid rgba(255,255,255,0.06);
+                box-shadow: 0 18px 40px rgba(0,0,0,0.7);
+                margin-top: 0.2rem;
+                margin-bottom: 1.2rem;
+            }
+            .mk-home-title {
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 0.4rem;
+            }
+            .mk-home-sub {
+                font-size: 0.95rem;
+                opacity: 0.85;
+                margin-bottom: 0.8rem;
+            }
+            .mk-home-bullets {
+                font-size: 0.9rem;
+                opacity: 0.85;
+            }
+            .mk-home-feature-title {
+                font-weight: 600;
+                margin-bottom: 0.15rem;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True,
         )
+
+        col_main, col_img = st.columns([2.2, 1])
+
+        with col_main:
+            st.markdown(
+                """
+                <div class="mk-home-card">
+                    <div class="mk-home-title">👋 Bienvenido/a a tu espacio MatchKey</div>
+                    <div class="mk-home-sub">
+                        Este es tu panel personal para gestionar tu búsqueda de empleo con ayuda de la IA.
+                        MatchKey analiza tu CV, tus respuestas y tus preferencias para encontrar vacantes
+                        que encajen contigo no solo por skills, sino también por valores y forma de trabajar.
+                    </div>
+                    <div class="mk-home-bullets">
+                        <ul>
+                            <li><b>Descubre vacantes recomendadas</b> en función de tu perfil y tu encaje cultural.</li>
+                            <li><b>Identifica tus gaps</b> y recibe sugerencias de cursos concretos para mejorarlos.</li>
+                            <li><b>Comprende tu perfil</b> con el resumen psicológico-profesional generado por la IA.</li>
+                        </ul>
+                    </div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+        with col_img:
+            if HOME_ILLUSTRATION_PATH:
+                st.image(HOME_ILLUSTRATION_PATH, use_column_width=True)
+
+        st.markdown("")
+
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            st.markdown("**🧠 IA que te conoce**")
+            st.caption(
+                "Completa la Llamada IA para que el sistema entienda tus motivaciones, valores y forma de trabajar."
+            )
+            if st.button("Hacer Llamada IA"):
+                st.session_state.current_page = "Llamada IA"
+                st.rerun()
+
+        with col2:
+            st.markdown("**💼 Vacantes recomendadas**")
+            st.caption(
+                "Explora puestos que ya vienen filtrados por encaje de skills, valores y team-fit."
+            )
+            if st.button("Ver vacantes recomendadas"):
+                st.session_state.current_page = "Vacantes recomendadas"
+                st.rerun()
+
+        with col3:
+            st.markdown("**📈 Mejora tu perfil**")
+            st.caption(
+                "Revisa tus gaps por vacante y sigue las recomendaciones de cursos para subir tu match."
+            )
+            if st.button("Ir a Mejora (gaps + cursos)"):
+                st.session_state.current_page = "Mejora (gaps + cursos)"
+                st.rerun()
 
     elif page == "Mi perfil":
         candidate_profile.render()
@@ -280,11 +567,87 @@ def render_company_portal():
     page = st.session_state.current_page
 
     if page == "Inicio":
-        st.markdown("#### 👋 Bienvenido/a al portal empresa de MatchKey")
-        st.write(
-            "Desde el menú lateral puedes definir tu perfil, crear vacantes, ver analíticas "
-            "y acceder al dashboard cuando necesites una visión global."
+        # Tarjeta de bienvenida empresa más rica + posible ilustración
+        st.markdown(
+            """
+            <style>
+            .mk-home-card {
+                background-color: rgba(15,15,15,0.95);
+                border-radius: 18px;
+                padding: 1.5rem 1.4rem;
+                border: 1px solid rgba(255,255,255,0.06);
+                box-shadow: 0 18px 40px rgba(0,0,0,0.7);
+                margin-top: 0.2rem;
+                margin-bottom: 1.2rem;
+            }
+            .mk-home-title {
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 0.4rem;
+            }
+            .mk-home-sub {
+                font-size: 0.95rem;
+                opacity: 0.85;
+                margin-bottom: 0.8rem;
+            }
+            .mk-home-bullets {
+                font-size: 0.9rem;
+                opacity: 0.85;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True,
         )
+
+        col_main, col_img = st.columns([2.2, 1])
+
+        with col_main:
+            st.markdown(
+                """
+                <div class="mk-home-card">
+                    <div class="mk-home-title">👋 Bienvenido/a al portal empresa de MatchKey</div>
+                    <div class="mk-home-sub">
+                        Desde aquí puedes definir tu cultura, crear vacantes y dejar que nuestra IA te ayude
+                        a encontrar talento que encaje con tu forma de trabajar y con los equipos existentes.
+                    </div>
+                    <div class="mk-home-bullets">
+                        <ul>
+                            <li><b>Define el perfil de tu empresa</b> con valores, cultura y forma de trabajo.</li>
+                            <li><b>Crea vacantes</b> y deja que el motor de matching priorice a los mejores candidatos.</li>
+                            <li><b>Explora Co-Teaching</b> para descubrir parejas de candidatos complementarios.</li>
+                        </ul>
+                    </div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+        with col_img:
+            if COMPANY_HOME_ILLUSTRATION_PATH:
+                st.image(COMPANY_HOME_ILLUSTRATION_PATH, use_column_width=True)
+
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            st.markdown("**📄 Completar perfil de empresa**")
+            st.caption("Empieza definiendo quién eres y qué tipo de personas encajan mejor.")
+            if st.button("Ir al perfil de empresa"):
+                st.session_state.current_page = "Perfil empresa"
+                st.rerun()
+
+        with col2:
+            st.markdown("**➕ Crear una nueva vacante**")
+            st.caption("Publica una posición y deja que el sistema te sugiera candidatos.")
+            if st.button("Crear vacante"):
+                st.session_state.current_page = "Crear vacante"
+                st.rerun()
+
+        with col3:
+            st.markdown("**📊 Ver analítica de talento**")
+            st.caption("Consulta la distribución de encaje y descubre insights sobre tus vacantes.")
+            if st.button("Ir a Analítica de talento"):
+                st.session_state.current_page = "Analítica de talento"
+                st.rerun()
 
     elif page == "Perfil empresa":
         company_profile.render()

@@ -59,9 +59,6 @@ def ensure_candidate_id():
 def fetch_recommended_jobs(candidate_id):
     """
     Llama a /candidates/{id}/recommended_jobs (GET) para recuperar las vacantes recomendadas.
-    Asumimos que devuelve una lista de objetos job con campos típicos:
-    - id, title, company_name, location, description / short_description
-    - scores: { global, skills, values, team_fit } o campos planos equivalentes.
     """
     try:
         resp = requests.get(
@@ -85,6 +82,65 @@ def fetch_recommended_jobs(candidate_id):
             f"No se han podido recuperar tus vacantes recomendadas (código {resp.status_code})."
         )
         return []
+
+
+def apply_to_job(job_id, candidate_id):
+    """
+    Llama a /jobs/{job_id}/apply para que el candidato solicite la vacante.
+    """
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/jobs/{job_id}/apply",
+            json={"candidate_id": candidate_id},
+            timeout=10,
+        )
+    except Exception as e:
+        st.error(f"Error al solicitar el puesto: {e}")
+        return
+
+    if resp.status_code != 200:
+        st.error(
+            f"No se ha podido solicitar el puesto (código {resp.status_code})."
+        )
+        return
+
+    data = resp.json()
+    msg = data.get("message") if isinstance(data, dict) else "Solicitud enviada correctamente."
+    st.success(f"✅ {msg}")
+
+
+def format_description(text: str) -> str:
+    """
+    Intenta convertir un tochaco sin saltos de línea en algo legible:
+    - Añade párrafos tras cada punto.
+    - Mete saltos antes de algunos bloques típicos de JDs (¿Cómo será tu día a día?, Innovación, Be flex...).
+    - Convierte bullets que empiezan por '+' en '- ' para markdown.
+    """
+    if not text:
+        return ""
+
+    t = text.replace("\r\n", "\n")
+
+    # Bullets tipo "+ " → "- "
+    t = t.replace("+ ", "\n- ")
+
+    # Saltos antes de bloques típicos que suelen ser secciones
+    markers = [
+        "**¿Cómo será tu día a día?",
+        "¿Cómo será tu día a día?",
+        "¿Cómo puedes ampliar tus conocimientos?**",
+        "¿Cómo puedes ampliar tus conocimientos?",
+        "Innovación",
+        "Colaboración",
+        "Be flex",
+    ]
+    for m in markers:
+        t = t.replace(m, f"\n\n{m}")
+
+    # Párrafos: cada punto seguido se convierte en salto de párrafo
+    t = t.replace(". ", ".\n\n")
+
+    return t
 
 
 # -------------------------
@@ -122,7 +178,6 @@ def render():
         )
 
     with col_filter:
-        # Placeholder para futuros filtros (remoto, tipo contrato, etc.)
         st.multiselect(
             "Filtros rápidos (placeholder)",
             ["Remoto", "Híbrido", "Presencial", "Júnior", "Senior"],
@@ -189,13 +244,12 @@ def render():
         title = job.get("title", "Puesto sin título")
         company_name = job.get("company_name") or job.get("company") or "Empresa no indicada"
         location = job.get("location") or "Ubicación no indicada"
-        short_desc = (
-            job.get("short_description")
-            or job.get("summary")
-            or job.get("description", "")[:220] + "..."
-            if job.get("description")
-            else "Sin descripción disponible."
-        )
+
+        description = job.get("description")
+        if description:
+            resumen = description[:220] + ("..." if len(description) > 220 else "")
+        else:
+            resumen = "Sin descripción disponible."
 
         scores = extract_scores(job)
         global_score = scores["global"]
@@ -218,7 +272,7 @@ def render():
                 else:
                     st.metric("Encaje global", "N/D")
 
-            st.write(short_desc)
+            st.write(resumen)
 
             # Subscores
             sub1, sub2, sub3 = st.columns(3)
@@ -252,43 +306,128 @@ def render():
                     key=f"gaps_{job_id}",
                     use_container_width=True,
                 ):
-                    # Guardamos contexto para la página de mejora
                     st.session_state.selected_job_id = job_id
                     st.session_state.selected_job_title = title
                     st.session_state.current_page = "Mejora (gaps + cursos)"
                     st.rerun()
 
             with action_col2:
-                with st.expander("📄 Ver más detalles de la vacante"):
-                    # Mostramos info más completa si está disponible
-                    full_desc = job.get("description")
-                    if full_desc:
-                        st.markdown("##### Descripción completa")
-                        st.write(full_desc)
+                if st.button(
+                    "✅ Solicitar este puesto",
+                    key=f"apply_{job_id}",
+                    use_container_width=True,
+                ):
+                    apply_to_job(job_id, candidate_id)
 
-                    must_have = (
-                        job.get("must_have")
-                        or job.get("must_skills")
-                        or job.get("requirements_must")
-                    )
-                    nice_to_have = (
-                        job.get("nice_to_have")
-                        or job.get("nice_skills")
-                        or job.get("requirements_nice")
-                    )
+            # Detalles ampliados
+            with st.expander("📄 Ver más detalles de la vacante"):
+                full_desc = description
+                if full_desc:
+                    st.markdown("##### Descripción completa")
+                    formatted_desc = format_description(full_desc)
+                    st.markdown(formatted_desc)
+                else:
+                    st.write("Sin descripción disponible.")
 
-                    if must_have:
-                        st.markdown("##### ✅ Requisitos principales (Must-have)")
-                        if isinstance(must_have, list):
-                            for m in must_have:
-                                st.write(f"- {m}")
-                        else:
-                            st.write(must_have)
+                st.markdown("##### ℹ️ Información del puesto")
+                info_lines = []
 
-                    if nice_to_have:
-                        st.markdown("##### ⭐ Requisitos valorables (Nice-to-have)")
-                        if isinstance(nice_to_have, list):
-                            for n in nice_to_have:
-                                st.write(f"- {n}")
-                        else:
-                            st.write(nice_to_have)
+                category = job.get("category")
+                if category:
+                    info_lines.append(f"- **Categoría**: {category}")
+
+                ct_type = job.get("contract_type")
+                if ct_type:
+                    info_lines.append(f"- **Tipo de contrato**: {ct_type}")
+
+                ct_time = job.get("contract_time")
+                if ct_time:
+                    info_lines.append(f"- **Jornada**: {ct_time}")
+
+                job_type = job.get("job_type")
+                if job_type:
+                    info_lines.append(f"- **Modalidad**: {job_type}")
+
+                exp_req = job.get("experience_required")
+                if exp_req:
+                    info_lines.append(f"- **Experiencia requerida**: {exp_req}")
+
+                edu_req = job.get("education_required")
+                if edu_req:
+                    info_lines.append(f"- **Formación requerida**: {edu_req}")
+
+                salary_min = job.get("salary_min")
+                salary_max = job.get("salary_max")
+                if salary_min or salary_max:
+                    if salary_min and salary_max:
+                        info_lines.append(f"- **Salario**: {salary_min} - {salary_max}")
+                    elif salary_min:
+                        info_lines.append(f"- **Salario desde**: {salary_min}")
+                    elif salary_max:
+                        info_lines.append(f"- **Salario hasta**: {salary_max}")
+
+                if info_lines:
+                    st.markdown("\n".join(info_lines))
+                else:
+                    st.write("- Información adicional no disponible.")
+
+                # Tech stack, soft skills, idiomas, beneficios
+                tech_stack = job.get("tech_stack") or []
+                if isinstance(tech_stack, str):
+                    tech_stack = [tech_stack]
+                if tech_stack:
+                    st.markdown("##### 🛠️ Tech stack")
+                    for t in tech_stack:
+                        st.write(f"- {t}")
+
+                soft_skills = job.get("soft_skills") or []
+                if isinstance(soft_skills, str):
+                    soft_skills = [soft_skills]
+                if soft_skills:
+                    st.markdown("##### 🤝 Soft skills")
+                    for s in soft_skills:
+                        st.write(f"- {s}")
+
+                languages = job.get("languages") or []
+                if isinstance(languages, str):
+                    languages = [languages]
+                if languages:
+                    st.markdown("##### 🌍 Idiomas")
+                    for lang in languages:
+                        st.write(f"- {lang}")
+
+                benefits = job.get("benefits") or []
+                if isinstance(benefits, str):
+                    benefits = [benefits]
+                if benefits:
+                    st.markdown("##### 🎁 Beneficios")
+                    for b in benefits:
+                        st.write(f"- {b}")
+
+                # Must / Nice (por si en el futuro los tenemos)
+                must_have = (
+                    job.get("must_have")
+                    or job.get("must_skills")
+                    or job.get("requirements_must")
+                )
+                nice_to_have = (
+                    job.get("nice_to_have")
+                    or job.get("nice_skills")
+                    or job.get("requirements_nice")
+                )
+
+                if must_have:
+                    st.markdown("##### ✅ Requisitos principales (Must-have)")
+                    if isinstance(must_have, list):
+                        for m in must_have:
+                            st.write(f"- {m}")
+                    else:
+                        st.write(must_have)
+
+                if nice_to_have:
+                    st.markdown("##### ⭐ Requisitos valorables (Nice-to-have)")
+                    if isinstance(nice_to_have, list):
+                        for n in nice_to_have:
+                            st.write(f"- {n}")
+                    else:
+                        st.write(nice_to_have)

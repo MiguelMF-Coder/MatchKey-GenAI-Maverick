@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional, Any
 
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Query
 from pydantic import BaseModel, EmailStr
@@ -84,6 +84,23 @@ class RecommendedJobItem(BaseModel):
     title: str
     company_name: Optional[str] = None
     location: Optional[str] = None
+
+    # Datos extendidos del Job
+    description: Optional[str] = None
+    category: Optional[str] = None
+    contract_type: Optional[str] = None
+    contract_time: Optional[str] = None
+    job_type: Optional[str] = None
+    salary_min: Optional[float] = None
+    salary_max: Optional[float] = None
+    experience_required: Optional[str] = None
+    education_required: Optional[str] = None
+    area: Optional[Any] = None  # puede ser lista/JSON
+    tech_stack: Optional[List[str]] = None
+    soft_skills: Optional[List[str]] = None
+    languages: Optional[List[str]] = None
+    benefits: Optional[List[str]] = None
+
     scores: RecommendedJobScores
 
 
@@ -293,25 +310,15 @@ async def upload_and_parse_cv(
             detail="Set parse_cv=true to trigger CV parsing",
         )
 
-    # TODO: integrar con Document Parser y Skills Extractor reales.
-    # Aquí solo dejamos un stub para que el frontend funcione.
     content_bytes = await file.read()
     raw_text = f"Archivo recibido: {file.filename} ({len(content_bytes)} bytes)"
 
-    # Por ahora, devolvemos un ejemplo simple y guardamos CERO skills reales
     all_skills: List[str] = []
     must_have: List[str] = []
     nice_to_have: List[str] = []
 
-    # Si quieres, aquí puedes rellenar algunas skills dummy:
-    # all_skills = ["Python", "SQL", "Power BI"]
-    # must_have = ["Python", "SQL"]
-    # nice_to_have = ["Power BI"]
-
-    # Borramos skills anteriores del candidato (opcional)
     db.query(CandidateSkill).filter(CandidateSkill.candidate_id == candidate.id).delete()
 
-    # Guardar skills (de momento, nada; cuando integremos el extractor, aquí se insertan)
     for skill_name in all_skills:
         skill = CandidateSkill(
             candidate_id=candidate.id,
@@ -349,8 +356,6 @@ def get_recommended_jobs(candidate_id: int, db: Session = Depends(get_db)):
     recommended: List[RecommendedJobItem] = []
 
     for job in jobs:
-        # TODO: aquí deberíamos llamar a matching_engine.run(candidate, job)
-        # De momento devolvemos scores dummy para que el frontend pueda pintar algo.
         scores = RecommendedJobScores(
             global_score=75.0,
             skills_match=80.0,
@@ -362,11 +367,32 @@ def get_recommended_jobs(candidate_id: int, db: Session = Depends(get_db)):
         if hasattr(job, "company") and job.company is not None:
             company_name = getattr(job.company, "name", None)
 
+        # experience_required puede ser int o texto → lo normalizamos a str
+        exp_req = job.experience_required
+        if exp_req is not None and not isinstance(exp_req, str):
+            exp_req = str(exp_req)
+
         item = RecommendedJobItem(
             job_id=job.id,
             title=job.title,
             company_name=company_name,
             location=getattr(job, "location", None),
+
+            description=getattr(job, "jd_text", None),
+            category=getattr(job, "category", None),
+            contract_type=getattr(job, "contract_type", None),
+            contract_time=getattr(job, "contract_time", None),
+            job_type=getattr(job, "job_type", None),
+            salary_min=getattr(job, "salary_min", None),
+            salary_max=getattr(job, "salary_max", None),
+            experience_required=exp_req,
+            education_required=getattr(job, "education_required", None),
+            area=getattr(job, "area", None),
+            tech_stack=getattr(job, "tech_stack", None),
+            soft_skills=getattr(job, "soft_skills", None),
+            languages=getattr(job, "languages", None),
+            benefits=getattr(job, "benefits", None),
+
             scores=scores,
         )
         recommended.append(item)
@@ -392,13 +418,6 @@ def get_gaps_for_job(
     if job is None:
         raise HTTPException(status_code=404, detail="Job not found")
 
-    # TODO:
-    # - Leer CandidateSkill y JobSkill
-    # - Calcular fuertes / en desarrollo / a desarrollar
-    # - Calcular scores reales apoyados en Matching Engine
-    # - Cruzar con courses_dataset.json para sugerir cursos
-
-    # Por ahora, devolvemos algo coherente pero dummy:
     scores = RecommendedJobScores(
         global_score=75.0,
         skills_match=80.0,

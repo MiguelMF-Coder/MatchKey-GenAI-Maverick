@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from app.db.session import SessionLocal
-from app.models.jobs import Job, TeamProfile, TeamMember, CoTeachingPair
+from app.models.jobs import Job, TeamProfile, TeamMember, CoTeachingPair, Application
 from app.models.companies import Company
 from app.models.candidates import Candidate
 from app.models.skills import CandidateSkill, JobSkill
@@ -179,6 +179,11 @@ class CoTeachingResponse(BaseModel):
     pairs: List[CoTeachingPairItem]
 
 
+# --- Apply schema ---
+class ApplyPayload(BaseModel):
+    candidate_id: int
+
+
 # -------------------------------------------------
 # 1) POST /jobs/create
 #    Crea la vacante + team_profile + team_members + skills (dummy)
@@ -242,13 +247,6 @@ def create_job(payload: JobCreate, db: Session = Depends(get_db)):
     if payload.auto_extract_skills and payload.jd_text:
         # TODO: Integrar con Document Parser (si viene JD en fichero)
         #       e invocar Skills Extractor sobre el texto limpio.
-        # Ejemplo futuro:
-        # parsed = parse_document(file_or_text=payload.jd_text)
-        # skills = extract_skills(parsed["clean_text"])
-        # must_have = skills["must_have"]
-        # nice_to_have = skills["nice_to_have"]
-        # all_skills = skills["all_skills"]
-        #
         # De momento ponemos algunos skills dummy solo para probar el frontend:
         must_have = ["Python", "SQL"]
         nice_to_have = ["Docker", "Power BI"]
@@ -449,15 +447,6 @@ def match_candidates_for_job(job_id: int, db: Session = Depends(get_db)):
         user = db.query(User).filter(User.id == cand.user_id).first()
 
         # TODO: aquí deberíamos llamar a matching_engine.run(candidate, job)
-        # y obtener scores reales.
-        # Ejemplo futuro:
-        # result = run_matching_engine(candidate=cand, job=job)
-        # scores = MatchScores(
-        #     global_score=result["scores"]["global"],
-        #     skills_match=result["scores"]["skills"],
-        #     values_match=result["scores"]["values"],
-        #     team_fit=result["scores"]["team_fit"],
-        # )
         scores = MatchScores(
             global_score=75.0,
             skills_match=80.0,
@@ -532,3 +521,49 @@ def get_co_teaching_pairs(job_id: int, db: Session = Depends(get_db)):
         job_id=job.id,
         pairs=pairs,
     )
+
+
+# -------------------------------------------------
+# 5) POST /jobs/{job_id}/apply
+#    Candidato solicita una vacante (crea Application si no existe)
+# -------------------------------------------------
+@router.post("/{job_id}/apply")
+def apply_to_job(job_id: int, payload: ApplyPayload, db: Session = Depends(get_db)):
+    job = db.query(Job).filter(Job.id == job_id).first()
+    if job is None:
+        raise HTTPException(status_code=404, detail="Job not found")
+
+    candidate = db.query(Candidate).filter(Candidate.id == payload.candidate_id).first()
+    if candidate is None:
+        raise HTTPException(status_code=404, detail="Candidate not found")
+
+    # ¿Ya existe la application?
+    existing = (
+        db.query(Application)
+        .filter(
+            Application.job_id == job_id,
+            Application.candidate_id == payload.candidate_id,
+        )
+        .first()
+    )
+    if existing:
+        return {
+            "status": "ok",
+            "message": "Ya habías solicitado esta vacante.",
+            "application_id": existing.id,
+        }
+
+    application = Application(
+        job_id=job_id,
+        candidate_id=payload.candidate_id,
+        status="applied",
+    )
+    db.add(application)
+    db.commit()
+    db.refresh(application)
+
+    return {
+        "status": "ok",
+        "message": "Solicitud registrada correctamente.",
+        "application_id": application.id,
+    }
