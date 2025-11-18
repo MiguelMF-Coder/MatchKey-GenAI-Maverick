@@ -6,12 +6,13 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-# Dependencias del sistema (psycopg2, tesseract, etc.)
+# Dependencias del sistema (psycopg2, tesseract, ffmpeg para whisper, etc.)
 RUN apt-get update && apt-get install -y \
     build-essential \
     libpq-dev \
     tesseract-ocr \
     poppler-utils \
+    ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 # Instalar requirements

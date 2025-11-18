@@ -23,19 +23,21 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: matchkey-backend
+    env_file:
+      - ./backend/.env
     environment:
       DB_HOST: db
       DB_PORT: 5432
       DB_NAME: matchkey
       DB_USER: matchkey_user
       DB_PASSWORD: matchkey_password
-      # Si usas OpenAI u otra IA:
-      # OPENAI_API_KEY: your_api_key_here
     depends_on:
       db:
         condition: service_healthy
     ports:
       - "8000:8000"
+    volumes:
+      - ./backend/app:/app/app:ro
 
   frontend:
     build:

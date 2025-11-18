@@ -120,21 +120,17 @@ def render():
         st.stop()
 
     # -----------------------------------------
-    # BOTÓN DE LLAMADA IA (futuro)
+    # INFORMACIÓN SOBRE FUNCIONALIDADES
     # -----------------------------------------
-    st.markdown("### 📞 Llamada IA en tiempo real (próximamente)")
+    col_info1, col_info2 = st.columns(2)
 
-    if st.button("📞 Hacer llamada IA (beta - próximamente disponible)", use_container_width=True):
-        st.warning(
-            "Esta funcionalidad aún no está activada. "
-            "Muy pronto podrás realizar una llamada de voz o chat en tiempo real con nuestro HR Copilot 💜",
-            icon="⚠️"
-        )
+    with col_info1:
+        st.info("✅ **DISPONIBLE AHORA**: Cuestionario de texto con análisis IA completo")
 
-    st.markdown(
-        "<hr style='border: 1px solid #A100FF; margin-top: 10px; margin-bottom: 25px;'>",
-        unsafe_allow_html=True,
-    )
+    with col_info2:
+        st.warning("🚧 **PRÓXIMAMENTE**: Llamada de voz en tiempo real")
+
+    st.markdown("---")
 
     # Explicación de qué va a completarse en el perfil
     with st.expander("ℹ️ ¿Qué va a completar esta llamada en tu perfil?"):
@@ -207,12 +203,17 @@ cómo te está “viendo” el sistema.
         questions = [q for (q, _) in non_empty_pairs]
         answers_only = [a.strip() for (_, a) in non_empty_pairs]
 
-        with st.spinner("Analizando tus respuestas con el HR Copilot..."):
+        with st.spinner("🤖 Analizando tus respuestas con el HR Copilot..."):
             result = call_hr_copilot(candidate_id, answers_only, questions)
 
         if result:
-            st.success("Análisis completado ✅ Tu perfil se ha actualizado con esta información.")
+            st.balloons()
+            st.success("✅ ¡Análisis completado! Tu perfil se ha actualizado con esta información.")
             st.session_state["hr_copilot_last_result"] = result
+            st.info("💡 Desplázate hacia abajo para ver el análisis completo de tu perfil.")
+        else:
+            st.error("❌ Hubo un problema al procesar tus respuestas. Por favor, intenta de nuevo.")
+            st.info("Si el problema persiste, verifica que el backend esté funcionando correctamente.")
 
     # -------------------------
     # Bloque de transparencia: mostrar TODO lo que completa el perfil
