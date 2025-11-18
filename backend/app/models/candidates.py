@@ -20,7 +20,7 @@ class Candidate(Base, TimestampMixin):
     user = relationship("User", back_populates="candidate")
     skills = relationship("CandidateSkill", back_populates="candidate", cascade="all, delete-orphan")
     interviews = relationship("CandidateInterview", back_populates="candidate", cascade="all, delete-orphan")
-    cvs = relationship("CV", back_populates="candidate", cascade="all, delete-orphan")
+    # cvs = relationship("CV", back_populates="candidate", cascade="all, delete-orphan")
 
     applications = relationship("Application", back_populates="candidate")
     recommendations = relationship("JobRecommendation", back_populates="candidate")

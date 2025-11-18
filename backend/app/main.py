@@ -1,16 +1,33 @@
 from fastapi import FastAPI
-from .routers import auth, candidates, companies, jobs, copilot, matching
+from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="MatchKey Backend")
+# Importa los routers
+from app.routers import auth, candidates, companies, jobs, copilot, matching
 
-@app.get("/")
-def root():
-    return {"message": "MatchKey Backend is running"}
+app = FastAPI(
+    title="MatchKey API",
+    version="0.1.0",
+)
 
-# Incluir routers
-app.include_router(auth.router, prefix="/auth", tags=["auth"])
-app.include_router(candidates.router, prefix="/candidates", tags=["candidates"])
-app.include_router(companies.router, prefix="/companies", tags=["companies"])
-app.include_router(jobs.router, prefix="/jobs", tags=["jobs"])
-app.include_router(copilot.router, prefix="/copilot", tags=["copilot"])
-app.include_router(matching.router, prefix="/matching", tags=["matching"])
+# CORS (útil si algún día llamáis desde fuera de Docker / otro dominio)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # en producción se puede cerrar
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Incluimos routers tal cual, SIN prefijos extra
+app.include_router(auth.router)        # /auth/...
+app.include_router(candidates.router)  # /candidates/...
+app.include_router(companies.router)   # /companies/...
+app.include_router(jobs.router)        # /jobs/...
+# Si tenéis estos ya creados:
+# app.include_router(copilot.router)
+# app.include_router(matching.router)
+
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}

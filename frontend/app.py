@@ -1,6 +1,7 @@
 import streamlit as st
 from utils import apply_accenture_theme
 from utils import get_backend_url
+from utils import api_post  # ⬅️ IMPORTAMOS EL HELPER PARA LLAMAR AL BACKEND
 
 # --------- IMPORTS DE PÁGINAS POR ROL ---------
 # CANDIDATO
@@ -34,6 +35,10 @@ def init_session_state():
         st.session_state.role = None
     if "current_page" not in st.session_state:
         st.session_state.current_page = "Inicio"
+    if "candidate_id" not in st.session_state:
+        st.session_state.candidate_id = None
+    if "company_id" not in st.session_state:
+        st.session_state.company_id = None
 
 
 # -------------------------
@@ -76,7 +81,7 @@ no solo por skills, sino también por **valores**, **cultura** y **encaje de equ
 
 
 # -------------------------
-# Formulario de Login (simplificado)
+# Formulario de Login (real contra backend)
 # -------------------------
 def render_login_card():
     st.subheader("Inicia sesión para acceder a tu portal")
@@ -98,16 +103,41 @@ def render_login_card():
             st.error("Por favor, introduce email y contraseña.")
             return
 
-        # 🔐 Aquí en el futuro se integrará con el backend de auth
+        # Convertimos la elección visual en el rol real usado por el backend
         role = "candidate" if "Candidato" in role_choice else "company"
 
+        payload = {
+            "email": email,
+            "password": password,
+            "role": role,
+        }
+
+        # 🚀 Llamada REAL al backend: POST /auth/login
+        data, error = api_post("/auth/login", json=payload)
+
+        if error:
+            st.error(f"Error al iniciar sesión: {error}")
+            return
+
+        # data debe contener: user_id, email, role, candidate_id, company_id
         st.session_state.auth["is_authenticated"] = True
-        st.session_state.auth["user_id"] = email  # temporal
-        st.session_state.auth["email"] = email
-        st.session_state.role = role
+        st.session_state.auth["user_id"] = data.get("user_id")
+        st.session_state.auth["email"] = data.get("email")
+        st.session_state.role = data.get("role")
+
+        # Guardamos los IDs específicos según el rol
+        if st.session_state.role == "candidate":
+            st.session_state.candidate_id = data.get("candidate_id")
+            st.session_state.company_id = None
+        else:
+            st.session_state.company_id = data.get("company_id")
+            st.session_state.candidate_id = None
+
         st.session_state.current_page = "Inicio"
 
+        # Forzamos recarga para entrar en el portal
         st.success("Inicio de sesión correcto. Cargando tu portal...")
+        st.rerun()
 
 
 # -------------------------
@@ -138,6 +168,8 @@ def render_private_header():
             }
             st.session_state.role = None
             st.session_state.current_page = "Inicio"
+            st.session_state.candidate_id = None
+            st.session_state.company_id = None
             st.rerun()
 
 

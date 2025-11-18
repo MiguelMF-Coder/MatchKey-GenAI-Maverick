@@ -16,3 +16,9 @@ class CoursesAdapter:
     def get_courses_for_skill(self, skill: str):
         skill = skill.lower()
         return [c for c in self.courses if c["skill"] == skill]
+    
+    def import_vacantes_json(self, json_path: str):
+        path = Path(json_path)
+        self.courses = json.load(open(path, "r", encoding="utf8"))
+
+
