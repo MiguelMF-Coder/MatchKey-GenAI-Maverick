@@ -1,0 +1,25 @@
+{
+  "test_case": "Candidato Junior - Desarrollador Backend",
+  "description": "Candidato recién graduado, entusiasta, busca aprender",
+  "questions": [
+    "¿Qué te motiva de este puesto y por qué te interesa trabajar con nosotros?",
+    "Cuéntame sobre un proyecto del que estés especialmente orgulloso. ¿Qué hiciste y qué aprendiste?",
+    "¿En qué tipo de equipo te sientes más cómodo y rindes mejor?",
+    "¿Qué valor personal o principio te define más en tu forma de trabajar?",
+    "¿Cómo manejas situaciones de alta presión o cuando las cosas no salen según lo planeado?"
+  ],
+  "answers": [
+    "Me motiva muchísimo poder trabajar en una empresa que está innovando en tecnología. Siempre me ha apasionado el desarrollo backend y la idea de construir sistemas escalables. Además, he investigado sobre vuestra empresa y me encanta la cultura de aprendizaje continuo que promovéis. Creo que aquí podría crecer como profesional mientras aporto valor al equipo.",
+    "Estoy muy orgulloso de mi proyecto final de carrera. Desarrollé una API REST para gestionar reservas de espacios universitarios usando FastAPI y PostgreSQL. Lo más desafiante fue implementar un sistema de autenticación JWT y optimizar las consultas para manejar concurrencia. Aprendí muchísimo sobre arquitectura de software y la importancia de escribir código limpio y bien documentado. También tuve que aprender a usar Docker para el despliegue, lo cual fue nuevo para mí pero muy gratificante.",
+    "Me siento más cómodo en equipos pequeños donde hay buena comunicación. Valoro mucho poder hacer pair programming y aprender de desarrolladores con más experiencia. Creo que los equipos ágiles, donde puedes tener conversaciones directas y recibir feedback rápido, son donde mejor rindo. También me gusta cuando hay un ambiente de confianza donde puedes preguntar sin miedo a equivocarte.",
+    "Diría que el aprendizaje continuo es lo que más me define. Siempre estoy buscando mejorar y aprender nuevas tecnologías. También valoro mucho la honestidad y la transparencia en el trabajo. Prefiero decir cuando no sé algo y pedir ayuda, que pretender que lo sé todo. Creo que esa humildad es esencial para crecer como profesional.",
+    "Cuando las cosas no salen como esperaba, trato de mantener la calma y analizar qué salió mal. En mi proyecto final, tuve un bug crítico dos días antes de la entrega que causaba pérdida de datos. En lugar de entrar en pánico, respiré hondo, busqué ayuda de un profesor, y nos pusimos a debuggear sistemáticamente. Al final lo solucionamos y aprendí la importancia de tener buenos tests y no dejar todo para el último momento. Ahora soy más organizado y proactivo con los plazos."
+  ],
+  "expected_insights": {
+    "motivaciones": "Desarrollo profesional en tecnología backend, aprendizaje continuo, aportación de valor",
+    "valores": ["innovacion", "aprendizaje_continuo", "transparencia", "humildad"],
+    "soft_skills": ["comunicacion", "trabajo_equipo", "adaptabilidad", "resiliencia", "organizacion"],
+    "preferencias_equipo": "Equipos pequeños, ágiles, con buena comunicación y cultura de aprendizaje"
+  }
+}
+

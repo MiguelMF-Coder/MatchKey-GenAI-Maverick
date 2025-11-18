@@ -50,17 +50,22 @@ def ensure_candidate_id():
     return candidate_id
 
 
-def call_hr_copilot(candidate_id, answers):
+def call_hr_copilot(candidate_id, answers: list[str], questions: list[str] | None = None):
     """
     Llama al endpoint del HR Copilot.
-    Asumimos un contrato tipo:
-      POST /copilot/process_call
-      body: { "candidate_id": ..., "answers": [ { "question": "...", "answer": "..." }, ... ] }
+    Contrato real backend (POST /copilot/process_call):
+      {
+        "candidate_id": int,
+        "answers": ["respuesta1", "respuesta2", ...],
+        "questions": ["pregunta1", "pregunta2", ...]  # opcional
+      }
     """
     payload = {
         "candidate_id": candidate_id,
         "answers": answers,
     }
+    if questions:
+        payload["questions"] = questions
 
     try:
         resp = requests.post(
@@ -168,14 +173,14 @@ cómo te está “viendo” el sistema.
     ]
 
     with st.form("hr_copilot_form"):
-        answers_text = []
+        answers_pairs = []  # (pregunta, respuesta)
         for i, q in enumerate(default_questions):
             answer = st.text_area(
                 f"{i+1}. {q}",
                 key=f"q_{i}",
                 height=80,
             )
-            answers_text.append((q, answer))
+            answers_pairs.append((q, answer))
 
         st.markdown("----")
         honest_check = st.checkbox(
@@ -194,19 +199,16 @@ cómo te está “viendo” el sistema.
             return
 
         # Validación mínima: al menos 2 respuestas no vacías
-        non_empty = [a for (_, a) in answers_text if a and a.strip()]
-        if len(non_empty) < 2:
+        non_empty_pairs = [(q, a) for (q, a) in answers_pairs if a and a.strip()]
+        if len(non_empty_pairs) < 2:
             st.error("Responde al menos a un par de preguntas para que la IA pueda trabajar bien.")
             return
 
-        answers_payload = [
-            {"question": q, "answer": a}
-            for (q, a) in answers_text
-            if a and a.strip()
-        ]
+        questions = [q for (q, _) in non_empty_pairs]
+        answers_only = [a.strip() for (_, a) in non_empty_pairs]
 
         with st.spinner("Analizando tus respuestas con el HR Copilot..."):
-            result = call_hr_copilot(candidate_id, answers_payload)
+            result = call_hr_copilot(candidate_id, answers_only, questions)
 
         if result:
             st.success("Análisis completado ✅ Tu perfil se ha actualizado con esta información.")
