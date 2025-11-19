@@ -10,6 +10,7 @@ from app.models.candidates import Candidate
 from app.models.skills import CandidateSkill
 from app.models.jobs import Job
 from app.models.interviews import CandidateInterview
+from app.services.recommendations.courses_recommender import recommend_courses_for_gaps
 
 router = APIRouter(prefix="/candidates", tags=["candidates"])
 
@@ -120,6 +121,11 @@ class CourseRecommendation(BaseModel):
     url: Optional[str] = None
     target_skills: List[str] = []
 
+class RecommendedCoursesResponse(BaseModel):
+    candidate_id: int
+    job_id: int
+    missing_skills: List[str]
+    courses: List[CourseRecommendation] = []
 
 class GapsRecommendations(BaseModel):
     courses: List[CourseRecommendation] = []
@@ -453,3 +459,90 @@ def get_gaps_for_job(
         skills=skills_section,
         recommendations=recommendations,
     )
+
+@router.get("/courses")
+def get_all_courses():
+    """
+    Devuelve todos los cursos del dataset de scraping.
+    Intenta varias rutas posibles para ser robusto.
+    """
+    import json
+    from pathlib import Path
+
+    candidate_paths = [
+        Path("app/services/scraping/courses_dataset.json"),
+        Path("app/services/scraping/courses/data/courses.json"),
+        Path("app/services/scraping/courses.json"),
+    ]
+
+    dataset_path = None
+    for p in candidate_paths:
+        if p.exists():
+            dataset_path = p
+            break
+
+    if dataset_path is None:
+        # Opcional: logear algo aquí
+        return []
+
+    try:
+        with open(dataset_path, "r", encoding="utf-8") as f:
+            courses = json.load(f)
+    except Exception:
+        return []
+
+    if not isinstance(courses, list):
+        return []
+
+    return courses
+
+
+@router.get(
+    "/{candidate_id}/job/{job_id}/recommended_courses",
+    response_model=RecommendedCoursesResponse,
+)
+def get_recommended_courses_for_job(
+    candidate_id: int,
+    job_id: int,
+    db: Session = Depends(get_db),
+):
+    """
+    Recomienda cursos para los gaps detectados en una vacante concreta.
+    Se apoya en:
+      - get_gaps_for_job(...) para obtener los missing skills
+      - recommend_courses_for_gaps(...) para buscar cursos relevantes
+    """
+    # Aseguramos que candidate y job existen (por coherencia)
+    candidate = db.query(Candidate).filter(Candidate.id == candidate_id).first()
+    if candidate is None:
+        raise HTTPException(status_code=404, detail="Candidate not found")
+
+    job = db.query(Job).filter(Job.id == job_id).first()
+    if job is None:
+        raise HTTPException(status_code=404, detail="Job not found")
+
+    # Reutilizamos la lógica de gaps ya existente
+    gaps_response = get_gaps_for_job(candidate_id=candidate_id, job_id=job_id, db=db)
+
+    missing_skills = gaps_response.skills.missing or []
+
+    if not missing_skills:
+        return RecommendedCoursesResponse(
+            candidate_id=candidate_id,
+            job_id=job_id,
+            missing_skills=[],
+            courses=[],
+        )
+
+    # Llamamos al recomendador de cursos (fuzzy matching básico)
+    raw_courses = recommend_courses_for_gaps(missing_skills)
+
+    courses = [CourseRecommendation(**c) for c in raw_courses]
+
+    return RecommendedCoursesResponse(
+        candidate_id=candidate_id,
+        job_id=job_id,
+        missing_skills=missing_skills,
+        courses=courses,
+    )
+
