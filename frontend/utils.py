@@ -145,6 +145,15 @@ def api_post(path: str, json: dict | None = None):
         return res.json(), None
     except Exception as e:
         return None, str(e)
+    
+def api_post_file(path: str, files=None, data=None):
+    url = get_backend_url() + path
+    try:
+        resp = requests.post(url, files=files, data=data, timeout=60)
+        resp.raise_for_status()
+        return resp.json(), None
+    except Exception as e:
+        return None, str(e)
 
 
 def require_role(expected_role: str):
