@@ -10,6 +10,7 @@ from app.models.companies import Company
 from app.models.candidates import Candidate
 from app.models.skills import CandidateSkill, JobSkill
 from app.models.users import User
+from app.services.notifications.email_service import send_selection_email
 
 
 # TODO (cuando toque):
@@ -74,6 +75,18 @@ class JobCreate(BaseModel):
 
     # Auto extracción de skills (stub)
     auto_extract_skills: bool = True
+
+
+class JobUpdate(BaseModel):
+    title: Optional[str] = None
+    department: Optional[str] = None
+    location: Optional[str] = None
+    contract_type: Optional[str] = None
+    salary_range: Optional[str] = None
+    seniority: Optional[str] = None
+    is_remote_friendly: Optional[bool] = None
+    jd_text: Optional[str] = None
+    status: Optional[str] = None
 
 
 class JobSkillItem(BaseModel):
@@ -566,4 +579,211 @@ def apply_to_job(job_id: int, payload: ApplyPayload, db: Session = Depends(get_d
         "status": "ok",
         "message": "Solicitud registrada correctamente.",
         "application_id": application.id,
+    }
+
+
+@router.get("/{job_id}/applications")
+def list_job_applications(job_id: int, db: Session = Depends(get_db)):
+    job = db.query(Job).filter(Job.id == job_id).first()
+    if not job:
+        raise HTTPException(status_code=404, detail="Job not found")
+
+    applications = (
+        db.query(Application)
+        .filter(Application.job_id == job_id)
+        .all()
+    )
+
+    # Juntamos info de Candidate para mostrar en frontend
+    result = []
+    for app in applications:
+        cand = (
+            db.query(Candidate)
+            .filter(Candidate.id == app.candidate_id)
+            .first()
+        )
+        if not cand:
+            continue
+
+        user = db.query(User).filter(User.id == cand.user_id).first() if cand.user_id else None
+
+        result.append(
+            {
+                "application_id": app.id,
+                "candidate_id": cand.id,
+                "candidate_name": cand.name,
+                "candidate_email": user.email if user else None,
+                # Si tienes campo cv_url o similar en Candidate, añádelo aquí:
+                # "cv_url": cand.cv_url,
+                "applied_at": getattr(app, "created_at", None),
+                "status": getattr(app, "status", None),
+            }
+        )
+
+    return {
+        "job_id": job.id,
+        "job_title": job.title,
+        "company_id": job.company_id,
+        "applications": result,
+    }
+
+
+@router.post("/{job_id}/applications/{application_id}/select")
+def select_application(job_id: int, application_id: int, db: Session = Depends(get_db)):
+    app = (
+        db.query(Application)
+        .filter(
+            Application.id == application_id,
+            Application.job_id == job_id,
+        )
+        .first()
+    )
+    if not app:
+        raise HTTPException(status_code=404, detail="Application not found")
+
+    job = db.query(Job).filter(Job.id == job_id).first()
+    candidate = db.query(Candidate).filter(Candidate.id == app.candidate_id).first()
+    company = db.query(Company).filter(Company.id == job.company_id).first()
+
+    if not candidate or not company:
+        raise HTTPException(status_code=400, detail="Invalid candidate or company")
+
+    user = db.query(User).filter(User.id == candidate.user_id).first() if candidate.user_id else None
+    candidate_email = getattr(candidate, "email", None) or (user.email if user else None)
+
+    # Actualizamos status si existe el campo
+    if hasattr(app, "status"):
+        app.status = "selected"
+    db.add(app)
+    db.commit()
+
+    # Enviar email (puede ser real o stub según configuración)
+    if candidate_email:
+        send_selection_email(
+            candidate_email=candidate_email,
+            candidate_name=candidate.name,
+            job_title=job.title,
+            company_name=company.name,
+        )
+
+    return {
+        "message": "Candidate selected and email sent (if email service is configured).",
+        "application_id": app.id,
+        "candidate_id": candidate.id,
+        "job_id": job.id,
+    }
+
+
+# -------------------------------------------------
+# 6) PUT /jobs/{job_id}
+#    Actualizar datos de una vacante existente
+# -------------------------------------------------
+@router.put("/{job_id}", response_model=JobDetailResponse)
+def update_job(job_id: int, payload: JobUpdate, db: Session = Depends(get_db)):
+    job = db.query(Job).filter(Job.id == job_id).first()
+    if not job:
+        raise HTTPException(status_code=404, detail="Job not found")
+
+    update_data = payload.dict(exclude_unset=True)
+    for field, value in update_data.items():
+        setattr(job, field, value)
+
+    db.add(job)
+    db.commit()
+    db.refresh(job)
+
+    # Recuperar skills actuales
+    job_skills = db.query(JobSkill).filter(JobSkill.job_id == job.id).all()
+    must_have = [s.skill_name for s in job_skills if s.importance == "must_have"]
+    nice_to_have = [s.skill_name for s in job_skills if s.importance == "nice_to_have"]
+    all_skills = list(dict.fromkeys(must_have + nice_to_have))
+
+    # Recuperar team_profile y miembros
+    team_profile_obj = (
+        db.query(TeamProfile)
+        .filter(TeamProfile.job_id == job.id)
+        .first()
+    )
+
+    team_profile_item: Optional[TeamProfileItem] = None
+    if team_profile_obj:
+        members_db = (
+            db.query(TeamMember)
+            .filter(TeamMember.team_profile_id == team_profile_obj.id)
+            .all()
+        )
+        members_items = [
+            TeamMemberItem(
+                id=m.id,
+                role=m.role,
+                seniority=m.seniority,
+                work_style=m.work_style,
+                communication_style=m.communication_style,
+                values=m.values or [],
+                collaboration_style=m.collaboration_style,
+            )
+            for m in members_db
+        ]
+        team_profile_item = TeamProfileItem(
+            id=team_profile_obj.id,
+            team_name=team_profile_obj.team_name,
+            team_mission=team_profile_obj.team_mission,
+            team_work_style=team_profile_obj.team_work_style,
+            team_communication=team_profile_obj.team_communication,
+            team_autonomy=team_profile_obj.team_autonomy,
+            team_ideal_profile=team_profile_obj.team_ideal_profile,
+            members=members_items,
+        )
+
+    return JobDetailResponse(
+        id=job.id,
+        company_id=job.company_id,
+        title=job.title,
+        department=job.department,
+        location=job.location,
+        contract_type=job.contract_type,
+        salary_range=job.salary_range,
+        seniority=job.seniority,
+        is_remote_friendly=job.is_remote_friendly,
+        jd_text=job.jd_text,
+        must_have=must_have,
+        nice_to_have=nice_to_have,
+        all_skills=all_skills,
+        team_profile=team_profile_item,
+    )
+
+
+# -------------------------------------------------
+# 7) DELETE /jobs/{job_id}
+#    Eliminar una vacante y datos relacionados
+# -------------------------------------------------
+@router.delete("/{job_id}")
+def delete_job(job_id: int, db: Session = Depends(get_db)):
+    job = db.query(Job).filter(Job.id == job_id).first()
+    if not job:
+        raise HTTPException(status_code=404, detail="Job not found")
+
+    # Borrar Applications
+    db.query(Application).filter(Application.job_id == job_id).delete()
+
+    # Borrar JobSkills
+    db.query(JobSkill).filter(JobSkill.job_id == job_id).delete()
+
+    # Borrar TeamProfiles y TeamMembers asociados
+    team_profiles = db.query(TeamProfile).filter(TeamProfile.job_id == job_id).all()
+    for tp in team_profiles:
+        db.query(TeamMember).filter(TeamMember.team_profile_id == tp.id).delete()
+    db.query(TeamProfile).filter(TeamProfile.job_id == job_id).delete()
+
+    # Borrar CoTeachingPairs
+    db.query(CoTeachingPair).filter(CoTeachingPair.job_id == job_id).delete()
+
+    # Borrar el Job
+    db.delete(job)
+    db.commit()
+
+    return {
+        "status": "ok",
+        "message": "Job and related data deleted successfully.",
+        "job_id": job_id,
     }

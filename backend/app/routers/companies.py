@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from app.db.session import SessionLocal
 from app.models.users import User
 from app.models.companies import Company, CompanyCulture
-from app.models.jobs import Job
+from app.models.jobs import Job, Application
 
 router = APIRouter(prefix="/companies", tags=["companies"])
 
@@ -246,9 +246,10 @@ def update_company_profile(
         "work_mode", "perks", "team_fit_summary",
     ]
 
+    payload_dict = payload.dict(exclude_unset=True)
     for field in culture_fields:
-        if field in payload.dict(exclude_unset=True):
-            setattr(culture, field, payload.dict()[field])
+        if field in payload_dict:
+            setattr(culture, field, payload_dict[field])
 
     db.add(company)
     db.add(culture)
@@ -286,3 +287,46 @@ def update_company_profile(
         team_fit_summary=culture.team_fit_summary,
         jobs=job_items,
     )
+
+
+# -------------------------------------------------
+# 4) GET /companies/{company_id}/jobs_with_applications
+#    Vacantes de la empresa + nº de candidaturas
+# -------------------------------------------------
+@router.get("/{company_id}/jobs_with_applications")
+def list_company_jobs_with_applications(company_id: int, db: Session = Depends(get_db)):
+    company = db.query(Company).filter(Company.id == company_id).first()
+    if not company:
+        raise HTTPException(status_code=404, detail="Company not found")
+
+    jobs = (
+        db.query(Job)
+        .filter(Job.company_id == company_id)
+        .order_by(Job.created_at.desc() if hasattr(Job, "created_at") else Job.id.desc())
+        .all()
+    )
+
+    result = []
+    for job in jobs:
+        app_count = (
+            db.query(Application)
+            .filter(Application.job_id == job.id)
+            .count()
+        )
+        result.append(
+            {
+                "job_id": job.id,
+                "title": job.title,
+                "location": job.location,
+                "department": job.department,
+                "status": getattr(job, "status", None),
+                "created_at": getattr(job, "created_at", None),
+                "application_count": app_count,
+            }
+        )
+
+    return {
+        "company_id": company.id,
+        "company_name": company.name,
+        "jobs": result,
+    }

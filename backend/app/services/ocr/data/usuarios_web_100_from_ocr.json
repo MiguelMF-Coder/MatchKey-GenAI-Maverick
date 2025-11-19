@@ -1,0 +1,902 @@
+[
+  {
+    "email": "ana.garcia.ruiz0@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Ana García Ruiz",
+    "location": "Madrid",
+    "years_experience": 1,
+    "seed_from_cv_id": 1
+  },
+  {
+    "email": "carlos.navarro.hernandez1@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Carlos Navarro Hernández",
+    "location": "Sevilla",
+    "years_experience": 1,
+    "seed_from_cv_id": 2
+  },
+  {
+    "email": "david.torres.diaz2@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "David Torres Díaz",
+    "location": "Valladolid",
+    "years_experience": 4,
+    "seed_from_cv_id": 3
+  },
+  {
+    "email": "pablo.gutierrez.gomez3@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Pablo Gutiérrez Gómez",
+    "location": "Valladolid",
+    "years_experience": 8,
+    "seed_from_cv_id": 4
+  },
+  {
+    "email": "alejandro.sanchez.jimenez4@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Alejandro Sánchez Jiménez",
+    "location": "Madrid",
+    "years_experience": 1,
+    "seed_from_cv_id": 5
+  },
+  {
+    "email": "paula.alvarez.romero5@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Paula Álvarez Romero",
+    "location": "Valladolid",
+    "years_experience": 7,
+    "seed_from_cv_id": 6
+  },
+  {
+    "email": "cristina.alonso.perez6@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Cristina Alonso Pérez",
+    "location": "Madrid",
+    "years_experience": 7,
+    "seed_from_cv_id": 7
+  },
+  {
+    "email": "javier.hernandez.romero7@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Javier Hernández Romero",
+    "location": "Sevilla",
+    "years_experience": 8,
+    "seed_from_cv_id": 8
+  },
+  {
+    "email": "carlos.alvarez.ruiz8@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Carlos Álvarez Ruiz",
+    "location": "Valladolid",
+    "years_experience": 0,
+    "seed_from_cv_id": 9
+  },
+  {
+    "email": "sergio.alvarez.jimenez9@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Sergio Álvarez Jiménez",
+    "location": "Zaragoza",
+    "years_experience": 4,
+    "seed_from_cv_id": 10
+  },
+  {
+    "email": "diego.martin.ruiz10@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Diego Martín Ruiz",
+    "location": "Zaragoza",
+    "years_experience": 5,
+    "seed_from_cv_id": 11
+  },
+  {
+    "email": "marta.lopez.hernandez11@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Marta López Hernández",
+    "location": "Madrid",
+    "years_experience": 0,
+    "seed_from_cv_id": 12
+  },
+  {
+    "email": "maria.gutierrez.alvarez12@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "María Gutiérrez Álvarez",
+    "location": "Alicante",
+    "years_experience": 3,
+    "seed_from_cv_id": 13
+  },
+  {
+    "email": "adrian.alonso.garcia13@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Adrián Alonso García",
+    "location": "Sevilla",
+    "years_experience": 4,
+    "seed_from_cv_id": 14
+  },
+  {
+    "email": "pablo.alvarez.ruiz14@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Pablo Álvarez Ruiz",
+    "location": "Madrid",
+    "years_experience": 3,
+    "seed_from_cv_id": 15
+  },
+  {
+    "email": "cristina.alvarez.moreno15@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Cristina Álvarez Moreno",
+    "location": "Alicante",
+    "years_experience": 2,
+    "seed_from_cv_id": 16
+  },
+  {
+    "email": "maria.ruiz.navarro16@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "María Ruiz Navarro",
+    "location": "Alicante",
+    "years_experience": 7,
+    "seed_from_cv_id": 17
+  },
+  {
+    "email": "cristina.gomez.martin17@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Cristina Gómez Martín",
+    "location": "Bilbao",
+    "years_experience": 3,
+    "seed_from_cv_id": 18
+  },
+  {
+    "email": "carlos.munoz.alonso18@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Carlos Muñoz Alonso",
+    "location": "Barcelona",
+    "years_experience": 8,
+    "seed_from_cv_id": 19
+  },
+  {
+    "email": "laura.ruiz.torres19@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Laura Ruiz Torres",
+    "location": "Madrid",
+    "years_experience": 2,
+    "seed_from_cv_id": 20
+  },
+  {
+    "email": "irene.alvarez.diaz20@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Irene Álvarez Díaz",
+    "location": "Madrid",
+    "years_experience": 7,
+    "seed_from_cv_id": 21
+  },
+  {
+    "email": "marta.hernandez.navarro21@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Marta Hernández Navarro",
+    "location": "Alicante",
+    "years_experience": 4,
+    "seed_from_cv_id": 22
+  },
+  {
+    "email": "cristina.navarro.munoz22@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Cristina Navarro Muñoz",
+    "location": "Zaragoza",
+    "years_experience": 7,
+    "seed_from_cv_id": 23
+  },
+  {
+    "email": "lucia.dominguez.lopez23@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Lucía Domínguez López",
+    "location": "Bilbao",
+    "years_experience": 0,
+    "seed_from_cv_id": 24
+  },
+  {
+    "email": "elena.navarro.gomez24@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Elena Navarro Gómez",
+    "location": "Sevilla",
+    "years_experience": 6,
+    "seed_from_cv_id": 25
+  },
+  {
+    "email": "javier.lopez.hernandez25@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Javier López Hernández",
+    "location": "Bilbao",
+    "years_experience": 2,
+    "seed_from_cv_id": 26
+  },
+  {
+    "email": "laura.lopez.romero26@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Laura López Romero",
+    "location": "Barcelona",
+    "years_experience": 3,
+    "seed_from_cv_id": 27
+  },
+  {
+    "email": "alejandro.lopez.martin27@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Alejandro López Martín",
+    "location": "Valladolid",
+    "years_experience": 3,
+    "seed_from_cv_id": 28
+  },
+  {
+    "email": "carlos.alonso.romero28@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Carlos Alonso Romero",
+    "location": "Valladolid",
+    "years_experience": 4,
+    "seed_from_cv_id": 29
+  },
+  {
+    "email": "laura.alvarez.diaz29@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Laura Álvarez Díaz",
+    "location": "Valencia",
+    "years_experience": 7,
+    "seed_from_cv_id": 30
+  },
+  {
+    "email": "irene.sanchez.ruiz30@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Irene Sánchez Ruiz",
+    "location": "Bilbao",
+    "years_experience": 0,
+    "seed_from_cv_id": 31
+  },
+  {
+    "email": "carlos.ruiz.romero31@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Carlos Ruiz Romero",
+    "location": "Zaragoza",
+    "years_experience": 6,
+    "seed_from_cv_id": 32
+  },
+  {
+    "email": "carlos.diaz.torres32@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Carlos Díaz Torres",
+    "location": "Valencia",
+    "years_experience": 7,
+    "seed_from_cv_id": 33
+  },
+  {
+    "email": "maria.perez.lopez33@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "María Pérez López",
+    "location": "Zaragoza",
+    "years_experience": 2,
+    "seed_from_cv_id": 34
+  },
+  {
+    "email": "maria.alonso.gutierrez34@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "María Alonso Gutiérrez",
+    "location": "Sevilla",
+    "years_experience": 7,
+    "seed_from_cv_id": 35
+  },
+  {
+    "email": "cristina.munoz.diaz35@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Cristina Muñoz Díaz",
+    "location": "Valencia",
+    "years_experience": 3,
+    "seed_from_cv_id": 36
+  },
+  {
+    "email": "maria.hernandez.romero36@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "María Hernández Romero",
+    "location": "Alicante",
+    "years_experience": 4,
+    "seed_from_cv_id": 37
+  },
+  {
+    "email": "paula.martinez.munoz37@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Paula Martínez Muñoz",
+    "location": "Barcelona",
+    "years_experience": 5,
+    "seed_from_cv_id": 38
+  },
+  {
+    "email": "ana.alonso.dominguez38@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Ana Alonso Domínguez",
+    "location": "Murcia",
+    "years_experience": 5,
+    "seed_from_cv_id": 39
+  },
+  {
+    "email": "marta.romero.alonso39@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Marta Romero Alonso",
+    "location": "Madrid",
+    "years_experience": 5,
+    "seed_from_cv_id": 40
+  },
+  {
+    "email": "maria.gomez.navarro40@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "María Gómez Navarro",
+    "location": "Málaga",
+    "years_experience": 2,
+    "seed_from_cv_id": 41
+  },
+  {
+    "email": "diego.perez.gutierrez41@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Diego Pérez Gutiérrez",
+    "location": "Valladolid",
+    "years_experience": 6,
+    "seed_from_cv_id": 42
+  },
+  {
+    "email": "laura.alonso.garcia42@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Laura Alonso García",
+    "location": "Barcelona",
+    "years_experience": 4,
+    "seed_from_cv_id": 43
+  },
+  {
+    "email": "elena.lopez.ruiz43@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Elena López Ruiz",
+    "location": "Valencia",
+    "years_experience": 2,
+    "seed_from_cv_id": 44
+  },
+  {
+    "email": "paula.alonso.romero44@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Paula Alonso Romero",
+    "location": "Zaragoza",
+    "years_experience": 8,
+    "seed_from_cv_id": 45
+  },
+  {
+    "email": "ruben.romero.jimenez45@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Rubén Romero Jiménez",
+    "location": "Bilbao",
+    "years_experience": 8,
+    "seed_from_cv_id": 46
+  },
+  {
+    "email": "maria.gutierrez.munoz46@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "María Gutiérrez Muñoz",
+    "location": "Valencia",
+    "years_experience": 8,
+    "seed_from_cv_id": 47
+  },
+  {
+    "email": "miguel.romero.diaz47@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Miguel Romero Díaz",
+    "location": "Valencia",
+    "years_experience": 8,
+    "seed_from_cv_id": 48
+  },
+  {
+    "email": "ana.torres.navarro48@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Ana Torres Navarro",
+    "location": "Alicante",
+    "years_experience": 4,
+    "seed_from_cv_id": 49
+  },
+  {
+    "email": "noelia.alonso.martin49@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Noelia Alonso Martín",
+    "location": "Valencia",
+    "years_experience": 6,
+    "seed_from_cv_id": 50
+  },
+  {
+    "email": "alejandro.ruiz.gomez0@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Alejandro Ruiz Gómez",
+    "location": "Valladolid",
+    "years_experience": 5,
+    "seed_from_cv_id": 51
+  },
+  {
+    "email": "noelia.perez.romero1@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Noelia Pérez Romero",
+    "location": "Barcelona",
+    "years_experience": 8,
+    "seed_from_cv_id": 52
+  },
+  {
+    "email": "lucia.navarro.romero2@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Lucía Navarro Romero",
+    "location": "Málaga",
+    "years_experience": 5,
+    "seed_from_cv_id": 53
+  },
+  {
+    "email": "elena.romero.navarro3@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Elena Romero Navarro",
+    "location": "Sevilla",
+    "years_experience": 1,
+    "seed_from_cv_id": 54
+  },
+  {
+    "email": "javier.gutierrez.jimenez4@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Javier Gutiérrez Jiménez",
+    "location": "Alicante",
+    "years_experience": 0,
+    "seed_from_cv_id": 55
+  },
+  {
+    "email": "cristina.martin.martinez5@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Cristina Martín Martínez",
+    "location": "Sevilla",
+    "years_experience": 7,
+    "seed_from_cv_id": 56
+  },
+  {
+    "email": "paula.martinez.torres6@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Paula Martínez Torres",
+    "location": "Valencia",
+    "years_experience": 3,
+    "seed_from_cv_id": 57
+  },
+  {
+    "email": "david.gutierrez.romero7@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "David Gutiérrez Romero",
+    "location": "Valladolid",
+    "years_experience": 6,
+    "seed_from_cv_id": 58
+  },
+  {
+    "email": "adrian.navarro.alonso8@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Adrián Navarro Alonso",
+    "location": "Valladolid",
+    "years_experience": 0,
+    "seed_from_cv_id": 59
+  },
+  {
+    "email": "ana.alvarez.jimenez9@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Ana Álvarez Jiménez",
+    "location": "Alicante",
+    "years_experience": 7,
+    "seed_from_cv_id": 60
+  },
+  {
+    "email": "marta.alvarez.romero10@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Marta Álvarez Romero",
+    "location": "Barcelona",
+    "years_experience": 5,
+    "seed_from_cv_id": 61
+  },
+  {
+    "email": "pablo.jimenez.alonso11@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Pablo Jiménez Alonso",
+    "location": "Zaragoza",
+    "years_experience": 6,
+    "seed_from_cv_id": 62
+  },
+  {
+    "email": "cristina.garcia.romero12@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Cristina García Romero",
+    "location": "Bilbao",
+    "years_experience": 2,
+    "seed_from_cv_id": 63
+  },
+  {
+    "email": "laura.gutierrez.gutierrez13@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Laura Gutiérrez Gutiérrez",
+    "location": "Valladolid",
+    "years_experience": 2,
+    "seed_from_cv_id": 64
+  },
+  {
+    "email": "sergio.sanchez.gomez14@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Sergio Sánchez Gómez",
+    "location": "Sevilla",
+    "years_experience": 6,
+    "seed_from_cv_id": 65
+  },
+  {
+    "email": "adrian.dominguez.munoz15@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Adrián Domínguez Muñoz",
+    "location": "Murcia",
+    "years_experience": 1,
+    "seed_from_cv_id": 66
+  },
+  {
+    "email": "lucia.moreno.garcia16@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Lucía Moreno García",
+    "location": "Málaga",
+    "years_experience": 7,
+    "seed_from_cv_id": 67
+  },
+  {
+    "email": "irene.lopez.romero17@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Irene López Romero",
+    "location": "Valencia",
+    "years_experience": 3,
+    "seed_from_cv_id": 68
+  },
+  {
+    "email": "diego.ruiz.alvarez18@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Diego Ruiz Álvarez",
+    "location": "Alicante",
+    "years_experience": 5,
+    "seed_from_cv_id": 69
+  },
+  {
+    "email": "miguel.alvarez.martin19@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Miguel Álvarez Martín",
+    "location": "Valencia",
+    "years_experience": 0,
+    "seed_from_cv_id": 70
+  },
+  {
+    "email": "sergio.moreno.hernandez20@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Sergio Moreno Hernández",
+    "location": "Valencia",
+    "years_experience": 7,
+    "seed_from_cv_id": 71
+  },
+  {
+    "email": "noelia.munoz.sanchez21@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Noelia Muñoz Sánchez",
+    "location": "Málaga",
+    "years_experience": 6,
+    "seed_from_cv_id": 72
+  },
+  {
+    "email": "sergio.munoz.torres22@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Sergio Muñoz Torres",
+    "location": "Alicante",
+    "years_experience": 0,
+    "seed_from_cv_id": 73
+  },
+  {
+    "email": "irene.martinez.alonso23@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Irene Martínez Alonso",
+    "location": "Valladolid",
+    "years_experience": 0,
+    "seed_from_cv_id": 74
+  },
+  {
+    "email": "carlos.romero.hernandez24@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Carlos Romero Hernández",
+    "location": "Murcia",
+    "years_experience": 4,
+    "seed_from_cv_id": 75
+  },
+  {
+    "email": "noelia.martinez.perez25@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Noelia Martínez Pérez",
+    "location": "Murcia",
+    "years_experience": 1,
+    "seed_from_cv_id": 76
+  },
+  {
+    "email": "sergio.alvarez.sanchez26@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Sergio Álvarez Sánchez",
+    "location": "Valencia",
+    "years_experience": 4,
+    "seed_from_cv_id": 77
+  },
+  {
+    "email": "david.munoz.moreno27@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "David Muñoz Moreno",
+    "location": "Valencia",
+    "years_experience": 1,
+    "seed_from_cv_id": 78
+  },
+  {
+    "email": "adrian.perez.alvarez28@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Adrián Pérez Álvarez",
+    "location": "Alicante",
+    "years_experience": 5,
+    "seed_from_cv_id": 79
+  },
+  {
+    "email": "sergio.moreno.torres29@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Sergio Moreno Torres",
+    "location": "Bilbao",
+    "years_experience": 2,
+    "seed_from_cv_id": 80
+  },
+  {
+    "email": "elena.diaz.perez30@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Elena Díaz Pérez",
+    "location": "Murcia",
+    "years_experience": 2,
+    "seed_from_cv_id": 81
+  },
+  {
+    "email": "pablo.martin.jimenez31@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Pablo Martín Jiménez",
+    "location": "Valencia",
+    "years_experience": 6,
+    "seed_from_cv_id": 82
+  },
+  {
+    "email": "marta.dominguez.alvarez32@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Marta Domínguez Álvarez",
+    "location": "Bilbao",
+    "years_experience": 4,
+    "seed_from_cv_id": 83
+  },
+  {
+    "email": "pablo.lopez.navarro33@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Pablo López Navarro",
+    "location": "Alicante",
+    "years_experience": 7,
+    "seed_from_cv_id": 84
+  },
+  {
+    "email": "alejandro.gomez.gomez34@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Alejandro Gómez Gómez",
+    "location": "Murcia",
+    "years_experience": 4,
+    "seed_from_cv_id": 85
+  },
+  {
+    "email": "marta.ruiz.munoz35@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Marta Ruiz Muñoz",
+    "location": "Alicante",
+    "years_experience": 4,
+    "seed_from_cv_id": 86
+  },
+  {
+    "email": "marta.lopez.hernandez36@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Marta López Hernández",
+    "location": "Madrid",
+    "years_experience": 3,
+    "seed_from_cv_id": 87
+  },
+  {
+    "email": "david.jimenez.jimenez37@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "David Jiménez Jiménez",
+    "location": "Murcia",
+    "years_experience": 0,
+    "seed_from_cv_id": 88
+  },
+  {
+    "email": "javier.gutierrez.jimenez38@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Javier Gutiérrez Jiménez",
+    "location": "Málaga",
+    "years_experience": 6,
+    "seed_from_cv_id": 89
+  },
+  {
+    "email": "diego.hernandez.romero39@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Diego Hernández Romero",
+    "location": "Valladolid",
+    "years_experience": 1,
+    "seed_from_cv_id": 90
+  },
+  {
+    "email": "carlos.perez.dominguez40@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Carlos Pérez Domínguez",
+    "location": "Sevilla",
+    "years_experience": 5,
+    "seed_from_cv_id": 91
+  },
+  {
+    "email": "marta.munoz.garcia41@hotmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Marta Muñoz García",
+    "location": "Zaragoza",
+    "years_experience": 0,
+    "seed_from_cv_id": 92
+  },
+  {
+    "email": "maria.perez.alvarez42@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "María Pérez Álvarez",
+    "location": "Murcia",
+    "years_experience": 3,
+    "seed_from_cv_id": 93
+  },
+  {
+    "email": "lucia.hernandez.moreno43@outlook.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Lucía Hernández Moreno",
+    "location": "Zaragoza",
+    "years_experience": 7,
+    "seed_from_cv_id": 94
+  },
+  {
+    "email": "ana.alvarez.romero44@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Ana Álvarez Romero",
+    "location": "Zaragoza",
+    "years_experience": 8,
+    "seed_from_cv_id": 95
+  },
+  {
+    "email": "diego.romero.lopez45@alumno.ufv.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Diego Romero López",
+    "location": "Madrid",
+    "years_experience": 8,
+    "seed_from_cv_id": 96
+  },
+  {
+    "email": "paula.sanchez.ruiz46@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Paula Sánchez Ruiz",
+    "location": "Barcelona",
+    "years_experience": 6,
+    "seed_from_cv_id": 97
+  },
+  {
+    "email": "javier.alvarez.dominguez47@alumni.uc3m.es",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Javier Álvarez Domínguez",
+    "location": "Bilbao",
+    "years_experience": 5,
+    "seed_from_cv_id": 98
+  },
+  {
+    "email": "elena.martin.navarro48@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Elena Martín Navarro",
+    "location": "Sevilla",
+    "years_experience": 8,
+    "seed_from_cv_id": 99
+  },
+  {
+    "email": "ruben.sanchez.munoz49@gmail.com",
+    "password": "MatchKey123!",
+    "role": "candidate",
+    "full_name": "Rubén Sánchez Muñoz",
+    "location": "Madrid",
+    "years_experience": 5,
+    "seed_from_cv_id": 100
+  }
+]

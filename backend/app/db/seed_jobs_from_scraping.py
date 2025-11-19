@@ -101,7 +101,7 @@ def load_jobs_json() -> list:
     return data
 
 
-def seed_jobs() -> Tuple[int, int]:
+def seed_jobs_from_scraping() -> Tuple[int, int]:
     """
     Lee jobs_final.json y hace:
     - create/update de Company
@@ -197,4 +197,5 @@ def seed_jobs() -> Tuple[int, int]:
 
 
 if __name__ == "__main__":
-    seed_jobs()
+    seed_jobs_from_scraping()
+
