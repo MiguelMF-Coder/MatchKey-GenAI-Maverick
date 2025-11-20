@@ -1,3 +1,4 @@
+import json
 from typing import Optional, List
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, EmailStr
@@ -188,6 +189,37 @@ def get_company_profile(company_id: int, db: Session = Depends(get_db)):
         for j in jobs
     ]
 
+    # Normalizar values
+    values = []
+    if culture and culture.values is not None:
+        raw_values = culture.values
+        if isinstance(raw_values, str):
+            try:
+                values = json.loads(raw_values)  # string JSON → lista
+            except Exception:
+                values = [raw_values]            # fallback
+        elif isinstance(raw_values, list):
+            values = raw_values
+
+    # Normalizar perks
+    perks = []
+    if culture and getattr(culture, "perks", None) is not None:
+        raw_perks = culture.perks
+        if isinstance(raw_perks, str):
+            try:
+                perks = json.loads(raw_perks)
+            except Exception:
+                perks = [raw_perks]
+        elif isinstance(raw_perks, list):
+            perks = raw_perks
+
+    # Normalizar textos
+    work_mode = culture.work_mode if culture and culture.work_mode else ""
+    leadership_style = culture.leadership_style if culture and culture.leadership_style else ""
+    team_fit_summary = culture.team_fit_summary if culture and culture.team_fit_summary else None
+    culture_description = culture.culture_description if culture and culture.culture_description else None
+
+
     return CompanyProfileResponse(
         id=company.id,
         user_id=user.id,
@@ -198,14 +230,15 @@ def get_company_profile(company_id: int, db: Session = Depends(get_db)):
         location=company.location,
         website=company.website,
         description=company.description,
-        values=culture.values if culture else [],
-        culture_description=culture.culture_description if culture else None,
-        leadership_style=culture.leadership_style if culture else None,
-        work_mode=culture.work_mode if culture else None,
-        perks=culture.perks if culture else [],
-        team_fit_summary=culture.team_fit_summary if culture else None,
+        values=values,                    
+        culture_description=culture_description,
+        leadership_style=leadership_style,
+        work_mode=work_mode,
+        perks=perks,                    
+        team_fit_summary=team_fit_summary,
         jobs=job_items,
     )
+
 
 
 # -------------------------------------------------
