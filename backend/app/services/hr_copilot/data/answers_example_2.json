@@ -1,0 +1,25 @@
+{
+  "test_case": "Candidata Senior - Product Manager",
+  "description": "Candidata con experiencia, enfocada en impacto y liderazgo",
+  "questions": [
+    "¿Qué te motiva de este puesto y por qué te interesa trabajar con nosotros?",
+    "Cuéntame sobre un proyecto del que estés especialmente orgulloso. ¿Qué hiciste y qué aprendiste?",
+    "¿En qué tipo de equipo te sientes más cómodo y rindes mejor?",
+    "¿Qué valor personal o principio te define más en tu forma de trabajar?",
+    "¿Cómo manejas situaciones de alta presión o cuando las cosas no salen según lo planeado?"
+  ],
+  "answers": [
+    "Lo que me atrae es la oportunidad de liderar productos que realmente impacten en las personas. He seguido vuestro crecimiento y me impresiona cómo priorizáis la experiencia del usuario por encima de todo. En mi trayectoria, he aprendido que los mejores productos nacen cuando combinas visión estratégica con empatía real hacia los usuarios. Creo que puedo aportar mi experiencia en transformación digital para ayudaros a escalar manteniendo esa calidad.",
+    "Mi proyecto más significativo fue liderar el rediseño completo de una plataforma de e-learning con más de 50,000 usuarios activos. Coordiné equipos de diseño, desarrollo y marketing durante 8 meses. Lo más desafiante fue balancear las necesidades de diferentes stakeholders mientras manteníamos la visión del producto. Implementamos metodologías de design thinking y logramos aumentar el engagement un 40%. Aprendí que el liderazgo efectivo requiere escucha activa, decisión clara, y la capacidad de inspirar a tu equipo incluso en momentos difíciles.",
+    "Rindo mejor en equipos multidisciplinarios donde existe autonomía pero también colaboración estrecha. Me gusta trabajar con personas que desafían mis ideas constructivamente. Creo firmemente en los equipos diversos, porque diferentes perspectivas llevan a mejores soluciones. También valoro la transparencia: equipos donde se comparte información abiertamente y todos entienden el 'por qué' detrás de las decisiones.",
+    "El impacto social es mi principio rector. Siempre me pregunto: ¿esto realmente mejora la vida de las personas? También valoro profundamente la excelencia - no conformarse con 'suficientemente bueno', sino buscar constantemente cómo mejorar. Y la ética es fundamental: he rechazado proyectos que comprometían la privacidad de usuarios, aunque fueran lucrativos. Al final del día, necesito estar orgullosa del trabajo que hago.",
+    "En situaciones de alta presión, mi estrategia es triple: primero, priorizar implacablemente - no todo es urgente de verdad. Segundo, comunicar transparentemente con los stakeholders sobre qué es realista. Y tercero, cuidar al equipo - bajo presión es cuando más necesitan apoyo, no más demandas. Tuve una situación donde un cliente importante amenazó con irse por un bug crítico. Mantuve la calma, armé un war room con el equipo, establecimos milestones claros cada 2 horas, y resolvimos el problema en 48 horas. Lo clave fue no culpar a nadie, sino enfocarnos en la solución."
+  ],
+  "expected_insights": {
+    "motivaciones": "Impacto social, liderazgo de producto, experiencia de usuario",
+    "valores": ["impacto_social", "excelencia", "etica", "diversidad", "transparencia"],
+    "soft_skills": ["liderazgo", "comunicacion", "empatia", "pensamiento_critico", "resiliencia", "organizacion"],
+    "preferencias_equipo": "Multidisciplinarios, diversos, autónomos pero colaborativos"
+  }
+}
+

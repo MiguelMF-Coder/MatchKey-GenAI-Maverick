@@ -1,0 +1,25 @@
+{
+  "test_case": "Candidato Mid-Level - Data Scientist",
+  "description": "Candidato con experiencia media, analítico, busca balance vida-trabajo",
+  "questions": [
+    "¿Qué te motiva de este puesto y por qué te interesa trabajar con nosotros?",
+    "Cuéntame sobre un proyecto del que estés especialmente orgulloso. ¿Qué hiciste y qué aprendiste?",
+    "¿En qué tipo de equipo te sientes más cómodo y rindes mejor?",
+    "¿Qué valor personal o principio te define más en tu forma de trabajar?",
+    "¿Cómo manejas situaciones de alta presión o cuando las cosas no salen según lo planeado?"
+  ],
+  "answers": [
+    "Me interesa principalmente el tipo de problemas que resolvéis con datos. He visto que trabajáis en optimización de procesos industriales, que es un área donde creo que puedo aportar. Tengo 3 años de experiencia en machine learning aplicado y me gustaría trabajar en problemas reales con impacto medible. También valoro mucho que tengáis una política de teletrabajo flexible, porque para mí el balance vida-trabajo es importante.",
+    "Desarrollé un sistema de predicción de mantenimiento para maquinaria industrial. Usé Random Forest y XGBoost para predecir fallos con 72 horas de anticipación, logrando un 85% de accuracy. Lo más interesante fue lidiar con datos desbalanceados y ruidosos - aprendí mucho sobre feature engineering y la importancia de entender el dominio del problema. También tuve que explicar modelos complejos a stakeholders no técnicos, lo cual mejoró mucho mis habilidades de comunicación.",
+    "Prefiero equipos pequeños, de 4-6 personas, donde cada uno tiene su área de expertise pero todos colaboran. Me gusta tener autonomía en cómo abordo los problemas, pero también poder consultar cuando me atasco. No me van los ambientes excesivamente competitivos; prefiero la colaboración al individualismo. Un equipo donde se respetan los horarios y no se glorifica el 'hustle culture' es ideal para mí.",
+    "Diría que el rigor científico. Me gusta fundamentar las decisiones en datos y evidencia, no en intuiciones. También valoro la honestidad intelectual - reconocer cuando un modelo no funciona en lugar de forzar resultados. Y cada vez valoro más la sostenibilidad en el trabajo: trabajar de forma inteligente, no solo dura. Creo que los mejores resultados vienen de mentes descansadas, no de jornadas de 12 horas.",
+    "Trato de no dramatizar. En mi trabajo anterior, un modelo en producción empezó a dar predicciones erróneas por un cambio en el formato de los datos de entrada. Lo primero fue rollback inmediato para minimizar impacto. Luego, investigamos la causa raíz, actualizamos los tests, y documentamos todo para evitar que se repita. Aprendí que los sistemas fallan, y lo importante es tener buenos procesos de monitoreo y recuperación. Bajo presión trato de ser metódico y no tomar atajos que generen más problemas después."
+  ],
+  "expected_insights": {
+    "motivaciones": "Resolver problemas reales con datos, impacto medible, balance vida-trabajo",
+    "valores": ["rigor_cientifico", "honestidad_intelectual", "sostenibilidad", "colaboracion", "autonomia"],
+    "soft_skills": ["pensamiento_analitico", "comunicacion", "organizacion", "adaptabilidad", "trabajo_equipo"],
+    "preferencias_equipo": "Equipos pequeños, colaborativos, con autonomía y balance vida-trabajo"
+  }
+}
+

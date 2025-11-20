@@ -36,6 +36,10 @@ lxml==5.3.0
 
 # IA / MCP (OpenAI)
 openai==1.51.0
+groq==0.9.0
+openai-whisper==20231117
+soundfile==0.12.1
+pydub==0.25.1
 
 # NLP / SpaCy (NECESARIO para CVParser)
 spacy==3.7.5
