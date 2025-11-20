@@ -27,8 +27,6 @@ services:
       DB_NAME: matchkey
       DB_USER: matchkey_user
       DB_PASSWORD: matchkey_password
-      # Si usas OpenAI u otra IA:
-      # OPENAI_API_KEY: your_api_key_here
     depends_on:
       db:
         condition: service_healthy
@@ -47,5 +45,20 @@ services:
     ports:
       - "8501:8501"
 
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: matchkey-pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@matchkey.com   # 👈 correo "normal"
+      PGADMIN_DEFAULT_PASSWORD: admin123          # o el que quieras
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
 volumes:
   db_data:
+  pgadmin_data:

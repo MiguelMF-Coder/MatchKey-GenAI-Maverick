@@ -10,6 +10,7 @@ from app.db.seed_jobs_from_scraping import seed_jobs_from_scraping
 from app.db.seed_companies_from_values_dataset import seed_companies_from_values_dataset
 from app.db.seed_candidates_from_ocr import seed_candidates_from_ocr
 from app.db.seed_fake_applications import seed_fake_applications
+from app.db.seed_teams_and_members import seed_team_profiles
 
 # Modelos
 from app.models.users import User

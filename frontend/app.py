@@ -435,7 +435,7 @@ def render_sidebar_navigation():
             opciones = [
                 "Inicio",
                 "Perfil empresa",
-                "Crear vacante",
+                "Portal vacantes",
                 "Analítica de talento",
                 "Co-Teaching",
                 "Dashboard",

@@ -10,6 +10,8 @@ from app.db.seed_jobs_from_scraping import seed_jobs_from_scraping
 from app.db.seed_candidates_from_ocr import seed_candidates_from_ocr
 from app.db.seed_fake_applications import seed_fake_applications
 
+
+
 app = FastAPI(
     title="MatchKey API",
     version="0.1.0",
@@ -30,7 +32,7 @@ app.include_router(candidates.router)
 app.include_router(companies.router)
 app.include_router(jobs.router)
 # app.include_router(copilot.router)
-# app.include_router(matching.router)
+app.include_router(matching.router)
 
 # ------------------------------------------------------
 # 🔥 EVENTO DE ARRANQUE DEL BACKEND (seed automático)

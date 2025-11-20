@@ -12,6 +12,8 @@ from app.models.jobs import Job
 from app.models.interviews import CandidateInterview
 from app.services.recommendations.courses_recommender import recommend_courses_for_gaps
 from app.services.ocr.document_parser import parse_cv_upload
+from app.routers.matching import get_match_scores
+
 
 router = APIRouter(prefix="/candidates", tags=["candidates"])
 
@@ -389,19 +391,31 @@ def get_recommended_jobs(candidate_id: int, db: Session = Depends(get_db)):
     recommended: List[RecommendedJobItem] = []
 
     for job in jobs:
-        scores = RecommendedJobScores(
-            global_score=75.0,
-            skills_match=80.0,
-            values_match=70.0,
-            team_fit=65.0,
-        )
+        # --- 1) Obtenemos los scores reales usando la lógica de matching ---
+        try:
+            raw_scores = get_match_scores(candidate_id=candidate_id, job_id=job.id, db=db)
+            # raw_scores es un dict con: skills_fit, values_fit, team_fit, global_fit
+            scores = RecommendedJobScores(
+                global_score=raw_scores.get("global_fit", 0.0),
+                skills_match=raw_scores.get("skills_fit", 0.0),
+                values_match=raw_scores.get("values_fit", 0.0),
+                team_fit=raw_scores.get("team_fit", 0.0),
+            )
+        except Exception:
+            # Fallback por si algo peta en un job concreto: no rompe toda la lista
+            scores = RecommendedJobScores(
+                global_score=0.0,
+                skills_match=0.0,
+                values_match=0.0,
+                team_fit=0.0,
+            )
 
+        # --- 2) Resto igual: datos de job + normalización de experiencia ---
         company_name = None
         if hasattr(job, "company") and job.company is not None:
             company_name = getattr(job.company, "name", None)
 
-        # experience_required puede ser int o texto → lo normalizamos a str
-        exp_req = job.experience_required
+        exp_req = getattr(job, "experience_required", None)
         if exp_req is not None and not isinstance(exp_req, str):
             exp_req = str(exp_req)
 
@@ -429,6 +443,7 @@ def get_recommended_jobs(candidate_id: int, db: Session = Depends(get_db)):
         recommended.append(item)
 
     return RecommendedJobsResponse(jobs=recommended)
+
 
 
 # -------------------------------------------------

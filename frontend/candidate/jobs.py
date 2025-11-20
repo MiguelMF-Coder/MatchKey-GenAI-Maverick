@@ -2,8 +2,8 @@ import streamlit as st
 import requests
 from utils import get_backend_url
 
-BACKEND_URL = get_backend_url()
 
+BACKEND_URL = get_backend_url()
 
 # -------------------------
 # Helpers compartidos
@@ -56,9 +56,55 @@ def ensure_candidate_id():
     return candidate_id
 
 
+def fetch_match_scores(candidate_id: int, job_id: int):
+    """
+    Llama al backend para obtener los scores reales de matching
+    para (candidate_id, job_id).
+
+    Endpoint: GET /matching/candidates/{candidate_id}/job/{job_id}/scores
+
+    Esperamos algo como:
+    {
+        "skills_fit": 80.0,
+        "values_fit": 70.0,
+        "team_fit": 65.0,
+        "global_fit": 75.0
+    }
+    """
+    try:
+        resp = requests.get(
+            f"{BACKEND_URL}/matching/candidates/{candidate_id}/job/{job_id}/scores",
+            timeout=10,
+        )
+    except Exception as e:
+        st.warning(f"No se han podido cargar los scores para la vacante {job_id}: {e}")
+        return None
+
+    if resp.status_code != 200:
+        return None
+
+    data = resp.json() or {}
+
+    # Normalizamos nombres para que el resto del código viva tranquilo
+    skills_fit = data.get("skills_fit") or data.get("skills_score")
+    values_fit = data.get("values_fit") or data.get("values_score")
+    team_fit = data.get("team_fit") or data.get("teamfit") or data.get("team_fit_score")
+    global_fit = data.get("global_fit") or data.get("global_score")
+
+    return {
+        # nombres consistentes internos
+        "skills_fit": skills_fit,
+        "values_fit": values_fit,
+        "team_fit": team_fit,
+        "global_fit": global_fit,
+    }
+
+
 def fetch_recommended_jobs(candidate_id):
     """
-    Llama a /candidates/{id}/recommended_jobs (GET) para recuperar las vacantes recomendadas.
+    1) Llama a /candidates/{id}/recommended_jobs para sacar las vacantes base.
+    2) Para cada vacante, llama a /matching/candidates/{id}/job/{job_id}/scores
+       y mete los scores normalizados en job["scores"].
     """
     try:
         resp = requests.get(
@@ -69,25 +115,98 @@ def fetch_recommended_jobs(candidate_id):
         st.error(f"Error al cargar tus vacantes recomendadas: {e}")
         return []
 
-    if resp.status_code == 200:
-        data = resp.json()
-        # Puede venir como {"jobs": [...]} o directamente lista
-        if isinstance(data, dict) and "jobs" in data:
-            return data["jobs"]
-        if isinstance(data, list):
-            return data
-        return []
-    else:
+    if resp.status_code != 200:
         st.warning(
-            f"No se han podido recuperar tus vacantes recomendadas (código {resp.status_code})."
+            f"No se han podido recuperar tus vacantes recomendadas "
+            f"(código {resp.status_code})."
         )
         return []
 
+    data = resp.json()
+    if isinstance(data, dict) and "jobs" in data:
+        jobs = data["jobs"]
+    elif isinstance(data, list):
+        jobs = data
+    else:
+        jobs = []
+
+    # Enriquecemos cada job con sus scores en tiempo real
+    for job in jobs:
+        job_id = job.get("id") or job.get("job_id")
+        if not job_id:
+            continue
+
+        scores = fetch_match_scores(candidate_id, job_id)
+        if not scores:
+            # si no hay scores, dejamos todo a 0
+            job["scores"] = {
+                "skills_match": 0.0,
+                "values_match": 0.0,
+                "team_fit": 0.0,
+                "global_score": 0.0,
+            }
+            continue
+
+        skills_fit = scores.get("skills_fit") or 0.0
+        values_fit = scores.get("values_fit") or 0.0
+        team_fit = scores.get("team_fit") or 0.0
+        global_fit = scores.get("global_fit") or 0.0
+
+        # Dejamos los nombres alineados con extract_scores
+        job["scores"] = {
+            # nombres “nuevos”
+            "skills_match": skills_fit,
+            "values_match": values_fit,
+            "team_fit": team_fit,
+            "global_score": global_fit,
+            # alias por compatibilidad
+            "skills_fit": skills_fit,
+            "values_fit": values_fit,
+            "global_fit": global_fit,
+        }
+
+    return jobs
+
+
+def extract_scores(job: dict) -> dict:
+    """
+    Lee job["scores"] y devuelve un diccionario limpio y completo
+    con todos los alias necesarios.
+    """
+    scores = job.get("scores") or {}
+
+    # Skills
+    skills_match = scores.get("skills_match")
+    if skills_match is None:
+        skills_match = scores.get("skills_fit", 0.0)
+
+    # Values
+    values_match = scores.get("values_match")
+    if values_match is None:
+        values_match = scores.get("values_fit", 0.0)
+
+    # Team
+    team_fit = scores.get("team_fit", 0.0)
+
+    # Global
+    global_score = scores.get("global_score")
+    if global_score is None:
+        global_score = scores.get("global_fit", 0.0)
+
+    return {
+        # nombres “nuevos”
+        "skills_match": skills_match,
+        "values_match": values_match,
+        "team_fit": team_fit,
+        "global_score": global_score,
+        # alias para código antiguo
+        "skills_fit": skills_match,
+        "values_fit": values_match,
+        "global_fit": global_score,
+    }
+
 
 def apply_to_job(job_id, candidate_id):
-    """
-    Llama a /jobs/{job_id}/apply para que el candidato solicite la vacante.
-    """
     try:
         resp = requests.post(
             f"{BACKEND_URL}/jobs/{job_id}/apply",
@@ -110,21 +229,12 @@ def apply_to_job(job_id, candidate_id):
 
 
 def format_description(text: str) -> str:
-    """
-    Intenta convertir un tochaco sin saltos de línea en algo legible:
-    - Añade párrafos tras cada punto.
-    - Mete saltos antes de algunos bloques típicos de JDs (¿Cómo será tu día a día?, Innovación, Be flex...).
-    - Convierte bullets que empiezan por '+' en '- ' para markdown.
-    """
     if not text:
         return ""
 
     t = text.replace("\r\n", "\n")
-
-    # Bullets tipo "+ " → "- "
     t = t.replace("+ ", "\n- ")
 
-    # Saltos antes de bloques típicos que suelen ser secciones
     markers = [
         "**¿Cómo será tu día a día?",
         "¿Cómo será tu día a día?",
@@ -137,20 +247,18 @@ def format_description(text: str) -> str:
     for m in markers:
         t = t.replace(m, f"\n\n{m}")
 
-    # Párrafos: cada punto seguido se convierte en salto de párrafo
     t = t.replace(". ", ".\n\n")
-
     return t
 
 
 # -------------------------
-# Render principal de la página
+# Render principal
 # -------------------------
 def render():
     st.markdown("## 💼 Vacantes recomendadas para ti")
     st.caption(
         "Estas vacantes se han generado a partir de tu CV, tus skills y, si la has realizado, "
-        "la Llamada IA (motivaciones, valores y encaje de equipo)."
+        "la Llamada IA."
     )
 
     candidate_id = ensure_candidate_id()
@@ -161,85 +269,45 @@ def render():
         jobs = fetch_recommended_jobs(candidate_id)
 
     if not jobs:
-        st.info(
-            "De momento no hay vacantes recomendadas para ti. "
-            "Prueba a subir tu CV y completar tu perfil con la Llamada IA para mejorar el matching."
-        )
+        st.info("No hay vacantes recomendadas por ahora.")
         return
 
-    # Opciones de ordenación simples (cliente)
+    # --------------------------------
+    # Ordenación
+    # --------------------------------
     st.markdown("### 🔎 Opciones de visualización")
-    col_sort, col_filter = st.columns([1, 1])
 
-    with col_sort:
-        sort_option = st.selectbox(
-            "Ordenar por",
-            ["Mejor encaje global", "Encaje por skills", "Encaje por valores"],
-        )
+    sort_option = st.selectbox(
+        "Ordenar por",
+        ["Mejor encaje global", "Encaje por skills", "Encaje por valores"],
+    )
 
-    with col_filter:
-        st.multiselect(
-            "Filtros rápidos (placeholder)",
-            ["Remoto", "Híbrido", "Presencial", "Júnior", "Senior"],
-            help="Aquí podrás filtrar por tipo de trabajo, modalidad, etc. (a implementar).",
-        )
-
-    # Preparamos datos de scores y ordenación
-    def extract_scores(job):
-        scores = job.get("scores", {}) or {}
-        global_score = (
-            scores.get("global")
-            or scores.get("global_score")
-            or job.get("global_score")
-        )
-        skills_score = (
-            scores.get("skills")
-            or scores.get("skills_match")
-            or job.get("skills_match")
-        )
-        values_score = (
-            scores.get("values")
-            or scores.get("values_match")
-            or job.get("values_match")
-        )
-        team_fit_score = (
-            scores.get("team_fit")
-            or scores.get("teamfit")
-            or job.get("team_fit")
-        )
-
-        return {
-            "global": global_score,
-            "skills": skills_score,
-            "values": values_score,
-            "team_fit": team_fit_score,
-        }
-
-    # Ordenamos según la opción elegida
     if sort_option == "Mejor encaje global":
         jobs = sorted(
             jobs,
-            key=lambda j: extract_scores(j)["global"] or 0,
+            key=lambda j: (extract_scores(j).get("global_score") or 0.0),
             reverse=True,
         )
     elif sort_option == "Encaje por skills":
         jobs = sorted(
             jobs,
-            key=lambda j: extract_scores(j)["skills"] or 0,
+            key=lambda j: (extract_scores(j).get("skills_match") or 0.0),
             reverse=True,
         )
     elif sort_option == "Encaje por valores":
         jobs = sorted(
             jobs,
-            key=lambda j: extract_scores(j)["values"] or 0,
+            key=lambda j: (extract_scores(j).get("values_match") or 0.0),
             reverse=True,
         )
 
+    # --------------------------------
+    # Render de tarjetas
+    # --------------------------------
     st.markdown("---")
     st.markdown("### 📋 Lista de vacantes")
 
-    # Renderizamos cada vacante como tarjeta
-    for job in jobs:
+    for idx, job in enumerate(jobs):
         job_id = job.get("id") or job.get("job_id")
         title = job.get("title", "Puesto sin título")
         company_name = job.get("company_name") or job.get("company") or "Empresa no indicada"
@@ -251,11 +319,16 @@ def render():
         else:
             resumen = "Sin descripción disponible."
 
+        # 🔥 Scores ya normalizados
         scores = extract_scores(job)
-        global_score = scores["global"]
-        skills_score = scores["skills"]
-        values_score = scores["values"]
-        team_fit_score = scores["team_fit"]
+
+        global_score = scores.get("global_score") or scores.get("global_fit") or 0.0
+        skills_score = scores.get("skills_match") or scores.get("skills_fit") or 0.0
+        values_score = scores.get("values_match") or scores.get("values_fit") or 0.0
+        team_fit_score = scores.get("team_fit") or 0.0
+
+        # 🔑 sufijo único para los keys de Streamlit
+        key_suffix = job_id if job_id is not None else f"noid_{idx}"
 
         # Tarjeta
         with st.container():
@@ -267,57 +340,51 @@ def render():
                 st.caption(f"🏢 {company_name}  ·  📍 {location}")
 
             with header_col2:
-                if global_score is not None:
-                    st.metric("Encaje global", f"{global_score:.0f} / 100")
-                else:
-                    st.metric("Encaje global", "N/D")
+                st.metric("Encaje global", f"{global_score:.0f} / 100")
 
             st.write(resumen)
 
             # Subscores
             sub1, sub2, sub3 = st.columns(3)
             with sub1:
-                if skills_score is not None:
-                    st.progress(min(max(skills_score / 100, 0), 1.0))
-                    st.caption(f"Encaje en skills: {skills_score:.0f}/100")
-                else:
-                    st.caption("Encaje en skills: N/D")
+                st.progress(min(max(skills_score / 100, 0), 1.0))
+                st.caption(f"Encaje en skills: {skills_score:.0f}/100")
 
             with sub2:
-                if values_score is not None:
-                    st.progress(min(max(values_score / 100, 0), 1.0))
-                    st.caption(f"Encaje en valores: {values_score:.0f}/100")
-                else:
-                    st.caption("Encaje en valores: N/D")
+                st.progress(min(max(values_score / 100, 0), 1.0))
+                st.caption(f"Encaje en valores: {values_score:.0f}/100")
 
             with sub3:
-                if team_fit_score is not None:
-                    st.progress(min(max(team_fit_score / 100, 0), 1.0))
-                    st.caption(f"Encaje en equipo: {team_fit_score:.0f}/100")
-                else:
-                    st.caption("Encaje en equipo: N/D")
+                st.progress(min(max(team_fit_score / 100, 0), 1.0))
+                st.caption(f"Encaje en equipo: {team_fit_score:.0f}/100")
 
             # Botones de acción
             action_col1, action_col2 = st.columns([1, 1])
 
             with action_col1:
-                if st.button(
-                    "🔍 Ver gaps y cómo mejorar para esta vacante",
-                    key=f"gaps_{job_id}",
-                    use_container_width=True,
-                ):
-                    st.session_state.selected_job_id = job_id
-                    st.session_state.selected_job_title = title
-                    st.session_state.current_page = "Mejora (gaps + cursos)"
-                    st.rerun()
+                if job_id is not None:
+                    if st.button(
+                        "🔍 Ver gaps y cómo mejorar para esta vacante",
+                        key=f"gaps_{key_suffix}",
+                        use_container_width=True,
+                    ):
+                        st.session_state.selected_job_id = job_id
+                        st.session_state.selected_job_title = title
+                        st.session_state.current_page = "Mejora (gaps + cursos)"
+                        st.rerun()
+                else:
+                    st.caption("ℹ️ Vacante sin ID interno (no se pueden ver gaps).")
 
             with action_col2:
-                if st.button(
-                    "✅ Solicitar este puesto",
-                    key=f"apply_{job_id}",
-                    use_container_width=True,
-                ):
-                    apply_to_job(job_id, candidate_id)
+                if job_id is not None:
+                    if st.button(
+                        "✅ Solicitar este puesto",
+                        key=f"apply_{key_suffix}",
+                        use_container_width=True,
+                    ):
+                        apply_to_job(job_id, candidate_id)
+                else:
+                    st.caption("ℹ️ Vacante sin ID interno (no se puede aplicar).")
 
             # Detalles ampliados
             with st.expander("📄 Ver más detalles de la vacante"):
@@ -404,7 +471,6 @@ def render():
                     for b in benefits:
                         st.write(f"- {b}")
 
-                # Must / Nice (por si en el futuro los tenemos)
                 must_have = (
                     job.get("must_have")
                     or job.get("must_skills")
