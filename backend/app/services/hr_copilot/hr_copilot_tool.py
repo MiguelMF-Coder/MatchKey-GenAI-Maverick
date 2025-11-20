@@ -44,7 +44,7 @@ class HRCopilotTool:
         self,
         api_key: Optional[str] = None,
         model: str = "llama-3.3-70b-versatile",
-        whisper_model: str = "base",
+        whisper_model: str = "whisper-large-v3-turbo",
         temperature: float = 0.3
     ):
         """
@@ -53,7 +53,9 @@ class HRCopilotTool:
         Args:
             api_key: Groq API key (si no se provee, se lee de GROQ_API_KEY env var)
             model: Modelo de Groq a usar (llama-3.3-70b-versatile, mixtral-8x7b-32768, etc.)
-            whisper_model: Tamaño del modelo Whisper (tiny, base, small, medium, large)
+            whisper_model: Modelo de Groq Whisper para transcripción de audio:
+                          - whisper-large-v3-turbo (recomendado, muy rápido)
+                          - whisper-large-v3 (máxima precisión)
             temperature: Temperatura para generación (0.0-1.0, menor = más determinístico)
         """
         self.api_key = api_key or os.getenv("GROQ_API_KEY")
@@ -63,9 +65,17 @@ class HRCopilotTool:
         self.model = model
         self.temperature = temperature
         self.client = Groq(api_key=self.api_key) if self.api_key else None
-        self.audio_processor = AudioProcessor(model_size=whisper_model)
 
-        logger.info(f"HRCopilotTool inicializado - Modelo: {model}, Whisper: {whisper_model}")
+        # Initialize AudioProcessor with same Groq API key
+        self.audio_processor = AudioProcessor(
+            api_key=self.api_key,
+            model=whisper_model
+        )
+
+        logger.info(
+            f"HRCopilotTool inicializado - Modelo: {model}, "
+            f"Whisper: {whisper_model}"
+        )
 
     def _call_groq_api(self, user_prompt: str) -> Optional[str]:
         """

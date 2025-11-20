@@ -12,30 +12,39 @@ class Job(Base, TimestampMixin):
     id = Column(Integer, primary_key=True, index=True)
     company_id = Column(Integer, ForeignKey("companies.id", ondelete="CASCADE"), nullable=False)
 
+    # Basic job info
     title = Column(String(255), nullable=False)
     department = Column(String(255), nullable=True)
     location = Column(String(255), nullable=True)
-    contract_type = Column(String(50), nullable=True)
-    salary_range = Column(String(100), nullable=True)
+    status = Column(String(50), nullable=False, default="open")  # open/closed/draft
+    jd_text = Column(Text, nullable=True)
+    
+    # Job classification
+    area = Column(JSON, nullable=True)
+    category = Column(String(255), nullable=True)
+    job_type = Column(String(100), nullable=True)
+    
+    # Contract details
+    contract_type = Column(String(100), nullable=True)
+    contract_time = Column(String(100), nullable=True)
     seniority = Column(String(50), nullable=True)
     is_remote_friendly = Column(Integer, nullable=True)  # 0/1
-    jd_text = Column(Text, nullable=True)
-    status = Column(String(50), nullable=False, default="open")  # open/closed/draft
-    area = Column(JSON)
-    category = Column(String)
-    contract_type = Column(String)
-    contract_time = Column(String)
-    salary_min = Column(Float)
-    salary_max = Column(Float)
-    salary_is_predicted = Column(Boolean)
-    experience_required = Column(String)
-    education_required = Column(String)
-    seniority = Column(String)
-    job_type = Column(String)
-    tech_stack = Column(JSON)
-    soft_skills = Column(JSON)
-    languages = Column(JSON)
-    benefits = Column(JSON)
+    
+    # Salary information
+    salary_range = Column(String(100), nullable=True)  # Legacy field
+    salary_min = Column(Float, nullable=True)
+    salary_max = Column(Float, nullable=True)
+    salary_is_predicted = Column(Boolean, default=False)
+    
+    # Requirements (using Text for longer content)
+    experience_required = Column(Text, nullable=True)
+    education_required = Column(Text, nullable=True)
+
+    # Skills and attributes (JSON fields)
+    tech_stack = Column(JSON, nullable=True)
+    soft_skills = Column(JSON, nullable=True)
+    languages = Column(JSON, nullable=True)
+    benefits = Column(JSON, nullable=True)
 
     company = relationship("Company", back_populates="jobs")
     skills = relationship("JobSkill", back_populates="job", cascade="all, delete-orphan")

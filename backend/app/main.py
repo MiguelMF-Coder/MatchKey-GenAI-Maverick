@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-# Routers
+# Importa los routers
 from app.routers import auth, candidates, companies, jobs, copilot, matching
 
 # 🔥 Importamos los seeders
@@ -9,8 +9,6 @@ from app.db.init_db import init_db
 from app.db.seed_jobs_from_scraping import seed_jobs_from_scraping
 from app.db.seed_candidates_from_ocr import seed_candidates_from_ocr
 from app.db.seed_fake_applications import seed_fake_applications
-
-
 
 app = FastAPI(
     title="MatchKey API",
@@ -20,7 +18,7 @@ app = FastAPI(
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],  # en producción se puede cerrar
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -31,7 +29,7 @@ app.include_router(auth.router)
 app.include_router(candidates.router)
 app.include_router(companies.router)
 app.include_router(jobs.router)
-# app.include_router(copilot.router)
+app.include_router(copilot.router)   # <- SE MANTIENE el router de Asier
 app.include_router(matching.router)
 
 # ------------------------------------------------------
@@ -47,6 +45,9 @@ def on_startup():
 
     # Ingesta de candidatos desde el OCR
     seed_candidates_from_ocr()
+
+    # (opcional pero recomendado)
+    # seed_fake_applications()
 
 
 @app.get("/health")

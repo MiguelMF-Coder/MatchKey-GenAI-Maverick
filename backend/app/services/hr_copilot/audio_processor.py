@@ -1,49 +1,60 @@
 # backend/app/services/hr_copilot/audio_processor.py
 
 """
-Procesador de audio que convierte grabaciones de voz a texto usando Whisper.
+Procesador de audio que convierte grabaciones de voz a texto usando Groq Whisper API.
 Utilizado para transcribir respuestas habladas del candidato.
+Usa whisper-large-v3-turbo de Groq para transcripción rápida y precisa.
 """
 
 import os
 import tempfile
 from pathlib import Path
 from typing import Optional, Union
-import whisper
 import logging
+from groq import Groq
+from dotenv import load_dotenv
+
+load_dotenv()
 
 logger = logging.getLogger(__name__)
 
 
 class AudioProcessor:
     """
-    Procesa archivos de audio y los convierte a texto usando Whisper.
+    Procesa archivos de audio y los convierte a texto usando Groq Whisper API.
     """
 
-    def __init__(self, model_size: str = "base"):
+    def __init__(
+        self,
+        api_key: Optional[str] = None,
+        model: str = "whisper-large-v3-turbo"
+    ):
         """
-        Inicializa el procesador de audio.
+        Inicializa el procesador de audio con Groq API.
 
         Args:
-            model_size: Tamaño del modelo Whisper (tiny, base, small, medium, large)
-                       - tiny: Más rápido, menos preciso (~1GB RAM)
-                       - base: Balance recomendado (~1GB RAM)
-                       - small: Mejor precisión (~2GB RAM)
-                       - medium: Alta precisión (~5GB RAM)
-                       - large: Máxima precisión (~10GB RAM)
+            api_key: Groq API key (si no se provee, se lee de GROQ_API_KEY env var)
+            model: Modelo de Groq Whisper a usar:
+                   - whisper-large-v3-turbo: Muy rápido, excelente precisión (recomendado)
+                   - whisper-large-v3: Rápido, máxima precisión
         """
-        self.model_size = model_size
-        self._model = None
-        logger.info(f"AudioProcessor inicializado con modelo: {model_size}")
+        self.api_key = api_key or os.getenv("GROQ_API_KEY")
+        self.model = model
+
+        if not self.api_key:
+            logger.warning(
+                "GROQ_API_KEY no configurada. La transcripción de audio no funcionará. "
+                "Obtén tu API key en: https://console.groq.com/keys"
+            )
+            self.client = None
+        else:
+            self.client = Groq(api_key=self.api_key)
+            logger.info(f"AudioProcessor inicializado con Groq API - Modelo: {model}")
 
     @property
-    def model(self):
-        """Lazy loading del modelo Whisper"""
-        if self._model is None:
-            logger.info(f"Cargando modelo Whisper '{self.model_size}'...")
-            self._model = whisper.load_model(self.model_size)
-            logger.info("Modelo Whisper cargado exitosamente")
-        return self._model
+    def model_size(self):
+        """Compatibilidad con código legacy - mapea a nombre de modelo Groq"""
+        return self.model
 
     def transcribe_audio(
         self,
@@ -52,7 +63,7 @@ class AudioProcessor:
         task: str = "transcribe"
     ) -> dict:
         """
-        Transcribe un archivo de audio a texto.
+        Transcribe un archivo de audio a texto usando Groq Whisper API.
 
         Args:
             audio_path: Ruta al archivo de audio (mp3, wav, m4a, etc.)
@@ -62,45 +73,69 @@ class AudioProcessor:
         Returns:
             dict con:
                 - text: Texto transcrito completo
-                - segments: Lista de segmentos con timestamps
+                - segments: Lista de segmentos (vacía en API mode)
                 - language: Idioma detectado
                 - success: bool indicando si fue exitoso
                 - error: mensaje de error si falló
         """
+        if not self.client:
+            logger.error("Cliente Groq no inicializado. Verifica GROQ_API_KEY")
+            return {
+                "text": "",
+                "segments": [],
+                "language": language,
+                "success": False,
+                "error": "GROQ_API_KEY no configurada"
+            }
+
         try:
             audio_path = Path(audio_path)
 
             if not audio_path.exists():
                 raise FileNotFoundError(f"Archivo de audio no encontrado: {audio_path}")
 
-            logger.info(f"Transcribiendo audio: {audio_path.name}")
+            logger.info(f"Transcribiendo audio con Groq API: {audio_path.name}")
 
-            # Transcribir con Whisper
-            result = self.model.transcribe(
-                str(audio_path),
-                language=language,
-                task=task,
-                verbose=False
-            )
+            # Transcribir con Groq Whisper API
+            with open(audio_path, "rb") as audio_file:
+                transcription = self.client.audio.transcriptions.create(
+                    model=self.model,
+                    file=audio_file,
+                    language=language if language != "auto" else None,
+                    response_format="verbose_json",  # Include more details
+                    temperature=0.0  # Deterministic output
+                )
 
-            logger.info(f"Transcripción completada. Texto de {len(result['text'])} caracteres")
+            # Normalizar respuesta de Groq al formato esperado
+            text = transcription.text.strip()
+
+            logger.info(f"Transcripción completada. Texto de {len(text)} caracteres")
 
             return {
-                "text": result["text"].strip(),
-                "segments": result.get("segments", []),
-                "language": result.get("language", language),
+                "text": text,
+                "segments": [],  # Groq API no devuelve segmentos en el formato actual
+                "language": language,
                 "success": True,
                 "error": None
             }
 
-        except Exception as e:
-            logger.error(f"Error transcribiendo audio: {str(e)}")
+        except FileNotFoundError as e:
+            logger.error(f"Archivo no encontrado: {str(e)}")
             return {
                 "text": "",
                 "segments": [],
                 "language": language,
                 "success": False,
-                "error": str(e)
+                "error": f"Archivo no encontrado: {str(e)}"
+            }
+        except Exception as e:
+            logger.error(f"Error transcribiendo audio con Groq API: {str(e)}")
+            return {
+                "text": "",
+                "segments": [],
+                "language": language,
+                "success": False,
+                "error": f"Error de transcripción: {str(e)}"
             }
 
     def transcribe_multiple(
@@ -142,6 +177,16 @@ class AudioProcessor:
         Returns:
             dict con resultado de transcripción
         """
+        if not self.client:
+            logger.error("Cliente Groq no inicializado")
+            return {
+                "text": "",
+                "segments": [],
+                "language": language,
+                "success": False,
+                "error": "GROQ_API_KEY no configurada"
+            }
+
         try:
             # Crear archivo temporal
             with tempfile.NamedTemporaryFile(
