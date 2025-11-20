@@ -1,9 +1,13 @@
 import streamlit as st
 import requests
-from utils import get_backend_url
+
+from utils import (
+    get_backend_url,
+    api_post_file,
+    require_role,
+)
 
 BACKEND_URL = get_backend_url()
-
 
 # -------------------------
 # Helpers de backend
@@ -50,7 +54,7 @@ def ensure_candidate_id():
     return candidate_id
 
 
-def fetch_candidate_profile(candidate_id):
+def fetch_candidate_profile(candidate_id: int):
     """
     Llama a /candidates/{id}/profile (GET) para recuperar los datos actuales.
     """
@@ -73,11 +77,10 @@ def fetch_candidate_profile(candidate_id):
         return None
 
 
-def update_candidate_profile(candidate_id, profile_data):
+def update_candidate_profile(candidate_id: int, profile_data: dict):
     """
-    Envía los datos de perfil (sin CV) al backend.
+    Envía los datos de perfil al backend.
     Suponemos que el backend acepta PUT en /candidates/{id}/profile con JSON.
-    Ajusta a PATCH/POST si tu API lo requiere.
     """
     try:
         resp = requests.put(
@@ -97,39 +100,69 @@ def update_candidate_profile(candidate_id, profile_data):
         return False
 
 
-def upload_cv_and_parse(candidate_id, uploaded_file):
+def upload_cv_and_parse(candidate_id: int, uploaded_file):
     """
-    Envía el CV al backend para que lo procese (Document Parser + Skills Extractor).
-    Aquí asumimos un endpoint tipo:
-      POST /candidates/{id}/profile?parse_cv=true
-    con multipart/form-data (file=...).
-    Ajusta la URL o el nombre del campo según tu backend real.
-    """
-    files = {"file": (uploaded_file.name, uploaded_file.getvalue())}
+    Llama al endpoint /candidates/{id}/parse_cv con el fichero subido
+    y devuelve la respuesta del backend ya en dict.
 
-    try:
-        resp = requests.post(
-            f"{BACKEND_URL}/candidates/{candidate_id}/profile",
-            params={"parse_cv": "true"},
-            files=files,
-            timeout=60,
+    Respuesta esperada:
+    {
+      "status": "success",
+      "candidate_id": ...,
+      "updated_candidate": {...},
+      "skills_detected": [...],
+      "parsed_cv": {...}
+    }
+    """
+    files = {
+        "file": (
+            uploaded_file.name,
+            uploaded_file.getvalue(),
+            uploaded_file.type or "application/octet-stream",
         )
-    except Exception as e:
-        st.error(f"Error al subir y procesar el CV: {e}")
+    }
+
+    from utils import api_post_file  # import local para evitar problemas circulares
+    data, error = api_post_file(f"/candidates/{candidate_id}/parse_cv", files=files)
+
+    if error:
+        st.error(f"Error procesando CV: {error}")
         return None
 
-    if resp.status_code not in (200, 201):
-        st.error(f"No se ha podido procesar el CV. Código: {resp.status_code}")
-        return None
-
-    return resp.json()
+    return data
 
 
 # -------------------------
 # Render principal de la página
 # -------------------------
 def render():
+    require_role("candidate")
     st.markdown("## 👤 Mi perfil")
+
+        # Estilos para las pills de skills
+    st.markdown(
+        """
+        <style>
+        .skill-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.35rem 0.9rem;
+            margin: 0.25rem;
+            border-radius: 999px;
+            background: rgba(161, 0, 255, 0.22);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            min-width: 110px;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #FFFFFF;            /* texto más visible */
+            white-space: nowrap;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
     # Aseguramos que el usuario logado es un candidato registrado en el backend
     candidate_id = ensure_candidate_id()
@@ -139,130 +172,241 @@ def render():
     # Cargar perfil actual desde el backend (si existe)
     profile_data = fetch_candidate_profile(candidate_id) or {}
 
-    # Valores iniciales (si no hay nada, ponemos cosas vacías)
-    name_init = profile_data.get("name", "")
-    headline_init = profile_data.get("headline", "")
-    location_init = profile_data.get("location", "")
-    summary_init = profile_data.get("summary", "")
-
-    # Layout de la página
-    col_left, col_right = st.columns([2, 2])
+    # Último análisis de CV guardado en sesión o en el propio perfil (si el backend lo guarda allí)
+    last_analysis = st.session_state.get("last_cv_analysis")
+    if not last_analysis and profile_data.get("analysis"):
+        last_analysis = {
+            "parsed_cv": profile_data["analysis"],
+            "updated_candidate": {},
+            "skills_detected": profile_data.get("all_skills") or profile_data.get("skills") or [],
+        }
 
     # -------------------------
-    # Columna izquierda: Datos básicos
+    # 1. Bloque: subir CV y analizar
     # -------------------------
-    with col_left:
-        st.markdown("### 📝 Datos básicos")
+    st.markdown("### 📄 CV y análisis automático")
+    st.caption(
+        "Sube tu CV en PDF, DOCX o imagen. El sistema lo analizará con OCR, "
+        "actualizará tu perfil y guardará tus skills."
+    )
 
-        with st.form("basic_profile_form"):
-            name = st.text_input("Nombre completo", value=name_init)
-            headline = st.text_input(
-                "Titular profesional",
-                value=headline_init,
-                placeholder="Ej. Data Analyst especializado en BI y visualización",
-            )
-            location = st.text_input(
-                "Ubicación",
-                value=location_init,
-                placeholder="Ciudad, País",
-            )
-            summary = st.text_area(
-                "Resumen / Sobre mí",
-                value=summary_init,
-                height=150,
-                placeholder="Cuéntanos brevemente quién eres, tu experiencia y qué buscas.",
-            )
+    uploaded_file = st.file_uploader(
+        "Subir CV",
+        type=["pdf", "docx", "doc", "png", "jpg", "jpeg"],
+    )
 
-            submitted = st.form_submit_button("Guardar perfil")
+    if uploaded_file is not None:
+        if st.button("Procesar CV y actualizar perfil"):
+            with st.spinner("Analizando tu CV, extrayendo información y actualizando tu perfil..."):
+                analysis_result = upload_cv_and_parse(candidate_id, uploaded_file)
 
-        if submitted:
-            if not name:
-                st.error("El nombre completo es obligatorio.")
+            if analysis_result:
+                st.success("CV analizado y perfil actualizado correctamente ✅")
+                st.session_state.last_cv_analysis = analysis_result
+                last_analysis = analysis_result
+
+    st.markdown("---")
+
+    # -------------------------
+    # 2. Formulario principal editable (basado en perfil + CV)
+    # -------------------------
+    parsed_cv = (last_analysis or {}).get("parsed_cv", {}) or {}
+    updated_from_cv = (last_analysis or {}).get("updated_candidate", {}) or {}
+
+    # Datos sugeridos desde CV
+    nombre_cv = updated_from_cv.get("first_name") or parsed_cv.get("Nombre", "")
+    apellidos_cv = updated_from_cv.get("last_name") or parsed_cv.get("Apellidos", "")
+    full_name_cv = (
+        updated_from_cv.get("full_name")
+        or " ".join([p for p in [nombre_cv, apellidos_cv] if p]).strip()
+    )
+
+    ubicacion_cv = updated_from_cv.get("location") or parsed_cv.get("Ubicacion", "")
+
+    contacto_cv = parsed_cv.get("Contacto", {}) or {}
+    email_cv = updated_from_cv.get("contact_email") or contacto_cv.get("Email", "")
+    phone_cv = updated_from_cv.get("contact_phone") or contacto_cv.get("Telefono", "")
+
+    # Valores iniciales finales (prioridad: perfil guardado > CV)
+    name_init = profile_data.get("name") or full_name_cv
+    location_init = profile_data.get("location") or ubicacion_cv
+    headline_init = profile_data.get("headline") or ""
+    summary_init = profile_data.get("summary") or ""
+    email_init = profile_data.get("contact_email") or email_cv
+    phone_init = profile_data.get("contact_phone") or phone_cv
+
+    st.markdown("### 📝 Datos de tu perfil (editables)")
+    st.caption("Estos datos se basan en tu CV y en la información ya guardada en tu perfil. Puedes ajustarlos a mano.")
+
+    with st.form("profile_from_cv_form"):
+        name = st.text_input("Nombre completo", value=name_init or "")
+        location = st.text_input("Ubicación", value=location_init or "", placeholder="Ciudad, País")
+        email = st.text_input("Email de contacto", value=email_init or "")
+        phone = st.text_input("Teléfono de contacto", value=phone_init or "")
+        headline = st.text_input(
+            "Titular profesional",
+            value=headline_init or "",
+            placeholder="Ej. Data Analyst especializado en BI y visualización",
+        )
+        summary = st.text_area(
+            "Resumen / Sobre mí",
+            value=summary_init or "",
+            height=150,
+            placeholder="Cuéntanos brevemente quién eres, tu experiencia y qué buscas.",
+        )
+
+        save_submitted = st.form_submit_button("Guardar perfil")
+
+    if save_submitted:
+        if not name:
+            st.error("El nombre completo es obligatorio.")
+        else:
+            payload = {
+                "name": name,
+                "headline": headline,
+                "location": location,
+                "summary": summary,
+                # estos campos puede que el backend ya los soporte; si no, los ignorará
+                "contact_email": email,
+                "contact_phone": phone,
+            }
+            if update_candidate_profile(candidate_id, payload):
+                profile_data.update(payload)
+
+    # Skills actuales en perfil (o detectadas)
+    existing_skills = (
+        profile_data.get("skills")
+        or profile_data.get("all_skills")
+        or (last_analysis or {}).get("skills_detected")
+        or (parsed_cv.get("Skills") if parsed_cv else [])
+    )
+
+    if existing_skills:
+        cols = st.columns(4)
+        for i, sk in enumerate(existing_skills):
+            with cols[i % 4]:
+                st.markdown(
+                    f'<div class="skill-pill">{sk}</div>',
+                    unsafe_allow_html=True,
+                )
+    else:
+        st.caption("Todavía no hay skills detectadas. Sube tu CV para extraerlas automáticamente.")
+
+
+    st.markdown("---")
+
+    # -------------------------
+    # 3. Tabs con detalle del CV analizado
+    # -------------------------
+    if parsed_cv:
+        st.markdown("### 📑 Resumen del CV analizado")
+
+        tabs = st.tabs(
+            [
+                "Datos personales",
+                "Formación",
+                "Experiencia",
+                "Idiomas & skills",
+                "Texto extraído",
+            ]
+        )
+
+        # TAB 1: Datos personales
+        with tabs[0]:
+            st.markdown("#### 🙋 Datos personales detectados")
+
+            fecha_ini = parsed_cv.get("Fecha_inicio", "")
+            fecha_fin = parsed_cv.get("Fecha_finalizacion", "")
+
+            st.write(f"**Nombre completo (desde CV):** {full_name_cv or '—'}")
+            st.write(f"**Ubicación (desde CV):** {ubicacion_cv or '—'}")
+            st.write(f"**Email (desde CV):** {email_cv or '—'}")
+            st.write(f"**Teléfono (desde CV):** {phone_cv or '—'}")
+
+            if fecha_ini or fecha_fin:
+                st.write(f"**Rango de fechas detectado en el CV:** {fecha_ini} - {fecha_fin}")
+
+        # TAB 2: Formación
+        with tabs[1]:
+            st.markdown("#### 🎓 Formación detectada")
+            estudios = parsed_cv.get("Estudios", "")
+            if estudios:
+                for linea in estudios.split("\n"):
+                    linea = linea.strip()
+                    if linea:
+                        st.markdown(f"- {linea}")
             else:
-                payload = {
-                    "name": name,
-                    "headline": headline,
-                    "location": location,
-                    "summary": summary,
-                }
-                update_candidate_profile(candidate_id, payload)
+                st.info("No se ha detectado sección de estudios en el CV.")
 
-        # Si el backend devuelve skills en el perfil, los mostramos como referencia rápida
-        existing_skills = profile_data.get("skills") or profile_data.get("all_skills")
-        if existing_skills:
-            st.markdown("#### 🧩 Skills detectados en tu perfil")
-            st.caption("Estos pueden venir de tu CV o de entrevistas previas.")
-            st.write(", ".join(existing_skills))
+        # TAB 3: Experiencia
+        with tabs[2]:
+            st.markdown("#### 💼 Experiencia profesional")
+            experiencia = parsed_cv.get("Experiencia", {}) or {}
 
-    # -------------------------
-    # Columna derecha: CV + Llamada IA
-    # -------------------------
-    with col_right:
-        # Bloque CV
-        st.markdown("### 📄 CV y análisis con IA")
-        st.caption(
-            "Sube tu CV en PDF, DOCX o imagen. El sistema lo analizará con OCR y "
-            "extraerá tus skills automáticamente."
-        )
+            empleos = experiencia.get("Empleos") or []
+            practicas = experiencia.get("Practicas") or []
+            proyectos = experiencia.get("Proyectos") or []
 
-        uploaded_file = st.file_uploader(
-            "Subir CV",
-            type=["pdf", "docx", "doc", "png", "jpg", "jpeg"],
-        )
+            if not (empleos or practicas or proyectos):
+                st.info("No se ha podido estructurar la experiencia a partir del CV.")
+            else:
+                if empleos:
+                    st.markdown("##### 🧱 Empleos")
+                    for block in empleos:
+                        st.markdown(f"- {block}")
 
-        if uploaded_file is not None:
-            if st.button("Procesar CV con IA"):
-                with st.spinner("Analizando tu CV..."):
-                    analysis_result = upload_cv_and_parse(candidate_id, uploaded_file)
+                if practicas:
+                    st.markdown("##### 🎓 Prácticas / Becas")
+                    for block in practicas:
+                        st.markdown(f"- {block}")
 
-                if analysis_result:
-                    st.success("CV analizado correctamente ✅")
+                if proyectos:
+                    st.markdown("##### 🧪 Proyectos")
+                    for block in proyectos:
+                        st.markdown(f"- {block}")
 
-                    # Mostramos algunos campos típicos devueltos por el backend
-                    raw_text = analysis_result.get("raw_text")
-                    clean_text = analysis_result.get("clean_text")
-                    must_have = analysis_result.get("must_have") or analysis_result.get("must_skills")
-                    nice_to_have = analysis_result.get("nice_to_have")
-                    all_skills = analysis_result.get("all_skills")
+        # TAB 4: Idiomas & skills
+        with tabs[3]:
+            st.markdown("#### 🌍 Idiomas")
+            idiomas = parsed_cv.get("Idiomas", []) or []
+            if idiomas:
+                st.write(", ".join(idiomas))
+            else:
+                st.info("No se han detectado idiomas en el CV.")
 
-                    if all_skills:
-                        st.markdown("#### 🧩 Skills detectados")
-                        st.write(", ".join(all_skills))
+            st.markdown("#### 🧠 Skills detectadas en el CV")
+            skills_from_parser = parsed_cv.get("Skills", []) or []
+            all_cv_skills = (last_analysis or {}).get("skills_detected") or skills_from_parser
 
-                    col1, col2 = st.columns(2)
-                    with col1:
-                        if must_have:
-                            st.markdown("##### ✅ Skills fuertes (Must-have)")
-                            st.write(", ".join(must_have))
-                    with col2:
-                        if nice_to_have:
-                            st.markdown("##### ⭐ Skills adicionales (Nice-to-have)")
-                            st.write(", ".join(nice_to_have))
+            if all_cv_skills:
+                cols = st.columns(4)
+                for i, sk in enumerate(all_cv_skills):
+                    with cols[i % 4]:
+                        st.markdown(
+                            f'<div class="skill-pill">{sk}</div>',
+                            unsafe_allow_html=True,
+                        )
+            else:
+                st.info("No se han detectado skills en el CV.")
 
-                    with st.expander("Ver texto parseado del CV"):
-                        if clean_text:
-                            st.markdown("##### Texto limpio")
-                            st.write(clean_text[:5000])  # por si es muy largo
-                        elif raw_text:
-                            st.markdown("##### Texto bruto")
-                            st.write(raw_text[:5000])
-                        else:
-                            st.info("El backend no ha devuelto texto parseado del CV.")
+        # TAB 5: Texto extraído
+        with tabs[4]:
+            st.markdown("#### 📄 Texto extraído del CV")
+            raw_preview = parsed_cv.get("raw_text_preview", "")
+            if raw_preview:
+                st.code(raw_preview, language="markdown")
+            else:
+                st.info("No se pudo extraer texto del CV o el texto disponible es demasiado corto.")
 
-        # Si el perfil ya tenía información de análisis previa, la mostramos abajo
-        if profile_data.get("analysis"):
-            st.markdown("### 📊 Último análisis guardado")
-            st.json(profile_data["analysis"])
+    st.markdown("---")
 
-        st.markdown("---")
+    # Bloque Llamada IA
+    st.markdown("### 🔮 Completa tu perfil con la Llamada IA")
+    st.caption(
+        "Si quieres que el sistema detecte tus motivaciones, valores, soft skills y preferencias "
+        "de equipo, puedes completar tu perfil a través de la Llamada IA."
+    )
 
-        # Bloque Llamada IA
-        st.markdown("### 🔮 Completa tu perfil con la Llamada IA")
-        st.caption(
-            "Si quieres que el sistema detecte tus motivaciones, valores, soft skills y preferencias "
-            "de equipo, puedes completar tu perfil a través de la Llamada IA."
-        )
-
-        if st.button("✨ Completar perfil con Llamada IA", use_container_width=True):
-            st.session_state.current_page = "Llamada IA"
-            st.rerun()
+    if st.button("✨ Completar perfil con Llamada IA", use_container_width=True):
+        st.session_state.current_page = "Llamada IA"
+        st.rerun()

@@ -16,6 +16,8 @@ class Candidate(Base, TimestampMixin):
     location = Column(String(255), nullable=True)
     summary = Column(Text, nullable=True)
     years_experience = Column(Integer, nullable=True)
+    contact_email = Column(String, nullable=True)
+    contact_phone = Column(String, nullable=True)
 
     user = relationship("User", back_populates="candidate")
     skills = relationship("CandidateSkill", back_populates="candidate", cascade="all, delete-orphan")

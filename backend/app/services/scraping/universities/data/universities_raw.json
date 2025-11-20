@@ -1,0 +1,464 @@
+[
+    {
+        "name":"Universidad de Almer\u00eda",
+        "website":"https:\/\/www.ual.es",
+        "province":"Almer\u00eda",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de C\u00e1diz",
+        "website":"https:\/\/www.uca.es",
+        "province":"C\u00e1diz",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de C\u00f3rdoba",
+        "website":"http:\/\/www.uco.es",
+        "province":"C\u00f3rdoba",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Loyola Andaluc\u00eda",
+        "website":"https:\/\/www.uloyola.es",
+        "province":"C\u00f3rdoba",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad de Granada",
+        "website":"https:\/\/www.ugr.es",
+        "province":"Granada",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Huelva",
+        "website":"http:\/\/www.uhu.es",
+        "province":"Huelva",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Ja\u00e9n",
+        "website":"https:\/\/www.ujaen.es",
+        "province":"Ja\u00e9n",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de M\u00e1laga",
+        "website":"http:\/\/www.uma.es",
+        "province":"M\u00e1laga",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Internacional de Andaluc\u00eda",
+        "website":"https:\/\/www.unia.es",
+        "province":"Sevilla",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Pablo de Olavide",
+        "website":"http:\/\/www.upo.es",
+        "province":"Sevilla",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Sevilla",
+        "website":"http:\/\/www.us.es",
+        "province":"Sevilla",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad San Jorge",
+        "website":"https:\/\/www.usj.es",
+        "province":"Zaragoza",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad de Zaragoza",
+        "website":"http:\/\/www.unizar.es",
+        "province":"Zaragoza",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Oviedo",
+        "website":"http:\/\/www.uniovi.es",
+        "province":"Oviedo",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Las Palmas de Gran Canaria",
+        "website":"http:\/\/www.ulpgc.es",
+        "province":"Las Palmas de Gran Canaria",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de La Laguna",
+        "website":"https:\/\/www.ull.es",
+        "province":"Tenerife",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Cantabria",
+        "website":"http:\/\/www.unican.es",
+        "province":"Santander",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Cat\u00f3lica de \u00c1vila",
+        "website":"https:\/\/www.ucavila.es",
+        "province":"\u00c1vila",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad de Burgos",
+        "website":"https:\/\/www.ubu.es",
+        "province":"Burgos",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Le\u00f3n",
+        "website":"https:\/\/www.unileon.es",
+        "province":"Le\u00f3n",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Pontificia de Salamanca",
+        "website":"https:\/\/www.upsa.es",
+        "province":"Salamanca",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad de Salamanca",
+        "website":"https:\/\/www.usal.es",
+        "province":"Salamanca",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"IE University",
+        "website":"https:\/\/www.ie.edu",
+        "province":"Segovia",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad Europea Miguel de Cervantes",
+        "website":"http:\/\/www.uemc.es",
+        "province":"Valladolid",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad de Valladolid",
+        "website":"http:\/\/www.uva.es",
+        "province":"Valladolid",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Castilla-La Mancha",
+        "website":"https:\/\/www.uclm.es",
+        "province":"Ciudad Real",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universitat Abat Oliba CEU",
+        "website":"https:\/\/www.uaoceu.es\/",
+        "province":"Barcelona",
+        "type":"Privada"
+    },
+    {
+        "name":"Universitat Aut\u00f2noma de Barcelona",
+        "website":"https:\/\/www.uab.cat",
+        "province":"Barcelona",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universitat de Barcelona",
+        "website":"http:\/\/www.ub.es",
+        "province":"Barcelona",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universitat Internacional de Catalunya",
+        "website":"http:\/\/www.unica.edu",
+        "province":"Barcelona",
+        "type":"Privada"
+    },
+    {
+        "name":"Universitat Oberta de Catalunya",
+        "website":"http:\/\/www.uoc.es",
+        "province":"Barcelona",
+        "type":"Privada"
+    },
+    {
+        "name":"Universitat Polit\u00e8cnica de Catalunya",
+        "website":"http:\/\/www.upc.es",
+        "province":"Barcelona",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universitat Pompeu Fabra",
+        "website":"http:\/\/www.upf.es",
+        "province":"Barcelona",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universitat Ramon Llull",
+        "website":"http:\/\/www.url.es",
+        "province":"Barcelona",
+        "type":"Privada"
+    },
+    {
+        "name":"Universitat de Vic",
+        "website":"https:\/\/www.uvic.cat",
+        "province":"Barcelona",
+        "type":"Privada"
+    },
+    {
+        "name":"Universitat de Girona",
+        "website":"http:\/\/www.udg.es",
+        "province":"Girona",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universitat de Lleida",
+        "website":"http:\/\/www.udl.es",
+        "province":"Lleida",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universitat Rovira i Virgili",
+        "website":"http:\/\/www.urv.cat",
+        "province":"Tarragona",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Alcal\u00e1",
+        "website":"https:\/\/www.uah.es\/es\/",
+        "province":"Madrid",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Alfonso X El Sabio",
+        "website":"https:\/\/www.uax.es\/",
+        "province":"Madrid",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad Antonio de Nebrija",
+        "website":"https:\/\/www.nebrija.com",
+        "province":"Madrid",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad Aut\u00f3noma de Madrid",
+        "website":"http:\/\/www.uam.es",
+        "province":"Madrid",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Camilo Jos\u00e9 Cela",
+        "website":"http:\/\/www.ucjc.edu",
+        "province":"Madrid",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad Carlos III de Madrid",
+        "website":"http:\/\/www.uc3m.es",
+        "province":"Madrid",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad CEU San Pablo",
+        "website":"http:\/\/www.ceu.es",
+        "province":"Madrid",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad Complutense de Madrid",
+        "website":"http:\/\/www.ucm.es",
+        "province":"Madrid",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad a Distancia de Madrid",
+        "website":"http:\/\/www.udima.es",
+        "province":"Madrid",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad Europea de Madrid",
+        "website":"https:\/\/universidadeuropea.com\/",
+        "province":"Madrid",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad Francisco de Vitoria",
+        "website":"http:\/\/www.ufv.es",
+        "province":"Madrid",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad Polit\u00e9cnica de Madrid",
+        "website":"http:\/\/www.upm.es",
+        "province":"Madrid",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Pontificia Comillas",
+        "website":"https:\/\/www.comillas.edu\/",
+        "province":"Madrid",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad Rey Juan Carlos",
+        "website":"http:\/\/www.urjc.es",
+        "province":"Madrid",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Navarra",
+        "website":"http:\/\/www.unav.es",
+        "province":"Pamplona",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad P\u00fablica de Navarra",
+        "website":"http:\/\/www.unavarra.es",
+        "province":"Pamplona",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Alicante",
+        "website":"http:\/\/www.ua.es",
+        "province":"Alicante",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Miguel Hern\u00e1ndez de Elche",
+        "website":"http:\/\/www.umh.es",
+        "province":"Alicante",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universitat Jaume I",
+        "website":"http:\/\/www.uji.es",
+        "province":"Castell\u00f3n",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Cat\u00f3lica de Valencia San Vicente M\u00e1rtir",
+        "website":"http:\/\/www.ucv.es",
+        "province":"Valencia",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad CEU Cardenal Herrera",
+        "website":"https:\/\/www.uchceu.es",
+        "province":"Valencia",
+        "type":"Privada"
+    },
+    {
+        "name":"Universitat Polit\u00e8cnica de Val\u00e8ncia",
+        "website":"http:\/\/www.upv.es",
+        "province":"Valencia",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universitat de Val\u00e8ncia",
+        "website":"https:\/\/www.uv.es",
+        "province":"Valencia",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Internacional de Valencia",
+        "website":"https:\/\/www.universidadviu.com\/es\/",
+        "province":"Valencia",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad internacional Men\u00e9ndez Pelayo",
+        "website":"http:\/\/www.uimp.es",
+        "province":"Madrid",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Nacional de Educaci\u00f3n a Distancia",
+        "website":"http:\/\/www.uned.es",
+        "province":"Madrid",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Extremadura",
+        "website":"https:\/\/www.unex.es",
+        "province":"Badajoz",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidade da Coru\u00f1a",
+        "website":"http:\/\/www.udc.es",
+        "province":"A Coru\u00f1a",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidade de Santiago de Compostela",
+        "website":"http:\/\/www.usc.es",
+        "province":"A Coru\u00f1a",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidade de Vigo",
+        "website":"http:\/\/www.uvigo.es",
+        "province":"Vigo",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universitat de les Illes Balears",
+        "website":"http:\/\/www.uib.es",
+        "province":"Palma de Mallorca",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Internacional de La Rioja",
+        "website":"http:\/\/www.unir.net",
+        "province":"La Rioja",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad de La Rioja",
+        "website":"https:\/\/www.unirioja.es",
+        "province":"La Rioja",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad de Deusto",
+        "website":"http:\/\/www.deusto.es",
+        "province":"Bizkaia",
+        "type":"Privada"
+    },
+    {
+        "name":"Euskal Herriko Unibertsitatea",
+        "website":"http:\/\/www.ehu.es",
+        "province":"Bizkaia",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Mondragon Unibertsitatea",
+        "website":"http:\/\/www.mondragon.edu",
+        "province":"Gipuzkoa",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad Cat\u00f3lica San Antonio de Murcia",
+        "website":"http:\/\/www.ucam.edu",
+        "province":"Murcia",
+        "type":"Privada"
+    },
+    {
+        "name":"Universidad de Murcia",
+        "website":"http:\/\/www.um.es",
+        "province":"Murcia",
+        "type":"P\u00fablica"
+    },
+    {
+        "name":"Universidad Polit\u00e9cnica de Cartagena",
+        "website":"http:\/\/www.upct.es",
+        "province":"Murcia",
+        "type":"P\u00fablica"
+    }
+]

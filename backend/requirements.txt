@@ -1,38 +1,52 @@
+# FastAPI y servidor
 fastapi==0.115.2
 uvicorn[standard]==0.30.6
 
+# Base de datos
 SQLAlchemy==2.0.35
 psycopg2-binary==2.9.9
 
+# Validación
 pydantic==2.9.2
 pydantic-settings==2.6.1
 
+# Multipart/form-data
 python-multipart==0.0.9
+
+# HTTP
 requests==2.32.3
 httpx==0.27.2
 
-# Seguridad / autenticación
+# Seguridad
 passlib[bcrypt]
 bcrypt==4.0.1
 cffi
 email-validator
 
-# OCR / parsing documentos
+# OCR / Parsing documentos
 pillow==11.0.0
 pytesseract==0.3.13
 python-docx==1.1.2
 pdfplumber==0.11.4
+pdf2image==1.17.0
 
-# Scraping valores / cursos
+# Scraping
 beautifulsoup4==4.12.3
 lxml==5.3.0
 
-# IA / MCP (puedes cambiarlo si usáis otro proveedor)
+# IA / MCP (OpenAI)
 openai==1.51.0
 groq==0.9.0
 openai-whisper==20231117
 soundfile==0.12.1
 pydub==0.25.1
+
+# NLP / SpaCy (NECESARIO para CVParser)
+spacy==3.7.5
+es-core-news-md @ https://github.com/explosion/spacy-models/releases/download/es_core_news_md-3.7.0/es_core_news_md-3.7.0.tar.gz
+
+# Utilidades de texto / normalización
+Unidecode==1.3.8
 
 # Utilidades
 python-dotenv==1.0.1

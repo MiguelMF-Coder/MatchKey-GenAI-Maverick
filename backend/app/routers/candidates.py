@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional, Any, Dict
 
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Query
 from pydantic import BaseModel, EmailStr
@@ -10,6 +10,8 @@ from app.models.candidates import Candidate
 from app.models.skills import CandidateSkill
 from app.models.jobs import Job
 from app.models.interviews import CandidateInterview
+from app.services.recommendations.courses_recommender import recommend_courses_for_gaps
+from app.services.ocr.document_parser import parse_cv_upload
 
 router = APIRouter(prefix="/candidates", tags=["candidates"])
 
@@ -40,16 +42,28 @@ class CandidateProfileUpdate(BaseModel):
     summary: Optional[str] = None
     years_experience: Optional[int] = None
 
+    # Campos de contacto editables desde el frontend
+    contact_email: Optional[str] = None
+    contact_phone: Optional[str] = None
+
 
 class CandidateProfileResponse(BaseModel):
     id: int
     user_id: int
-    email: EmailStr
+    email: Optional[str]
     name: Optional[str]
     headline: Optional[str]
     location: Optional[str]
     summary: Optional[str]
-    years_experience: Optional[int] = None
+    years_experience: Optional[int]
+
+    # Campos de contacto almacenados en Candidate
+    contact_email: Optional[str] = None
+    contact_phone: Optional[str] = None
+
+    # ✅ Lista de skills reales del candidato (desde CandidateSkill)
+    skills: List[str] = []
+
     num_skills: int
     has_hr_interview: bool
 
@@ -84,6 +98,23 @@ class RecommendedJobItem(BaseModel):
     title: str
     company_name: Optional[str] = None
     location: Optional[str] = None
+
+    # Datos extendidos del Job
+    description: Optional[str] = None
+    category: Optional[str] = None
+    contract_type: Optional[str] = None
+    contract_time: Optional[str] = None
+    job_type: Optional[str] = None
+    salary_min: Optional[float] = None
+    salary_max: Optional[float] = None
+    experience_required: Optional[str] = None
+    education_required: Optional[str] = None
+    area: Optional[Any] = None  # puede ser lista/JSON
+    tech_stack: Optional[List[str]] = None
+    soft_skills: Optional[List[str]] = None
+    languages: Optional[List[str]] = None
+    benefits: Optional[List[str]] = None
+
     scores: RecommendedJobScores
 
 
@@ -102,6 +133,13 @@ class CourseRecommendation(BaseModel):
     provider: Optional[str] = None
     url: Optional[str] = None
     target_skills: List[str] = []
+
+
+class RecommendedCoursesResponse(BaseModel):
+    candidate_id: int
+    job_id: int
+    missing_skills: List[str]
+    courses: List[CourseRecommendation] = []
 
 
 class GapsRecommendations(BaseModel):
@@ -124,11 +162,7 @@ class GapsResponse(BaseModel):
 @router.post("/create", response_model=CandidateProfileResponse)
 def create_candidate(payload: CandidateCreate, db: Session = Depends(get_db)):
     # ¿Existe ya el usuario?
-    user = (
-        db.query(User)
-        .filter(User.email == payload.email)
-        .first()
-    )
+    user = db.query(User).filter(User.email == payload.email).first()
 
     if user is None:
         user = User(
@@ -139,11 +173,7 @@ def create_candidate(payload: CandidateCreate, db: Session = Depends(get_db)):
         db.flush()  # para obtener user.id
 
     # ¿Existe ya el candidate?
-    candidate = (
-        db.query(Candidate)
-        .filter(Candidate.user_id == user.id)
-        .first()
-    )
+    candidate = db.query(Candidate).filter(Candidate.user_id == user.id).first()
 
     if candidate is None:
         candidate = Candidate(
@@ -157,12 +187,15 @@ def create_candidate(payload: CandidateCreate, db: Session = Depends(get_db)):
     db.refresh(candidate)
     db.refresh(user)
 
-    # Contar skills e IA
-    num_skills = (
+    # Skills actuales del candidato (normalmente 0 justo tras crear)
+    skill_rows = (
         db.query(CandidateSkill)
         .filter(CandidateSkill.candidate_id == candidate.id)
-        .count()
+        .all()
     )
+    skills = [s.skill_name for s in skill_rows]
+    num_skills = len(skills)
+
     has_hr_interview = (
         db.query(CandidateInterview)
         .filter(CandidateInterview.candidate_id == candidate.id)
@@ -179,6 +212,9 @@ def create_candidate(payload: CandidateCreate, db: Session = Depends(get_db)):
         location=getattr(candidate, "location", None),
         summary=getattr(candidate, "summary", None),
         years_experience=getattr(candidate, "years_experience", None),
+        contact_email=getattr(candidate, "contact_email", None),
+        contact_phone=getattr(candidate, "contact_phone", None),
+        skills=skills,
         num_skills=num_skills,
         has_hr_interview=has_hr_interview,
     )
@@ -197,11 +233,15 @@ def get_candidate_profile(candidate_id: int, db: Session = Depends(get_db)):
     if user is None:
         raise HTTPException(status_code=404, detail="User not found for candidate")
 
-    num_skills = (
+    # ✅ Skills reales del candidato
+    skill_rows = (
         db.query(CandidateSkill)
         .filter(CandidateSkill.candidate_id == candidate.id)
-        .count()
+        .all()
     )
+    skills = [s.skill_name for s in skill_rows]
+    num_skills = len(skills)
+
     has_hr_interview = (
         db.query(CandidateInterview)
         .filter(CandidateInterview.candidate_id == candidate.id)
@@ -218,6 +258,9 @@ def get_candidate_profile(candidate_id: int, db: Session = Depends(get_db)):
         location=getattr(candidate, "location", None),
         summary=getattr(candidate, "summary", None),
         years_experience=getattr(candidate, "years_experience", None),
+        contact_email=getattr(candidate, "contact_email", None),
+        contact_phone=getattr(candidate, "contact_phone", None),
+        skills=skills,
         num_skills=num_skills,
         has_hr_interview=has_hr_interview,
     )
@@ -245,12 +288,18 @@ def update_candidate_profile(
     db.refresh(candidate)
 
     user = db.query(User).filter(User.id == candidate.user_id).first()
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found for candidate")
 
-    num_skills = (
+    # Recalculamos skills
+    skill_rows = (
         db.query(CandidateSkill)
         .filter(CandidateSkill.candidate_id == candidate.id)
-        .count()
+        .all()
     )
+    skills = [s.skill_name for s in skill_rows]
+    num_skills = len(skills)
+
     has_hr_interview = (
         db.query(CandidateInterview)
         .filter(CandidateInterview.candidate_id == candidate.id)
@@ -267,6 +316,9 @@ def update_candidate_profile(
         location=getattr(candidate, "location", None),
         summary=getattr(candidate, "summary", None),
         years_experience=getattr(candidate, "years_experience", None),
+        contact_email=getattr(candidate, "contact_email", None),
+        contact_phone=getattr(candidate, "contact_phone", None),
+        skills=skills,
         num_skills=num_skills,
         has_hr_interview=has_hr_interview,
     )
@@ -274,7 +326,7 @@ def update_candidate_profile(
 
 # -------------------------------------------------
 # 4) POST /candidates/{id}/profile?parse_cv=true
-#    Placeholder listo para integrar Document Parser + Skills Extractor
+#    (stub legado, lo dejamos tal cual por si algo lo usa)
 # -------------------------------------------------
 @router.post("/{candidate_id}/profile", response_model=CVParseResult)
 async def upload_and_parse_cv(
@@ -293,25 +345,15 @@ async def upload_and_parse_cv(
             detail="Set parse_cv=true to trigger CV parsing",
         )
 
-    # TODO: integrar con Document Parser y Skills Extractor reales.
-    # Aquí solo dejamos un stub para que el frontend funcione.
     content_bytes = await file.read()
     raw_text = f"Archivo recibido: {file.filename} ({len(content_bytes)} bytes)"
 
-    # Por ahora, devolvemos un ejemplo simple y guardamos CERO skills reales
     all_skills: List[str] = []
     must_have: List[str] = []
     nice_to_have: List[str] = []
 
-    # Si quieres, aquí puedes rellenar algunas skills dummy:
-    # all_skills = ["Python", "SQL", "Power BI"]
-    # must_have = ["Python", "SQL"]
-    # nice_to_have = ["Power BI"]
-
-    # Borramos skills anteriores del candidato (opcional)
     db.query(CandidateSkill).filter(CandidateSkill.candidate_id == candidate.id).delete()
 
-    # Guardar skills (de momento, nada; cuando integremos el extractor, aquí se insertan)
     for skill_name in all_skills:
         skill = CandidateSkill(
             candidate_id=candidate.id,
@@ -335,8 +377,6 @@ async def upload_and_parse_cv(
 
 # -------------------------------------------------
 # 5) GET /candidates/{id}/recommended_jobs
-#    Versión mínima para que el frontend funcione.
-#    Más adelante se conectará al Matching Engine real.
 # -------------------------------------------------
 @router.get("/{candidate_id}/recommended_jobs", response_model=RecommendedJobsResponse)
 def get_recommended_jobs(candidate_id: int, db: Session = Depends(get_db)):
@@ -349,8 +389,6 @@ def get_recommended_jobs(candidate_id: int, db: Session = Depends(get_db)):
     recommended: List[RecommendedJobItem] = []
 
     for job in jobs:
-        # TODO: aquí deberíamos llamar a matching_engine.run(candidate, job)
-        # De momento devolvemos scores dummy para que el frontend pueda pintar algo.
         scores = RecommendedJobScores(
             global_score=75.0,
             skills_match=80.0,
@@ -362,11 +400,30 @@ def get_recommended_jobs(candidate_id: int, db: Session = Depends(get_db)):
         if hasattr(job, "company") and job.company is not None:
             company_name = getattr(job.company, "name", None)
 
+        # experience_required puede ser int o texto → lo normalizamos a str
+        exp_req = job.experience_required
+        if exp_req is not None and not isinstance(exp_req, str):
+            exp_req = str(exp_req)
+
         item = RecommendedJobItem(
             job_id=job.id,
             title=job.title,
             company_name=company_name,
             location=getattr(job, "location", None),
+            description=getattr(job, "jd_text", None),
+            category=getattr(job, "category", None),
+            contract_type=getattr(job, "contract_type", None),
+            contract_time=getattr(job, "contract_time", None),
+            job_type=getattr(job, "job_type", None),
+            salary_min=getattr(job, "salary_min", None),
+            salary_max=getattr(job, "salary_max", None),
+            experience_required=exp_req,
+            education_required=getattr(job, "education_required", None),
+            area=getattr(job, "area", None),
+            tech_stack=getattr(job, "tech_stack", None),
+            soft_skills=getattr(job, "soft_skills", None),
+            languages=getattr(job, "languages", None),
+            benefits=getattr(job, "benefits", None),
             scores=scores,
         )
         recommended.append(item)
@@ -376,7 +433,6 @@ def get_recommended_jobs(candidate_id: int, db: Session = Depends(get_db)):
 
 # -------------------------------------------------
 # 6) GET /candidates/{id}/job/{job}/gaps
-#    Stub preparado para integrar lógica de gaps + cursos.
 # -------------------------------------------------
 @router.get("/{candidate_id}/job/{job_id}/gaps", response_model=GapsResponse)
 def get_gaps_for_job(
@@ -392,13 +448,6 @@ def get_gaps_for_job(
     if job is None:
         raise HTTPException(status_code=404, detail="Job not found")
 
-    # TODO:
-    # - Leer CandidateSkill y JobSkill
-    # - Calcular fuertes / en desarrollo / a desarrollar
-    # - Calcular scores reales apoyados en Matching Engine
-    # - Cruzar con courses_dataset.json para sugerir cursos
-
-    # Por ahora, devolvemos algo coherente pero dummy:
     scores = RecommendedJobScores(
         global_score=75.0,
         skills_match=80.0,
@@ -434,3 +483,182 @@ def get_gaps_for_job(
         skills=skills_section,
         recommendations=recommendations,
     )
+
+
+@router.get("/courses")
+def get_all_courses():
+    """
+    Devuelve todos los cursos del dataset de scraping.
+    Intenta varias rutas posibles para ser robusto.
+    """
+    import json
+    from pathlib import Path
+
+    candidate_paths = [
+        Path("app/services/scraping/courses_dataset.json"),
+        Path("app/services/scraping/courses/data/courses.json"),
+        Path("app/services/scraping/courses.json"),
+    ]
+
+    dataset_path = None
+    for p in candidate_paths:
+        if p.exists():
+            dataset_path = p
+            break
+
+    if dataset_path is None:
+        return []
+
+    try:
+        with open(dataset_path, "r", encoding="utf-8") as f:
+            courses = json.load(f)
+    except Exception:
+        return []
+
+    if not isinstance(courses, list):
+        return []
+
+    return courses
+
+
+@router.get(
+    "/{candidate_id}/job/{job_id}/recommended_courses",
+    response_model=RecommendedCoursesResponse,
+)
+def get_recommended_courses_for_job(
+    candidate_id: int,
+    job_id: int,
+    db: Session = Depends(get_db),
+):
+    """
+    Recomienda cursos para los gaps detectados en una vacante concreta.
+    Se apoya en:
+      - get_gaps_for_job(...) para obtener los missing skills
+      - recommend_courses_for_gaps(...) para buscar cursos relevantes
+    """
+    candidate = db.query(Candidate).filter(Candidate.id == candidate_id).first()
+    if candidate is None:
+        raise HTTPException(status_code=404, detail="Candidate not found")
+
+    job = db.query(Job).filter(Job.id == job_id).first()
+    if job is None:
+        raise HTTPException(status_code=404, detail="Job not found")
+
+    gaps_response = get_gaps_for_job(candidate_id=candidate_id, job_id=job_id, db=db)
+
+    missing_skills = gaps_response.skills.missing or []
+
+    if not missing_skills:
+        return RecommendedCoursesResponse(
+            candidate_id=candidate_id,
+            job_id=job_id,
+            missing_skills=[],
+            courses=[],
+        )
+
+    raw_courses = recommend_courses_for_gaps(missing_skills)
+    courses = [CourseRecommendation(**c) for c in raw_courses]
+
+    return RecommendedCoursesResponse(
+        candidate_id=candidate_id,
+        job_id=job_id,
+        missing_skills=missing_skills,
+        courses=courses,
+    )
+
+
+# -------------------------------------------------
+# 7) POST /candidates/{id}/parse_cv
+#     OCR + Parser + actualización de Candidate + Skills
+# -------------------------------------------------
+@router.post("/{candidate_id}/parse_cv")
+async def parse_candidate_cv(
+    candidate_id: int,
+    file: UploadFile = File(..., description="Archivo de CV (PDF, DOCX, JPG, PNG)"),
+    db: Session = Depends(get_db),
+) -> Dict[str, Any]:
+    """
+    Sube un CV de un candidato, lo pasa por OCR/Parser y:
+    1) Analiza el CV con OCR
+    2) Actualiza el Candidate (name, location, contacto si existen esos campos)
+    3) Actualiza CandidateSkill
+    4) Devuelve un resumen de lo actualizado + el CV parseado
+    """
+    if not file.filename:
+        raise HTTPException(status_code=400, detail="No se ha enviado ningún archivo.")
+
+    parsed = parse_cv_upload(file)
+
+    if "error" in parsed:
+        raise HTTPException(status_code=422, detail=parsed["error"])
+
+    candidate = db.query(Candidate).filter(Candidate.id == candidate_id).first()
+    if not candidate:
+        raise HTTPException(status_code=404, detail="Candidato no encontrado.")
+
+    nombre = (parsed.get("Nombre") or "").strip()
+    apellidos = (parsed.get("Apellidos") or "").strip()
+    full_name = " ".join([p for p in [nombre, apellidos] if p]).strip()
+
+    ubicacion = (parsed.get("Ubicacion") or "").strip()
+    contacto = parsed.get("Contacto") or {}
+    email_cv = (contacto.get("Email") or "").strip()
+    telefono_cv = (contacto.get("Telefono") or "").strip()
+
+    # Nombre completo
+    if full_name and hasattr(candidate, "name") and not getattr(candidate, "name", None):
+        candidate.name = full_name
+
+    # Ubicación
+    if ubicacion and hasattr(candidate, "location") and not getattr(candidate, "location", None):
+        candidate.location = ubicacion
+
+    # Email de contacto
+    if email_cv and hasattr(candidate, "contact_email") and not getattr(candidate, "contact_email", None):
+        candidate.contact_email = email_cv
+
+    # Teléfono de contacto
+    if telefono_cv and hasattr(candidate, "contact_phone") and not getattr(candidate, "contact_phone", None):
+        candidate.contact_phone = telefono_cv
+
+    # Opcional: análisis completo
+    if hasattr(candidate, "analysis") and not getattr(candidate, "analysis", None):
+        candidate.analysis = parsed
+
+    skills_from_cv = parsed.get("Skills", []) or []
+
+    db.query(CandidateSkill).filter(
+        CandidateSkill.candidate_id == candidate_id
+    ).delete()
+
+    for skill in skills_from_cv:
+        new_skill = CandidateSkill(
+            candidate_id=candidate_id,
+            skill_name=skill,
+            level="cv_detected",
+        )
+        db.add(new_skill)
+
+    db.commit()
+    db.refresh(candidate)
+
+    updated_candidate = {
+        "first_name": nombre,
+        "last_name": apellidos,
+        "full_name": getattr(candidate, "name", full_name) or full_name,
+        "location": getattr(candidate, "location", None),
+        "contact_email": getattr(candidate, "contact_email", email_cv)
+        if hasattr(candidate, "contact_email")
+        else email_cv,
+        "contact_phone": getattr(candidate, "contact_phone", telefono_cv)
+        if hasattr(candidate, "contact_phone")
+        else telefono_cv,
+    }
+
+    return {
+        "status": "success",
+        "candidate_id": candidate_id,
+        "updated_candidate": updated_candidate,
+        "skills_detected": skills_from_cv,
+        "parsed_cv": parsed,
+    }

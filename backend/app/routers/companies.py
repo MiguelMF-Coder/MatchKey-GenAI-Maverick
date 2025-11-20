@@ -1,3 +1,4 @@
+import json
 from typing import Optional, List
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, EmailStr
@@ -6,7 +7,7 @@ from sqlalchemy.orm import Session
 from app.db.session import SessionLocal
 from app.models.users import User
 from app.models.companies import Company, CompanyCulture
-from app.models.jobs import Job
+from app.models.jobs import Job, Application
 
 router = APIRouter(prefix="/companies", tags=["companies"])
 
@@ -188,6 +189,37 @@ def get_company_profile(company_id: int, db: Session = Depends(get_db)):
         for j in jobs
     ]
 
+    # Normalizar values
+    values = []
+    if culture and culture.values is not None:
+        raw_values = culture.values
+        if isinstance(raw_values, str):
+            try:
+                values = json.loads(raw_values)  # string JSON → lista
+            except Exception:
+                values = [raw_values]            # fallback
+        elif isinstance(raw_values, list):
+            values = raw_values
+
+    # Normalizar perks
+    perks = []
+    if culture and getattr(culture, "perks", None) is not None:
+        raw_perks = culture.perks
+        if isinstance(raw_perks, str):
+            try:
+                perks = json.loads(raw_perks)
+            except Exception:
+                perks = [raw_perks]
+        elif isinstance(raw_perks, list):
+            perks = raw_perks
+
+    # Normalizar textos
+    work_mode = culture.work_mode if culture and culture.work_mode else ""
+    leadership_style = culture.leadership_style if culture and culture.leadership_style else ""
+    team_fit_summary = culture.team_fit_summary if culture and culture.team_fit_summary else None
+    culture_description = culture.culture_description if culture and culture.culture_description else None
+
+
     return CompanyProfileResponse(
         id=company.id,
         user_id=user.id,
@@ -198,14 +230,15 @@ def get_company_profile(company_id: int, db: Session = Depends(get_db)):
         location=company.location,
         website=company.website,
         description=company.description,
-        values=culture.values if culture else [],
-        culture_description=culture.culture_description if culture else None,
-        leadership_style=culture.leadership_style if culture else None,
-        work_mode=culture.work_mode if culture else None,
-        perks=culture.perks if culture else [],
-        team_fit_summary=culture.team_fit_summary if culture else None,
+        values=values,                    
+        culture_description=culture_description,
+        leadership_style=leadership_style,
+        work_mode=work_mode,
+        perks=perks,                    
+        team_fit_summary=team_fit_summary,
         jobs=job_items,
     )
+
 
 
 # -------------------------------------------------
@@ -246,9 +279,10 @@ def update_company_profile(
         "work_mode", "perks", "team_fit_summary",
     ]
 
+    payload_dict = payload.dict(exclude_unset=True)
     for field in culture_fields:
-        if field in payload.dict(exclude_unset=True):
-            setattr(culture, field, payload.dict()[field])
+        if field in payload_dict:
+            setattr(culture, field, payload_dict[field])
 
     db.add(company)
     db.add(culture)
@@ -286,3 +320,46 @@ def update_company_profile(
         team_fit_summary=culture.team_fit_summary,
         jobs=job_items,
     )
+
+
+# -------------------------------------------------
+# 4) GET /companies/{company_id}/jobs_with_applications
+#    Vacantes de la empresa + nº de candidaturas
+# -------------------------------------------------
+@router.get("/{company_id}/jobs_with_applications")
+def list_company_jobs_with_applications(company_id: int, db: Session = Depends(get_db)):
+    company = db.query(Company).filter(Company.id == company_id).first()
+    if not company:
+        raise HTTPException(status_code=404, detail="Company not found")
+
+    jobs = (
+        db.query(Job)
+        .filter(Job.company_id == company_id)
+        .order_by(Job.created_at.desc() if hasattr(Job, "created_at") else Job.id.desc())
+        .all()
+    )
+
+    result = []
+    for job in jobs:
+        app_count = (
+            db.query(Application)
+            .filter(Application.job_id == job.id)
+            .count()
+        )
+        result.append(
+            {
+                "job_id": job.id,
+                "title": job.title,
+                "location": job.location,
+                "department": job.department,
+                "status": getattr(job, "status", None),
+                "created_at": getattr(job, "created_at", None),
+                "application_count": app_count,
+            }
+        )
+
+    return {
+        "company_id": company.id,
+        "company_name": company.name,
+        "jobs": result,
+    }

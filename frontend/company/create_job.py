@@ -6,7 +6,7 @@ BACKEND_URL = get_backend_url()
 
 
 # -------------------------
-# Helpers de backend
+# Helpers de sesión / auth
 # -------------------------
 def get_auth_email():
     auth = st.session_state.get("auth", {})
@@ -43,6 +43,10 @@ def ensure_company_id():
         st.error(
             f"No se ha podido registrar la empresa. Código: {resp.status_code}"
         )
+        try:
+            st.json(resp.json())
+        except Exception:
+            st.write(resp.text)
         return None
 
     data = resp.json()
@@ -56,22 +60,14 @@ def ensure_company_id():
     return company_id
 
 
+# -------------------------
+# Helpers de backend (API)
+# -------------------------
 def create_job(company_id, job_data, uploaded_file=None):
     """
     Crea una vacante en el backend.
     - Si hay fichero, se envía como multipart (file + campos en form-data).
     - Si no, se envía JSON.
-    Suponemos que /jobs/create puede:
-      - Crear la vacante
-      - (Opcionalmente) ejecutar OCR + Skills Extractor
-    y devolver algo como:
-      {
-        "job_id": ...,
-        "must_have": [...],
-        "nice_to_have": [...],
-        "all_skills": [...],
-        ...
-      }
     """
     url = f"{BACKEND_URL}/jobs/create"
 
@@ -81,7 +77,7 @@ def create_job(company_id, job_data, uploaded_file=None):
     try:
         if uploaded_file is not None:
             files = {"file": (uploaded_file.name, uploaded_file.getvalue())}
-            # Para multipart usaremos "data" en lugar de "json"
+            # Para multipart usamos "data" en lugar de "json"
             resp = requests.post(url, data=job_data, files=files, timeout=60)
         else:
             resp = requests.post(url, json=job_data, timeout=60)
@@ -102,19 +98,123 @@ def create_job(company_id, job_data, uploaded_file=None):
     return resp.json()
 
 
+def fetch_company_jobs_with_applications(company_id):
+    url = f"{BACKEND_URL}/companies/{company_id}/jobs_with_applications"
+    try:
+        resp = requests.get(url, timeout=15)
+    except Exception as e:
+        st.error(f"Error al obtener las vacantes de la empresa: {e}")
+        return None
+
+    if resp.status_code != 200:
+        st.error(
+            f"No se han podido obtener las vacantes. Código: {resp.status_code}"
+        )
+        try:
+            st.json(resp.json())
+        except Exception:
+            st.write(resp.text)
+        return None
+
+    return resp.json()
+
+
+def fetch_job_applications(job_id):
+    url = f"{BACKEND_URL}/jobs/{job_id}/applications"
+    try:
+        resp = requests.get(url, timeout=15)
+    except Exception as e:
+        st.error(f"Error al obtener las candidaturas de la vacante: {e}")
+        return None
+
+    if resp.status_code != 200:
+        st.error(
+            f"No se han podido obtener las candidaturas. Código: {resp.status_code}"
+        )
+        try:
+            st.json(resp.json())
+        except Exception:
+            st.write(resp.text)
+        return None
+
+    return resp.json()
+
+
+def select_application_backend(job_id, application_id):
+    url = f"{BACKEND_URL}/jobs/{job_id}/applications/{application_id}/select"
+    try:
+        resp = requests.post(url, timeout=20)
+    except Exception as e:
+        st.error(f"Error al seleccionar la candidatura: {e}")
+        return None
+
+    if resp.status_code not in (200, 201):
+        st.error(
+            f"No se ha podido seleccionar la candidatura. Código: {resp.status_code}"
+        )
+        try:
+            st.json(resp.json())
+        except Exception:
+            st.write(resp.text)
+        return None
+
+    return resp.json()
+
+
+def update_job_backend(job_id, payload):
+    url = f"{BACKEND_URL}/jobs/{job_id}"
+    try:
+        resp = requests.put(url, json=payload, timeout=20)
+    except Exception as e:
+        st.error(f"Error al actualizar la vacante: {e}")
+        return None
+
+    if resp.status_code not in (200, 201):
+        st.error(
+            f"No se ha podido actualizar la vacante. Código: {resp.status_code}"
+        )
+        try:
+            st.json(resp.json())
+        except Exception:
+            st.write(resp.text)
+        return None
+
+    return resp.json()
+
+
+def delete_job_backend(job_id):
+    url = f"{BACKEND_URL}/jobs/{job_id}"
+    try:
+        resp = requests.delete(url, timeout=20)
+    except Exception as e:
+        st.error(f"Error al eliminar la vacante: {e}")
+        return None
+
+    if resp.status_code not in (200, 204):
+        st.error(
+            f"No se ha podido eliminar la vacante. Código: {resp.status_code}"
+        )
+        try:
+            st.json(resp.json())
+        except Exception:
+            st.write(resp.text)
+        return None
+
+    try:
+        return resp.json()
+    except Exception:
+        return {"status": "ok", "message": "Vacante eliminada"}
+
+
 # -------------------------
-# Render principal de la página
+# UI: Crear nueva vacante
 # -------------------------
-def render():
+def render_create_job_tab(company_id):
     st.markdown("## 📄 Crear nueva vacante")
     st.caption(
         "Define los datos básicos de la vacante, sube o pega la descripción del puesto "
         "y describe el equipo en el que trabajará la persona para optimizar el matching."
     )
-
-    company_id = ensure_company_id()
-    if not company_id:
-        st.stop()
 
     with st.form("create_job_form"):
         # -------------------------
@@ -413,3 +513,197 @@ def render():
                 "La vacante ya está lista para usarse en el motor de matching, analíticas "
                 "y en el módulo de Co-Teaching."
             )
+
+            # Flag para refrescar la pestaña de gestión
+            st.session_state["refresh_company_jobs"] = True
+
+
+# -------------------------
+# UI: Gestión de vacantes
+# -------------------------
+def render_manage_jobs_tab(company_id):
+    st.markdown("## 📊 Gestionar mis vacantes")
+    st.caption(
+        "Revisa tus vacantes, ve cuántos candidatos han aplicado, selecciona personas, "
+        "edita los detalles o elimina ofertas que ya no estén activas."
+    )
+
+    if st.session_state.get("refresh_company_jobs"):
+        # Simplemente limpiar el flag; el rerun de Streamlit ya habrá refrescado
+        st.session_state["refresh_company_jobs"] = False
+
+    data = fetch_company_jobs_with_applications(company_id)
+    if not data:
+        return
+
+    jobs = data.get("jobs", [])
+    if not jobs:
+        st.info("Todavía no has creado ninguna vacante. Empieza en la pestaña 'Crear vacante'.")
+        return
+
+    for job in jobs:
+        job_id = job.get("job_id")
+        title = job.get("title") or "Sin título"
+        location = job.get("location") or "Ubicación no especificada"
+        department = job.get("department") or "Departamento no especificado"
+        status = job.get("status") or "sin estado"
+        created_at = job.get("created_at")
+        app_count = job.get("application_count", 0)
+
+        with st.expander(f"📌 {title}"):
+            # Resumen de la vacante
+            col_a, col_b, col_c = st.columns([2, 2, 1])
+
+            with col_a:
+                st.markdown(f"**Ubicación:** {location}")
+                st.markdown(f"**Departamento:** {department}")
+
+            with col_b:
+                st.markdown(f"**Estado:** `{status}`")
+                st.markdown(f"**Candidatos aplicados:** {app_count}")
+                if created_at:
+                    st.caption(f"Creada: {created_at}")
+
+            with col_c:
+                # Botón eliminar
+                if st.button("🗑️ Eliminar vacante", key=f"delete_job_{job_id}"):
+                    res = delete_job_backend(job_id)
+                    if res:
+                        st.success("Vacante eliminada correctamente.")
+                        st.session_state["refresh_company_jobs"] = True
+                        st.experimental_rerun()
+
+            st.markdown("---")
+
+            # -------------------------
+            # Candidatos que han aplicado
+            # -------------------------
+            st.markdown("### 👤 Candidatos que han aplicado")
+
+            apps_data = fetch_job_applications(job_id)
+            if apps_data and apps_data.get("applications"):
+                for app in apps_data["applications"]:
+                    a_col1, a_col2, a_col3 = st.columns([3, 2, 2])
+
+                    candidate_name = app.get("candidate_name") or "Candidato sin nombre"
+                    candidate_email = app.get("candidate_email") or "Sin email"
+                    applied_at = app.get("applied_at") or "Fecha no disponible"
+                    status_app = app.get("status") or "applied"
+
+                    with a_col1:
+                        st.markdown(f"**{candidate_name}**")
+                        st.caption(candidate_email)
+
+                    with a_col2:
+                        st.markdown(f"Estado: `{status_app}`")
+                        st.caption(f"Aplicó: {applied_at}")
+
+                    with a_col3:
+                        select_key = f"select_app_{job_id}_{app['application_id']}"
+                        if st.button("✅ Seleccionar y enviar email", key=select_key):
+                            res = select_application_backend(job_id, app["application_id"])
+                            if res:
+                                st.success("Candidato seleccionado y email enviado (si está configurado).")
+                                st.session_state["refresh_company_jobs"] = True
+                                st.experimental_rerun()
+            else:
+                st.info("Aún no hay candidatos aplicados a esta vacante.")
+
+            st.markdown("---")
+
+            # -------------------------
+            # Edición rápida de la vacante
+            # -------------------------
+            st.markdown("### ✏️ Editar detalles de la vacante")
+
+            with st.form(f"edit_job_form_{job_id}"):
+                e_col1, e_col2 = st.columns(2)
+
+                with e_col1:
+                    new_title = st.text_input(
+                        "Título del puesto",
+                        value=title,
+                        key=f"edit_title_{job_id}",
+                    )
+                    new_location = st.text_input(
+                        "Ubicación / modalidad",
+                        value=location if location != "Ubicación no especificada" else "",
+                        key=f"edit_location_{job_id}",
+                    )
+                    new_department = st.text_input(
+                        "Departamento / área",
+                        value=department if department != "Departamento no especificado" else "",
+                        key=f"edit_department_{job_id}",
+                    )
+
+                with e_col2:
+                    new_contract_type = st.text_input(
+                        "Tipo de contrato",
+                        value=job.get("contract_type", "") or "",
+                        key=f"edit_contract_type_{job_id}",
+                    )
+                    new_salary_range = st.text_input(
+                        "Rango salarial",
+                        value=job.get("salary_range", "") or "",
+                        key=f"edit_salary_range_{job_id}",
+                    )
+                    new_seniority = st.selectbox(
+                        "Seniority objetivo",
+                        ["No especificado", "Junior", "Mid", "Senior", "Lead"],
+                        index=(
+                            ["No especificado", "Junior", "Mid", "Senior", "Lead"]
+                            .index(job.get("seniority", "No especificado"))
+                            if job.get("seniority") in ["No especificado", "Junior", "Mid", "Senior", "Lead"]
+                            else 0
+                        ),
+                        key=f"edit_seniority_{job_id}",
+                    )
+
+                new_status = st.selectbox(
+                    "Estado de la vacante",
+                    ["open", "closed", "paused"],
+                    index=(
+                        ["open", "closed", "paused"].index(status)
+                        if status in ["open", "closed", "paused"]
+                        else 0
+                    ),
+                    key=f"edit_status_{job_id}",
+                )
+
+                submitted_edit = st.form_submit_button("Guardar cambios")
+
+            if submitted_edit:
+                payload = {
+                    "title": new_title,
+                    "location": new_location,
+                    "department": new_department,
+                    "contract_type": new_contract_type,
+                    "salary_range": new_salary_range,
+                    "seniority": new_seniority,
+                    "status": new_status,
+                }
+
+                with st.spinner("Actualizando la vacante..."):
+                    res = update_job_backend(job_id, payload)
+
+                if res:
+                    st.success("Vacante actualizada correctamente.")
+                    st.session_state["refresh_company_jobs"] = True
+                    st.experimental_rerun()
+
+
+# -------------------------
+# Render principal de la página
+# -------------------------
+def render():
+    company_id = ensure_company_id()
+    if not company_id:
+        st.stop()
+
+    tab_create, tab_manage = st.tabs(["➕ Crear vacante", "📊 Gestionar vacantes"])
+
+    with tab_create:
+        render_create_job_tab(company_id)
+
+    with tab_manage:
+        render_manage_jobs_tab(company_id)
