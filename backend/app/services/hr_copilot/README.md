@@ -6,11 +6,12 @@ El **HR Copilot** es un agente de IA que simula y analiza entrevistas iniciales 
 
 ### Características principales:
 - ✅ Análisis semántico con **Groq API** (llama-3.3-70b-versatile)
-- ✅ Transcripción de audio con **OpenAI Whisper**
+- ✅ Transcripción de audio con **Groq Whisper API** (whisper-large-v3-turbo)
 - ✅ Extracción estructurada de insights
 - ✅ JSON estandarizado para integración
 - ✅ Fallback automático si la API falla
 - ✅ Validación y normalización de datos
+- ✅ Sin dependencias de modelos locales pesados
 
 ---
 
@@ -272,13 +273,20 @@ Modelos disponibles:
 - `mixtral-8x7b-32768` (rápido, económico)
 - `llama-3.1-8b-instant` (muy rápido, menos preciso)
 
-### Cambiar modelo de Whisper:
+### Cambiar modelo de Groq Whisper:
 
 ```python
 hr = HRCopilotTool(
-    whisper_model="small"  # tiny, base, small, medium, large
+    whisper_model="whisper-large-v3"  # Para máxima precisión
 )
 ```
+
+Modelos disponibles:
+- `whisper-large-v3-turbo` (recomendado, muy rápido y preciso)
+- `whisper-large-v3` (máxima precisión, un poco más lento)
+
+**Nota**: Ya no se usan modelos locales de Whisper. Todas las transcripciones 
+usan la API de Groq para mejor rendimiento y menor uso de recursos.
 
 ---
 

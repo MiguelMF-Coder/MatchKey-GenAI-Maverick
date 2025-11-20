@@ -85,15 +85,27 @@ def call_hr_copilot_audio(candidate_id, audio_files_bytes: list):
         if resp.status_code != 200:
             st.error(f"Error del servidor: {resp.status_code}")
             try:
-                st.json(resp.json())
+                error_detail = resp.json()
+                st.error(f"Detalle: {error_detail.get('detail', 'Error desconocido')}")
+
+                # Mostrar mensaje específico para errores de API key
+                if "GROQ_API_KEY" in str(error_detail):
+                    st.warning(
+                        "⚠️ El servidor no tiene configurada la GROQ_API_KEY. "
+                        "Por favor, contacta al administrador o configura la variable de entorno."
+                    )
             except:
                 st.write(resp.text)
             return None
 
         return resp.json()
 
+    except requests.Timeout:
+        st.error("⏱️ La transcripción está tomando más tiempo del esperado. Por favor, intenta con archivos más cortos.")
+        return None
     except Exception as e:
         st.error(f"Error al procesar audio: {e}")
+        st.info("💡 Verifica que el backend esté funcionando y que tengas conexión a internet.")
         return None
 
 
@@ -170,7 +182,10 @@ def render():
     # GRABACIÓN DE VOZ
     # -----------------------------------------
     st.markdown("### 🎙️ Opción 1: Responder por Voz")
-    st.caption("Graba tus respuestas hablando. El sistema las transcribirá automáticamente con Whisper.")
+    st.caption(
+        "Graba tus respuestas hablando. El sistema las transcribirá automáticamente "
+        "usando Groq Whisper API (whisper-large-v3-turbo) para máxima precisión."
+    )
 
     use_audio = st.checkbox("✅ Quiero responder por voz", key="use_audio_checkbox")
 
@@ -196,13 +211,18 @@ def render():
 
         st.markdown("#### 🎙️ Graba tus respuestas")
 
-        # Usar componente experimental de audio de Streamlit
-        for i, question in enumerate(default_questions):
-            with st.expander(f"📝 Pregunta {i+1}: {question}", expanded=(i==0)):
-                st.write(f"**{question}**")
+        # Verificar si audio_input está disponible
+        audio_input_available = hasattr(st, 'audio_input')
 
-                # Usar st.audio_input (disponible en Streamlit 1.28+)
-                try:
+        if not audio_input_available:
+            st.warning("🎙️ La grabación de audio requiere Streamlit 1.28 o superior.")
+            st.info("💡 **Alternativa:** Usa la opción de texto abajo o actualiza Streamlit con: `pip install --upgrade streamlit>=1.39.0`")
+        else:
+            # Usar componente de audio de Streamlit
+            for i, question in enumerate(default_questions):
+                with st.expander(f"📝 Pregunta {i+1}: {question}", expanded=(i==0)):
+                    st.write(f"**{question}**")
+
                     audio_bytes = st.audio_input(
                         f"Graba tu respuesta {i+1}",
                         key=f"audio_input_{i}"
@@ -225,55 +245,49 @@ def render():
                             del st.session_state.audio_recordings[i]
                             st.rerun()
 
-                except AttributeError:
-                    # Fallback si audio_input no está disponible
-                    st.warning("🎙️ La grabación de audio requiere Streamlit 1.28 o superior.")
-                    st.info("💡 **Alternativa:** Usa la opción de texto abajo")
-                    break
+            # Botón de envío (dentro del bloque de audio_input_available)
+            if len(st.session_state.audio_recordings) >= 2:
+                st.markdown("---")
+                st.success(f"✅ {len(st.session_state.audio_recordings)} respuestas grabadas")
 
-        # Botón de envío
-        if len(st.session_state.audio_recordings) >= 2:
-            st.markdown("---")
-            st.success(f"✅ {len(st.session_state.audio_recordings)} respuestas grabadas")
+                honest_check_audio = st.checkbox(
+                    "Confirmo que he respondido de forma sincera",
+                    key="honest_audio"
+                )
 
-            honest_check_audio = st.checkbox(
-                "Confirmo que he respondido de forma sincera",
-                key="honest_audio"
-            )
-
-            if st.button("🚀 Enviar Grabaciones para Análisis", use_container_width=True, type="primary"):
-                if not honest_check_audio:
-                    st.error("Por favor, marca la casilla de confirmación.")
-                else:
-                    with st.spinner("🎙️ Transcribiendo audio con Whisper y analizando con IA..."):
-                        # Preparar archivos de audio
-                        audio_files = []
-                        for idx in sorted(st.session_state.audio_recordings.keys()):
-                            audio_files.append(st.session_state.audio_recordings[idx])
-
-                        # Llamar al endpoint de audio
-                        result = call_hr_copilot_audio(candidate_id, audio_files)
-
-                    if result:
-                        st.balloons()
-                        st.success("✅ ¡Análisis completado! Tu perfil se ha actualizado.")
-                        st.session_state["hr_copilot_last_result"] = result
-
-                        # Mostrar transcripciones si están disponibles
-                        if "transcriptions" in result:
-                            with st.expander("📝 Ver transcripciones de tus respuestas"):
-                                for i, transcription in enumerate(result["transcriptions"], 1):
-                                    st.markdown(f"**Respuesta {i}:**")
-                                    st.write(transcription)
-                                    st.markdown("---")
-
-                        st.info("💡 Desplázate hacia abajo para ver el análisis completo.")
-                        # Limpiar grabaciones
-                        st.session_state.audio_recordings = {}
+                if st.button("🚀 Enviar Grabaciones para Análisis", use_container_width=True, type="primary"):
+                    if not honest_check_audio:
+                        st.error("Por favor, marca la casilla de confirmación.")
                     else:
-                        st.error("❌ Hubo un problema al procesar el audio.")
-        elif len(st.session_state.audio_recordings) > 0:
-            st.warning(f"⚠️ Has grabado {len(st.session_state.audio_recordings)} respuesta(s). Graba al menos 2 para continuar.")
+                        with st.spinner("🎙️ Transcribiendo audio con Groq Whisper API y analizando con IA..."):
+                            # Preparar archivos de audio
+                            audio_files = []
+                            for idx in sorted(st.session_state.audio_recordings.keys()):
+                                audio_files.append(st.session_state.audio_recordings[idx])
+
+                            # Llamar al endpoint de audio
+                            result = call_hr_copilot_audio(candidate_id, audio_files)
+
+                        if result:
+                            st.balloons()
+                            st.success("✅ ¡Análisis completado! Tu perfil se ha actualizado.")
+                            st.session_state["hr_copilot_last_result"] = result
+
+                            # Mostrar transcripciones si están disponibles
+                            if "transcriptions" in result:
+                                with st.expander("📝 Ver transcripciones de tus respuestas"):
+                                    for i, transcription in enumerate(result["transcriptions"], 1):
+                                        st.markdown(f"**Respuesta {i}:**")
+                                        st.write(transcription)
+                                        st.markdown("---")
+
+                            st.info("💡 Desplázate hacia abajo para ver el análisis completo.")
+                            # Limpiar grabaciones
+                            st.session_state.audio_recordings = {}
+                        else:
+                            st.error("❌ Hubo un problema al procesar el audio.")
+            elif len(st.session_state.audio_recordings) > 0:
+                st.warning(f"⚠️ Has grabado {len(st.session_state.audio_recordings)} respuesta(s). Graba al menos 2 para continuar.")
 
     st.markdown("---")
     st.markdown("### 📝 Opción 2: Responder por Texto")

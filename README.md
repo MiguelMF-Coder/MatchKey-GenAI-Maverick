@@ -6,6 +6,12 @@
 
 ---
 
+> **🎙️ NOTA IMPORTANTE**: Este proyecto usa **Groq Whisper API** para transcripción de audio.  
+> Consulta [SETUP_GROQ_WHISPER.md](./SETUP_GROQ_WHISPER.md) para configurar tu API key.  
+> Ver detalles de la migración en: [GROQ_API_MIGRATION.md](./GROQ_API_MIGRATION.md)
+
+---
+
 ## 🧠 **¿Qué es MatchKey?**
 
 **MatchKey** es un portal de empleo inteligente diseñado para resolver una de las mayores ineficiencias del mercado laboral:
@@ -257,4 +263,3 @@ feature/jack-docs
 
 MatchKey no es solo un portal de empleo.
 Es **una nueva forma de conectar personas con oportunidades**, donde la IA **no deshumaniza**, sino que **entiende, recomienda y acompaña**.
-

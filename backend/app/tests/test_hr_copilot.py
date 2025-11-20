@@ -59,6 +59,8 @@ class TestHRCopilotBasic:
         assert hr is not None
         assert hr.model is not None
         assert hr.audio_processor is not None
+        # Audio processor should be initialized with Groq API
+        assert hr.audio_processor.model == "whisper-large-v3-turbo"
 
     def test_empty_answers_returns_fallback(self):
         """Test que respuestas vacías devuelven valores fallback"""

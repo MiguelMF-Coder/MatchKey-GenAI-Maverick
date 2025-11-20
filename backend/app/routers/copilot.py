@@ -167,7 +167,8 @@ def health_check():
         "status": "healthy",
         "groq_configured": hr.api_key is not None,
         "model": hr.model,
-        "whisper_model": hr.audio_processor.model_size,
+        "whisper_model": hr.audio_processor.model,
+        "whisper_api": "groq",  # Indica que usa Groq API en lugar de local
         "questions_count": len(get_questions())
     }
 
