@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, UploadFile, File
+from fastapi import APIRouter, HTTPException, UploadFile, File, Form
 from pydantic import BaseModel
 from typing import List, Optional
 import json
@@ -93,9 +93,9 @@ def process_call(request: ProcessCallRequest):
 
 @router.post("/process_call_audio")
 async def process_call_audio(
-    candidate_id: int,
+    candidate_id: int = Form(...),
     audio_files: List[UploadFile] = File(...),
-    language: str = "es"
+    language: str = Form("es")
 ):
     """
     Procesa respuestas de audio de una llamada de RRHH.
@@ -171,4 +171,3 @@ def health_check():
         "whisper_api": "groq",  # Indica que usa Groq API en lugar de local
         "questions_count": len(get_questions())
     }
-

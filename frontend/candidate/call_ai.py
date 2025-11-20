@@ -190,11 +190,20 @@ def render():
     use_audio = st.checkbox("✅ Quiero responder por voz", key="use_audio_checkbox")
 
     if use_audio:
-        st.info("🎤 **Cómo funciona:**\n"
-                "1. Permite acceso al micrófono cuando lo solicite el navegador\n"
-                "2. Habla tu respuesta de forma natural para cada pregunta\n"
-                "3. Graba al menos 2 respuestas\n"
-                "4. Envía todas las grabaciones para análisis")
+        st.success(
+            "🎤 **Sistema de Transcripción Activado**\n\n"
+            "Tus grabaciones se procesarán con **Groq Whisper API** (whisper-large-v3-turbo)"
+        )
+
+        st.markdown("""
+        #### 📋 Instrucciones:
+        1. 🎤 Permite acceso al micrófono cuando lo solicite tu navegador
+        2. 🗣️ Habla de forma natural para cada pregunta
+        3. ✅ Graba al menos 2 respuestas
+        4. 🚀 Envía todas las grabaciones para transcripción y análisis
+        
+        **Nota:** La transcripción se realiza en la nube con tecnología de última generación.
+        """)
 
         # Inicializar almacenamiento de audios
         if "audio_recordings" not in st.session_state:
@@ -211,12 +220,28 @@ def render():
 
         st.markdown("#### 🎙️ Graba tus respuestas")
 
+        st.info(
+            "🎤 **Grabación con Groq Whisper API:**\n\n"
+            "Tus respuestas de audio se transcribirán automáticamente usando "
+            "**Groq Whisper API (whisper-large-v3-turbo)** para máxima precisión.\n\n"
+            "✅ Sin necesidad de procesamiento local\n"
+            "✅ Transcripción rápida y precisa\n"
+            "✅ Soporta múltiples formatos de audio"
+        )
+
         # Verificar si audio_input está disponible
         audio_input_available = hasattr(st, 'audio_input')
 
         if not audio_input_available:
-            st.warning("🎙️ La grabación de audio requiere Streamlit 1.28 o superior.")
-            st.info("💡 **Alternativa:** Usa la opción de texto abajo o actualiza Streamlit con: `pip install --upgrade streamlit>=1.39.0`")
+            st.error(
+                "❌ **Función de grabación no disponible**\n\n"
+                "La grabación de audio requiere Streamlit 1.28 o superior.\n\n"
+                "**Solución:**\n"
+                "```bash\n"
+                "pip install --upgrade streamlit>=1.39.0\n"
+                "```\n\n"
+                "**Alternativa:** Usa la opción de texto abajo."
+            )
         else:
             # Usar componente de audio de Streamlit
             for i, question in enumerate(default_questions):

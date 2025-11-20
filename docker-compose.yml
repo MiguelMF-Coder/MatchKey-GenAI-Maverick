@@ -48,6 +48,8 @@ services:
       BACKEND_URL: http://backend:8000
     ports:
       - "8501:8501"
+    volumes:
+      - ./frontend:/app:ro
 
 volumes:
   db_data:
