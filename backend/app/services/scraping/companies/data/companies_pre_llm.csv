@@ -1109,205 +1109,6 @@ Canal de consultas y denuncias
 Qualentum © PROEDUCA 2023. Todos los derechos reservados
 Scroll al inicio"
 Plexus,https://www.plexus.es/somos/,"Somos - Plexus Tech
-Consentimiento
-Detalles
-[#IABV2SETTINGS#]
-Consent Selection
-Necesarias
-Preferencias
-Estadística
-Marketing
-Mostrar detalles
-Detalles
-Necesarias
-10
-Cloudflare
-2
-Más información sobre este proveedor
-_cfuvid
-Esta cookie es una parte de los servicios provistos por Cloudflare – Incluyendo el equilibrio de carga, entrega del contenido de la web y conexión al servidor DNS para operadores de la web.
-Duración máxima de almacenamiento
-: Sesión
-Tipo
-: Cookie HTTP
-cf.turnstile.u
-Esta cookie se utiliza para distinguir entre humanos y bots.
-Duración máxima de almacenamiento
-: Persistente
-Tipo
-: Almacenamiento Local HTML
-Cookiebot
-1
-Más información sobre este proveedor
-CookieConsent
-Duración máxima de almacenamiento
-: 1 año
-Tipo
-: Cookie HTTP
-Google
-7
-Más información sobre este proveedor
-Algunos de los datos recopilados por este proveedor tiene fines de personalización y medición de la efectividad de la publicidad.
-test_cookie
-Duración máxima de almacenamiento
-: 1 día
-Tipo
-: Cookie HTTP
-_GRECAPTCHA
-Esta cookie se utiliza para distinguir entre humanos y bots. Esto es beneficioso para la web con el objeto de elaborar informes válidos sobre el uso de su web.
-Duración máxima de almacenamiento
-: 180 días
-Tipo
-: Cookie HTTP
-_grecaptcha
-Esta cookie se utiliza para distinguir entre humanos y bots. Esto es beneficioso para la web con el objeto de elaborar informes válidos sobre el uso de su web.
-Duración máxima de almacenamiento
-: Persistente
-Tipo
-: Almacenamiento Local HTML
-rc::a
-Esta cookie se utiliza para distinguir entre humanos y bots. Esto es beneficioso para la web con el objeto de elaborar informes válidos sobre el uso de su web.
-Duración máxima de almacenamiento
-: Persistente
-Tipo
-: Almacenamiento Local HTML
-rc::b
-Esta cookie se utiliza para distinguir entre humanos y bots.
-Duración máxima de almacenamiento
-: Sesión
-Tipo
-: Almacenamiento Local HTML
-rc::c
-Esta cookie se utiliza para distinguir entre humanos y bots.
-Duración máxima de almacenamiento
-: Sesión
-Tipo
-: Almacenamiento Local HTML
-rc::f
-Esta cookie se utiliza para distinguir entre humanos y bots.
-Duración máxima de almacenamiento
-: Persistente
-Tipo
-: Almacenamiento Local HTML
-Preferencias
-3
-www.plexus.es
-3
-_icl_visitor_lang_js
-Guarda el idioma preferido del usuario en el sitio web.
-Duración máxima de almacenamiento
-: 1 día
-Tipo
-: Cookie HTTP
-wpml_browser_redirect_test
-Guarda el idioma preferido del usuario en el sitio web.
-Duración máxima de almacenamiento
-: Sesión
-Tipo
-: Cookie HTTP
-wp-wpml_current_language
-Designa el código de país que se calcula según la dirección IP del usuario. Utilizada para determinar qué idioma debería usarse para usuarios.
-Duración máxima de almacenamiento
-: Sesión
-Tipo
-: Cookie HTTP
-Estadística
-0
-Marketing
-6
-Google
-6
-Más información sobre este proveedor
-Algunos de los datos recopilados por este proveedor tiene fines de personalización y medición de la efectividad de la publicidad.
-IDE
-Pendiente
-Duración máxima de almacenamiento
-: 400 días
-Tipo
-: Cookie HTTP
-pagead/1p-user-list/#
-Utilizada para rastrear si el visitante ha mostrado un interés específico em productos o eventos a través de múltiples webs y detectar como el visitante navega entre webs - Esto se utiliza para la medida de los esfuerzos publicitarios y facilitar la tasa de emisión entre sitios.
-Duración máxima de almacenamiento
-: Sesión
-Tipo
-: Píxel de Seguimiento
-_ga
-Se utiliza para enviar datos a Google Analytics sobre el dispositivo del visitante y su comportamiento. Rastrea al visitante a través de dispositivos y canales de marketing.
-Duración máxima de almacenamiento
-: 2 años
-Tipo
-: Cookie HTTP
-_ga_#
-Se utiliza para enviar datos a Google Analytics sobre el dispositivo del visitante y su comportamiento. Rastrea al visitante a través de dispositivos y canales de marketing.
-Duración máxima de almacenamiento
-: 2 años
-Tipo
-: Cookie HTTP
-_gcl_au
-Utilizada por Google AdSense para experimentar con la eficiencia publicitaria a través de las webs usando sus servicios.
-Duración máxima de almacenamiento
-: 3 meses
-Tipo
-: Cookie HTTP
-_gcl_ls
-Rastrea el índice de conversión entre el usuario y los banners publicitarios de la web – Esto sirve para optimizar la relevancia de los anuncios de la web.
-Duración máxima de almacenamiento
-: Persistente
-Tipo
-: Almacenamiento Local HTML
-No clasificados
-4
-www.plexus.es
-4
-current_h1
-Pendiente
-Duración máxima de almacenamiento
-: Persistente
-Tipo
-: Almacenamiento Local HTML
-url_utm_campaign
-Pendiente
-Duración máxima de almacenamiento
-: Persistente
-Tipo
-: Almacenamiento Local HTML
-url_utm_medium
-Pendiente
-Duración máxima de almacenamiento
-: Persistente
-Tipo
-: Almacenamiento Local HTML
-url_utm_source
-Pendiente
-Duración máxima de almacenamiento
-: Persistente
-Tipo
-: Almacenamiento Local HTML
-Consentimiento entre dominios
-[#BULK_CONSENT_DOMAINS_COUNT#]
-[#BULK_CONSENT_TITLE#]
-Lista de dominios a los que se aplica tu consentimiento:
-[#BULK_CONSENT_DOMAINS#]
-Cookiebot
-[#IABV2_TITLE#]
-[#IABV2_BODY_INTRO#]
-[#IABV2_BODY_LEGITIMATE_INTEREST_INTRO#]
-[#IABV2_BODY_PREFERENCE_INTRO#]
-[#IABV2_LABEL_PURPOSES#]
-[#IABV2_BODY_PURPOSES_INTRO#]
-[#IABV2_BODY_PURPOSES#]
-[#IABV2_LABEL_FEATURES#]
-[#IABV2_BODY_FEATURES_INTRO#]
-[#IABV2_BODY_FEATURES#]
-[#IABV2_LABEL_PARTNERS#]
-[#IABV2_BODY_PARTNERS_INTRO#]
-[#IABV2_BODY_PARTNERS#]
-Al contactarnos respecto a su consentimiento, por favor, indique el ID y la fecha de su consentimiento.
-No vender ni compartir mi información personal
-Permitir todas
-Personalizar
-Permitir la selección
-Denegar
 Ir al contenido
 Buscar:
 Menu
@@ -1747,7 +1548,7 @@ E-mail
 info@grupodigital.net
 ©Grupo Digital 2025. Todos los derechos reservados -"
 Social You,https://socialyou.es,"Socialyou | HR Digital&IT
-131658
+131659
 Profesionales cualificados de Digital & IT
 MENÚ
 Empresas
@@ -2418,7 +2219,6 @@ Organization
 Locations
 Awards
 Leadership
-Commitments
 Expand Menu
 Commitments
 Organization
@@ -2808,313 +2608,6 @@ GDPR Cookie Compliance
 Resumen de privacidad
 Activar todo
 Guardar ajustes"
-CAIXABANK DIGITAL HUB,https://www.caixabank.com/es/sobre-nosotros/conocenos/mision-vision-valores.html,"Misión, visión, valores
-| CaixaBank
-analizar tu navegación
-con la finalidad de mejorar tanto las funcionalidades del sitio web como los productos y servicios que ponemos a tu disposición, para
-gestionar los espacios publicitarios
-, y para
-personalizarte nuestra oferta de productos y servicios
-(Abrir en ventana nueva)
-.
-(Abrir en ventana nueva)
-Rechazar
-Aceptar
-Ir al contenido central
-Acción CABK
-9,022
-+0,15% 17:35
-Acción CABK (Abrir en ventana nueva)
-Spotify (Abrir en ventana nueva)
-TikTok (Abrir en ventana nueva)
-Whatsapp (Abrir en ventana nueva)
-ES
-Cerrar
-Castellano
-Catalán
-Inglés
-Información comercial
-(Abrir en ventana nueva)
-Sobre nosotros
-Sostenibilidad
-Accionistas e inversores
-Personas
-Actualidad
-Esfera
-Sobre nosotros
-Sobre nosotros
-Lo más destacado
-Conócenos
-Conócenos
-Nuestro propósito
-Misión, visión, valores
-Nuestra marca
-Líneas estratégicas
-Cerca de las personas
-Nuestra Acción Social
-Nuestro negocio
-Nuestro negocio
-Modelo de negocio
-Principales datos
-Grupo CaixaBank
-Publicaciones
-Reconocimientos
-Innovación
-Nuestros patrocinios
-Nuestros patrocinios
-Los valores que apoyamos
-Fútbol
-Baloncesto
-Deporte paralímpico
-Running
-Sail Team Bcn
-Innovación y desarrollo económico y social
-CaixaBank Escolta València
-Queremos acompañarte día a día
-Más información
-Sostenibilidad
-Sostenibilidad
-Lo más destacado
-Banca sostenible
-Banca sostenible
-Nuestro modelo
-Gobernanza
-Materialidad y diálogo
-Asociaciones, adhesiones y alianzas
-Analistas y ratings ASG
-Cultura responsable
-Cultura responsable
-Gestión responsable
-Políticas de ética e integridad
-Public Policy
-Ciberseguridad
-Compras y proveedores
-Canal de Denuncias
-Transición sostenible
-Transición sostenible
-Estrategia medioambiental y climática
-Negocio sostenible
-Gestión del riesgo ASG
-Gestión medioambiental
-Impacto social e inclusión financiera
-Impacto social e inclusión financiera
-MicroBank
-Banca próxima
-Cultura financiera
-Empleo y emprendimiento
-Asumimos la responsabilidad de impulsar una economía positiva para el bienestar de las personas, demostrando el valor social de la banca.
-Ir a la sección
-Accionistas e inversores
-Accionistas e inversores
-Lo más destacado
-La acción CaixaBank
-La acción CaixaBank
-Cotización
-La acción y su capital social
-Distribución de capital
-Participaciones significativas y autocartera
-Dividendos
-Analistas
-Información general
-Información general
-Información privilegiada
-Otra información relevante
-Hechos relevantes (Hasta el 8-02-2020)
-Pactos parasociales
-Ofertas públicas de venta y admisión de valores
-OPAS
-Fusiones
-EMIR
-Canales de comunicación
-Información económico-financiera
-Información económico-financiera
-Información financiera trimestral
-Cuentas anuales y semestrales
-Otra información financiera
-Periodo medio de pago a proveedores
-Ratings
-Presentaciones
-Inversores Renta Fija
-Gobierno corporativo y política de remuneraciones
-Gobierno corporativo y política de remuneraciones
-Consejo de Administración
-Comisiones del Consejo
-Comité de Dirección
-Gestión del riesgo
-Junta General de Accionistas
-Informe Anual de Gobierno Corporativo
-Remuneración de los Consejeros
-Estatutos
-Reglamento de la Junta General de Accionistas
-Reglamento del Consejo de Administración
-Reglamento interno de conducta
-Políticas corporativas y otros documentos corporativos
-Agenda del inversor
-Espacio del accionista
-Espacio del accionista
-Ver sección
-¿Qué significa ser accionista?
-Servicio de información al accionista
-Encuentros corporativos
-Ventajas para accionistas
-Comité Consultivo de accionistas
-Aula
-Accede a toda la información sobre los Resultados de CaixaBank del 3T 2025.
-Ir a la sección
-Personas
-Personas
-Lo más destacado
-Progresa en tu carrera
-Bienestar e inclusión
-Entorno innovador
-Deja tu huella en el mundo
-Únete a nuestro equipo
-(Abrir en ventana nueva)
-Wengage es nuestro programa de diversidad, donde impulsamos y visualizamos la igualdad de oportunidades y la diversidad de género, funcional y generacional.
-Descubre Wengage
-Actualidad
-Actualidad
-Lo más destacado
-Noticias
-Recursos para medios
-CaixaBank Research
-(Abrir en ventana nueva)
-CaixaBank impulsa la inclusión financiera en España con sus ofimóviles
-Más información
-Esfera
-Esfera
-Lo más destacado
-Entorno económico
-Entorno económico
-Macroeconomía
-Mercados
-Negocios
-Política monetaria
-Empleo
-Bienestar
-Bienestar
-Progreso
-Deporte
-Ocio
-Aprender
-Aprender
-Salud financiera
-Educación
-Cultura
-Emprender
-Emprender
-Casos de éxito
-Gestión y liderazgo
-Recursos para empresas
-Compromiso
-Compromiso
-Impacto social
-Gestión sostenible
-Planeta
-Innovación
-Innovación
-Transformación
-Tecnología
-Tendencias
-Pódcast
-Esfera, la nueva plataforma de contenidos de CaixaBank
-Más información
-Spotify (Abrir en ventana nueva)
-TikTok (Abrir en ventana nueva)
-Whatsapp (Abrir en ventana nueva)
-ES
-CA
-EN
-Información comercial
-(Abrir en ventana nueva)
-Caixabank (Ir a Inicio)
-X
-Sobre nosotros
-Conócenos
-Misión, visión, valores
-Imprimir página
-Misión, visión, valores
-Nuestra misión
-""Contribuir al
-bienestar financiero
-de nuestros clientes y al
-progreso de toda la sociedad”
-En CaixaBank ponemos a disposición de nuestros clientes las mejores herramientas y asesoramiento experto para tomar decisiones y desarrollar hábitos que son fuente de
-bienestar financiero
-y que permiten, por ejemplo, planificar adecuadamente para hacer frente a gastos recurrentes, cubrirse frente a imprevistos, mantener el poder adquisitivo durante la jubilación o hacer realidad ilusiones y proyectos.
-Lo hacemos con
-:
-Asesoramiento especializado.
-Herramientas de simulación y de seguimiento de las finanzas personales.
-Medios de pago cómodos y seguros.
-Un abanico completo de productos de ahorro, previsión y seguros.
-Crédito concedido de manera responsable.
-Cuidando la seguridad de la información personal de nuestros clientes.
-Además de contribuir al bienestar financiero de nuestros clientes, nuestro propósito es
-apoyar el progreso de toda la sociedad
-. Somos una entidad minorista enraizada allá donde trabajamos y, por ello, nos sentimos partícipes del progreso de las comunidades donde desarrollamos nuestro negocio.
-Contribuimos al progreso de la sociedad
-:
-Canalizando de forma eficaz y prudente el ahorro y la financiación, y garantizando un sistema de pagos eficiente y seguro.
-Mediante la inclusión y la educación financiera, la sostenibilidad medioambiental, el apoyo a la diversidad, con los programas de ayudas a la vivienda, o promoviendo el voluntariado corporativo.
-Y por supuesto, a través de nuestra colaboración con la Obra Social de la Fundación Bancaria “la Caixa”, cuyo presupuesto se alimenta en parte de los dividendos que CriteriaCaixa cobra por su participación en CaixaBank. Una parte significativa de este presupuesto, se canaliza a necesidades locales identificadas desde la red de oficinas de CaixaBank en España y de BPI en Portugal.
-Nuestros valores
-Calidad
-Confianza
-Compromiso Social
-Nuestra cultura
-Las personas, lo primero
-La agilidad, nuestra actitud
-La colaboración, nuestra fuerza
-Actualidad
-Noticias Corporativas
-Esfera Content Center
-CaixaBank Research
-(Abrir en ventana nueva)
-Newsletter Accionistas
-Productos y servicios
-Particulares
-(Abrir en ventana nueva)
-Empresas
-(Abrir en ventana nueva)
-Negocios
-(Abrir en ventana nueva)
-Tarifas e información de interés
-(Abrir en ventana nueva)
-Banca Premier
-(Abrir en ventana nueva)
-Wealth Management
-(Abrir en ventana nueva)
-Banca Internacional
-(Abrir en ventana nueva)
-MiFID
-(Abrir en ventana nueva)
-PRIIPs
-(Abrir en ventana nueva)
-Otras webs corporativas
-Grupo CaixaBank
-(Abrir en ventana nueva)
-MicroBank
-(Abrir en ventana nueva)
-Trabaja con nosotros
-(Abrir en ventana nueva)
-Portal de proveedores
-(Abrir en ventana nueva)
-Dualiza
-(Abrir en ventana nueva)
-Spotify (Abrir en ventana nueva)
-TikTok (Abrir en ventana nueva)
-Whatsapp (Abrir en ventana nueva)
-© CaixaBank, SA 2025
-Información legal sobre CaixaBank, S.A.
-Mapa Web
-Accesibilidad
-Recomendaciones de navegación
-Privacidad
-(Abrir en ventana nueva)
-Canal de Denuncias
-Certificación ILUNION tecnología y accesibilidad (Abrir en ventana nueva)
-Texto de prueba"
 SEAT SA,https://www.seat.es/sobre-seat/creatividad-urbana,"Creatividad urbana: nuestro carácter e inspiración | SEAT
 es:company:Inspiring Creative Living
 ES/ES
@@ -4171,6 +3664,16 @@ fundación randstad.
 Apostamos por la igualdad de oportunidades en el empleo para las personas con discapacidad mediante la sensibilización, la capacitación y la transición al empleo.
 ir a fundación randstad
 sala de prensa.
+20 noviembre 2025
+Los salarios aumentarán alrededor del 5% el próximo año en España.
+Tendencias salariales
+mercado laboral
+España
+salarios
+informe salarios
+informe
+sueldo
+cross
 18 noviembre 2025
 Randstad RPO, en colaboración con Renault Group, busca 300 operarios para su fábrica de Valladolid.
 Renault Group
@@ -4236,12 +3739,6 @@ sector químico
 mercado laboral
 ocupación
 industria
-16 octubre 2025
-El empleo en Construcción crece un 3,1% en el último año y alcanza los 1,52 millones de ocupados.
-construcción
-mercado de trabajo
-ocupados
-crecimiento
 ver todas
 más información.
 contáctanos
@@ -6602,6 +6099,7 @@ Personal 7 – © Todos los derechos reservados |
 Contacta"
 IRIUM - Spain,https://www.irium.es/about,"Sobre nosotros | Irium Soluciones Y Sistemas
 top of page
+Ir al contenido principal
 Sobre nosotros
 Servicios IT
 Servicios Gestionados
@@ -6654,7 +6152,9 @@ Política de Seguridad y Gestión de Servicios
 Política de Calidad
 Copyright © 2025 Irium Soluciones y Sistemas SL.
 Acceso Corporativo
-bottom of page"
+bottom of page
+Rechazar todas
+Acepto"
 Plain Concepts,https://www.plainconcepts.com/es/quienes-somos/,"Quiénes somos y qué hacemos - Plain ConceptsPlain Concepts
 Soluciones
 Inteligencia Artificial
@@ -11425,7 +10925,7 @@ Teléfono
 ¿De qué pueblo eres?
 Curso interesado/a
 ¿Algo más que quieras decirnos?
-6 + 14
+12 + 10
 =
 Enviar
 Curso Inglés para Adultos
@@ -11451,13 +10951,10 @@ Everfield buys and grows European vertical market and specialist software compan
 who we are
 Pioneering the future of European software
 Everfield buys and grows European vertical market and specialist software companies, providing them with the tools they need to move to the next level. We’re here to help continue your success story.
-22
 +
 Software companies
-712
 +
 Employees in the ecosystem
-7
 +
 Countries
 1 mission:
@@ -11948,86 +11445,6 @@ Copyright - Everfield
 Legal notice
 Privacy policy
 Cookie policy"
-primer impacto,https://primer-impacto.com/nosotros/,"Quienes somos - Primer impacto
-NOSOTROS
-SERVICIOS
-ÚNETE AL EQUIPO
-BLOG & NEWS
-Notas de Blog
-Casos de Éxitos
-PI Conversa con
-Guías descargables
-Píldoras PIkipedia
-Infografías
-ÉTICA
-Políticas de Empresa
-Canal de Denuncias
-CONTACTO
-Menú
-NOSOTROS
-SERVICIOS
-ÚNETE AL EQUIPO
-BLOG & NEWS
-Notas de Blog
-Casos de Éxitos
-PI Conversa con
-Guías descargables
-Píldoras PIkipedia
-Infografías
-ÉTICA
-Políticas de Empresa
-Canal de Denuncias
-CONTACTO
-Buscar
-Cerrar
-Generar las mejores ventas para las marcas,
-cuidando y desarrollando a las personas
-Cada paso que damos lo hacemos siguiendo nuestros valores, pues para nosotros no son ideas que se quedan en palabras.
-Cuidado de las personas
-Ponerse en la piel del cliente
-Compromiso con la fiabilidad
-nuestras
-oficinas comerciales
-nuestras
-delegaciones
-nuestros
-almacenes
-equipo
-propio
-SOSTENIBILIDAD
-Te cuidamos
-y cuidamos el planeta
-TRABAJAMOS EN VARIAS INICIATIVAS PARA COMPENSAR O REDUCIR NUESTRO
-IMPACTO MEDIOAMBIENTAL
-CUANTOS MENOS KM
-MEJOR
-Invertimos en programas de optimización de rutas y geolocalización para evitar emisiones de CO₂ injustificadas
-LOGÍSTICA
-ECO
-Nuestra logística utiliza motores Diesel con control
-de emisiones de CO2
-CREANDO
-OXÍGENO
-7000 árboles plantados para contrarrestar nuestra emisión de CO2.
-Empresa colaboradora:
-ECONOMÍA
-CIRCULAR
-Desarrollamos iniciativas responsables mediante la reutilización de materiales, el reciclaje y el trabajo conjunto con nuestros colaboradores en proyectos orientados a la sostenibilidad.
-¿Hablamos?
-Una empresa integrada en
-NOSOTROS
-SERVICIOS
-ÚNETE AL EQUIPO
-CONTACTO
-Menú
-NOSOTROS
-SERVICIOS
-ÚNETE AL EQUIPO
-CONTACTO
-Política de redes sociales
-Menú
-Política de redes sociales
-Todos los derechos reservados – Primer Impacto"
 Inetum Spain,https://www.inetum.com/es/sobre-nosotros,"Sobre nosotros | Inetum
 Más info
 Guardar preferencias
@@ -12088,7 +11505,7 @@ Contacto
 4, 3
 4, 4
 4, 5
-fr
+co
 Bélgica
 Brasil
 Bulgaria
@@ -12113,40 +11530,23 @@ Français
 Español
 Português
 Nederlands
-Elija su ubicación e idioma
-Para facilitar el acceso a los diferentes idiomas y para que haya más información disponible en nuestro sitio, hemos optado por la traducción automática.
-Le agradecemos su comprensión respecto a la traducción literal del contenido.
-Ubicación
-Bélgica
-Brasil
-Colombia
-Francia
-Luxemburgo
-México
-Marruecos
-Perú
-Polonia
-Portugal
-Rumanía
-España
-Suiza
-Túnez
-Reino Unido
-Estados Unidos
-Irlanda
-Bulgaria
-Idioma
-Inglés
-Francés
-Español
-Português
-Nederlands
-Enviar
 Sobre nosotros
 Sobre nosotros
 Inetum es líder europeo en servicios digitales. El equipo de Inetum, formado por 27.000 consultores y especialistas, trabaja cada día para generar un impacto digital en las empresas, las entidades del sector público y la sociedad. Las soluciones de Inetum tienen como objetivo contribuir al rendimiento y la innovación de sus clientes, así como al bien común.
 Presente en 19 países con una densa red de sitios, Inetum se asocia con los principales editores de software para enfrentar los desafíos de la transformación digital con proximidad y flexibilidad.
 Impulsada por su ambición de crecimiento y escala, Inetum generó ventas de 2.400 millones de euros en 2024.
+0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 0, 0
 0, 1
 0, 2
@@ -12203,26 +11603,6 @@ Impulsada por su ambición de crecimiento y escala, Inetum generó ventas de 2.4
 6, 5
 6, 6
 6, 7
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
 0, 0
 0, 0
 0, 1
@@ -12304,91 +11684,289 @@ Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Join us to live your digital impact!
 Inetum, certificado Top Employer Europe 2025!
 Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
 Leer más
 0, 0
+0, 1
+0, 2
+1, 0
+1, 1
+1, 2
+2, 0
+2, 1
+2, 2
+3, 0
+3, 1
+3, 2
 Dirección
 Antwerpsesteenweg 261/bus 2
 2800 Mechelen
@@ -12823,61 +12401,6 @@ label
 checkbox label
 label
 Confirm My Choices"
-Irium,https://www.irium.es/about,"Sobre nosotros | Irium Soluciones Y Sistemas
-top of page
-Sobre nosotros
-Servicios IT
-Servicios Gestionados
-Servicios Profesionales
-Centros de Servicio
-Digital Work Center
-Irium Operation Center
-Security Operation (SOC)
-Nuestro Blog
-Únete a nosotros
-Contacto
-Mas
-Use tab to navigate through the menu items.
-sobre nosotros
-Somos un equipo de más de 750 profesionales que trabajamos diariamente para ayudar a las empresas a mejorar sus procesos productivos y de gestión a través de la tecnología.
-nuestras cifras
-facturación
-23M€ de facturación anual.
-proyectos
-innovadores
-En múltiples sectores
-+ 100 proyectos
-Repartidos por más de 15 países.
-+ 750 profesionales
-Especializados en Tecnología.
-nuestra historia
-Más de 19 años de trayectoria marcada por una evolución ascendente de la mano de importantes clientes de diferentes sectores de actividad, tanto de carácter nacional como internacional.
-2003
-2005
-2008
-2009
-2011
-2013
-2016
-2018
-2019
-Inicio de actividad en Madrid
-Creación División Formación (ITS)
-Inicio de actividad en Murcia
-Apertura Software Factory en México
-Inicio de actividad en Portugal
-Apertura sede en Barcelona
-Inicio actividad de la unidad Servicios Gestionados
-Inicio actividad en México
-Consolidación de Servicios de Ciberseguridad
-nuestraS POLÍTICAS
-Política de Medio Ambiente
-Política de Responsabilidad Social
-Política de Seguridad y Gestión de Servicios
-Política de Calidad
-Copyright © 2025 Irium Soluciones y Sistemas SL.
-Acceso Corporativo
-bottom of page"
 Trigo Quality Ibérica,https://www.trigo-group.com/en/company/about-TRIGO,"About us | TRIGO Group
 Cookie settings
 and
@@ -13673,253 +13196,1118 @@ GRAN NOGAL CORREDURIA DE SEGUROS, S.L. con  NIF B86540945 y clave de autorizaci
 Copyright © 2025 – Correduría Seguros Nogal
 Sistema Interno de Información
 Sistema Interno de Información"
-Grupo Quirónsalud,https://www.quironsalud.com/es/grupo/quienes-somos,"Quiénes somos | Quirónsalud
-Saltar al contenido
-menu-telefono
-900 301 013
-Atención al paciente:
-menuTop
-Trabaja con nosotros
-International patient
-Buscar
-Buscar
-menuPedirCita
-Pedir cita
-Mi Quirónsalud
-Toggle navigation
-Menú
-menuPrincipal
-Hospitales
-Cuadro médico
-Especialidades
-Enfermedades y tratamientos
-Ver sección
-Enfermedades y síntomas
-Pruebas diagnósticas
-Tecnología punta
-Unidades médicas
-Embarazo y parto
-Estética
-Genética
-Reproducción asistida
+Grupo Quirónsalud,https://qsalud.com/quienes-somos/,"Quiénes somos | QSalud Online
+Valoramos tu privacidad
+Personalizar
+Rechazar todo
+Aceptar todo
+Personalizar las preferencias de consentimiento
+Mostrar más
+Necesaria
+Siempre activas
+Funcional
+Analítica
+el rendimiento
+Anuncio
+Rechazar todo
+Guardar mis preferencias
+Aceptar todo
+Saltar al contenido principal
+Saltar al pie de página
+Disponible 24/7 en el
+900 86 85 65
+Primera consulta: 10€ de descuento.
+Aplica el código ""METAQARE"" con la reserva
+Disponible 24/7 en el
+900 86 85 65
+ES
+EN
+FR
+PT
+IT
+Especialidades Medicas
+Medicina General
+Dermatología
+Endocrinología
+Ginecología
+Pediatría
+Psicología
+Alergología
+Aparato Digestivo
+Cardiología
+Cirugía General
+Cirugía Vascular
+Dermatología
+Enfermería
+Fisioterapia y osteopatía
+Hematología
+Medicina estética
+Medicina Interna
+Nefrología
+Neumología
+Neurocirugía
+Neurología
+Otorrinolaringología
+Podología
+Psicología
+Psiquiatría
+Rehabilitación
+Traumatología
+Urología
+Planes
+Planes de salud
+Planes de entrenamiento
+Planes de nutricion
+Salud Digital
+CHEQUEOS MÉDICOS
+CONSULTAS
+BIENESTAR
+TRATAMIENTOS
+Test y Analiticas
+Alergia
+Autoinmunidad y reumatología
+Bioquímica básica
+Digestivo
+Hormonas y tiroides
+Marcadores tumorales
+Microbiología e infecciones
+Migrañas
+Otras analiticas
+Pruebas ETS
+Pruebas fertilidad mujer
+Test de tolerancia alimentaria
+Test genéticos
+Test prenatales no invasivos
+Vitaminas y minerales
+Únete a la comunidad de médicos online
+Iniciar session
+Especialidades Medicas
+Alergología
+Aparato Digestivo
+Cardiología
+Cirugía General
+Cirugía Vascular
+Dermatología
+Dietética y Nutrición
+Endocrinología
+Enfermería
+Fisioterapia y osteopatía
+Geriatría
+Ginecología
+Hematología
+Medicina Educación Física y del deporte
+Medicina estética
+Medicina General
+Medicina Interna
+Nefrología
+Neumología
+Neurocirugía
+Neurología
 Oftalmología
-Chequeos médicos
-Kenko: la salud de los pequeños
-International patient
-Investigación
-Ver sección
-Quiénes somos
-Ensayos clínicos
-La investigación de Quirónsalud en cifras
-Servicios a investigadores Quirónsalud
-Proyectos corporativos más destacados
-Premios y jornadas de I+i
-Noticias
-El grupo
-Ver sección
-Quiénes somos
-Nuestra red
-Nuestra Fundación
-Responsabilidad Social Corporativa
-Calidad
-Tu experiencia nos importa
-Canal de denuncias
-Comunicación
-Ver sección
-Vídeos
-Podcast
-Contenidos de Salud
-Actualidad
-Agenda de eventos
-Escuela de familias
-Blogs
-Tu canal de salud
-Orientador de salud
-menuPedirCita
-Pedir cita
-Mi Quirónsalud
-menuPrincipal
-Hospitales
-Cuadro médico
-Especialidades
-Enfermedades y tratamientos
-Ver sección
-Enfermedades y síntomas
-Pruebas diagnósticas
-Tecnología punta
-Unidades médicas
-Embarazo y parto
-Estética
-Genética
-Reproducción asistida
+Oncología Médica
+Otorrinolaringología
+Pediatría
+Podología
+Psicología
+Psiquiatría
+Rehabilitación
+Reumatología
+Traumatología
+Urología
+Planes
+Planes de salud
+PLANES DE ENTRENAMIENTO
+PLANES DE NUTRICIÓN
+Salud Digital
+CHEQUEOS MÉDICOS
+CONSULTAS
+TEST Y ANALÍTICAS
+Alergia
+Autoinmunidad y reumatología
+Bioquímica básica
+Digestivo
+Hormonas y tiroides
+Marcadores tumorales
+Microbiología e infecciones
+Migrañas
+Otras analiticas
+Pruebas ETS
+Pruebas fertilidad mujer
+Test de tolerancia alimentaria
+Test genéticos
+Test prenatales no invasivos
+Vitaminas y minerales
+TRATAMIENTOS
+BIENESTAR
+Especialidades Medicas
+Alergología
+Aparato Digestivo
+Cardiología
+Cirugía General
+Cirugía Vascular
+Dermatología
+Dietética y Nutrición
+Endocrinología
+Enfermería
+Fisioterapia y osteopatía
+Geriatría
+Ginecología
+Hematología
+Medicina Educación Física y del deporte
+Medicina estética
+Medicina General
+Medicina Interna
+Nefrología
+Neumología
+Neurocirugía
+Neurología
 Oftalmología
-Chequeos médicos
-Kenko: la salud de los pequeños
-International patient
-Investigación
-Ver sección
-Quiénes somos
-Ensayos clínicos
-La investigación de Quirónsalud en cifras
-Servicios a investigadores Quirónsalud
-Proyectos corporativos más destacados
-Premios y jornadas de I+i
-Noticias
-El grupo
-Ver sección
-Quiénes somos
-Nuestra red
-Nuestra Fundación
-Responsabilidad Social Corporativa
-Calidad
-Tu experiencia nos importa
-Canal de denuncias
-Comunicación
-Ver sección
-Vídeos
-Podcast
-Contenidos de Salud
-Actualidad
-Agenda de eventos
-Escuela de familias
-Blogs
-Tu canal de salud
-Orientador de salud
-LateralHamburguesa
-Tramitación PFC
-menuTop
-Trabaja con nosotros
-International patient
-Idioma:
-Idioma activo
-español
-español
+Oncología Médica
+Otorrinolaringología
+Pediatría
+Podología
+Psicología
+Psiquiatría
+Rehabilitación
+Reumatología
+Traumatología
+Urología
+Planes
+Planes de salud
+PLANES DE ENTRENAMIENTO
+PLANES DE NUTRICIÓN
+Salud Digital
+CHEQUEOS MÉDICOS
+CONSULTAS
+TEST Y ANALÍTICAS
+Alergia
+Autoinmunidad y reumatología
+Bioquímica básica
+Digestivo
+Hormonas y tiroides
+Marcadores tumorales
+Microbiología e infecciones
+Migrañas
+Otras analiticas
+Pruebas ETS
+Pruebas fertilidad mujer
+Test de tolerancia alimentaria
+Test genéticos
+Test prenatales no invasivos
+Vitaminas y minerales
+TRATAMIENTOS
+BIENESTAR
+Reservar ahora
+Select Language
+Basque
+Catalan
+Chinese (Simplified)
+Danish
+Dutch
 English
-Inicio
-El grupo
-Quiénes somos
-Quiénes somos
-Quirónsalud es la compañía líder en España en prestación de servicios sanitarios. Somos una marca joven, fruto de la integración entre IDCsalud y Quirón, pero con más de 60 años de experiencia en el cuidado de la salud y bienestar de las personas.
-Cubrimos todas las especialidades médicas para ofrecer una atención integral al paciente. Para ello, contamos con más de 150 centros en toda España, un prestigioso equipo de profesionales, la tecnología más avanzada, una valiosa vocación investigadora y docente,y un modelo de gestión basado en un sólido compromiso con la calidad.
-La atención integral al paciente comienza en la prevención, es por ello que desde 2016 forman parte del Grupo Quirónsalud cuatro de las principales compañías de prevención de riesgos laborales de España: Fraterprevención, MC Prevención, Premap y Unipresalud. Estas empresas añaden a la red de Quirónsalud más de 150 centros en toda España y presencia en Latinoamérica y Oriente Medio, todo ello con el único objetivo de cuidar la salud de las personas, de cada una de ellas.
-Un cuidado experto y una visión de la medicina basada en la personalización, la cercanía y la conexión por el paciente. Porque entendemos la salud persona a persona.
-Más de 60 años cuidando de las personas.
-Quirónsalud tiene sus orígenes en el grupo sanitario IDCsalud y en Grupo Hospitalario Quirón. Ambos grupos han centrado siempre sus esfuerzos y recursos en un mismo objetivo: ofrecer a las personas una asistencia sanitaria marcada por la excelencia y la calidad. Esta visión situó a sus centros a la cabeza de la sanidad privada en sus respectivas regiones de origen (Castilla - La Mancha y Aragón). Posteriormente, ambas compañías se expandieron por España hasta integrarse y conformar el grupo líder a nivel nacional en el sector salud.
-El nombre actual de la compañía, Quirónsalud, es un reflejo de la integración de la historia de ambas entidades, de su evolución y del compromiso común con el cuidado del paciente, de la persona.
-Cubrimos todas las especialidades médicas para ofrecer una atención integral al paciente. Para ello, contamos con más de 150 centros en toda España, un prestigioso equipo de profesionales, la tecnología más avanzada, una valiosa vocación investigadora y docente, y un modelo de gestión basado en un sólido compromiso con la calidad.
-Un cuidado experto y una visión de la medicina basada en la personalización, la cercanía y la conexión por el paciente. Porque entendemos la salud persona a persona.
-Nuestros valores
-Nuestros valores
-Nuestros valores son los pilares que sustentan nuestra forma de actuar, trabajar y hacer las cosas. Dicen cómo somos hoy y cómo vamos a ser en el futuro. Hablan sobre nuestra manera de entender la salud y nuestra relación con las personas. Nos hacen diferentes y únicos. Son nuestra identidad:
-Lo primero, las personas
-El cuidado de la
-salud y bienestar
-de las personas es nuestra
-razón de ser.
-Nos esforzamos en proporcionar
-seguridad y tranquilidad
-a cada paciente.
-Cada persona es
-única
-, el cuidado que le ofrecemos, también lo es.
-Equipo
-Hacer equipo es coordinar e integrar esfuerzos para alcanzar una
-meta común.
-Es sumar
-conocimientos
-y
-experiencias
-.
-Es compartir metas y creer que
-""juntos, somos más""
-Comprometidos
-Promovemos el
-valor
-de cada vocación profesional
-Fomentamos el
-compromiso
-y la
-implicación
-en el trabajo diario.
-Nuestra dedicación redunda en la
-calidad
-de nuestro servicio.
-Apasionados
-Queremos ser reconocidos por nuestra
-cercanía y empatía
-con el paciente.
-Ofrecemos un
-trato amable y cálido.
-Buscamos favorecer el
-respeto
-y la
-comunicación
-.
-Profesionales
-Ofrecemos un nivel de
-asistencia
-de
-máxima calidad.
-Contamos con
-profesionales expertos
-y
-cualificados
-.
-Buscamos ser
-eficaces
-y
-eficientes
-.
-Innovadores
-Innovar es
-explorar
-nuevos caminos y
-mejorar
-los existentes.
-Es tener una
-mente abierta
-y una actitud creativa.
-Es
-evolucionar
-, buscar resultados diferentes.
-Es liderar.
-Cercanos
-Cuidamos de la
-salud
-de las personas y del
-entorno
-que las rodea.
-Transferimos los
-resultados
-de nuestras
-investigaciones
-al conjunto de la sociedad.
-Tenemos un fuerte
-compromiso
-con el medio ambiente.
-Ver valores
-Código de conducta
-Código de conducta
-Consulta nuestro
-Código de Conducta y ético del Grupo Quirónsalud:
-Ver documento
-menu-social
-Tiktok
-Feed RSS
-menu-legal
-Otras webs del Grupo
-Mapa Web
-Protección de datos
+French
+Galician
+German
+Italian
+Japanese
+Norwegian
+Portuguese
+Romanian
+Russian
+Spanish
+Swedish
+Turkish
+0
+Tu navegador no admite la etiqueta de vídeo.
+Recursos MetaQare para Profesionales de la Salud
+Recursos MetaQare para Profesionales de la Salud
+Manual Profesional MetaQare
+Accede a la guía completa para profesionales de la salud y resuelve tus dudas sobre el uso de MetaQare.
+Ver Manual Profesional
+Documentación General de MetaQare
+Explora todas las funcionalidades, preguntas frecuentes y recursos para sacar el máximo provecho de MetaQare.
+Ir a la Documentación
+Agentes Inteligentes de IA en MetaQare
+Descubre cómo aprovechar los agentes inteligentes de MetaQare para optimizar tu práctica médica.
+Ver Agentes Inteligentes
+Estos servicios ofrecen videoconsultas y llamadas telefónicas con profesionales médicos para la prevención, el diagnóstico y el tratamiento de enfermedades, así como el
+mantenimiento de la salud. Las opiniones médicas derivadas de estos servicios se basan en información médica ofrecida por el cliente. Servicios sanitarios prestados por QFISIO,
+CENTRO DE FISIOTERAPIA Y OSTEOPATIA, S.L. (Código Sanitario Registro Sanitario: 1606518/1608048)
+ESPECIALIDADES MÉDICAS
+Alergología
+Aparato Digestivo
+Cardiología
+Cirugía General
+Cirugía Vascular
+Dermatología
+Dietética y Nutrición
+Endocrinología
+Enfermería
+Fisioterapia y osteopatía
+Geriatría
+Ginecología
+Hematología
+Medicina Educación Física y del deporte
+Medicina estética
+Medicina General
+Medicina Interna
+Nefrología
+Neumología
+Neurocirugía
+Neurología
+Oftalmología
+Oncología Médica
+Otorrinolaringología
+Pediatría
+Podología
+Psicología
+Psiquiatría
+Rehabilitación
+Reumatología
+Traumatología
+Urología
+ACCESO PROFESIONAL
+Únete a la comunidad de médicos online
+TÉRMINOS Y CONDICIONES
+Terminos y condiciones
 Accesibilidad
-menu-empleados
-Empleados
-Correo webmail
-Office 365
-Club Quironsalud
-Intranet corporativa
-© 2025 Quirónsalud - Todos los derechos reservados
-Información sobre la restructuración societaria en la que Grupo Hospitalario Quirón, S.A. actúa como sociedad absorbida y Quirón Hospitales, S.L.U. como absorbente (artículo 39 Ley Modificaciones Estructurales)
-""Volver arriba"""
+Confidencialidad
+POLÍTICA Y PRIVACIDAD
+Politica de Privacidad
+RGPD
+CONTÁCTANOS
+Medios de comunicación
+SOBRE NOSOTROS
+Nosotros
+Historia
+Equipo
+Blog
+COMUNÍCATE CON NOSOTROS
+Enviar
+REDES SOCIALES
+Copyright © 2025 QSALUD. TODOS LOS DERECHOS RESERVADOS.
+Usuario
+Usuario
+ACTUALIZAR
+Contraseña
+Contraseña
+ACTUALIZAR
+Iniciar consulta Telefonica
+Haz click en el boton de llamar para iniciar la llamada.
+Llamar
+Enviar
+Alta profesional en QSalud
+1
+Datos Personales
+2
+Datos Profesionales
+3
+Datos de la consulta
+4
+Validación de datos
+5
+Resumen
+Datos de identificación personal
+F. de nacimiento:
+Género
+Masculino
+Femenino
+Otro
+Nacionalidad
+Afganistán
+Albania
+Alemania
+Andorra
+Angola
+Antigua y Barbuda
+Arabia Saudita
+Argelia
+Argentina
+Armenia
+Australia
+Austria
+Azerbaiyán
+Bahamas
+Bangladés
+Barbados
+Baréin
+Bélgica
+Belice
+Benín
+Bielorrusia
+Birmania
+Bolivia
+Bosnia y Herzegovina
+Botsuana
+Brasil
+Brunéi
+Bulgaria
+Burkina Faso
+Burundi
+Bután
+Cabo Verde
+Camboya
+Camerún
+Canadá
+Catar
+Chad
+Chile
+China
+Chipre
+Ciudad del Vaticano
+Colombia
+Comoras
+Corea del Norte
+Corea del Sur
+Costa de Marfil
+Costa Rica
+Croacia
+Cuba
+Dinamarca
+Dominica
+Ecuador
+Egipto
+El Salvador
+Emiratos Árabes Unidos
+Eritrea
+Eslovaquia
+Eslovenia
+España
+Estados Unidos
+Estonia
+Esuatini
+Etiopía
+Filipinas
+Finlandia
+Fiyi
+Francia
+Gabón
+Gambia
+Georgia
+Ghana
+Granada
+Grecia
+Guatemala
+Guinea
+Guinea-Bisáu
+Guinea Ecuatorial
+Guyana
+Haití
+Honduras
+Hungría
+India
+Indonesia
+Irak
+Irán
+Irlanda
+Islandia
+Islas Marshall
+Islas Salomón
+Israel
+Italia
+Jamaica
+Japón
+Jordania
+Kazajistán
+Kenia
+Kirguistán
+Kiribati
+Kuwait
+Laos
+Lesoto
+Letonia
+Líbano
+Liberia
+Libia
+Liechtenstein
+Lituania
+Luxemburgo
+Madagascar
+Malasia
+Malaui
+Maldivas
+Malí
+Malta
+Marruecos
+Mauricio
+Mauritania
+México
+Micronesia
+Moldavia
+Mónaco
+Mongolia
+Montenegro
+Mozambique
+Namibia
+Nauru
+Nepal
+Nicaragua
+Níger
+Nigeria
+Noruega
+Nueva Zelanda
+Omán
+Países Bajos
+Pakistán
+Palaos
+Panamá
+Papúa Nueva Guinea
+Paraguay
+Perú
+Polonia
+Portugal
+Reino Unido
+República Centroafricana
+República Checa
+República del Congo
+República Democrática del Congo
+República Dominicana
+Ruanda
+Rumania
+Rusia
+Samoa
+San Cristóbal y Nieves
+San Marino
+San Vicente y las Granadinas
+Santa Lucía
+Santo Tomé y Príncipe
+Senegal
+Serbia
+Seychelles
+Sierra Leona
+Singapur
+Siria
+Somalia
+Sri Lanka
+Suazilandia
+Sudáfrica
+Sudán
+Sudán del Sur
+Suecia
+Suiza
+Surinam
+Tailandia
+Tanzania
+Tayikistán
+Timor Oriental
+Togo
+Tonga
+Trinidad y Tobago
+Túnez
+Turkmenistán
+Turquía
+Tuvalu
+Ucrania
+Uganda
+Uruguay
+Uzbekistán
+Vanuatu
+Venezuela
+Vietnam
+Yemen
+Yibuti
+Zambia
+Zimbabue
+Tipo de documento
+DNI
+NIE
+Pasaporte
+Datos de contacto
+País
+Afganistán (+93)
+Albania (+355)
+Alemania (+49)
+Andorra (+376)
+Angola (+244)
+Anguila (+1-264)
+Antártida (+672)
+Antigua y Barbuda (+1-268)
+Arabia Saudita (+966)
+Argelia (+213)
+Argentina (+54)
+Armenia (+374)
+Aruba (+297)
+Australia (+61)
+Austria (+43)
+Azerbaiyán (+994)
+Bahamas (+1-242)
+Bangladés (+880)
+Barbados (+1-246)
+Baréin (+973)
+Bélgica (+32)
+Belice (+501)
+Benín (+229)
+Bermudas (+1-441)
+Bielorrusia (+375)
+Birmania (+95)
+Bolivia (+591)
+Bosnia y Herzegovina (+387)
+Botsuana (+267)
+Brasil (+55)
+Brunéi (+673)
+Bulgaria (+359)
+Burkina Faso (+226)
+Burundi (+257)
+Bután (+975)
+Cabo Verde (+238)
+Camboya (+855)
+Camerún (+237)
+Canadá (+1)
+Chad (+235)
+Chile (+56)
+China (+86)
+Chipre (+357)
+Ciudad del Vaticano (+39-06)
+Colombia (+57)
+Comoras (+269)
+Corea del Norte (+850)
+Corea del Sur (+82)
+Costa de Marfil (+225)
+Costa Rica (+506)
+Croacia (+385)
+Cuba (+53)
+Curazao (+599)
+Dinamarca (+45)
+Dominica (+1-767)
+Ecuador (+593)
+Egipto (+20)
+El Salvador (+503)
+Emiratos Árabes Unidos (+971)
+Eritrea (+291)
+Eslovaquia (+421)
+Eslovenia (+386)
+España (+34)
+Estados Unidos (+1)
+Estonia (+372)
+Etiopía (+251)
+Filipinas (+63)
+Finlandia (+358)
+Fiyi (+679)
+Francia (+33)
+Gabón (+241)
+Gambia (+220)
+Georgia (+995)
+Ghana (+233)
+Gibraltar (+350)
+Granada (+1-473)
+Grecia (+30)
+Groenlandia (+299)
+Guadalupe (+590)
+Guam (+1-671)
+Guatemala (+502)
+Guayana Francesa (+594)
+Guernsey (+44-1481)
+Guinea (+224)
+Guinea Ecuatorial (+240)
+Guinea-Bisáu (+245)
+Guyana (+592)
+Haití (+509)
+Honduras (+504)
+Hong Kong (+852)
+Hungría (+36)
+India (+91)
+Indonesia (+62)
+Irak (+964)
+Irán (+98)
+Irlanda (+353)
+Isla Bouvet (+47)
+Isla de Man (+44-1624)
+Isla de Navidad (+61)
+Islandia (+354)
+Islas Caimán (+1-345)
+Islas Cocos (+61)
+Islas Cook (+682)
+Islas Feroe (+298)
+Islas Georgias del Sur y Sandwich del Sur (+500)
+Islas Heard y McDonald (+672)
+Islas Malvinas (+500)
+Islas Marianas del Norte (+1-670)
+Islas Marshall (+692)
+Islas Pitcairn (+64)
+Islas Salomón (+677)
+Islas Turcas y Caicos (+1-649)
+Islas Vírgenes Británicas (+1-284)
+Islas Vírgenes de los Estados Unidos (+1-340)
+Israel (+972)
+Italia (+39)
+Jamaica (+1-876)
+Japón (+81)
+Jersey (+44-1534)
+Jordania (+962)
+Kazajistán (+7)
+Kenia (+254)
+Kirguistán (+996)
+Kiribati (+686)
+Kuwait (+965)
+Laos (+856)
+Lesoto (+266)
+Letonia (+371)
+Líbano (+961)
+Liberia (+231)
+Libia (+218)
+Liechtenstein (+423)
+Lituania (+370)
+Luxemburgo (+352)
+Macao (+853)
+Macedonia del Norte (+389)
+Madagascar (+261)
+Malasia (+60)
+Malaui (+265)
+Maldivas (+960)
+Malí (+223)
+Malta (+356)
+Marruecos (+212)
+Martinica (+596)
+Mauricio (+230)
+Mauritania (+222)
+Mayotte (+262)
+México (+52)
+Micronesia (+691)
+Moldavia (+373)
+Mónaco (+377)
+Mongolia (+976)
+Montenegro (+382)
+Montserrat (+1-664)
+Mozambique (+258)
+Namibia (+264)
+Nauru (+674)
+Nepal (+977)
+Nicaragua (+505)
+Níger (+227)
+Nigeria (+234)
+Niue (+683)
+Noruega (+47)
+Nueva Caledonia (+687)
+Nueva Zelanda (+64)
+Omán (+968)
+Países Bajos (+31)
+Pakistán (+92)
+Palaos (+680)
+Palestina (+970)
+Panamá (+507)
+Papúa Nueva Guinea (+675)
+Paraguay (+595)
+Perú (+51)
+Polinesia Francesa (+689)
+Polonia (+48)
+Portugal (+351)
+Puerto Rico (+1-787)
+Qatar (+974)
+Reino Unido (+44)
+República Centroafricana (+236)
+República Checa (+420)
+República del Congo (+242)
+República Democrática del Congo (+243)
+República Dominicana (+1-809)
+Ruanda (+250)
+Rumania (+40)
+Rusia (+7)
+Sahara Occidental (+212)
+Samoa (+685)
+Samoa Americana (+1-684)
+San Bartolomé (+590)
+San Cristóbal y Nieves (+1-869)
+San Marino (+378)
+San Martín (+1-721)
+San Pedro y Miquelón (+508)
+San Vicente y las Granadinas (+1-784)
+Santa Elena (+290)
+Santa Lucía (+1-758)
+Santo Tomé y Príncipe (+239)
+Senegal (+221)
+Serbia (+381)
+Seychelles (+248)
+Sierra Leona (+232)
+Singapur (+65)
+Sint Eustatius (+599)
+Siria (+963)
+Somalia (+252)
+Sri Lanka (+94)
+Suazilandia (+268)
+Sudáfrica (+27)
+Sudán (+249)
+Sudán del Sur (+211)
+Suecia (+46)
+Suiza (+41)
+Surinam (+597)
+Svalbard y Jan Mayen (+47)
+Tailandia (+66)
+Taiwán (+886)
+Tanzania (+255)
+Tayikistán (+992)
+Timor Oriental (+670)
+Togo (+228)
+Tokelau (+690)
+Tonga (+676)
+Trinidad y Tobago (+1-868)
+Túnez (+216)
+Turkmenistán (+993)
+Turquía (+90)
+Tuvalu (+688)
+Ucrania (+380)
+Uganda (+256)
+Uruguay (+598)
+Uzbekistán (+998)
+Vanuatu (+678)
+Venezuela (+58)
+Vietnam (+84)
+Wallis y Futuna (+681)
+Yemen (+967)
+Yibuti (+253)
+Zambia (+260)
+Zimbabue (+263)
+Siguiente
+Datos de colegiación
+Foto de Perfil:
+Peso máximo: 1 GB
+Nº de colegio:
+Nombre a Publicar:
+Usted dispone de colegiación fuera de España ?
+No - Si
+Agregue el/los paises y numero de colegiado
++
+Datos profesionales
+Formaciones principales
+Formación principal
+Centro de estudios
++
+Formaciones Segundarias
+Puede añadir formaciones con el botón ""
+Añadir nuevo
+""
++ Añadir nuevo
+Experiencia profesional
+Puede añadir experiencia profesional con el botón ""
+Añadir nuevo
+""
++ Añadir nuevo
+Atrás
+Siguiente
+Datos de la consulta
+Idiomas en los que puede atender la consulta
+Puede seleccionar uno o mas idiomas
+Abkhazian
+Afar
+Afrikaans
+Akan
+Albanian
+Amharic
+Arabic
+Aragonese
+Armenian
+Assamese
+Avaric
+Avestan
+Aymara
+Azerbaijani
+Bambara
+Bashkir
+Basque
+Belarusian
+Bengali
+Bislama
+Bosnian
+Breton
+Bulgarian
+Burmese
+Catalan
+Central Khmer
+Chamorro
+Chechen
+Chinese
+Church Slavic
+Chuvash
+Cornish
+Corsican
+Cree
+Croatian
+Czech
+Danish
+Dhivehi
+Dutch
+Dzongkha
+English
+Esperanto
+Estonian
+Ewe
+Faroese
+Fijian
+Finnish
+French
+Fulah
+Galician
+Ganda
+Georgian
+German
+Guarani
+Gujarati
+Haitian
+Hausa
+Hebrew
+Herero
+Hindi
+Hiri Motu
+Hungarian
+Icelandic
+Ido
+Igbo
+Indonesian
+Interlingua (International Auxiliary Language Association)
+Interlingue
+Inuktitut
+Inupiaq
+Irish
+Italian
+Japanese
+Javanese
+Kalaallisut
+Kannada
+Kanuri
+Kashmiri
+Kazakh
+Kikuyu
+Kinyarwanda
+Kirghiz
+Komi
+Kongo
+Korean
+Kuanyama
+Kurdish
+Lao
+Latin
+Latvian
+Limburgan
+Lingala
+Lithuanian
+Luba-Katanga
+Luxembourgish
+Macedonian
+Malagasy
+Malay (macrolanguage)
+Malayalam
+Maltese
+Manx
+Maori
+Marathi
+Marshallese
+Modern Greek (1453-)
+Mongolian
+Nauru
+Navajo
+Ndonga
+Nepali (macrolanguage)
+North Ndebele
+Northern Sami
+Norwegian
+Norwegian Bokmål
+Norwegian Nynorsk
+Nyanja
+Occitan (post 1500)
+Ojibwa
+Oriya (macrolanguage)
+Oromo
+Ossetian
+Pali
+Panjabi
+Persian
+Polish
+Portuguese
+Pushto
+Quechua
+Romanian
+Romansh
+Rundi
+Russian
+Samoan
+Sango
+Sanskrit
+Sardinian
+Scottish Gaelic
+Serbian
+Serbo-Croatian
+Shona
+Sichuan Yi
+Sindhi
+Sinhala
+Slovak
+Slovenian
+Somali
+South Ndebele
+Southern Sotho
+Spanish
+Sundanese
+Swahili (macrolanguage)
+Swati
+Swedish
+Tagalog
+Tahitian
+Tajik
+Tamil
+Tatar
+Telugu
+Thai
+Tibetan
+Tigrinya
+Tonga (Tonga Islands)
+Tsonga
+Tswana
+Turkish
+Turkmen
+Twi
+Uighur
+Ukrainian
+Urdu
+Uzbek
+Venda
+Vietnamese
+Volapük
+Walloon
+Welsh
+Western Frisian
+Wolof
+Xhosa
+Yiddish
+Yoruba
+Zhuang
+Zulu
+Aleman
+Euskera
+Ingles
+Especialidad
+ALERGOLOGIA
+APARATO DIGESTIVO
+CARDIOLOGIA
+CIRUGIA GENERAL
+CIRUGIA VASCULAR
+DERMATOLOGIA
+HEMATOLOGIA
+MEDICINA GENERAL
+MEDICINA INTERNA
+NEUMOLOGIA
+NEUROCIRUGIA
+NEUROLOGIA
+OBSTETRICIA Y GINECOLOGIA
+OFTALMOLOGIA
+OTORRINOLARINGOLOGIA
+PEDIATRIA
+PSICOLOGIA
+PSIQUIATRIA
+REHABILITACION
+TRAUMATOLOGIA
+UROLOGIA
+NEFROLOGIA
+MEDICINA EDUCION FISICA Y DEL DEPORTE
+NEUROCIRUGIA
+ONCOLOGIA MEDICA
+REUMATOLOGIA
+ENDOCRINOLOGIA
+ENFERMERIA
+FISIOTERAPIA
+MEDICINA ESTETICA
+Atrás
+Siguiente
+Verificación de Datos
+Por favor sube los archivos que comprueban tu información, puede hacerlo mas adelante desde su panel Profesional QSalud.
+Pasaporte
+Peso máximo: 1 GB
+NIE
+Peso máximo: 1 GB
+DNI
+Peso máximo: 1 GB
+Curriculum vitae
+Peso máximo: 1 GB
+Datos personales
+Datos profesionales
+Constancia de formacion principal
+Peso máximo: 1 GB
+Su constancia fue expedida en España
+Homologación de constancia
+Peso máximo: 1 GB
+Constancia de formacion segundaria
+Peso máximo: 1 GB
+Su constancia fue expedida en España
+Homologación de constancia
+Peso máximo: 1 GB
+Datos de colegiado
+Constancia de colegiación
+Peso máximo: 1 GB
+Provincia donde se emite
+Atrás
+Siguiente
+Datos de identificación personal
+Nombre:
+Fecha de nacimiento:
+Nacionalidad:
+NIE:
+Pasaporte:
+Genero:
+Datos de contacto con QSalud - MetaQare
+Numero de contacto: %pref_pais%%telefono_movil%
+Correo electrónico: %correo_electronico%
+Datos de colegiación
+Nombre a mostrar:
+Nro Colegiado:
+Datos profesionales
+Idioma:
+Formación Principal: -
+Especialidad:
+Consentimiento para el Tratamiento de Datos Personales
+Doy mi consentimiento para que Qsalud trate mis datos de salud para usar los servicios.
+Saber más
+Quiero recibir comunicaciones comerciales de Qsalud (opcional).
+Saber más
+Validar
+Domicilio habitual de la póliza
+Domicilio habitual de la poliza
+ACTUALIZAR
+Numero tarjeta
+Numero tarjeta
+ACTUALIZAR
+Fecha baja tarjeta
+Fecha baja tarjeta
+ACTUALIZAR
+Fecha alta tarjeta
+Fecha alta tarjeta
+ACTUALIZAR
+Numero de paciente
+Numero de paciente
+ACTUALIZAR
+Aseguradora
+Aseguradora
+ACTUALIZAR
+Id Aseguradora
+Id Aseguradora
+ACTUALIZAR
+Teléfono móvil
+Domicilio habitual del tomador
+ACTUALIZAR
+Teléfono móvil
+Teléfono móvil
+ACTUALIZAR
+Email principal
+Email principal
+ACTUALIZAR
+Fecha de nacimiento
+Fecha de nacimiento
+ACTUALIZAR
+DNI / NIF / Pasaporte
+DNI / NIF / Pasaporte
+ACTUALIZAR
+Subir Imagen de Perfil
+Imagen de Perfil
+Tamaño máximo: 4 MB
+Actualizar
+✋ ¡Bienvenido a QSalud! ✨
+Tu bienestar es nuestra prioridad. ¿En qué podemos ayudarte hoy?
+☺️
+Consultas médicas con especialista o de medicina general.
+Planes de Nutrición y Entrenamiento personalizados.
+Resolvemos todas tus dudas sobre salud y bienestar.
+Escríbenos tu consulta y nuestro equipo te responderá lo antes posible.
+Si prefieres, también puedes llamarnos 900 86 85 65
+¡Estamos aquí para ayudarte a lograr tu mejor versión!
+Escríbenos
+●"
 ITI,https://www.iti.es/sobre-iti/que-es-iti/,"¿Qué es ITI? - ITI
 Funcional
 Funcional
@@ -14132,6 +14520,7 @@ Press
 Investor Relations
 0 suggestions available. Use the up and down arrow keys to navigate.
 Search suggestion
+Global
 Products & Services
 Industries
 Company
@@ -14151,48 +14540,6 @@ Digital ID
 Whistleblowing
 © Siemens 1996 – 2025"
 Ikerlan,https://www.ikerlan.es/somos-ikerlan,"Conoce IKERLAN
-¿Podemos ayudarte?
-Introduce un término de búsqueda
-ofertas de trabajo
-laboratorios
-tecnologías
-sectores
-tesis
-Actualidad
-es
-en
-eu
-Search
-Únete al equipo
-Sectores
-TODOS LOS SECTORES
-Transporte y movilidad
-Energía
-Fabricación avanzada
-Electrónica y TIC
-Alimentación y bebidas
-Automoción
-Aeronáutica y aeroespacial
-Salud y deporte
-Casos de éxito
-CONOCE NUESTROS PROYECTOS CON EMPRESAS
-Oferta para empresas
-Tecnologías
-IKERLAN
-SOMOS IKERLAN
-Nuestro equipo
-Corporación Mondragon
-Red de colaboradores
-Laboratorios y equipamiento
-Compromiso con el entorno
-Instalaciones científicas de vanguardia
-Conoce nuestros laboratorios
-Contacto
-Ley de Transparencia
-Política y certificaciones
-© IKERLAN Todos los derechos reservados.
-Portal de privacidad
-Sistema Interno de Información
 Navegación principal
 Únete al equipo
 Sectores
@@ -14302,36 +14649,7 @@ Política y certificaciones
 © IKERLAN Todos los derechos reservados.
 Footer Legales
 Portal de privacidad
-Sistema Interno de Información
-Centro de preferencia de la privacidad
-Permitirlas todas
-Son aquellas que almacenan información del comportamiento de los usuarios obtenida a través de la observación continuada de sus hábitos de navegación, lo que permite desarrollar un perfil específico para mostrar publicidad en función del mismo.
-Son aquéllas que permiten al responsable de las mismas, el seguimiento y análisis del comportamiento de los usuarios
-Activas siempre
-Son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la
-sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o sonido o compartir contenidos a través de redes sociales.
-Back Button
-Vendor Search
-Search Icon
-Filter Icon
-Clear
-checkbox label
-label
-Apply
-Cancel
-Consent
-Leg.Interest
-checkbox label
-label
-checkbox label
-label
-checkbox label
-label
-Name
-cookie name
-Confirmar mis preferencias
-.
-Rechazarlas todas"
+Sistema Interno de Información"
 Metaqare Intellihealth,https://metaqare.ai/company.php#about,"MetaQare - Company
 ×
 English
@@ -14975,31 +15293,7 @@ Contactar con nosotros
 Ética
 Eco-diseño
 Accesibilidad: Parcialmente conforme
-© 2025 VISEO Iberia
-Rechazarlas todas
-Centro de preferencia de la privacidad
-Más información
-Permitirlas todas
-Gestionar las preferencias de consentimiento
-Activas siempre
-Back Button
-Search Icon
-Filter Icon
-Clear
-checkbox label
-label
-Apply
-Cancel
-Consent
-Leg.Interest
-checkbox label
-label
-checkbox label
-label
-checkbox label
-label
-Rechazarlas todas
-Confirmar mis preferencias"
+© 2025 VISEO Iberia"
 Inkoova,https://inkoova.com/empresa/,"Empresa - Inkoova
 Funcional
 Funcional
@@ -15495,28 +15789,31 @@ a
 r
 d
 We’ve invested in hundreds of companies throughout over a decade of experience, creating products that have generated billions in enterprise value
-Want to
-]
-e t
-_
-e
-_
-o
-/
-n
+Wa
 ^
-er of
-=
-you
-?
-/
-wn st
+t
+{
+t
 _
-rt
 _
-+
-p?
-<
+}
+_
+the foun
+_
+_
+r
+[
+of y
+—
+ur ow
+_
+star
+}
+]
+}
+-
+!
+_
 Need an operating partner for your seed-stage startup?
 Our unique launch & scale playbook makes us the best partner for founders at all stages of their entrepreneurial journey, driving them towards sustainable success.
 Product
@@ -16657,136 +16954,35 @@ Kit Digital
 Política de calidad
 Canal de denuncias
 Scroll al inicio"
-Experis España,https://www.experis.es/es/acerca-de-nosotros,"Quiénes somos
-skip to the main content
-Soluciones IT
-Servicios
-Business Transformation
-Cloud and Infrastructure
-SAP & Enterprise Applications
-Selección IT
-Experis Academy
-Insights
-Únete a Experis
-Únete a nuestro equipo
-Plan de carrera
-Tu plan impulsa
-Preguntas frecuentes
-Quiénes somos
-Responsabilidad social
-Localizador de oficinas
-Contáctanos
-Buscar ofertas
-Encuentra tu próxima oportunidad IT
-Título del puesto, sector o habilidad
-Título del puesto, sector o habilidad
-Ubicación
-Ubicación
-BUSCAR
-Ver todas las ofertas
-Login
-Contáctanos
-Spain
-(Español)
-Cerrar
-BUSCAR OFERTAS
-BUSCAR EN LA WEB
-Título del puesto, sector o habilidad
-Título del puesto, sector o habilidad
-Ubicación
-Ubicación
-BUSCAR OFERTAS
-Soluciones IT
-VOLVER
-Soluciones IT
-Servicios
-Business Transformation
-Cloud and Infrastructure
-SAP & Enterprise Applications
-Selección IT
-Experis Academy
-Insights
-VOLVER
-Insights
-Únete a Experis
-VOLVER
-Únete a Experis
-Únete a nuestro equipo
-Plan de carrera
-Tu plan impulsa
-Preguntas frecuentes
-Quiénes somos
-VOLVER
-Quiénes somos
-Responsabilidad social
-Localizador de oficinas
-Contáctanos
-Contáctanos
-Spain
-(Español)
-Insights
-Ver todo el contenido
-NEWSLETTER
-Contáctanos
-Spain
-(Español)
-Acerca de nosotros
-En Experis te ofrecemos soluciones y servicios IT para que tu negocio se adapte a los desafíos de la era digital. Desde la optimización de la tecnología, a la formación y contratación de Talento IT
-¿EMPEZAMOS?
-Somos tu ventaja competitiva
-Somos líderes mundiales en recursos profesionales, soluciones para proyectos y gestión de servicios IT para empresas. Nuestro objetivo es ayudar a las organizaciones a transformar sus aplicaciones empresariales, infraestructura digital, servicios en la nube y ciberseguridad de la manera para optimizar y aumentar la eficiencia de todos sus procesos y áreas de negocio
-Servicios
-Business Transformation
-La estrategia digital de tu negocio y las herramientas tecnológicas más innovadoras para optimizar los procesos y toma de decisiones.
-VER MÁS
-Cloud and Infrastructure
-Journey to Cloud, la automatización de procesos y soluciones de ciberseguridad personalizadas
-VER MÁS
-SAP & Enterprise Applications
-Ofrecemos soluciones SAP globales que dan cobertura a cualquier necesidad de los clientes
-VER MÁS
-Selección IT
-Creamos el talento que necesitan las empresas para dar respuesta a sus necesidades digitales y promover su independencia tecnológica formando perfiles especializados desde cero
-VER MÁS
-Experis Academy
-VER MÁS
-Experis forma parte de la familia de marcas de ManpowerGroup
-ManpowerGroup es líder mundial en soluciones de Talento innovadoras, que conectan el potencial de las personas con las necesidades de los negocios. ManpowerGroup colabora con grandes y pequeñas empresas de todos los sectores industriales a través de nuestras marcas e iniciativas de empleo: Manpower, Experis y Talent Solutions
-VISITA WWW.MANPOWERGROUP.ES
-Contáctanos
-Descubre cómo Experis puede impulsar el rendimiento de tu negocio gracias a la combinación de soluciones digitales más avanzada del mercado
-CONTACTO
-Soluciones IT
-Servicios
-Business Transformation
-Cloud and Infrastructure
-SAP & Enterprise Applications
-Selección IT
-Experis Academy
-Insights
-Únete a Experis
-Únete a nuestro equipo
-Plan de carrera
-Tu plan impulsa
-Preguntas frecuentes
-Quiénes somos
-Responsabilidad social
-Localizador de oficinas
-Contáctanos
-NEWSLETTER
-ManpowerGroup® (NYSE: MAN), líder mundial en soluciones innovadoras en la Estrategia de Talento, ayuda a las organizaciones a transformarse en el cambiante mundo del empleo, a través de la atracción, el desarrollo y el compromiso del Talento, que garantiza su sostenibilidad y competitividad. Desarrollamos soluciones para más de 400.000 clientes y conectamos a más de tres millones de personas con oportunidades de desarrollo profesional, en compañías de todos los tamaños y sectores.
-Relaciones con Inversores
-Condiciones de uso
-Accesibilidad
-Política de Seguridad
-Política de Calidad
-Ver todos los trabajos
-© 2025 ManpowerGroup - Todos los derechos reservados
-SÍGUENOS
-Contáctanos
-Spain
-(Español)
-logout"
+Experis España,https://www.experis.es/es/acerca-de-nosotros,"experis.es | 502: Bad gateway
+Bad gateway
+Error code 502
+Visit
+cloudflare.com
+for more information.
+2025-11-20 09:20:53 UTC
+You
+Browser
+Working
+Lisbon
+Cloudflare
+Working
+www.experis.es
+Host
+Error
+What happened?
+The web server reported a bad gateway error.
+What can I do?
+Please try again in a few minutes.
+Cloudflare Ray ID:
+9a16dfb07e10aa28
+•
+Your IP:
+Click to reveal
+150.244.199.207
+•
+Performance & security by
+Cloudflare"
 Impuso Veritas Solutions Sl,https://impulso-veritas-solutions-dd0415.webflow.io/quienes-somos,"Quiénes Somos | Impulso Veritas Solutions
 Navbar · Impulso Veritas Solutions
 Inicio
@@ -16966,7 +17162,7 @@ Pie de página
 Impulso Veritas Solutions
 Tecnología y rigor legal del futuro
 Nivel Cuántico:
-53.2%
+4.1%
 Servicios
 →
 Herencias y sucesiones
@@ -17020,129 +17216,7 @@ Casos
 © 2025 Impulso Veritas Solutions S.L. Todos los derechos reservados.
 •
 •"
-Talent Connect,https://jobs.talentconnect.ai,"IT jobs - Talent Connect
-Consulta nuestra
-.
-Estrictamente necesarias
-Proveedores
-Teamtailor
-Analíticas
-Proveedores
-Teamtailor
-Menú de empleo
-Inicio
-Jobs
-Empleado
-Iniciar sesión
-Candidato
-Inicia sesión en Connect
-Página de inicio
-talentconnect.ai
-X
-Your next challenge is here
-Tu próximo desafío
-JOBS
-Jobs
-Consultor SAP PP/QM Senior - Argentina (100% remoto)
-SAP
-·
-Argentina
-·
-Completamente remoto
-Consultor SAP MM/PM Senior - Argentina (100% remoto)
-SAP
-·
-Argentina
-·
-Completamente remoto
-Python Senior - (Buenos Aires, híbrido)
-Back-End
-·
-Argentina
-·
-Híbrido
-React Senior - (Buenos Aires, híbrido)
-Front-End
-·
-Argentina
-·
-Híbrido
-Tech Lead (Microsoft Dynamics 365) (Ref. 120733) - Argentina (100% remota)
-Tech Lead
-·
-Argentina
-·
-Completamente remoto
-Todas las vacantes
-345
-+ Oportunidades + Opportunities
-92
-Empresas destacadas Top Companies
-1
-Única entrevista Single interview
-Primera y última entrevista
-Talent Connect permite que el proceso de búsqueda de empleo sea más
-rápido y preciso
-, logrando alta compatibilidad con tus expectativas, intereses y preferencias. A través de una
-entrevista con AI
-,  accedes a decenas de puestos.
-First and last interview
-Talent Connect makes the job search process
-faster and more accurate
-, achieving high compatibility with your expectations, interests and preferences. Through an
-interview with AI
-, you gain access to dozens of positions.
-START NOW
-Tu perfil, siempre actualizado
-¡Ya no tienes que invertir más tiempo en tu CV!
-Your profile is kept up to date
-You no longer have to spend time on your CV!
-About Us
-¿Por qué Talent Connect? | Why Talent Connect?
-- Vas a recibir solo propuestas a tu medida.
-- Con el rango de sueldo buscado, con la modalidad que prefieras, del tipo de desafío que busques.
-- Tu decides con cuál oportunidad avanzas.
-- Tus datos seguros. Hasta que no definas interés sobre la posición, no compartiremos tu perfil con las empresas.
-Con Talent Connect, si tu perfil presenta compatibilidad con las ofertas, en máximo 24h de cargado tu perfil, vas a recibir entrevistas técnicas directamente con la empresa.
----
-- You will only receive proposals tailored to your needs.
-- With the salary range you are looking for, with the modality you prefer, with the type of challenge you are looking for.
-- You decide which opportunity you move forward with.
-- Your data is secure. Until you define your interest in the position, we will not share your profile with the companies.
-With Talent Connect, if your profile is compatible with the offers, within 24 hours of uploading your profile, you will receive technical interviews directly with the company.
-¿Quienes somos? | Who we are?
-Talent Connect se especializa en conectar el mejor talento IT con empresas de primer nivel, a través de su plataforma con Inteligencia Artificial.
-Más de 20.000 talentos IT se han inscripto y han realizado su primera entrevista con Talent Connect.
---
-Talent Connect specializes in connecting the best IT talent with top-tier companies through its AI-powered platform.
-More than 20,000 IT talents have signed up and had their first interview with Talent Connect and are ready to go!
-Argentina
-Brasil
-Chile
-Colombia
-Ecuador
-España
-Mexico
-Milano
-Paraguay
-Perú
-Uruguay
-USA
-Acerca de Talent Connect
-Fundada en
-2017
-Compañeros
-+100
-Página de empleo
-Inicio
-Jobs
-Datos y privacidad
-talentconnect.ai
-Inicio de sesión de empleados/as
-Inicio de sesión de Connect para personas candidatas
-·
-Español
-Inglés (Estados Unidos)"
+Talent Connect,https://jobs.talentconnect.ai,
 Gfi Informatique,https://www.gifi.fr/qui-sommes-nous.html,"Qui sommes-nous ?
 Continuer sans accepter →
 Pour en savoir plus sur la finalité de chaque traceur, vous pouvez consulter notre
@@ -18992,7 +19066,7 @@ Contacta con nosotros
 Teléfono
 918316970
 Formulario contacto
-UERCMiU4EhsTPgchpjWg7e98KezgXyh2sCr_MkRgPbM=.html"
+9j_pruvw_-VkAxCIy-KLSS3qtnzRd1zqX_yBE6fFgz4=.html"
 Garaje de Ideas,https://www.garajedeideas.com/es/approach/overview,"Metodología | Garaje de Ideas
 Metodología
 work
@@ -21475,6 +21549,8 @@ Inscríbete ahora
 Sales Assistant Citees Málaga CC Plaza Mayor - 20H
 Inscríbete ahora
 OPORTO
+Sales Assistant Pampling & Co Oporto Rua das Flores 130- 20H
+Inscríbete ahora
 Store manager Pampling&Co Oporto Rua Das Flores 130- 40H
 Inscríbete ahora
 PADOVA
@@ -22448,174 +22524,6 @@ C/ Velázquez 27 1-I, 28001 Madrid
 Llámanos: +34 662 326 297
 info@cmvconsultores.es
 Copyright © Todos los derechos reservados."
-Trabajos en Ecix Tech,https://ecix.tech,"Soluciones tecnológicas para evitar multas y sanciones. | ECIX TECH
-MIA
-QUÉ ES MIA
-CÓMO FUNCIONA
-ORIGEN
-SOLUCIONES
-LEGALTECH
-MIAbogado
-REGTECH
-PRIVACIDAD
-COMPLIANCE
-CIBERSEGURIDAD
-ENTORNO NORMATIVO
-OBSERVATORIO
-CIBERDERECHO
-COMPLIANCE
-PROTECCIÓN DE DATOS
-SOLICITA DEMO
-MI CUENTA
-Buscar
-Seleccionar página
-MIA
-QUÉ ES MIA
-CÓMO FUNCIONA
-ORIGEN
-SOLUCIONES
-LEGALTECH
-MIAbogado
-REGTECH
-PRIVACIDAD
-COMPLIANCE
-CIBERSEGURIDAD
-ENTORNO NORMATIVO
-OBSERVATORIO
-CIBERDERECHO
-COMPLIANCE
-PROTECCIÓN DE DATOS
-SOLICITA DEMO
-MI CUENTA
-Buscar
-El Socio Legal  que te hace ganar más
-Inteligencia Artificial que responde consultas legales
-, crea contratos, revisa documentación jurídica y ejecuta
-Due Diligence
-por ti
-con la precisión que necesitas,
-en cualquier idioma y sin complicaciones.
-El asistente legal que siempre has deseado, desarrollado por Abogados y para Abogados,
-para que ganes más en tu día a día.
-Ver qué es esta IA →
-Reproductor de vídeo
-00:00
-00:00
-00:15
-Utiliza las teclas de flecha arriba/abajo para aumentar o disminuir el volumen.
-¿Sabías que hasta los trabajadores subcontratados pueden hacer que tu empresa sea penalmente responsable?
-Descubre todo lo que necesitas saber sobre cómo optimizar esta tediosa labor y te asegures que los proveedores y terceras partes de tu organización, no ponen en riesgo tu estrategia de cumplimiento.
-Descargar informe
-Anterior
-Siguiente
-1
-2
-Sobre ECIX TECH
-La mayor RegTech en
-Riesgos Normativos y Empresariales
-EcixTech es una empresa de tecnología y asesoría jurídica que ofrece soluciones personalizadas para garantizar el cumplimiento normativo y la seguridad de los datos de tu empresa. Nuestra amplia experiencia y nuestras herramientas especializadas te ayudarán a evitar multas y sanciones, proteger la privacidad de tus datos y mantener tu negocio en línea con las regulaciones aplicables.
-Experiencia
-+de 40 soluciones específicas para el cumplimiento
-RegTech
-Desarrollo propio de herramientas desde 2005
-A medida
-Soluciones llave en mano basadas en tecnología + servicio
-Clientes
-+ de 15.000 empresas confían en las Soluciones de ECIX TECH
-Nuestras soluciones
-RegTech Privacidad
-Soluciones para cumplir con el RGPD.
-VER SOLUCIONES
-RegTech Compliance
-Soluciones para asegurar el correcto cumplimiento de tu empresa.
-VER SOLUCIONES
-RegTech Ciberseguridad
-Soluciones para proteger a tu compañía de ataques e incidentes de seguridad.
-VER SOLUCIONES
-LegalTech
-Soluciones legales que agilizan y te ayudan en tu día a día.
-VER SOLUCIONES
-MIA
-La Inteligencia Artificial que ayuda legalmente a tu empresa.
-MÁS SOBRE MIA
-Timeline ECIX TECH:
-Contamos con más de 20 años de experiencia asesorando a las principales compañías en España y a nivel global.
-Enero 2023
-Ecix Group se convierte en ECIXTech la primera RegTech española.
-Noviembre 2022
-MIA recibe el premio Legal Marcom 2022 a la innovación en la Gala Nacional del Derecho.
-Septiembre 2022
-MIA incorpora un módulo específico de Blanqueo de Capitales para el control de las operaciones y el cumplimiento normativo.
-Mayo 2022
-MIA amplia su ámbito de actuación incorporando un módulo de Seguridad de la Información con: ENS, DORA, SWIFT e ISO 27001.
-Febrero 2022
-Lanzamiento Legal X el primer servicio que integra procesos+tecnología+personas para agilizar la revisión y tratamientos de grandes volúmenes de información.
-Septiembre 2021
-Lanzamiento de MIA, la primera Inteligencia Artificial que detecta Brechas Legales en las compañías en diferentes marcos normativos.
-Enero 2019
-ElixTech, firma 100% del Grupo, abre mercado con la venta de software en LATAM.
-Enero 2018
-Ecix abre oficinas en Barcelona y Zaragoza.
-Enero 2017
-Ecix desarrolla con la Universidad Complutense de Madrid una metodología de Análisis de Riesgos.
-Enero 2016
-Ecix crea ElixTech, la primera empresa Legal Tech que desarrolla y comercializa software de Compliance.
-Enero 2015
-Ecix desarrolla y crea el área de Ciberderecho.
-Enero 2014
-A raíz de un proceso de transformación, Ecix, se convierte en una firma especializada en consultoría de Compliance.
-Enero 2013
-Ecix desarrolla y crea el área de CSV (Compliance Software Value).
-Enero 2012
-Ecix Group y Coosbay Investments firman la separación de Écija en dos firmas. Ecix explota el área de Compliance y el software y Coosbay el área Legal.
-Septiembre 2002
-Ecix Group crea el área de I+D y lanza al mercado el primer software de Compliance y Privacidad «ePrivacy».
-Enero 2000
-Ecix Group amplía y lidera el área de Compliance Écija.
-Enero 1996
-Ecix Group (Álvaro Écija) y Coosbay Investments (Hugo Écija) fundan Écija Abogados al 50%.
-Previous
-Next
-15.000 empresas ya confían en nuestras soluciones ¿Quieres ser el siguiente caso de éxito?
-Con más de 20 años de experiencia en asesoría jurídica especializada y herramientas tecnológicas propias, EcixTech te ofrece una gama completa de soluciones para garantizar el cumplimiento regulatorio y evitar multas y sanciones de forma personalizada para cualquier organismo público o empresa privada. Únete a las más de 15.000 empresas que ya confían en nosotros para garantizar la seguridad y privacidad de sus datos.
-Solicita una demostración
-y descubre cómo podemos ayudarte a ti también.
-Saber
-más sobre
-ECIX TECH
-Para cualquier consulta, envíe un correo electrónico a
-info@ecix.tech
-, estaremos encantados de ayudarte.
-Seguir
-Seguir
-Solicita una demo
-Política de Calidad
-Política Seguridad de la Información
-Canal denuncias
-Política de Calidad
-Política Seguridad de la Información
-Canal denuncias
-Nuestro equipo
-Responsabilidad Social
-Certificaciones
-Nuestro equipo
-Responsabilidad Social
-Certificaciones
-Ecix Madrid
-C/ Lopez de Hoyos, 35  2º A
-28002 – Madrid, Spain
-(+34) 91 001 67 67
-Ecix Cataluña
-Passeig de gracia
-101, 2-1,
-08008 – Barcelona
-(+34) 91 001 67 67
-scroll
-info@miaintelligence.com
-×
-Para obtener más información, acceda a nuestra
-By
-v2.0"
 Lefebvre,https://www.lefebvre.es/conocenos/,"Conócenos - Lefebvre
 Consentimiento
 Detalles
@@ -24941,6 +24849,7 @@ Iniciativas Lefebvre
 Iniciativas Lefebvre
 Congreso IA Derecho y Empresa
 Hackathon
+Brand in Law
 IA Report
 Estudios e informes
 Estudios e informes
@@ -25821,32 +25730,7 @@ Canal Denuncias
 ES
 ca
 eu
-en
-Rechazarlas todas
-Aceptar todas
-Centro de preferencia de la privacidad
-Más información
-Permitirlas todas
-Gestionar las preferencias de consentimiento
-Activas siempre
-Back Button
-Search Icon
-Filter Icon
-Clear
-checkbox label
-label
-Apply
-Cancel
-Consent
-Leg.Interest
-checkbox label
-label
-checkbox label
-label
-checkbox label
-label
-Rechazarlas todas
-Confirmar mis preferencias"
+en"
 Consultoria Geneo Ia,https://www.geneo.co.uk/about-geneo-lean-consulting-and-software/,"About GENEO's Lean consulting and software - operational excellence
 About
 SOFTWARE
@@ -26595,6 +26479,8 @@ Our history
 2016
 2015
 2014
+A completely new project is born: Flash Now, the leading independent media platform 🚀✨
+So... What’s next?
 Our mission
 At Kova Builder, our mission is to create the next generation of tech-driven startups that transform industries and solve real-world challenges.
 We focus on identifying market inefficiencies and turning them into scalable, innovative, and profitable businesses. Our goal is to drive long-term, sustainable impact by using cutting-edge technology and data-driven strategies to disrupt markets and redefine industries.
@@ -26658,7 +26544,12 @@ Sofkredit
 About us
 People & Culture
 Join our team
-Contact"
+Contact
+From Valencia with love
+© 2025 Kova Builder
+© 2025 Kova Builder
+Legal Notice
+Policy statement"
 OCA Global,https://www.ocaglobal.com/es/conocenos/,"OCA Global
 Selecciona un país:
 GLOBAL
@@ -26917,7 +26808,7 @@ About Us
 Work With Us
 Contact Us
 We make innovation
-CON
+CO
 Because our mission is to give every company, no matter the size, the opportunity to innovate and help build a better future.
 Learn how we do this
 Work with us
@@ -27129,1947 +27020,3 @@ Version française
 Legal
 Privacy Policy
 © CIRCET 2025 - All rights reserved"
-QSalud,https://qsalud.com/quienes-somos/,"Quiénes somos | QSalud Online
-Valoramos tu privacidad
-Personalizar
-Rechazar todo
-Aceptar todo
-Personalizar las preferencias de consentimiento
-Mostrar más
-Necesaria
-Siempre activas
-Funcional
-Analítica
-el rendimiento
-Anuncio
-Rechazar todo
-Guardar mis preferencias
-Aceptar todo
-Saltar al contenido principal
-Saltar al pie de página
-Disponible 24/7 en el
-900 86 85 65
-Primera consulta: 10€ de descuento.
-Aplica el código ""METAQARE"" con la reserva
-Disponible 24/7 en el
-900 86 85 65
-ES
-EN
-FR
-PT
-IT
-Especialidades Medicas
-Medicina General
-Dermatología
-Endocrinología
-Ginecología
-Pediatría
-Psicología
-Alergología
-Aparato Digestivo
-Cardiología
-Cirugía General
-Cirugía Vascular
-Dermatología
-Enfermería
-Fisioterapia y osteopatía
-Hematología
-Medicina estética
-Medicina Interna
-Nefrología
-Neumología
-Neurocirugía
-Neurología
-Otorrinolaringología
-Podología
-Psicología
-Psiquiatría
-Rehabilitación
-Traumatología
-Urología
-Planes
-Planes de salud
-Planes de entrenamiento
-Planes de nutricion
-Salud Digital
-CHEQUEOS MÉDICOS
-CONSULTAS
-BIENESTAR
-TRATAMIENTOS
-Test y Analiticas
-Alergia
-Autoinmunidad y reumatología
-Bioquímica básica
-Digestivo
-Hormonas y tiroides
-Marcadores tumorales
-Microbiología e infecciones
-Migrañas
-Otras analiticas
-Pruebas ETS
-Pruebas fertilidad mujer
-Test de tolerancia alimentaria
-Test genéticos
-Test prenatales no invasivos
-Vitaminas y minerales
-Únete a la comunidad de médicos online
-Iniciar session
-Especialidades Medicas
-Alergología
-Aparato Digestivo
-Cardiología
-Cirugía General
-Cirugía Vascular
-Dermatología
-Dietética y Nutrición
-Endocrinología
-Enfermería
-Fisioterapia y osteopatía
-Geriatría
-Ginecología
-Hematología
-Medicina Educación Física y del deporte
-Medicina estética
-Medicina General
-Medicina Interna
-Nefrología
-Neumología
-Neurocirugía
-Neurología
-Oftalmología
-Oncología Médica
-Otorrinolaringología
-Pediatría
-Podología
-Psicología
-Psiquiatría
-Rehabilitación
-Reumatología
-Traumatología
-Urología
-Planes
-Planes de salud
-PLANES DE ENTRENAMIENTO
-PLANES DE NUTRICIÓN
-Salud Digital
-CHEQUEOS MÉDICOS
-CONSULTAS
-TEST Y ANALÍTICAS
-Alergia
-Autoinmunidad y reumatología
-Bioquímica básica
-Digestivo
-Hormonas y tiroides
-Marcadores tumorales
-Microbiología e infecciones
-Migrañas
-Otras analiticas
-Pruebas ETS
-Pruebas fertilidad mujer
-Test de tolerancia alimentaria
-Test genéticos
-Test prenatales no invasivos
-Vitaminas y minerales
-TRATAMIENTOS
-BIENESTAR
-Especialidades Medicas
-Alergología
-Aparato Digestivo
-Cardiología
-Cirugía General
-Cirugía Vascular
-Dermatología
-Dietética y Nutrición
-Endocrinología
-Enfermería
-Fisioterapia y osteopatía
-Geriatría
-Ginecología
-Hematología
-Medicina Educación Física y del deporte
-Medicina estética
-Medicina General
-Medicina Interna
-Nefrología
-Neumología
-Neurocirugía
-Neurología
-Oftalmología
-Oncología Médica
-Otorrinolaringología
-Pediatría
-Podología
-Psicología
-Psiquiatría
-Rehabilitación
-Reumatología
-Traumatología
-Urología
-Planes
-Planes de salud
-PLANES DE ENTRENAMIENTO
-PLANES DE NUTRICIÓN
-Salud Digital
-CHEQUEOS MÉDICOS
-CONSULTAS
-TEST Y ANALÍTICAS
-Alergia
-Autoinmunidad y reumatología
-Bioquímica básica
-Digestivo
-Hormonas y tiroides
-Marcadores tumorales
-Microbiología e infecciones
-Migrañas
-Otras analiticas
-Pruebas ETS
-Pruebas fertilidad mujer
-Test de tolerancia alimentaria
-Test genéticos
-Test prenatales no invasivos
-Vitaminas y minerales
-TRATAMIENTOS
-BIENESTAR
-Reservar ahora
-Select Language
-Basque
-Catalan
-Chinese (Simplified)
-Danish
-Dutch
-English
-French
-Galician
-German
-Italian
-Japanese
-Norwegian
-Portuguese
-Romanian
-Russian
-Spanish
-Swedish
-Turkish
-0
-Tu navegador no admite la etiqueta de vídeo.
-Recursos MetaQare para Profesionales de la Salud
-Recursos MetaQare para Profesionales de la Salud
-Manual Profesional MetaQare
-Accede a la guía completa para profesionales de la salud y resuelve tus dudas sobre el uso de MetaQare.
-Ver Manual Profesional
-Documentación General de MetaQare
-Explora todas las funcionalidades, preguntas frecuentes y recursos para sacar el máximo provecho de MetaQare.
-Ir a la Documentación
-Agentes Inteligentes de IA en MetaQare
-Descubre cómo aprovechar los agentes inteligentes de MetaQare para optimizar tu práctica médica.
-Ver Agentes Inteligentes
-Estos servicios ofrecen videoconsultas y llamadas telefónicas con profesionales médicos para la prevención, el diagnóstico y el tratamiento de enfermedades, así como el
-mantenimiento de la salud. Las opiniones médicas derivadas de estos servicios se basan en información médica ofrecida por el cliente. Servicios sanitarios prestados por QFISIO,
-CENTRO DE FISIOTERAPIA Y OSTEOPATIA, S.L. (Código Sanitario Registro Sanitario: 1606518/1608048)
-ESPECIALIDADES MÉDICAS
-Alergología
-Aparato Digestivo
-Cardiología
-Cirugía General
-Cirugía Vascular
-Dermatología
-Dietética y Nutrición
-Endocrinología
-Enfermería
-Fisioterapia y osteopatía
-Geriatría
-Ginecología
-Hematología
-Medicina Educación Física y del deporte
-Medicina estética
-Medicina General
-Medicina Interna
-Nefrología
-Neumología
-Neurocirugía
-Neurología
-Oftalmología
-Oncología Médica
-Otorrinolaringología
-Pediatría
-Podología
-Psicología
-Psiquiatría
-Rehabilitación
-Reumatología
-Traumatología
-Urología
-ACCESO PROFESIONAL
-Únete a la comunidad de médicos online
-TÉRMINOS Y CONDICIONES
-Terminos y condiciones
-Accesibilidad
-Confidencialidad
-POLÍTICA Y PRIVACIDAD
-Politica de Privacidad
-RGPD
-CONTÁCTANOS
-Medios de comunicación
-SOBRE NOSOTROS
-Nosotros
-Historia
-Equipo
-Blog
-COMUNÍCATE CON NOSOTROS
-Enviar
-REDES SOCIALES
-Copyright © 2025 QSALUD. TODOS LOS DERECHOS RESERVADOS.
-Usuario
-Usuario
-ACTUALIZAR
-Contraseña
-Contraseña
-ACTUALIZAR
-Iniciar consulta Telefonica
-Haz click en el boton de llamar para iniciar la llamada.
-Llamar
-Enviar
-Alta profesional en QSalud
-1
-Datos Personales
-2
-Datos Profesionales
-3
-Datos de la consulta
-4
-Validación de datos
-5
-Resumen
-Datos de identificación personal
-F. de nacimiento:
-Género
-Masculino
-Femenino
-Otro
-Nacionalidad
-Afganistán
-Albania
-Alemania
-Andorra
-Angola
-Antigua y Barbuda
-Arabia Saudita
-Argelia
-Argentina
-Armenia
-Australia
-Austria
-Azerbaiyán
-Bahamas
-Bangladés
-Barbados
-Baréin
-Bélgica
-Belice
-Benín
-Bielorrusia
-Birmania
-Bolivia
-Bosnia y Herzegovina
-Botsuana
-Brasil
-Brunéi
-Bulgaria
-Burkina Faso
-Burundi
-Bután
-Cabo Verde
-Camboya
-Camerún
-Canadá
-Catar
-Chad
-Chile
-China
-Chipre
-Ciudad del Vaticano
-Colombia
-Comoras
-Corea del Norte
-Corea del Sur
-Costa de Marfil
-Costa Rica
-Croacia
-Cuba
-Dinamarca
-Dominica
-Ecuador
-Egipto
-El Salvador
-Emiratos Árabes Unidos
-Eritrea
-Eslovaquia
-Eslovenia
-España
-Estados Unidos
-Estonia
-Esuatini
-Etiopía
-Filipinas
-Finlandia
-Fiyi
-Francia
-Gabón
-Gambia
-Georgia
-Ghana
-Granada
-Grecia
-Guatemala
-Guinea
-Guinea-Bisáu
-Guinea Ecuatorial
-Guyana
-Haití
-Honduras
-Hungría
-India
-Indonesia
-Irak
-Irán
-Irlanda
-Islandia
-Islas Marshall
-Islas Salomón
-Israel
-Italia
-Jamaica
-Japón
-Jordania
-Kazajistán
-Kenia
-Kirguistán
-Kiribati
-Kuwait
-Laos
-Lesoto
-Letonia
-Líbano
-Liberia
-Libia
-Liechtenstein
-Lituania
-Luxemburgo
-Madagascar
-Malasia
-Malaui
-Maldivas
-Malí
-Malta
-Marruecos
-Mauricio
-Mauritania
-México
-Micronesia
-Moldavia
-Mónaco
-Mongolia
-Montenegro
-Mozambique
-Namibia
-Nauru
-Nepal
-Nicaragua
-Níger
-Nigeria
-Noruega
-Nueva Zelanda
-Omán
-Países Bajos
-Pakistán
-Palaos
-Panamá
-Papúa Nueva Guinea
-Paraguay
-Perú
-Polonia
-Portugal
-Reino Unido
-República Centroafricana
-República Checa
-República del Congo
-República Democrática del Congo
-República Dominicana
-Ruanda
-Rumania
-Rusia
-Samoa
-San Cristóbal y Nieves
-San Marino
-San Vicente y las Granadinas
-Santa Lucía
-Santo Tomé y Príncipe
-Senegal
-Serbia
-Seychelles
-Sierra Leona
-Singapur
-Siria
-Somalia
-Sri Lanka
-Suazilandia
-Sudáfrica
-Sudán
-Sudán del Sur
-Suecia
-Suiza
-Surinam
-Tailandia
-Tanzania
-Tayikistán
-Timor Oriental
-Togo
-Tonga
-Trinidad y Tobago
-Túnez
-Turkmenistán
-Turquía
-Tuvalu
-Ucrania
-Uganda
-Uruguay
-Uzbekistán
-Vanuatu
-Venezuela
-Vietnam
-Yemen
-Yibuti
-Zambia
-Zimbabue
-Tipo de documento
-DNI
-NIE
-Pasaporte
-Datos de contacto
-País
-Afganistán (+93)
-Albania (+355)
-Alemania (+49)
-Andorra (+376)
-Angola (+244)
-Anguila (+1-264)
-Antártida (+672)
-Antigua y Barbuda (+1-268)
-Arabia Saudita (+966)
-Argelia (+213)
-Argentina (+54)
-Armenia (+374)
-Aruba (+297)
-Australia (+61)
-Austria (+43)
-Azerbaiyán (+994)
-Bahamas (+1-242)
-Bangladés (+880)
-Barbados (+1-246)
-Baréin (+973)
-Bélgica (+32)
-Belice (+501)
-Benín (+229)
-Bermudas (+1-441)
-Bielorrusia (+375)
-Birmania (+95)
-Bolivia (+591)
-Bosnia y Herzegovina (+387)
-Botsuana (+267)
-Brasil (+55)
-Brunéi (+673)
-Bulgaria (+359)
-Burkina Faso (+226)
-Burundi (+257)
-Bután (+975)
-Cabo Verde (+238)
-Camboya (+855)
-Camerún (+237)
-Canadá (+1)
-Chad (+235)
-Chile (+56)
-China (+86)
-Chipre (+357)
-Ciudad del Vaticano (+39-06)
-Colombia (+57)
-Comoras (+269)
-Corea del Norte (+850)
-Corea del Sur (+82)
-Costa de Marfil (+225)
-Costa Rica (+506)
-Croacia (+385)
-Cuba (+53)
-Curazao (+599)
-Dinamarca (+45)
-Dominica (+1-767)
-Ecuador (+593)
-Egipto (+20)
-El Salvador (+503)
-Emiratos Árabes Unidos (+971)
-Eritrea (+291)
-Eslovaquia (+421)
-Eslovenia (+386)
-España (+34)
-Estados Unidos (+1)
-Estonia (+372)
-Etiopía (+251)
-Filipinas (+63)
-Finlandia (+358)
-Fiyi (+679)
-Francia (+33)
-Gabón (+241)
-Gambia (+220)
-Georgia (+995)
-Ghana (+233)
-Gibraltar (+350)
-Granada (+1-473)
-Grecia (+30)
-Groenlandia (+299)
-Guadalupe (+590)
-Guam (+1-671)
-Guatemala (+502)
-Guayana Francesa (+594)
-Guernsey (+44-1481)
-Guinea (+224)
-Guinea Ecuatorial (+240)
-Guinea-Bisáu (+245)
-Guyana (+592)
-Haití (+509)
-Honduras (+504)
-Hong Kong (+852)
-Hungría (+36)
-India (+91)
-Indonesia (+62)
-Irak (+964)
-Irán (+98)
-Irlanda (+353)
-Isla Bouvet (+47)
-Isla de Man (+44-1624)
-Isla de Navidad (+61)
-Islandia (+354)
-Islas Caimán (+1-345)
-Islas Cocos (+61)
-Islas Cook (+682)
-Islas Feroe (+298)
-Islas Georgias del Sur y Sandwich del Sur (+500)
-Islas Heard y McDonald (+672)
-Islas Malvinas (+500)
-Islas Marianas del Norte (+1-670)
-Islas Marshall (+692)
-Islas Pitcairn (+64)
-Islas Salomón (+677)
-Islas Turcas y Caicos (+1-649)
-Islas Vírgenes Británicas (+1-284)
-Islas Vírgenes de los Estados Unidos (+1-340)
-Israel (+972)
-Italia (+39)
-Jamaica (+1-876)
-Japón (+81)
-Jersey (+44-1534)
-Jordania (+962)
-Kazajistán (+7)
-Kenia (+254)
-Kirguistán (+996)
-Kiribati (+686)
-Kuwait (+965)
-Laos (+856)
-Lesoto (+266)
-Letonia (+371)
-Líbano (+961)
-Liberia (+231)
-Libia (+218)
-Liechtenstein (+423)
-Lituania (+370)
-Luxemburgo (+352)
-Macao (+853)
-Macedonia del Norte (+389)
-Madagascar (+261)
-Malasia (+60)
-Malaui (+265)
-Maldivas (+960)
-Malí (+223)
-Malta (+356)
-Marruecos (+212)
-Martinica (+596)
-Mauricio (+230)
-Mauritania (+222)
-Mayotte (+262)
-México (+52)
-Micronesia (+691)
-Moldavia (+373)
-Mónaco (+377)
-Mongolia (+976)
-Montenegro (+382)
-Montserrat (+1-664)
-Mozambique (+258)
-Namibia (+264)
-Nauru (+674)
-Nepal (+977)
-Nicaragua (+505)
-Níger (+227)
-Nigeria (+234)
-Niue (+683)
-Noruega (+47)
-Nueva Caledonia (+687)
-Nueva Zelanda (+64)
-Omán (+968)
-Países Bajos (+31)
-Pakistán (+92)
-Palaos (+680)
-Palestina (+970)
-Panamá (+507)
-Papúa Nueva Guinea (+675)
-Paraguay (+595)
-Perú (+51)
-Polinesia Francesa (+689)
-Polonia (+48)
-Portugal (+351)
-Puerto Rico (+1-787)
-Qatar (+974)
-Reino Unido (+44)
-República Centroafricana (+236)
-República Checa (+420)
-República del Congo (+242)
-República Democrática del Congo (+243)
-República Dominicana (+1-809)
-Ruanda (+250)
-Rumania (+40)
-Rusia (+7)
-Sahara Occidental (+212)
-Samoa (+685)
-Samoa Americana (+1-684)
-San Bartolomé (+590)
-San Cristóbal y Nieves (+1-869)
-San Marino (+378)
-San Martín (+1-721)
-San Pedro y Miquelón (+508)
-San Vicente y las Granadinas (+1-784)
-Santa Elena (+290)
-Santa Lucía (+1-758)
-Santo Tomé y Príncipe (+239)
-Senegal (+221)
-Serbia (+381)
-Seychelles (+248)
-Sierra Leona (+232)
-Singapur (+65)
-Sint Eustatius (+599)
-Siria (+963)
-Somalia (+252)
-Sri Lanka (+94)
-Suazilandia (+268)
-Sudáfrica (+27)
-Sudán (+249)
-Sudán del Sur (+211)
-Suecia (+46)
-Suiza (+41)
-Surinam (+597)
-Svalbard y Jan Mayen (+47)
-Tailandia (+66)
-Taiwán (+886)
-Tanzania (+255)
-Tayikistán (+992)
-Timor Oriental (+670)
-Togo (+228)
-Tokelau (+690)
-Tonga (+676)
-Trinidad y Tobago (+1-868)
-Túnez (+216)
-Turkmenistán (+993)
-Turquía (+90)
-Tuvalu (+688)
-Ucrania (+380)
-Uganda (+256)
-Uruguay (+598)
-Uzbekistán (+998)
-Vanuatu (+678)
-Venezuela (+58)
-Vietnam (+84)
-Wallis y Futuna (+681)
-Yemen (+967)
-Yibuti (+253)
-Zambia (+260)
-Zimbabue (+263)
-Siguiente
-Datos de colegiación
-Foto de Perfil:
-Peso máximo: 1 GB
-Nº de colegio:
-Nombre a Publicar:
-Usted dispone de colegiación fuera de España ?
-No - Si
-Agregue el/los paises y numero de colegiado
-+
-Datos profesionales
-Formaciones principales
-Formación principal
-Centro de estudios
-+
-Formaciones Segundarias
-Puede añadir formaciones con el botón ""
-Añadir nuevo
-""
-+ Añadir nuevo
-Experiencia profesional
-Puede añadir experiencia profesional con el botón ""
-Añadir nuevo
-""
-+ Añadir nuevo
-Atrás
-Siguiente
-Datos de la consulta
-Idiomas en los que puede atender la consulta
-Puede seleccionar uno o mas idiomas
-Abkhazian
-Afar
-Afrikaans
-Akan
-Albanian
-Amharic
-Arabic
-Aragonese
-Armenian
-Assamese
-Avaric
-Avestan
-Aymara
-Azerbaijani
-Bambara
-Bashkir
-Basque
-Belarusian
-Bengali
-Bislama
-Bosnian
-Breton
-Bulgarian
-Burmese
-Catalan
-Central Khmer
-Chamorro
-Chechen
-Chinese
-Church Slavic
-Chuvash
-Cornish
-Corsican
-Cree
-Croatian
-Czech
-Danish
-Dhivehi
-Dutch
-Dzongkha
-English
-Esperanto
-Estonian
-Ewe
-Faroese
-Fijian
-Finnish
-French
-Fulah
-Galician
-Ganda
-Georgian
-German
-Guarani
-Gujarati
-Haitian
-Hausa
-Hebrew
-Herero
-Hindi
-Hiri Motu
-Hungarian
-Icelandic
-Ido
-Igbo
-Indonesian
-Interlingua (International Auxiliary Language Association)
-Interlingue
-Inuktitut
-Inupiaq
-Irish
-Italian
-Japanese
-Javanese
-Kalaallisut
-Kannada
-Kanuri
-Kashmiri
-Kazakh
-Kikuyu
-Kinyarwanda
-Kirghiz
-Komi
-Kongo
-Korean
-Kuanyama
-Kurdish
-Lao
-Latin
-Latvian
-Limburgan
-Lingala
-Lithuanian
-Luba-Katanga
-Luxembourgish
-Macedonian
-Malagasy
-Malay (macrolanguage)
-Malayalam
-Maltese
-Manx
-Maori
-Marathi
-Marshallese
-Modern Greek (1453-)
-Mongolian
-Nauru
-Navajo
-Ndonga
-Nepali (macrolanguage)
-North Ndebele
-Northern Sami
-Norwegian
-Norwegian Bokmål
-Norwegian Nynorsk
-Nyanja
-Occitan (post 1500)
-Ojibwa
-Oriya (macrolanguage)
-Oromo
-Ossetian
-Pali
-Panjabi
-Persian
-Polish
-Portuguese
-Pushto
-Quechua
-Romanian
-Romansh
-Rundi
-Russian
-Samoan
-Sango
-Sanskrit
-Sardinian
-Scottish Gaelic
-Serbian
-Serbo-Croatian
-Shona
-Sichuan Yi
-Sindhi
-Sinhala
-Slovak
-Slovenian
-Somali
-South Ndebele
-Southern Sotho
-Spanish
-Sundanese
-Swahili (macrolanguage)
-Swati
-Swedish
-Tagalog
-Tahitian
-Tajik
-Tamil
-Tatar
-Telugu
-Thai
-Tibetan
-Tigrinya
-Tonga (Tonga Islands)
-Tsonga
-Tswana
-Turkish
-Turkmen
-Twi
-Uighur
-Ukrainian
-Urdu
-Uzbek
-Venda
-Vietnamese
-Volapük
-Walloon
-Welsh
-Western Frisian
-Wolof
-Xhosa
-Yiddish
-Yoruba
-Zhuang
-Zulu
-Aleman
-Euskera
-Ingles
-Especialidad
-ALERGOLOGIA
-APARATO DIGESTIVO
-CARDIOLOGIA
-CIRUGIA GENERAL
-CIRUGIA VASCULAR
-DERMATOLOGIA
-HEMATOLOGIA
-MEDICINA GENERAL
-MEDICINA INTERNA
-NEUMOLOGIA
-NEUROCIRUGIA
-NEUROLOGIA
-OBSTETRICIA Y GINECOLOGIA
-OFTALMOLOGIA
-OTORRINOLARINGOLOGIA
-PEDIATRIA
-PSICOLOGIA
-PSIQUIATRIA
-REHABILITACION
-TRAUMATOLOGIA
-UROLOGIA
-NEFROLOGIA
-MEDICINA EDUCION FISICA Y DEL DEPORTE
-NEUROCIRUGIA
-ONCOLOGIA MEDICA
-REUMATOLOGIA
-ENDOCRINOLOGIA
-ENFERMERIA
-FISIOTERAPIA
-MEDICINA ESTETICA
-Atrás
-Siguiente
-Verificación de Datos
-Por favor sube los archivos que comprueban tu información, puede hacerlo mas adelante desde su panel Profesional QSalud.
-Pasaporte
-Peso máximo: 1 GB
-NIE
-Peso máximo: 1 GB
-DNI
-Peso máximo: 1 GB
-Curriculum vitae
-Peso máximo: 1 GB
-Datos personales
-Datos profesionales
-Constancia de formacion principal
-Peso máximo: 1 GB
-Su constancia fue expedida en España
-Homologación de constancia
-Peso máximo: 1 GB
-Constancia de formacion segundaria
-Peso máximo: 1 GB
-Su constancia fue expedida en España
-Homologación de constancia
-Peso máximo: 1 GB
-Datos de colegiado
-Constancia de colegiación
-Peso máximo: 1 GB
-Provincia donde se emite
-Atrás
-Siguiente
-Datos de identificación personal
-Nombre:
-Fecha de nacimiento:
-Nacionalidad:
-NIE:
-Pasaporte:
-Genero:
-Datos de contacto con QSalud - MetaQare
-Numero de contacto: %pref_pais%%telefono_movil%
-Correo electrónico: %correo_electronico%
-Datos de colegiación
-Nombre a mostrar:
-Nro Colegiado:
-Datos profesionales
-Idioma:
-Formación Principal: -
-Especialidad:
-Consentimiento para el Tratamiento de Datos Personales
-Doy mi consentimiento para que Qsalud trate mis datos de salud para usar los servicios.
-Saber más
-Quiero recibir comunicaciones comerciales de Qsalud (opcional).
-Saber más
-Validar
-Domicilio habitual de la póliza
-Domicilio habitual de la poliza
-ACTUALIZAR
-Numero tarjeta
-Numero tarjeta
-ACTUALIZAR
-Fecha baja tarjeta
-Fecha baja tarjeta
-ACTUALIZAR
-Fecha alta tarjeta
-Fecha alta tarjeta
-ACTUALIZAR
-Numero de paciente
-Numero de paciente
-ACTUALIZAR
-Aseguradora
-Aseguradora
-ACTUALIZAR
-Id Aseguradora
-Id Aseguradora
-ACTUALIZAR
-Teléfono móvil
-Domicilio habitual del tomador
-ACTUALIZAR
-Teléfono móvil
-Teléfono móvil
-ACTUALIZAR
-Email principal
-Email principal
-ACTUALIZAR
-Fecha de nacimiento
-Fecha de nacimiento
-ACTUALIZAR
-DNI / NIF / Pasaporte
-DNI / NIF / Pasaporte
-ACTUALIZAR
-Subir Imagen de Perfil
-Imagen de Perfil
-Tamaño máximo: 4 MB
-Actualizar
-✋ ¡Bienvenido a QSalud! ✨
-Tu bienestar es nuestra prioridad. ¿En qué podemos ayudarte hoy?
-☺️
-Consultas médicas con especialista o de medicina general.
-Planes de Nutrición y Entrenamiento personalizados.
-Resolvemos todas tus dudas sobre salud y bienestar.
-Escríbenos tu consulta y nuestro equipo te responderá lo antes posible.
-Si prefieres, también puedes llamarnos 900 86 85 65
-¡Estamos aquí para ayudarte a lograr tu mejor versión!
-Escríbenos
-●"
-Inetum North,https://www.inetum.com/es/inetum,"Sobre nosotros | Inetum
-Más info
-Guardar preferencias
-Negar todo
-Configuración
-Aceptar todo
-Withdraw consent
-Pasar al contenido principal
-Quiénes Somos
-Sobre nosotros
-Inetum Way
-Desarrollo sostenible
-Finanzas
-Compliance
-Calidad
-Seguridad
-Qué hacemos
-Nuestra propuesta de valor
-Inetum Consulting
-Inetum Solutions
-Inetum Technologies
-Innovación
-Inetum Gen AI
-Alianzas
-Contratamos
-Carrera
-Trabajos
-Emploi France
-Prensa
-Contacto
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-0, 5
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-1, 5
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-2, 5
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-3, 5
-4, 0
-4, 1
-4, 2
-4, 3
-4, 4
-4, 5
-fr
-Bélgica
-Brasil
-Bulgaria
-Colombia
-España
-Estados Unidos
-Francia
-Irlanda
-Luxemburgo
-Marruecos
-México
-Perú
-Polonia
-Portugal
-Reino Unido
-Rumanía
-Suiza
-Túnez
-es
-English
-Français
-Español
-Português
-Nederlands
-Elija su ubicación e idioma
-Para facilitar el acceso a los diferentes idiomas y para que haya más información disponible en nuestro sitio, hemos optado por la traducción automática.
-Le agradecemos su comprensión respecto a la traducción literal del contenido.
-Ubicación
-Bélgica
-Brasil
-Colombia
-Francia
-Luxemburgo
-México
-Marruecos
-Perú
-Polonia
-Portugal
-Rumanía
-España
-Suiza
-Túnez
-Reino Unido
-Estados Unidos
-Irlanda
-Bulgaria
-Idioma
-Inglés
-Francés
-Español
-Português
-Nederlands
-Enviar
-Sobre nosotros
-Sobre nosotros
-Inetum es líder europeo en servicios digitales. El equipo de Inetum, formado por 27.000 consultores y especialistas, trabaja cada día para generar un impacto digital en las empresas, las entidades del sector público y la sociedad. Las soluciones de Inetum tienen como objetivo contribuir al rendimiento y la innovación de sus clientes, así como al bien común.
-Presente en 19 países con una densa red de sitios, Inetum se asocia con los principales editores de software para enfrentar los desafíos de la transformación digital con proximidad y flexibilidad.
-Impulsada por su ambición de crecimiento y escala, Inetum generó ventas de 2.400 millones de euros en 2024.
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-0, 0
-0, 0
-0, 1
-1, 0
-1, 1
-Inetum Way
-Based on your values, apply action principles that give rise to a shared, living culture.
-Creemos que una estrategia ambiciosa debe hablar tanto al corazón como a la mente. Reflexionamos sobre por qué Inetum existe en el mundo, nuestro papel único en la creación de impacto y la cultura que necesitamos para triunfar.
-Creamos el ""método Inetum "", un marco que guiará nuestro trabajo en los próximos años y que unifica nuestro propósito, nuestros resultados estratégicos y nuestros valores.
-Invertimos nuestro tiempo y energía para ayudarnos a tomar decisiones más significativas.
-Leer más
-Cifras clave
-27.000 empleados locales para apoyar su proyecto de modernización, transformación o innovación digital con un enfoque de principio a fin.
-0, 0
-0, 0
-0, 1
-1, 0
-1, 1
-27 000
-COLABORADORES
-19
-PAÍSES
-7
-Laboratorio de fabricación
-21
-CENTROS DE SERVICIOS
-Gobernancia
-Chairman & CEO
-Contacta conmigo
-Jacques Pommeraud
-Chairman & CEO
-Leadership Team
-Executive Committee
-Leer más
-François Fleutiaux
-CEO Area Euromed
-Leer más
-Manuel García del Valle
-CEO Area Iberia & LatAm
-Leer más
-Kathy Quashie
-CEO Area Growing Markets
-Contacta conmigo
-Hemant Lamba
-CEO Inetum Solutions
-Contacta conmigo
-Emmanuelle Payan
-CEO Inetum Consulting
-Contacta conmigo
-Nathalie Pousin
-Chief Financial Officer
-Contacta conmigo
-Bruno Da Sola
-Chief People Officer
-Contacta conmigo
-David Gendry
-Chief Marketing, Communications and Public Affairs Officer
-Contacta conmigo
-Hugues Ruffat
-EVP Group Strategic Initiatives Officer
-3
-12
-10
-121
-+
-−
-Leaflet
-|
-©
-OpenStreetMap
-contributors ©
-CARTO
-Localisation
-Inetum en todo el mundo
-Inetum supports the international expansion of its major clients and develops its service offering to local companies and organizations in 19 countries.
-We have more than 130 offices around the world. There's sure to be one near you.
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Join us to live your digital impact!
-Inetum, certificado Top Employer Europe 2025!
-Tendrás la oportunidad de mejorar tu experiencia cada día y generar un impacto digital de forma rápida, sencilla y por el bien de todos, en un entorno que evoluciona constantemente.
-Leer más
-0, 0
-0, 1
-0, 2
-0, 3
-0, 4
-1, 0
-1, 1
-1, 2
-1, 3
-1, 4
-2, 0
-2, 1
-2, 2
-2, 3
-2, 4
-3, 0
-3, 1
-3, 2
-3, 3
-3, 4
-Dirección
-Antwerpsesteenweg 261/bus 2
-2800 Mechelen
-Belgium
-Mapa
-Teléfono
-+32 2 801 55 55
-Llàmame de nuevo
-Dirección
-Calle Surubim 577 - 17º piso, conjunto 71 Brooklin
-04571-050 São Paulo
-Brazil
-Mapa
-Teléfono
-+55 3528 4141
-Llàmame de nuevo
-Dirección
-Calle 104 ,18 A-52. Piso 2 y 3. Edificio Torre 104
-110111 Bogotá
-Colombia
-Mapa
-Dirección
-5-7 rue Touzet Gaillard
-93400 Saint-Ouen
-France
-Mapa
-Teléfono
-33 (0) 1 44 04 50 00
-Llàmame de nuevo
-Siguenos
-Dirección
-33 rue d'Eich
-1461 Luxembourg
-Luxembourg
-Mapa
-Teléfono
-+352 43 65 22-1
-Llàmame de nuevo
-Siguenos
-Dirección
-Blvd. Manuel Ávila Camacho 191, int. 502, Col. Los Morales Polanco
-11510 Mexico
-Mexico
-Mapa
-Teléfono
-+52 (55) 598 07373
-Llàmame de nuevo
-Dirección
-1100 Bd El Qods, Parc Casanearshore Shore 28 Sidi Maârouf
-20190 Casablanca
-Morocco
-Mapa
-Teléfono
-+212 (0)522 94 97 79/80/81
-Llàmame de nuevo
-Correo electrónico
-morocco@inetum.com
-Enviar un mensaje
-Dirección
-Av. Jorge Chávez 275 Of. 203 – Miraflores
-15074 Lima
-Peru
-Mapa
-Teléfono
-+511 2009730
-Llàmame de nuevo
-Dirección
-24 Wołoska St.
-02-675 Warszawa
-Poland
-Mapa
-Teléfono
-+48 22 31 46 000
-Llàmame de nuevo
-Correo electrónico
-poland@inetum.com
-Enviar un mensaje
-Siguenos
-Dirección
-Torre de Monsanto
-1495-061 Algés
-Portugal
-Mapa
-Teléfono
-+351 21 049 99 50
-Llàmame de nuevo
-Dirección
-Doamnei Street, number 14-16
-030056 Bucarest
-Romania
-Mapa
-Correo electrónico
-Office.ro@inetum.com
-Enviar un mensaje
-Dirección
-Calle María de Portugal, 9-11
-28050 Madrid
-Spain
-Mapa
-Teléfono
-+34 91 387 4700
-Llàmame de nuevo
-Dirección
-31 rue de Bourgogne - Q4
-1203 Geneva
-Swiss
-Mapa
-Teléfono
-+41227062711
-Llàmame de nuevo
-Dirección
-Immeuble Harbour, Avenue de la Bourse,
-1053 Tunis
-Tunisia
-Mapa
-Teléfono
-(+216) 70 01 62 20
-Llàmame de nuevo
-Dirección
-51 Eastcheap
-EC3M 1DT London
-England
-Mapa
-Correo electrónico
-uk@inetum.com
-Enviar un mensaje
-Dirección
-255 Giralda Avenue
-33134 Florida
-United States
-Mapa
-Teléfono
-+1 786-292-3612
-Llàmame de nuevo
-Dirección
-1 Poultry United Kingdom
-EC2R 8EJ London
-England
-Mapa
-Dirección
-89, Aleksandar Malinov Blvd.
-1715 Sofia
-Bulgaria
-Mapa
-© 2025 Inetum
-Todos los derechos reservados
-Descubra Inetum
-Ofertas
-Noticias
-Grupo
-El grupo
-Sobre nosotros
-Intranet
-Síguenos
-X
-Contacto
-Inetum
-5-7 rue Touzet Gaillard
-93400 Saint-Ouen
-Francia
-Tel: +33 (0)1 44 04 50 00
-Tel: +33 (0)1 44 04 59 00
-Contacto
-Accesibilidad: compliance parcial
-X"

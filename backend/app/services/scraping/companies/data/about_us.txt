@@ -53,7 +53,7 @@ https://newsroom.feverup.com/en-US/about/
 nan
 https://www.adeccogroup.com/our-group/about-us
 https://www.segurosnogal.es/nosotros/
-https://www.quironsalud.com/es/grupo/quienes-somos
+https://qsalud.com/quienes-somos/
 https://www.iti.es/sobre-iti/que-es-iti/
 https://www.siemens.com/global/en/company/about.html
 https://www.ikerlan.es/somos-ikerlan
@@ -89,4 +89,4 @@ https://www.ocaglobal.com/es/conocenos/
 https://www.oowlish.com/#about-us
 https://www.circet.com/company/overview
 https://qsalud.com/quienes-somos/
-https://www.inetum.com/es/inetum
+https://www.inetum.com/es/sobre-nosotros

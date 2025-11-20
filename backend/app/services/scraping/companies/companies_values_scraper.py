@@ -5,22 +5,24 @@ import time
 
 # ---------------  PROMPT --------------- #
 PROMPT = """
-Extrae la información de la empresa a partir del siguiente texto de su página web:
+Eres un analista empresarial experto. Analiza el siguiente texto procedente de la página web corporativa de una empresa:
 
 Texto:
 {texto}
 
-Devuelve un JSON con esta estructura EXACTA:
+Devuelve SOLO un JSON válido con la siguiente estructura EXACTA:
 
 {{
   "values": ["valor1", "valor2", "valor3"],
-  "culture_summary": "Resumen de la cultura de la empresa",
+  "culture_summary": "Resumen claro y profesional de la cultura de la empresa"
 }}
 
 REGLAS IMPORTANTES:
-1. Todos los campos deben estar presentes: si no hay información explícita, **infierelo razonablemente** a partir del contexto de la empresa.
-2. Devuelve solo JSON válido, sin explicaciones ni texto adicional.
-3. Mantén los valores concisos, claros y no redundantes.
+- NO escribas explicaciones fuera del JSON.
+- Extrae exactamente 3 valores clave que definan la identidad o filosofía de la empresa.
+- Si los valores no aparecen de forma explícita, infiérelos profesionalmente a partir del tono y contenido.
+- La cultura debe describirse en 2–3 frases como máximo.
+- No repitas información ni incluyas frases genéricas.
 """
 
 
@@ -49,13 +51,14 @@ def extract_info_cloud(texto: str) -> dict:
         print("CONTENT RECIBIDO:", content if 'content' in locals() else None)
         return {
             "values": [],
-            "culture_summary": "",
+            "culture_summary": ""
         }
 
 
 # ---------------  PROGRAMA --------------- #
 df = pd.read_csv("backend/app/services/scraping/companies/data/companies_pre_llm.csv")
-df = df.drop_duplicates(subset="url_about_us")
+df = df.dropna().reset_index()
+# df = df.drop_duplicates(subset="url_about_us")
 
 # Lista donde meteremos los diccionarios devueltos por el LLM
 results = []

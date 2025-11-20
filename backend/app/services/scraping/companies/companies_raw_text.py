@@ -56,6 +56,16 @@ def clean_web_text(browser, url, wait_selector="body", timeout=10):
     return cleaned_text
     
 
+from urllib.parse import urlparse
+
+def validar_url(url):
+    try:
+        resultado = urlparse(url)
+        if resultado.scheme in ["http", "https"] and resultado.netloc:
+            return True
+        return False
+    except:
+        return False
 
 # --------------- PROGRAMA PRINCIPAL --------------- #
 
@@ -77,14 +87,21 @@ browser = uc.Chrome(options=options, desired_capabilities=caps)
 
 df = pd.read_csv("backend/app/services/scraping/companies/data/companies_and_links.csv")
 df = df.dropna(subset=["url_about_us"])
+df = df.drop_duplicates(subset=["url_about_us"])
 urls = list(df["url_about_us"])
 
 texts = []
 
 for url in urls:
-    
-    text = clean_web_text(browser, url)
-    texts.append(text)
+    if not validar_url(url):
+        texts.append("")  # Guardamos vacío para mantener el índice
+        continue
+    try:
+        text = clean_web_text(browser, url)
+        texts.append(text)
+    except:
+        texts.append("")  # Si falla el scraping, seguimos y no crasheamos
+        continue
     
 browser.quit()
 
