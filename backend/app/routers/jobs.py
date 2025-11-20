@@ -12,6 +12,14 @@ from app.models.skills import CandidateSkill, JobSkill
 from app.models.users import User
 from app.services.notifications.email_service import send_selection_email
 
+from app.services.matching.matching_engine import (
+    compute_skills_fit,
+    compute_values_fit,
+    compute_team_fit,
+    compute_global_fit,
+    build_candidate_skills_list,
+    build_job_skills_list,
+)
 
 # TODO (cuando toque):
 # from app.services.ocr.document_parser import run as parse_document
@@ -36,6 +44,27 @@ def get_db():
 # -----------------------------
 # Pydantic Schemas
 # -----------------------------
+class CandidateSummary(BaseModel):
+    id: int
+    full_name: Optional[str] = None
+    email: str
+    headline: Optional[str] = None
+    location: Optional[str] = None
+    years_experience: Optional[float] = None
+
+class MatchingScores(BaseModel):
+    skills_fit: float
+    values_fit: float
+    team_fit: float
+    global_fit: float
+
+class JobApplicationWithMatchingResponse(BaseModel):
+    application_id: int
+    candidate: CandidateSummary
+    status: Optional[str] = None
+    created_at: Optional[str] = None  # o datetime si ya lo usas así
+    scores: MatchingScores
+
 class TeamMemberCreate(BaseModel):
     role: Optional[str] = None
     seniority: Optional[str] = None
@@ -787,3 +816,74 @@ def delete_job(job_id: int, db: Session = Depends(get_db)):
         "message": "Job and related data deleted successfully.",
         "job_id": job_id,
     }
+
+@router.get(
+    "/jobs/{job_id}/applications_with_matching",
+    response_model=List[JobApplicationWithMatchingResponse],
+)
+def get_job_applications_with_matching(job_id: int, db: Session = Depends(get_db)):
+    # 1) Aseguramos que existe el job
+    job = db.query(Job).filter(Job.id == job_id).first()
+    if not job:
+        raise HTTPException(status_code=404, detail="Job not found")
+
+    # 2) Cargamos las applications de esa vacante
+    applications = (
+        db.query(Application)
+        .filter(Application.job_id == job_id)
+        .order_by(Application.created_at.desc())
+        .all()
+    )
+
+    results: List[JobApplicationWithMatchingResponse] = []
+
+    for app_obj in applications:
+        candidate = (
+            db.query(Candidate)
+            .filter(Candidate.id == app_obj.candidate_id)
+            .first()
+        )
+        if not candidate:
+            # Si por algún motivo hay una aplicación huérfana, la saltamos
+            continue
+
+        user = db.query(User).filter(User.id == candidate.user_id).first()
+        email = user.email if user else ""
+
+        # 3) Construir listas de skills para candidate y job usando la misma lógica que el matching real
+        candidate_skills = build_candidate_skills_list(db, candidate)
+        job_skills = build_job_skills_list(db, job)
+
+        # 4) Calcular scores reales
+        skills_fit = compute_skills_fit(candidate_skills, job_skills)
+        values_fit = compute_values_fit(candidate, job)
+        team_fit = compute_team_fit(candidate, job)
+        global_fit = compute_global_fit(skills_fit, values_fit, team_fit)
+
+        candidate_summary = CandidateSummary(
+            id=candidate.id,
+            full_name=candidate.full_name,
+            email=email,
+            headline=getattr(candidate, "headline", None),
+            location=getattr(candidate, "location", None),
+            years_experience=getattr(candidate, "years_experience", None),
+        )
+
+        scores = MatchingScores(
+            skills_fit=skills_fit,
+            values_fit=values_fit,
+            team_fit=team_fit,
+            global_fit=global_fit,
+        )
+
+        results.append(
+            JobApplicationWithMatchingResponse(
+                application_id=app_obj.id,
+                candidate=candidate_summary,
+                status=getattr(app_obj, "status", None),
+                created_at=app_obj.created_at.isoformat() if app_obj.created_at else None,
+                scores=scores,
+            )
+        )
+
+    return results

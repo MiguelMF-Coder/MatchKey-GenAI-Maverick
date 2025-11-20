@@ -658,8 +658,8 @@ def render_company_portal():
         with col2:
             st.markdown("**➕ Crear una nueva vacante**")
             st.caption("Publica una posición y deja que el sistema te sugiera candidatos.")
-            if st.button("Crear vacante"):
-                st.session_state.current_page = "Crear vacante"
+            if st.button("Portal vacantes"):
+                st.session_state.current_page = "Portal vacantes"
                 st.rerun()
 
         with col3:
@@ -672,7 +672,7 @@ def render_company_portal():
     elif page == "Perfil empresa":
         company_profile.render()
 
-    elif page == "Crear vacante":
+    elif page == "Portal vacantes":
         company_create_job.render()
 
     elif page == "Analítica de talento":

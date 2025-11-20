@@ -120,6 +120,25 @@ def fetch_company_jobs_with_applications(company_id):
 
 
 def fetch_job_applications(job_id):
+    """
+    Devuelve las candidaturas de una vacante.
+
+    Se espera que el backend devuelva algo del estilo:
+    {
+        "applications": [
+            {
+                "application_id": int,
+                "candidate_id": int,        # ⚠️ Ideal para matching
+                "candidate_name": str,
+                "candidate_email": str,
+                "applied_at": str,
+                "status": str,
+                ...
+            },
+            ...
+        ]
+    }
+    """
     url = f"{BACKEND_URL}/jobs/{job_id}/applications"
     try:
         resp = requests.get(url, timeout=15)
@@ -135,6 +154,77 @@ def fetch_job_applications(job_id):
             st.json(resp.json())
         except Exception:
             st.write(resp.text)
+        return None
+
+    return resp.json()
+
+
+def fetch_matching_scores(candidate_id, job_id):
+    """
+    Llama al endpoint real de matching:
+    GET /matching/candidates/{candidate_id}/job/{job_id}/scores
+
+    Se espera algo como:
+    {
+        "skills_fit": 80.0,
+        "values_fit": 70.0,
+        "team_fit": 65.0,
+        "global_fit": 75.0
+    }
+    """
+    if candidate_id is None:
+        return None
+
+    url = f"{BACKEND_URL}/matching/candidates/{candidate_id}/job/{job_id}/scores"
+    try:
+        resp = requests.get(url, timeout=10)
+    except Exception as e:
+        st.error(f"Error al obtener el matching para el candidato {candidate_id}: {e}")
+        return None
+
+    if resp.status_code != 200:
+        # No lo tratamos como error bloqueante, simplemente no mostramos matching
+        try:
+            err = resp.json()
+        except Exception:
+            err = resp.text
+        st.warning(
+            f"No se han podido obtener los scores de matching "
+            f"para el candidato {candidate_id}. Detalle: {err}"
+        )
+        return None
+
+    return resp.json()
+
+
+def fetch_candidate_profile(candidate_id):
+    """
+    Carga un resumen del candidato para mostrarlo en el portal de empresa.
+    GET /candidates/{id}/profile
+
+    Se espera algo tipo:
+    {
+        "id": ...,
+        "full_name": ...,
+        "headline": ...,
+        "location": ...,
+        "years_experience": ...,
+        "skills": [...],
+        ...
+    }
+    """
+    if candidate_id is None:
+        return None
+
+    url = f"{BACKEND_URL}/candidates/{candidate_id}/profile"
+    try:
+        resp = requests.get(url, timeout=10)
+    except Exception as e:
+        st.error(f"Error al obtener el perfil del candidato {candidate_id}: {e}")
+        return None
+
+    if resp.status_code != 200:
+        # Igual que en matching: no bloqueamos, solo avisamos si queremos
         return None
 
     return resp.json()
@@ -521,15 +611,17 @@ def render_create_job_tab(company_id):
 # -------------------------
 # UI: Gestión de vacantes
 # -------------------------
+
 def render_manage_jobs_tab(company_id):
+    import streamlit as st
+
     st.markdown("## 📊 Gestionar mis vacantes")
     st.caption(
-        "Revisa tus vacantes, ve cuántos candidatos han aplicado, selecciona personas, "
-        "edita los detalles o elimina ofertas que ya no estén activas."
+        "Revisa tus vacantes, ve cuántos candidatos han aplicado, su encaje con la oferta, "
+        "selecciona personas, edita los detalles o elimina ofertas que ya no estén activas."
     )
 
     if st.session_state.get("refresh_company_jobs"):
-        # Simplemente limpiar el flag; el rerun de Streamlit ya habrá refrescado
         st.session_state["refresh_company_jobs"] = False
 
     data = fetch_company_jobs_with_applications(company_id)
@@ -551,21 +643,17 @@ def render_manage_jobs_tab(company_id):
         app_count = job.get("application_count", 0)
 
         with st.expander(f"📌 {title}"):
-            # Resumen de la vacante
-            col_a, col_b, col_c = st.columns([2, 2, 1])
-
+            # Resumen
+            col_a, col_b, col_c = st.columns([2,2,1])
             with col_a:
                 st.markdown(f"**Ubicación:** {location}")
                 st.markdown(f"**Departamento:** {department}")
-
             with col_b:
                 st.markdown(f"**Estado:** `{status}`")
                 st.markdown(f"**Candidatos aplicados:** {app_count}")
                 if created_at:
                     st.caption(f"Creada: {created_at}")
-
             with col_c:
-                # Botón eliminar
                 if st.button("🗑️ Eliminar vacante", key=f"delete_job_{job_id}"):
                     res = delete_job_backend(job_id)
                     if res:
@@ -575,99 +663,139 @@ def render_manage_jobs_tab(company_id):
 
             st.markdown("---")
 
-            # -------------------------
-            # Candidatos que han aplicado
-            # -------------------------
+            # ------------------------------------------
+            # Candidatos aplicados
+            # ------------------------------------------
             st.markdown("### 👤 Candidatos que han aplicado")
 
             apps_data = fetch_job_applications(job_id)
-            if apps_data and apps_data.get("applications"):
-                for app in apps_data["applications"]:
-                    a_col1, a_col2, a_col3 = st.columns([3, 2, 2])
+            applications = (apps_data or {}).get("applications") or []
 
+            if not applications:
+                st.info("Aún no hay candidatos aplicados a esta vacante.")
+            else:
+                for app in applications:
+                    candidate_id = app.get("candidate_id")
                     candidate_name = app.get("candidate_name") or "Candidato sin nombre"
                     candidate_email = app.get("candidate_email") or "Sin email"
                     applied_at = app.get("applied_at") or "Fecha no disponible"
                     status_app = app.get("status") or "applied"
 
+                    # ---------------- MATCHING REAL ----------------
+                    scores = fetch_matching_scores(candidate_id, job_id) if candidate_id else None
+
+                    def _safe_score(v, default=None):
+                        return v if isinstance(v, (int, float)) else default
+
+                    if scores:
+                        global_fit = _safe_score(scores.get("global_fit"), 0)
+                        skills_fit = _safe_score(scores.get("skills_fit"), 0)
+                        values_fit = _safe_score(scores.get("values_fit"), None)
+                        team_fit = _safe_score(scores.get("team_fit"), None)
+                    else:
+                        global_fit = 0
+                        skills_fit = 0
+                        values_fit = None
+                        team_fit = None
+
+                    # ---------------- PERFIL DEL CANDIDATO ----------------
+                    candidate_profile = fetch_candidate_profile(candidate_id) if candidate_id else None
+                    headline = candidate_profile.get("headline") if candidate_profile else None
+                    location_cand = candidate_profile.get("location") if candidate_profile else None
+                    years_exp = candidate_profile.get("years_experience") if candidate_profile else None
+
+                    a_col1, a_col2, a_col3, a_col4 = st.columns([3,2,2,2])
+
                     with a_col1:
                         st.markdown(f"**{candidate_name}**")
                         st.caption(candidate_email)
+                        if headline:
+                            st.caption(f"💼 {headline}")
+                        if location_cand:
+                            st.caption(f"📍 {location_cand}")
 
                     with a_col2:
                         st.markdown(f"Estado: `{status_app}`")
                         st.caption(f"Aplicó: {applied_at}")
+                        st.metric("Encaje global", f"{global_fit:.0f} / 100")
 
                     with a_col3:
-                        select_key = f"select_app_{job_id}_{app['application_id']}"
-                        if st.button("✅ Seleccionar y enviar email", key=select_key):
-                            res = select_application_backend(job_id, app["application_id"])
-                            if res:
-                                st.success("Candidato seleccionado y email enviado (si está configurado).")
-                                st.session_state["refresh_company_jobs"] = True
-                                st.experimental_rerun()
-            else:
-                st.info("Aún no hay candidatos aplicados a esta vacante.")
+                        st.markdown("**Skills fit**")
+                        st.progress(int(skills_fit or 0))
+                        st.caption(f"{skills_fit:.0f} / 100")
+
+                    with a_col4:
+                        st.markdown("**Valores / Team**")
+                        st.text(f"Valores: {values_fit:.0f}/100" if values_fit is not None else "Valores: N/A")
+                        st.text(f"Equipo:  {team_fit:.0f}/100" if team_fit is not None else "Equipo:  N/A")
+
+                    # --------------- DETALLE (YA SIN EXPANDER ANIDADO) ---------------
+                    st.markdown("#### 🔎 Detalle del candidato")
+                    if candidate_profile:
+                        st.write(f"Nombre completo: **{candidate_profile.get('full_name') or candidate_name}**")
+                        if years_exp is not None:
+                            st.write(f"**Años de experiencia:** {years_exp}")
+                        if candidate_profile.get("current_role"):
+                            st.write(f"**Rol actual:** {candidate_profile['current_role']}")
+                        if candidate_profile.get("skills"):
+                            st.markdown("**Skills principales:**")
+                            skills = candidate_profile["skills"]
+                            if isinstance(skills, list):
+                                st.write(", ".join(skills))
+                            else:
+                                st.write(skills)
+                    else:
+                        st.info("No se pudo cargar el detalle del candidato.")
+
+                    st.markdown("---")
+                    st.markdown("**Detalle de matching:**")
+                    st.write(f"- Encaje global: {global_fit:.0f}/100")
+                    st.write(f"- Skills fit: {skills_fit:.0f}/100")
+                    st.write(f"- Valores: {values_fit:.0f}/100" if values_fit is not None else "- Valores: N/A")
+                    st.write(f"- Team fit: {team_fit:.0f}/100" if team_fit is not None else "- Team fit: N/A")
+
+                    # Botón seleccionar
+                    select_key = f"select_app_{job_id}_{app['application_id']}"
+                    if st.button("✅ Seleccionar y enviar email", key=select_key):
+                        res = select_application_backend(job_id, app["application_id"])
+                        if res:
+                            st.success("Candidato seleccionado y email enviado.")
+                            st.session_state["refresh_company_jobs"] = True
+                            st.experimental_rerun()
+
+                    st.markdown("---")
 
             st.markdown("---")
 
-            # -------------------------
-            # Edición rápida de la vacante
-            # -------------------------
+            # ------------------------------------------
+            # Edición de la vacante
+            # ------------------------------------------
             st.markdown("### ✏️ Editar detalles de la vacante")
 
             with st.form(f"edit_job_form_{job_id}"):
                 e_col1, e_col2 = st.columns(2)
 
                 with e_col1:
-                    new_title = st.text_input(
-                        "Título del puesto",
-                        value=title,
-                        key=f"edit_title_{job_id}",
-                    )
-                    new_location = st.text_input(
-                        "Ubicación / modalidad",
-                        value=location if location != "Ubicación no especificada" else "",
-                        key=f"edit_location_{job_id}",
-                    )
-                    new_department = st.text_input(
-                        "Departamento / área",
-                        value=department if department != "Departamento no especificado" else "",
-                        key=f"edit_department_{job_id}",
-                    )
+                    new_title = st.text_input("Título del puesto", value=title)
+                    new_location = st.text_input("Ubicación / modalidad", value=location)
+                    new_department = st.text_input("Departamento / área", value=department)
 
                 with e_col2:
-                    new_contract_type = st.text_input(
-                        "Tipo de contrato",
-                        value=job.get("contract_type", "") or "",
-                        key=f"edit_contract_type_{job_id}",
-                    )
-                    new_salary_range = st.text_input(
-                        "Rango salarial",
-                        value=job.get("salary_range", "") or "",
-                        key=f"edit_salary_range_{job_id}",
-                    )
+                    new_contract_type = st.text_input("Tipo de contrato", value=job.get("contract_type", ""))
+                    new_salary_range = st.text_input("Rango salarial", value=job.get("salary_range", ""))
                     new_seniority = st.selectbox(
                         "Seniority objetivo",
                         ["No especificado", "Junior", "Mid", "Senior", "Lead"],
-                        index=(
-                            ["No especificado", "Junior", "Mid", "Senior", "Lead"]
-                            .index(job.get("seniority", "No especificado"))
-                            if job.get("seniority") in ["No especificado", "Junior", "Mid", "Senior", "Lead"]
-                            else 0
-                        ),
-                        key=f"edit_seniority_{job_id}",
+                        index=["No especificado", "Junior", "Mid", "Senior", "Lead"]
+                        .index(job.get("seniority", "No especificado"))
+                        if job.get("seniority") in ["No especificado", "Junior", "Mid", "Senior", "Lead"]
+                        else 0,
                     )
 
                 new_status = st.selectbox(
                     "Estado de la vacante",
                     ["open", "closed", "paused"],
-                    index=(
-                        ["open", "closed", "paused"].index(status)
-                        if status in ["open", "closed", "paused"]
-                        else 0
-                    ),
-                    key=f"edit_status_{job_id}",
+                    index=["open", "closed", "paused"].index(status) if status in ["open", "closed", "paused"] else 0,
                 )
 
                 submitted_edit = st.form_submit_button("Guardar cambios")
