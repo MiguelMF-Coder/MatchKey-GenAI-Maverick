@@ -1,15 +1,16 @@
-# Graph Report - .  (2026-06-13)
+# Graph Report - MatchKey-GenAI-Maverick  (2026-06-13)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 93 files · ~2,037,585 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 494 nodes · 1087 edges · 57 communities (37 shown, 20 thin omitted)
-- Extraction: 63% EXTRACTED · 37% INFERRED · 0% AMBIGUOUS · INFERRED: 403 edges (avg confidence: 0.53)
+- 613 nodes · 1174 edges · 90 communities (47 shown, 43 thin omitted)
+- Extraction: 67% EXTRACTED · 33% INFERRED · 0% AMBIGUOUS · INFERRED: 393 edges (avg confidence: 0.53)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f363ced4`
+- Built from commit: `426c6f23`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -57,6 +58,38 @@
 - [[_COMMUNITY_Pull Request Guidelines|Pull Request Guidelines]]
 - [[_COMMUNITY_PostgreSQL Admin Service|PostgreSQL Admin Service]]
 - [[_COMMUNITY_Getting Started Guide|Getting Started Guide]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 80|Community 80]]
+- [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
+- [[_COMMUNITY_Community 84|Community 84]]
+- [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Job` - 54 edges
@@ -71,29 +104,29 @@
 10. `CandidateInterview` - 24 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Banner vertical branding MatchKey sidebar` --references--> `MatchKey project README`  [INFERRED]
-  frontend/images/banner_barra_lateral.png → README.md
-- `Banner MatchKey login page` --references--> `MatchKey project README`  [INFERRED]
-  frontend/images/banner_inicio_sesion.png → README.md
-- `Illustration for candidate home page` --references--> `MatchKey project README`  [INFERRED]
-  frontend/images/candidate_home_illustration.png → README.md
-- `Illustration for company home page` --references--> `MatchKey project README`  [INFERRED]
-  frontend/images/company_home_illustration.png → README.md
-- `System prompt template for MatchKey project` --references--> `MatchKey project README`  [INFERRED]
-  graphify-out/converted/🟣 PLANTILLA SYSTEM PROMPT_8e503c68.md → README.md
+- `init_db()` --calls--> `seed_companies_from_values_dataset()`  [INFERRED]
+  backend/app/db/init_db.py → backend/app/db/seed_companies_from_values_dataset.py
+- `create_accenture_demo_user()` --calls--> `User`  [INFERRED]
+  backend/app/db/init_db.py → backend/app/models/users.py
+- `Path` --uses--> `Candidate`  [INFERRED]
+  backend/app/db/seed_candidates_from_ocr.py → backend/app/models/candidates.py
+- `seed_candidates_from_ocr()` --calls--> `CandidateInterview`  [INFERRED]
+  backend/app/db/seed_candidates_from_ocr.py → backend/app/models/interviews.py
+- `seed_candidates_from_ocr()` --calls--> `CandidateSkill`  [INFERRED]
+  backend/app/db/seed_candidates_from_ocr.py → backend/app/models/skills.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (57 total, 20 thin omitted)
+## Communities (90 total, 43 thin omitted)
 
 ### Community 0 - "Candidate Interview Management"
-Cohesion: 0.13
-Nodes (44): Path, Session, Any, Session, UploadFile, BaseModel, CandidateInterview, Resultado de una 'Llamada IA' del HR Copilot. (+36 more)
+Cohesion: 0.17
+Nodes (35): Path, Any, Session, UploadFile, BaseModel, CandidateInterview, Resultado de una 'Llamada IA' del HR Copilot., CandidateSkill (+27 more)
 
 ### Community 1 - "Team and Company Profiles"
-Cohesion: 0.16
-Nodes (42): Session, Session, Session, Base, _guess_team_type(), seed_team_profiles(), Candidate, Company (+34 more)
+Cohesion: 0.14
+Nodes (46): Session, Session, Session, Candidate, Session, Base, _guess_team_type(), seed_team_profiles() (+38 more)
 
 ### Community 2 - "Course Recommendations Logic"
 Cohesion: 0.07
@@ -123,17 +156,13 @@ Nodes (19): ensure_candidate_id(), extract_scores_from_job(), fetch_candidate_pr
 Cohesion: 0.18
 Nodes (18): compute_global_fit(), compute_skills_fit(), compute_team_fit(), compute_values_fit(), _map_autonomy(), _match_ratio(), _most_common_or_none(), _norm() (+10 more)
 
-### Community 9 - "Project Infrastructure and Frontend"
-Cohesion: 0.12
-Nodes (17): Companies about us URLs dataset, Backend Python requirements, Docker service: backend (FastAPI), Docker service: db (PostgreSQL), Docker service: frontend (Streamlit), Banner vertical branding MatchKey sidebar, Banner MatchKey login page, Illustration for candidate home page (+9 more)
-
 ### Community 10 - "Candidate Job Matching Scores"
-Cohesion: 0.21
-Nodes (13): Candidate, Job, Session, compute_global_fit(), compute_skills_fit(), compute_team_fit(), compute_values_fit(), get_match_scores() (+5 more)
+Cohesion: 0.23
+Nodes (12): Candidate, Job, compute_global_fit(), compute_skills_fit(), compute_team_fit(), compute_values_fit(), get_match_scores(), _normalize_skill() (+4 more)
 
 ### Community 11 - "Matching Engine Algorithms"
-Cohesion: 0.24
-Nodes (13): Candidate, Job, compute_global_fit(), compute_skills_fit(), compute_team_fit(), compute_values_fit(), get_match_scores(), _norm() (+5 more)
+Cohesion: 0.26
+Nodes (12): Job, compute_global_fit(), compute_skills_fit(), compute_team_fit(), compute_values_fit(), get_match_scores(), _norm(), Encaje en equipo: muy simple, basado en similitud de palabras clave     entre 't (+4 more)
 
 ### Community 12 - "Job Creation and Management"
 Cohesion: 0.25
@@ -142,14 +171,6 @@ Nodes (13): create_job(), delete_job_backend(), ensure_company_id(), fetch_compa
 ### Community 13 - "Job Application and Matching"
 Cohesion: 0.24
 Nodes (12): apply_to_job(), ensure_candidate_id(), extract_scores(), fetch_match_scores(), fetch_recommended_jobs(), format_description(), get_auth_email(), 1) Llama a /candidates/{id}/recommended_jobs para sacar las vacantes base.     2 (+4 more)
-
-### Community 14 - "Core Data Models"
-Cohesion: 0.36
-Nodes (3): Campos de creación y actualización, comunes a casi todas las tablas., TimestampMixin, JobRecommendation
-
-### Community 15 - "Graphify Skill Extraction"
-Cohesion: 0.20
-Nodes (10): graphify skill, graphify reference: add URL and watch folder, graphify reference: extra exports and benchmark, graphify reference: extraction subagent prompt, graphify reference: GitHub clone and cross-repo merge, graphify reference: commit hook and CLAUDE.md integration, graphify reference: query, path, explain, graphify reference: transcribe video and audio (+2 more)
 
 ### Community 16 - "Course Data Loading"
 Cohesion: 0.39
@@ -179,20 +200,68 @@ Nodes (6): extract_links_from_elements(), get_relevant_links(), open_main_menu()
 Cohesion: 0.67
 Nodes (4): backend/app/routers/candidates.py, backend/app/services/recommendations/courses_recommender.py, frontend/candidate/improve.py, frontend/candidate/jobs.py
 
+### Community 57 - "Community 57"
+Cohesion: 0.06
+Nodes (31): 1. **Document Parser (Pablo M)**, 2. **Skills Extractor (Pablo M)**, 3. **HR Copilot (Asier)**, 4. **Matching Engine (Miguel)**, 5. **Co-Teaching Engine (Miguel)**, 6. **Scraping & Datasets (Pablo)**, *AI Mavericks – Accenture Challenge*, 🧱 **Arquitectura General** (+23 more)
+
+### Community 58 - "Community 58"
+Cohesion: 0.08
+Nodes (23): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+15 more)
+
+### Community 59 - "Community 59"
+Cohesion: 0.33
+Nodes (8): Session, get_password_hash(), login(), LoginRequest, LoginResponse, _normalize_password(), Bcrypt solo admite hasta 72 bytes.     Para evitar errores raros, truncamos la c, verify_password()
+
+### Community 60 - "Community 60"
+Cohesion: 0.20
+Nodes (9): 00_ai_context, 01_architecture, 02_api, 03_modules, 04_user_flows, 05_decisions, Current status, MatchKey Documentation (+1 more)
+
+### Community 61 - "Community 61"
+Cohesion: 0.22
+Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
+
+### Community 62 - "Community 62"
+Cohesion: 0.25
+Nodes (7): Current project state, Detected stack, General repo structure, Main folders detected, Main modules and services detected, Main product split, MatchKey Context
+
+### Community 63 - "Community 63"
+Cohesion: 0.29
+Nodes (6): Architecture Index, Current documentation map, Pending note, Recommended pending documentation, Recommended reading order for AI, Recommended reading order for humans
+
+### Community 64 - "Community 64"
+Cohesion: 0.29
+Nodes (6): Current state, Graphify Workflow, How an IA should use the graph, Pending Graphify work, What to ignore, What to version
+
+### Community 65 - "Community 65"
+Cohesion: 0.33
+Nodes (5): For /graphify explain, For /graphify path, graphify reference: query, path, explain, Step 0 — Constrained query expansion (REQUIRED before traversal), Step 1 — Traversal
+
+### Community 66 - "Community 66"
+Cohesion: 0.50
+Nodes (3): For /graphify add, For --watch, graphify reference: add a URL and watch a folder
+
+### Community 67 - "Community 67"
+Cohesion: 0.50
+Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify reference: commit hook and native CLAUDE.md integration
+
+### Community 68 - "Community 68"
+Cohesion: 0.50
+Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
+
 ## Knowledge Gaps
-- **45 isolated node(s):** `UploadFile`, `entrypoint.sh script`, `Banner vertical branding MatchKey sidebar`, `Banner MatchKey login page`, `Illustration for candidate home page` (+40 more)
+- **127 isolated node(s):** `graphify`, `Usage`, `What graphify is for`, `Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)`, `Step 1 - Ensure graphify is installed` (+122 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **20 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **43 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `CandidateSkill` connect `Candidate Interview Management` to `Team and Company Profiles`, `System Initialization and Health`, `Candidate Job Matching Scores`, `Matching Engine Algorithms`, `Core Data Models`?**
-  _High betweenness centrality (0.045) - this node is a cross-community bridge._
-- **Why does `Job` connect `Candidate Interview Management` to `Team and Company Profiles`, `System Initialization and Health`, `Company Data and Culture`, `Candidate Job Matching Scores`, `Matching Engine Algorithms`, `Core Data Models`?**
-  _High betweenness centrality (0.041) - this node is a cross-community bridge._
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+- **Why does `Job` connect `Team and Company Profiles` to `Candidate Interview Management`, `System Initialization and Health`, `Company Data and Culture`, `Candidate Job Matching Scores`, `Matching Engine Algorithms`, `Core Data Models`?**
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **Why does `parse_candidate_cv()` connect `Candidate Interview Management` to `Resume Parsing and Extraction`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
 - **Are the 51 inferred relationships involving `Job` (e.g. with `Company` and `Job`) actually correct?**
   _`Job` has 51 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 50 inferred relationships involving `User` (e.g. with `Path` and `Session`) actually correct?**

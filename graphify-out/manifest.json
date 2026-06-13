@@ -420,9 +420,9 @@
     "semantic_hash": "7a9a7389e03dd3ad1a00506927a0971e"
   },
   "README.md": {
-    "mtime": 1763741407.4094865,
-    "ast_hash": "2dad78e78e10b6dbcedb1dd4ac1ff052",
-    "semantic_hash": "2dad78e78e10b6dbcedb1dd4ac1ff052"
+    "mtime": 1781316044.3567328,
+    "ast_hash": "980545467b678cfe102f5c84c1b68328",
+    "semantic_hash": ""
   },
   "backend/app/services/scraping/companies/data/about_us.txt": {
     "mtime": 1763673318.6056323,
@@ -493,5 +493,45 @@
     "mtime": 1763673318.6456342,
     "ast_hash": "69a480acd8e481bb269aaba392ad7836",
     "semantic_hash": "69a480acd8e481bb269aaba392ad7836"
+  },
+  ".vscode/settings.json": {
+    "mtime": 1781315776.0888124,
+    "ast_hash": "1e4534b3ac88194859593612db6ae895",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1781315852.5847886,
+    "ast_hash": "932541a876f9e3509df1f161e88c180f",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1781314985.6050665,
+    "ast_hash": "82efb97a359f5c7290bf2513d14686be",
+    "semantic_hash": ""
+  },
+  "docs/00_ai_context/AGENT_INSTRUCTIONS.md": {
+    "mtime": 1781315852.6967885,
+    "ast_hash": "3a2655f7e8cb7fc21673eabfb58ce2c1",
+    "semantic_hash": ""
+  },
+  "docs/00_ai_context/ARCHITECTURE_INDEX.md": {
+    "mtime": 1781315978.9167528,
+    "ast_hash": "178134b834a96727ae5cfdc03bb3abf6",
+    "semantic_hash": ""
+  },
+  "docs/00_ai_context/GRAPHIFY_WORKFLOW.md": {
+    "mtime": 1781315852.6367886,
+    "ast_hash": "36a4b2967a84772e592b9186c5ed411b",
+    "semantic_hash": ""
+  },
+  "docs/00_ai_context/MATCHKEY_CONTEXT.md": {
+    "mtime": 1781315852.6367886,
+    "ast_hash": "8c2e727e2a282753818ca49183443c85",
+    "semantic_hash": ""
+  },
+  "docs/README_DOCS.md": {
+    "mtime": 1781315978.9687529,
+    "ast_hash": "89e6f37a7991b4b4d57476c575692178",
+    "semantic_hash": ""
   }
 }
