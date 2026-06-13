@@ -1,0 +1,497 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1781314985.6050665,
+    "ast_hash": "e1073342e958ac9f00716938c8f165e3",
+    "semantic_hash": "e1073342e958ac9f00716938c8f165e3"
+  },
+  "backend/app/database.py": {
+    "mtime": 1763304863.4724817,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "backend/app/db/init_db.py": {
+    "mtime": 1763673318.597632,
+    "ast_hash": "5480a123bda385a3a204355abe60eafc",
+    "semantic_hash": "5480a123bda385a3a204355abe60eafc"
+  },
+  "backend/app/db/seed_candidates_from_ocr.py": {
+    "mtime": 1763673318.597632,
+    "ast_hash": "e31b4e16a74b4a3a0c8020d542bc3de4",
+    "semantic_hash": "e31b4e16a74b4a3a0c8020d542bc3de4"
+  },
+  "backend/app/db/seed_companies_from_values_dataset.py": {
+    "mtime": 1763673318.597632,
+    "ast_hash": "e6b93f4a00c44daa47bd78bb06f020e9",
+    "semantic_hash": "e6b93f4a00c44daa47bd78bb06f020e9"
+  },
+  "backend/app/db/seed_fake_applications.py": {
+    "mtime": 1763673318.597632,
+    "ast_hash": "b44b10056a0e9c8b4654decb5ae8d50f",
+    "semantic_hash": "b44b10056a0e9c8b4654decb5ae8d50f"
+  },
+  "backend/app/db/seed_jobs_from_scraping.py": {
+    "mtime": 1763673318.597632,
+    "ast_hash": "f9a5724f30e7bcfed88ca5c7e00c648a",
+    "semantic_hash": "f9a5724f30e7bcfed88ca5c7e00c648a"
+  },
+  "backend/app/db/seed_teams_and_members.py": {
+    "mtime": 1763673318.597632,
+    "ast_hash": "99f593f613e592773a20b2fe45c011d7",
+    "semantic_hash": "99f593f613e592773a20b2fe45c011d7"
+  },
+  "backend/app/db/session.py": {
+    "mtime": 1763504308.5595584,
+    "ast_hash": "5ce34697792be0b77402eb1db589ad07",
+    "semantic_hash": "5ce34697792be0b77402eb1db589ad07"
+  },
+  "backend/app/main.py": {
+    "mtime": 1763741407.4134865,
+    "ast_hash": "8d1d90851686fdc5fbd0ca3a2585fae6",
+    "semantic_hash": "8d1d90851686fdc5fbd0ca3a2585fae6"
+  },
+  "backend/app/models/__init__.py": {
+    "mtime": 1763504308.5595584,
+    "ast_hash": "457d374178dd513bda74f03fc021d97a",
+    "semantic_hash": "457d374178dd513bda74f03fc021d97a"
+  },
+  "backend/app/models/base.py": {
+    "mtime": 1763504308.5595584,
+    "ast_hash": "98a255f382784d77b30d7b71cba58097",
+    "semantic_hash": "98a255f382784d77b30d7b71cba58097"
+  },
+  "backend/app/models/candidates.py": {
+    "mtime": 1763673318.597632,
+    "ast_hash": "3c6664f51cbdea9d5544d2fe47bd7bdd",
+    "semantic_hash": "3c6664f51cbdea9d5544d2fe47bd7bdd"
+  },
+  "backend/app/models/companies.py": {
+    "mtime": 1763504308.5595584,
+    "ast_hash": "75427ae389979523d6c1bf7e54ee1e3d",
+    "semantic_hash": "75427ae389979523d6c1bf7e54ee1e3d"
+  },
+  "backend/app/models/interviews.py": {
+    "mtime": 1763504308.5595584,
+    "ast_hash": "d9acba5ab53ff9461103e297f9ee7abb",
+    "semantic_hash": "d9acba5ab53ff9461103e297f9ee7abb"
+  },
+  "backend/app/models/jobs.py": {
+    "mtime": 1763741407.4134865,
+    "ast_hash": "1f4c8408f01323101102b9bf85e7c165",
+    "semantic_hash": "1f4c8408f01323101102b9bf85e7c165"
+  },
+  "backend/app/models/skills.py": {
+    "mtime": 1763504308.5595584,
+    "ast_hash": "bf2278d958294c23cbe2e084bc442e66",
+    "semantic_hash": "bf2278d958294c23cbe2e084bc442e66"
+  },
+  "backend/app/models/users.py": {
+    "mtime": 1763504308.5595584,
+    "ast_hash": "572db97135f52c1613afdd7da4330d4b",
+    "semantic_hash": "572db97135f52c1613afdd7da4330d4b"
+  },
+  "backend/app/routers/auth.py": {
+    "mtime": 1763594386.4566963,
+    "ast_hash": "c46058eebb7b38a2f39e9f4bfc0ddc40",
+    "semantic_hash": "c46058eebb7b38a2f39e9f4bfc0ddc40"
+  },
+  "backend/app/routers/candidates.py": {
+    "mtime": 1763673318.597632,
+    "ast_hash": "6ce77b1fed01fe002515c46e7071d6d6",
+    "semantic_hash": "6ce77b1fed01fe002515c46e7071d6d6"
+  },
+  "backend/app/routers/companies.py": {
+    "mtime": 1763673318.597632,
+    "ast_hash": "3a8485080c74064097e079de0828f246",
+    "semantic_hash": "3a8485080c74064097e079de0828f246"
+  },
+  "backend/app/routers/copilot.py": {
+    "mtime": 1763741407.4134865,
+    "ast_hash": "bae1ca8069ad571d8662845a3cbc39d0",
+    "semantic_hash": "bae1ca8069ad571d8662845a3cbc39d0"
+  },
+  "backend/app/routers/jobs.py": {
+    "mtime": 1763741407.4174864,
+    "ast_hash": "0166d540a6115aa96672cb024afe93a3",
+    "semantic_hash": "0166d540a6115aa96672cb024afe93a3"
+  },
+  "backend/app/routers/matching.py": {
+    "mtime": 1763741407.4174864,
+    "ast_hash": "8daee0e7745c10e19214ded8e19a873a",
+    "semantic_hash": "8daee0e7745c10e19214ded8e19a873a"
+  },
+  "backend/app/schemas.py": {
+    "mtime": 1763304863.4724817,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "backend/app/services/common/text_cleaning.py": {
+    "mtime": 1763306151.7443867,
+    "ast_hash": "adeb7ce951f2f56adcd9f20bea784860",
+    "semantic_hash": "adeb7ce951f2f56adcd9f20bea784860"
+  },
+  "backend/app/services/hr_copilot/hr_copilot_tool.py": {
+    "mtime": 1763741407.4174864,
+    "ast_hash": "d756b23214d03cb83a93514ab9451fca",
+    "semantic_hash": "d756b23214d03cb83a93514ab9451fca"
+  },
+  "backend/app/services/hr_copilot/prompt_templates.py": {
+    "mtime": 1763741407.4174864,
+    "ast_hash": "d7bf3420011628223221b8b139c7316b",
+    "semantic_hash": "d7bf3420011628223221b8b139c7316b"
+  },
+  "backend/app/services/matching/fit_scores.py": {
+    "mtime": 1763673318.601632,
+    "ast_hash": "01846025f5af8c3233baf515c6b626c6",
+    "semantic_hash": "01846025f5af8c3233baf515c6b626c6"
+  },
+  "backend/app/services/matching/matching_engine.py": {
+    "mtime": 1763741407.4174864,
+    "ast_hash": "a8c68d10d891d65cdd6656007b2d2707",
+    "semantic_hash": "a8c68d10d891d65cdd6656007b2d2707"
+  },
+  "backend/app/services/mcp_client.py": {
+    "mtime": 1763306121.036389,
+    "ast_hash": "b52603c1356e077ec52da2d814b99b16",
+    "semantic_hash": "b52603c1356e077ec52da2d814b99b16"
+  },
+  "backend/app/services/notifications/email_service.py": {
+    "mtime": 1763673318.601632,
+    "ast_hash": "6606881310e0a4ffc2cf9390def1fabc",
+    "semantic_hash": "6606881310e0a4ffc2cf9390def1fabc"
+  },
+  "backend/app/services/ocr/data/cv_ocr_analizados_100.json": {
+    "mtime": 1763673318.601632,
+    "ast_hash": "892e8b700faf4df143c7bdd4f1cc7920",
+    "semantic_hash": "892e8b700faf4df143c7bdd4f1cc7920"
+  },
+  "backend/app/services/ocr/data/usuarios_web_100_from_ocr.json": {
+    "mtime": 1763673318.601632,
+    "ast_hash": "9f9968c6bd6b0435cd5ba413a472e387",
+    "semantic_hash": "9f9968c6bd6b0435cd5ba413a472e387"
+  },
+  "backend/app/services/ocr/document_parser.py": {
+    "mtime": 1763673318.601632,
+    "ast_hash": "e1404aca7bee7ac01ce2aee106fee0f1",
+    "semantic_hash": "e1404aca7bee7ac01ce2aee106fee0f1"
+  },
+  "backend/app/services/recommendations/courses_recommender.py": {
+    "mtime": 1763673318.6056323,
+    "ast_hash": "3840a6179b2db86416bc4d3f53973b1b",
+    "semantic_hash": "3840a6179b2db86416bc4d3f53973b1b"
+  },
+  "backend/app/services/scraping/companies/companies_base_info.py": {
+    "mtime": 1763673318.6056323,
+    "ast_hash": "5806fd207a78f139f8606ecc6f998dfc",
+    "semantic_hash": "5806fd207a78f139f8606ecc6f998dfc"
+  },
+  "backend/app/services/scraping/companies/companies_raw_text.py": {
+    "mtime": 1763673318.6056323,
+    "ast_hash": "e5fa900a8d3adf4466fca00004453c6e",
+    "semantic_hash": "e5fa900a8d3adf4466fca00004453c6e"
+  },
+  "backend/app/services/scraping/companies/companies_scrapper.py": {
+    "mtime": 1763673318.6056323,
+    "ast_hash": "3b10f8d0b1d40a0071f934b1fa198fc0",
+    "semantic_hash": "3b10f8d0b1d40a0071f934b1fa198fc0"
+  },
+  "backend/app/services/scraping/companies/companies_values_scraper.py": {
+    "mtime": 1763673318.6056323,
+    "ast_hash": "23377f5a5e5cb3252c557c8e4f37dcdb",
+    "semantic_hash": "23377f5a5e5cb3252c557c8e4f37dcdb"
+  },
+  "backend/app/services/scraping/companies/data/companies_final.json": {
+    "mtime": 1763673318.6136327,
+    "ast_hash": "040dad16e4234e1aebf9d2363cb04066",
+    "semantic_hash": "040dad16e4234e1aebf9d2363cb04066"
+  },
+  "backend/app/services/scraping/courses/courses_scraper.py": {
+    "mtime": 1763594386.4606965,
+    "ast_hash": "e9fbd46e4171976944ee4cbd124b38f7",
+    "semantic_hash": "e9fbd46e4171976944ee4cbd124b38f7"
+  },
+  "backend/app/services/scraping/courses/data/courses.json": {
+    "mtime": 1763594177.8074317,
+    "ast_hash": "85882938c6353244e3670396c9de2ea6",
+    "semantic_hash": "85882938c6353244e3670396c9de2ea6"
+  },
+  "backend/app/services/scraping/jobs/data/jobs_final.json": {
+    "mtime": 1763594177.8194323,
+    "ast_hash": "454392a1fb25893f7bbc411821cdb882",
+    "semantic_hash": "454392a1fb25893f7bbc411821cdb882"
+  },
+  "backend/app/services/scraping/jobs/descriptions_scraper.py": {
+    "mtime": 1763594177.8194323,
+    "ast_hash": "2c6eb7e0d66628813bd91ad6367d704e",
+    "semantic_hash": "2c6eb7e0d66628813bd91ad6367d704e"
+  },
+  "backend/app/services/scraping/jobs/jobs_scraper.py": {
+    "mtime": 1763594177.8194323,
+    "ast_hash": "9c46c81cdb31d55579e971059e9f7fe6",
+    "semantic_hash": "9c46c81cdb31d55579e971059e9f7fe6"
+  },
+  "backend/app/services/scraping/jobs/llm_scraper.py": {
+    "mtime": 1763594177.8234324,
+    "ast_hash": "eb1f1c03c0ec44dea99ea9cf108add52",
+    "semantic_hash": "eb1f1c03c0ec44dea99ea9cf108add52"
+  },
+  "backend/app/services/scraping/universities/data/universities_final.json": {
+    "mtime": 1763673318.6256332,
+    "ast_hash": "031e3c10c9bd2d048ea1cf8a13c9dca5",
+    "semantic_hash": "031e3c10c9bd2d048ea1cf8a13c9dca5"
+  },
+  "backend/app/services/scraping/universities/data/universities_raw.json": {
+    "mtime": 1763673318.6256332,
+    "ast_hash": "81e60fe18204e16c9da1171294cb2125",
+    "semantic_hash": "81e60fe18204e16c9da1171294cb2125"
+  },
+  "backend/app/services/scraping/universities/universities_base_info.py": {
+    "mtime": 1763673318.6256332,
+    "ast_hash": "08044f3ca1ee8fddbfa54f60bd3f0af5",
+    "semantic_hash": "08044f3ca1ee8fddbfa54f60bd3f0af5"
+  },
+  "backend/app/services/scraping/universities/universities_raw_text.py": {
+    "mtime": 1763673318.6256332,
+    "ast_hash": "ade41b1593f241d8a1c9e32ec74931ce",
+    "semantic_hash": "ade41b1593f241d8a1c9e32ec74931ce"
+  },
+  "backend/app/services/scraping/universities/universities_relevant_links.py": {
+    "mtime": 1763673318.6256332,
+    "ast_hash": "6943f7692be4a5cc1e26ee9a8c218148",
+    "semantic_hash": "6943f7692be4a5cc1e26ee9a8c218148"
+  },
+  "backend/app/services/scraping/universities/universities_values_scraper.py": {
+    "mtime": 1763673318.6256332,
+    "ast_hash": "6e7d81517d107504b36096e2858c79b2",
+    "semantic_hash": "6e7d81517d107504b36096e2858c79b2"
+  },
+  "backend/app/services/skills/skills_dictionary.json": {
+    "mtime": 1763306216.7243817,
+    "ast_hash": "887ff728b872b0f1b987ae6a6457d461",
+    "semantic_hash": "887ff728b872b0f1b987ae6a6457d461"
+  },
+  "backend/app/services/skills/skills_extractor.py": {
+    "mtime": 1763306234.78838,
+    "ast_hash": "bf712b4e81ca0335b8f7f786ee103d07",
+    "semantic_hash": "bf712b4e81ca0335b8f7f786ee103d07"
+  },
+  "backend/app/tests/test_copilot.py": {
+    "mtime": 1763306705.7563424,
+    "ast_hash": "c10c5805d5b879b2e38a58a5a08dca19",
+    "semantic_hash": "c10c5805d5b879b2e38a58a5a08dca19"
+  },
+  "backend/app/tests/test_ocr.py": {
+    "mtime": 1763306646.9603472,
+    "ast_hash": "584de411663e22841f5b835970a9f2c1",
+    "semantic_hash": "584de411663e22841f5b835970a9f2c1"
+  },
+  "backend/app/tests/test_skills.py": {
+    "mtime": 1763306682.6243443,
+    "ast_hash": "e7f2b96f0d62f551a4ac084574446002",
+    "semantic_hash": "e7f2b96f0d62f551a4ac084574446002"
+  },
+  "backend/entrypoint.sh": {
+    "mtime": 1763673318.6256332,
+    "ast_hash": "a74a1c2378198e1b1f8ccd46c33e9931",
+    "semantic_hash": "a74a1c2378198e1b1f8ccd46c33e9931"
+  },
+  "frontend/app.py": {
+    "mtime": 1781314772.381133,
+    "ast_hash": "6e45a5067ceffbefec493554ece0e333",
+    "semantic_hash": "6e45a5067ceffbefec493554ece0e333"
+  },
+  "frontend/candidate/__init__.py": {
+    "mtime": 1763504308.627561,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "frontend/candidate/call_ai.py": {
+    "mtime": 1763741407.4214864,
+    "ast_hash": "74423d6d4c6756d018d6f9fdb07272e5",
+    "semantic_hash": "74423d6d4c6756d018d6f9fdb07272e5"
+  },
+  "frontend/candidate/dashboard.py": {
+    "mtime": 1763504308.627561,
+    "ast_hash": "929dcd8920e2bf2cdd6a400de1af97ac",
+    "semantic_hash": "929dcd8920e2bf2cdd6a400de1af97ac"
+  },
+  "frontend/candidate/improve.py": {
+    "mtime": 1763673318.6296334,
+    "ast_hash": "ac566d26d208f4e03ca62a93c84b565a",
+    "semantic_hash": "ac566d26d208f4e03ca62a93c84b565a"
+  },
+  "frontend/candidate/jobs.py": {
+    "mtime": 1763673318.6296334,
+    "ast_hash": "111fdb6d33cf16eca88fb8aa7029876e",
+    "semantic_hash": "111fdb6d33cf16eca88fb8aa7029876e"
+  },
+  "frontend/candidate/profile.py": {
+    "mtime": 1763673318.6296334,
+    "ast_hash": "3d3fa55860b2dc5ba3551f7666514248",
+    "semantic_hash": "3d3fa55860b2dc5ba3551f7666514248"
+  },
+  "frontend/company/__init__.py": {
+    "mtime": 1763504308.627561,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "frontend/company/analytics.py": {
+    "mtime": 1763504308.627561,
+    "ast_hash": "199ba49955284b5f6aa26d87bab5a17c",
+    "semantic_hash": "199ba49955284b5f6aa26d87bab5a17c"
+  },
+  "frontend/company/co_teaching.py": {
+    "mtime": 1763504308.6315613,
+    "ast_hash": "2db66107b0974afa7881f29ee27042b6",
+    "semantic_hash": "2db66107b0974afa7881f29ee27042b6"
+  },
+  "frontend/company/create_job.py": {
+    "mtime": 1781314772.3851333,
+    "ast_hash": "71333a1e9420c9d627c012c57147a4d9",
+    "semantic_hash": "71333a1e9420c9d627c012c57147a4d9"
+  },
+  "frontend/company/dashboard.py": {
+    "mtime": 1763504308.6315613,
+    "ast_hash": "fb92c1e9ef8094b62bfa0fc76493e4e0",
+    "semantic_hash": "fb92c1e9ef8094b62bfa0fc76493e4e0"
+  },
+  "frontend/company/profile.py": {
+    "mtime": 1763504308.6315613,
+    "ast_hash": "e590e9481de1eaaa7c0dfe60240e5461",
+    "semantic_hash": "e590e9481de1eaaa7c0dfe60240e5461"
+  },
+  "frontend/utils.py": {
+    "mtime": 1763673318.6456342,
+    "ast_hash": "8f4d427614a2edbb61ffe32afd885b06",
+    "semantic_hash": "8f4d427614a2edbb61ffe32afd885b06"
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1781314985.6050665,
+    "ast_hash": "db73b0edd7ffbc61ceac177130730865",
+    "semantic_hash": "db73b0edd7ffbc61ceac177130730865"
+  },
+  ".claude/skills/graphify/SKILL.md": {
+    "mtime": 1781314985.6050665,
+    "ast_hash": "97c2755905a5a0e53b96b31c725a7010",
+    "semantic_hash": "97c2755905a5a0e53b96b31c725a7010"
+  },
+  ".claude/skills/graphify/references/add-watch.md": {
+    "mtime": 1781314971.5530703,
+    "ast_hash": "0df0589623217ca38a12bdcabfb42f4c",
+    "semantic_hash": "0df0589623217ca38a12bdcabfb42f4c"
+  },
+  ".claude/skills/graphify/references/exports.md": {
+    "mtime": 1781314971.5530703,
+    "ast_hash": "c04ddf8f1f5ef5e262ebec491a523c74",
+    "semantic_hash": "c04ddf8f1f5ef5e262ebec491a523c74"
+  },
+  ".claude/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1781314971.5530703,
+    "ast_hash": "24808b03abfeaf5f6435bb69c0125b2c",
+    "semantic_hash": "24808b03abfeaf5f6435bb69c0125b2c"
+  },
+  ".claude/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1781314971.5530703,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
+  },
+  ".claude/skills/graphify/references/hooks.md": {
+    "mtime": 1781314971.5530703,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
+  },
+  ".claude/skills/graphify/references/query.md": {
+    "mtime": 1781314971.5530703,
+    "ast_hash": "8b40ed8c9e9060fc215219a8fc964091",
+    "semantic_hash": "8b40ed8c9e9060fc215219a8fc964091"
+  },
+  ".claude/skills/graphify/references/transcribe.md": {
+    "mtime": 1781314971.5530703,
+    "ast_hash": "70f6aa30d6211f3a2c7e9fc45479f50c",
+    "semantic_hash": "70f6aa30d6211f3a2c7e9fc45479f50c"
+  },
+  ".claude/skills/graphify/references/update.md": {
+    "mtime": 1781314971.5530703,
+    "ast_hash": "0dad167a95bdb389f02fecffb60b1bc8",
+    "semantic_hash": "0dad167a95bdb389f02fecffb60b1bc8"
+  },
+  "CONTRIBUTING.md": {
+    "mtime": 1763504308.5555582,
+    "ast_hash": "7a9a7389e03dd3ad1a00506927a0971e",
+    "semantic_hash": "7a9a7389e03dd3ad1a00506927a0971e"
+  },
+  "README.md": {
+    "mtime": 1763741407.4094865,
+    "ast_hash": "2dad78e78e10b6dbcedb1dd4ac1ff052",
+    "semantic_hash": "2dad78e78e10b6dbcedb1dd4ac1ff052"
+  },
+  "backend/app/services/scraping/companies/data/about_us.txt": {
+    "mtime": 1763673318.6056323,
+    "ast_hash": "e4e6979e9410a64427df0421878f0f48",
+    "semantic_hash": "e4e6979e9410a64427df0421878f0f48"
+  },
+  "backend/requirements.txt": {
+    "mtime": 1781314596.52119,
+    "ast_hash": "cbf84e8887451ed5341d5d776ed0f92e",
+    "semantic_hash": "cbf84e8887451ed5341d5d776ed0f92e"
+  },
+  "docker-compose.yml": {
+    "mtime": 1763741407.4214864,
+    "ast_hash": "87b28ed7782d9552b64cb1a5239e041d",
+    "semantic_hash": "87b28ed7782d9552b64cb1a5239e041d"
+  },
+  "frontend/requirements.txt": {
+    "mtime": 1763504308.6315613,
+    "ast_hash": "7fbdadcb8e983b399e871fb0ed94599f",
+    "semantic_hash": "7fbdadcb8e983b399e871fb0ed94599f"
+  },
+  "graphify-out/converted/Workflow MatchKey-Asier_c9cf96b9.md": {
+    "mtime": 1781315007.2890599,
+    "ast_hash": "95447f2449b0d6fc8c72700ed9c4a679",
+    "semantic_hash": "95447f2449b0d6fc8c72700ed9c4a679"
+  },
+  "graphify-out/converted/Workflow MatchKey-Jack_6afef198.md": {
+    "mtime": 1781315007.3690598,
+    "ast_hash": "5e802d22c4546f419565342128e28502",
+    "semantic_hash": "5e802d22c4546f419565342128e28502"
+  },
+  "graphify-out/converted/Workflow MatchKey-Pablo.M_ce051b4a.md": {
+    "mtime": 1781315007.4770598,
+    "ast_hash": "32a42fcf91b75a733f923e967f87e249",
+    "semantic_hash": "32a42fcf91b75a733f923e967f87e249"
+  },
+  "graphify-out/converted/Workflow MatchKey-Pablo_3decd318.md": {
+    "mtime": 1781315007.5690598,
+    "ast_hash": "9b4b58c7b10eb777ed938dea5d2f01ff",
+    "semantic_hash": "9b4b58c7b10eb777ed938dea5d2f01ff"
+  },
+  "graphify-out/converted/Wrokflow MatchKey-Miguel_840991b4.md": {
+    "mtime": 1781315007.7530596,
+    "ast_hash": "3c059d3c9aa39b675b6502af4019d58a",
+    "semantic_hash": "3c059d3c9aa39b675b6502af4019d58a"
+  },
+  "graphify-out/converted/\ud83d\udfe3 PLANTILLA SYSTEM PROMPT_8e503c68.md": {
+    "mtime": 1781315007.8130598,
+    "ast_hash": "d1e4a33e1816e22689eab284e8b45bf5",
+    "semantic_hash": "d1e4a33e1816e22689eab284e8b45bf5"
+  },
+  "frontend/images/banner_barra_lateral.png": {
+    "mtime": 1763673318.6336336,
+    "ast_hash": "1b97aa6a371eb0fbba06b5364b0cc9be",
+    "semantic_hash": "1b97aa6a371eb0fbba06b5364b0cc9be"
+  },
+  "frontend/images/banner_inicio_sesion.png": {
+    "mtime": 1763673318.6336336,
+    "ast_hash": "9cf24b3edd4ce342b7b378c73058e7d8",
+    "semantic_hash": "9cf24b3edd4ce342b7b378c73058e7d8"
+  },
+  "frontend/images/candidate_home_illustration.png": {
+    "mtime": 1763673318.6376338,
+    "ast_hash": "6d9f97840a1e4600048902a8724baace",
+    "semantic_hash": "6d9f97840a1e4600048902a8724baace"
+  },
+  "frontend/images/company_home_illustration.png": {
+    "mtime": 1763673318.6456342,
+    "ast_hash": "69a480acd8e481bb269aaba392ad7836",
+    "semantic_hash": "69a480acd8e481bb269aaba392ad7836"
+  }
+}

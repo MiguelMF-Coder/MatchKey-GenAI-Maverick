@@ -244,7 +244,7 @@ feature/jack-docs
 # 🏁 **Estado del Proyecto**
 
 ✔ Estructura base creada
-✔ Documentación completa
+✔ Documentación base creada; documentación técnica en progreso
 ✔ Módulos MCP definidos
 ✔ Frontend y backend conectados
 ✔ Rutas dummy listas
@@ -257,4 +257,13 @@ feature/jack-docs
 
 MatchKey no es solo un portal de empleo.
 Es **una nueva forma de conectar personas con oportunidades**, donde la IA **no deshumaniza**, sino que **entiende, recomienda y acompaña**.
+
+---
+
+## Documentation
+
+- [Documentation hub](docs/README_DOCS.md)
+- [Architecture index](docs/00_ai_context/ARCHITECTURE_INDEX.md)
+- [MatchKey context](docs/00_ai_context/MATCHKEY_CONTEXT.md)
+- [Agent instructions](docs/00_ai_context/AGENT_INSTRUCTIONS.md)
 
