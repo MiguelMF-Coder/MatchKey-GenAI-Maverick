@@ -1,0 +1,4 @@
+﻿representacion,n_features,K_elegido,silhouette_cosine
+tfidf_text,50,7,0.104
+skills_only,32,4,0.085
+enriquecida,36,2,0.072

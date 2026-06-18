@@ -1,0 +1,22 @@
+﻿gap_skill,demand_pct,supply_pct_adj,curso,url
+aws,17.8,0.0,Advanced Data Science Techniques (with AWS Integration),https://www.coursera.org/learn/advanced-data-science-techniques-with-aws-integration
+aws,17.8,0.0,AI Fundamentals and the Cloud,https://www.coursera.org/learn/ai-fundamentals-and-the-cloud
+node.js,17.4,0.0,Build Generative AI Apps with Firebase Genkit,https://www.coursera.org/learn/build-generative-ai-apps-with-firebase-genkit
+node.js,17.4,0.0,Deploying Microservices to Kubernetes using Azure DevOps,https://www.coursera.org/learn/deploying-microservices-to-kubernetes-using-azure-devops
+javascript,16.5,0.0,Advanced React,https://www.coursera.org/learn/advanced-react
+javascript,16.5,0.0,Browser-based Models with TensorFlow.js,https://www.coursera.org/learn/browser-based-models-tensorflow
+azure,16.5,0.0,Advanced AI and Machine Learning Techniques and Capstone,https://www.coursera.org/learn/advanced-ai-and-machine-learning-techniques-and-capstone
+azure,16.5,0.0,Advanced Cybersecurity Concepts and Capstone Project,https://www.coursera.org/learn/advanced-cybersecurity-concepts-and-capstone-project
+postgresql,16.5,0.0,Advanced Application Management with Red Hat OpenShift,https://www.coursera.org/learn/advanced-application-management-with-red-hat-openshift
+postgresql,16.5,0.0,Big Data Integration and Processing,https://www.coursera.org/learn/big-data-integration-processing
+mysql,16.1,0.0,Advanced Data Modeling,https://www.coursera.org/learn/advanced-data-modeling
+mysql,16.1,0.0,Advanced MySQL Topics,https://www.coursera.org/learn/advanced-mysql-topics
+elevenlabs,15.7,0.0,(sin curso en el catálogo),
+zapier,15.7,0.0,(sin curso en el catálogo),
+airtable,15.3,0.0,(sin curso en el catálogo),
+twilio,15.3,0.0,(sin curso en el catálogo),
+rest apis,14.8,0.0,(sin curso en el catálogo),
+whisper,14.8,0.0,(sin curso en el catálogo),
+n8n,14.4,0.0,(sin curso en el catálogo),
+asterisk,14.0,0.0,(sin curso en el catálogo),
+crm integration,13.6,0.0,(sin curso en el catálogo),

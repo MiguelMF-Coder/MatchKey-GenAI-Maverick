@@ -1,0 +1,1413 @@
+﻿skill,demand_pct,supply_pct_raw,supply_pct_adj,gap_adj_pct,tipo
+aws,17.8,0.0,0.0,17.8,skill/tool
+node.js,17.4,0.0,0.0,17.4,skill/tool
+curiosity,16.5,0.0,0.0,16.5,soft (idioma corregido)
+javascript,16.5,0.0,0.0,16.5,skill/tool
+azure,16.5,0.0,0.0,16.5,skill/tool
+postgresql,16.5,0.0,0.0,16.5,skill/tool
+mysql,16.1,0.0,0.0,16.1,skill/tool
+elevenlabs,15.7,0.0,0.0,15.7,skill/tool
+zapier,15.7,0.0,0.0,15.7,skill/tool
+airtable,15.3,0.0,0.0,15.3,skill/tool
+twilio,15.3,0.0,0.0,15.3,skill/tool
+rest apis,14.8,0.0,0.0,14.8,skill/tool
+whisper,14.8,0.0,0.0,14.8,skill/tool
+n8n,14.4,0.0,0.0,14.4,skill/tool
+asterisk,14.0,0.0,0.0,14.0,skill/tool
+crm integration,13.6,0.0,0.0,13.6,skill/tool
+make,13.6,0.0,0.0,13.6,skill/tool
+integromat,13.1,0.0,0.0,13.1,skill/tool
+openai,12.7,0.0,0.0,12.7,skill/tool
+python,51.3,39.0,39.0,12.3,skill/tool
+openai api,11.9,0.0,0.0,11.9,skill/tool
+startup experience,10.6,0.0,0.0,10.6,skill/tool
+tensorflow,10.2,0.0,0.0,10.2,skill/tool
+pytorch,9.7,0.0,0.0,9.7,skill/tool
+innovation,8.5,0.0,0.0,8.5,skill/tool
+langchain,8.5,0.0,0.0,8.5,skill/tool
+google cloud,8.1,0.0,0.0,8.1,skill/tool
+llms,7.6,0.0,0.0,7.6,skill/tool
+ci/cd,7.2,0.0,0.0,7.2,skill/tool
+generative ai,6.8,0.0,0.0,6.8,skill/tool
+api integration,6.8,0.0,0.0,6.8,skill/tool
+business process understanding,6.4,0.0,0.0,6.4,skill/tool
+java,5.9,0.0,0.0,5.9,skill/tool
+creativity,5.9,0.0,0.0,5.9,skill/tool
+gcp,5.5,0.0,0.0,5.5,skill/tool
+kubernetes,5.5,0.0,0.0,5.5,skill/tool
+bot development,5.5,0.0,0.0,5.5,skill/tool
+problem‐solving,5.1,0.0,0.0,5.1,skill/tool
+clear communication,5.1,0.0,0.0,5.1,skill/tool
+deep learning,5.1,0.0,0.0,5.1,skill/tool
+organizacion,5.1,0.0,0.0,5.1,skill/tool
+mlops,4.7,0.0,0.0,4.7,skill/tool
+ia generativa,4.7,0.0,0.0,4.7,skill/tool
+nosql,4.2,0.0,0.0,4.2,skill/tool
+innovation mindset,4.2,0.0,0.0,4.2,skill/tool
+saas,4.2,0.0,0.0,4.2,skill/tool
+autonomy,4.2,0.0,0.0,4.2,skill/tool
+proactivo,3.8,0.0,0.0,3.8,skill/tool
+project management,3.8,0.0,0.0,3.8,skill/tool
+transformers,3.8,0.0,0.0,3.8,skill/tool
+bi tools,3.8,0.0,0.0,3.8,skill/tool
+llamaindex,3.8,0.0,0.0,3.8,skill/tool
+keras,3.8,0.0,0.0,3.8,skill/tool
+proactiva,3.8,0.0,0.0,3.8,skill/tool
+mlflow,3.4,0.0,0.0,3.4,skill/tool
+colaboracion,3.4,0.0,0.0,3.4,skill/tool
+comunicativa,3.4,0.0,0.0,3.4,skill/tool
+gestion de proyectos,3.4,0.0,0.0,3.4,skill/tool
+llm,3.4,0.0,0.0,3.4,skill/tool
+apis,3.4,0.0,0.0,3.4,skill/tool
+orientada a resultados,3.4,0.0,0.0,3.4,skill/tool
+market research,3.0,0.0,0.0,3.0,skill/tool
+digital transformation,3.0,0.0,0.0,3.0,skill/tool
+strategic vision,3.0,0.0,0.0,3.0,skill/tool
+team collaboration,2.5,0.0,0.0,2.5,skill/tool
+creatividad,2.5,0.0,0.0,2.5,skill/tool
+gestion de inventario,2.5,0.0,0.0,2.5,skill/tool
+technology trend analysis,2.5,0.0,0.0,2.5,skill/tool
+pasion por la tecnologia y los videojuegos,2.5,0.0,0.0,2.5,skill/tool
+autonomia,2.5,0.0,0.0,2.5,skill/tool
+automation,2.5,0.0,0.0,2.5,skill/tool
+orientacion al cliente,2.5,0.0,0.0,2.5,skill/tool
+autoencoders,2.5,0.0,0.0,2.5,skill/tool
+aprendizaje continuo,2.5,0.0,0.0,2.5,skill/tool
+rag,2.5,0.0,0.0,2.5,skill/tool
+chatgpt,2.5,0.0,0.0,2.5,skill/tool
+saas experience,2.5,0.0,0.0,2.5,skill/tool
+compromiso,2.5,0.0,0.0,2.5,skill/tool
+inteligencia artificial,2.5,0.0,0.0,2.5,skill/tool
+api development,2.5,0.0,0.0,2.5,skill/tool
+vertex ai,2.1,0.0,0.0,2.1,skill/tool
+stakeholder management,2.1,0.0,0.0,2.1,skill/tool
+curiosidad,2.1,0.0,0.0,2.1,skill/tool
+english,2.1,0.0,0.0,2.1,skill/tool
+curiosity about ai,2.1,0.0,0.0,2.1,skill/tool
+dataops,2.1,0.0,0.0,2.1,skill/tool
+continuous learning,2.1,0.0,0.0,2.1,skill/tool
+gemini,2.1,0.0,0.0,2.1,skill/tool
+gitlab,2.1,0.0,0.0,2.1,skill/tool
+hugging face,2.1,0.0,0.0,2.1,skill/tool
+analisis,2.1,0.0,0.0,2.1,skill/tool
+saas projects,2.1,0.0,0.0,2.1,skill/tool
+make (integromat),2.1,0.0,0.0,2.1,skill/tool
+claude,2.1,0.0,0.0,2.1,skill/tool
+react,2.1,0.0,0.0,2.1,skill/tool
+autogen,2.1,0.0,0.0,2.1,skill/tool
+c++,2.1,0.0,0.0,2.1,skill/tool
+c#,2.1,0.0,0.0,2.1,skill/tool
+business process analysis,2.1,0.0,0.0,2.1,skill/tool
+transformacion digital,2.1,0.0,0.0,2.1,skill/tool
+nlp,2.1,0.0,0.0,2.1,skill/tool
+langgraph,1.7,0.0,0.0,1.7,skill/tool
+computer vision,1.7,0.0,0.0,1.7,skill/tool
+innovacion,1.7,0.0,0.0,1.7,skill/tool
+ia,1.7,0.0,0.0,1.7,skill/tool
+gradient boosting,1.7,0.0,0.0,1.7,skill/tool
+diffusion models,1.7,0.0,0.0,1.7,skill/tool
+disponibilidad en fechas y horarios,1.7,0.0,0.0,1.7,skill/tool
+ai,1.7,0.0,0.0,1.7,skill/tool
+excel,1.7,0.0,0.0,1.7,skill/tool
+servicio al cliente,1.7,0.0,0.0,1.7,skill/tool
+github,1.7,0.0,0.0,1.7,skill/tool
+terraform,1.7,0.0,0.0,1.7,skill/tool
+rpa,1.7,0.0,0.0,1.7,skill/tool
+rnns,1.7,0.0,0.0,1.7,skill/tool
+investigacion de mercado,1.7,0.0,0.0,1.7,skill/tool
+analisis de datos,1.7,0.0,0.0,1.7,skill/tool
+analisis de tendencias tecnologicas,1.7,0.0,0.0,1.7,skill/tool
+rest,1.7,0.0,0.0,1.7,skill/tool
+responsabilidad,1.7,0.0,0.0,1.7,skill/tool
+mongodb,1.7,0.0,0.0,1.7,skill/tool
+multi-armed bandits,1.7,0.0,0.0,1.7,skill/tool
+mentoring,1.7,0.0,0.0,1.7,skill/tool
+prompt engineering,1.7,0.0,0.0,1.7,skill/tool
+bigquery,1.7,0.0,0.0,1.7,skill/tool
+azure ai,1.7,0.0,0.0,1.7,skill/tool
+data analysis,1.7,0.0,0.0,1.7,skill/tool
+vector databases,1.7,0.0,0.0,1.7,skill/tool
+vllm,1.3,0.0,0.0,1.3,skill/tool
+agile methodologies,1.3,0.0,0.0,1.3,skill/tool
+data architecture,1.3,0.0,0.0,1.3,skill/tool
+data governance,1.3,0.0,0.0,1.3,skill/tool
+devops,1.3,0.0,0.0,1.3,skill/tool
+dedicacion al cliente,1.3,0.0,0.0,1.3,skill/tool
+bots,1.3,0.0,0.0,1.3,skill/tool
+orientado a resultados,1.3,0.0,0.0,1.3,skill/tool
+opencv,1.3,0.0,0.0,1.3,skill/tool
+big data,1.3,0.0,0.0,1.3,skill/tool
+orientado/a a resultados,1.3,0.0,0.0,1.3,skill/tool
+open-source contributions,1.3,0.0,0.0,1.3,skill/tool
+product management,1.3,0.0,0.0,1.3,skill/tool
+microservicios,1.3,0.0,0.0,1.3,skill/tool
+resolutivo,1.3,0.0,0.0,1.3,skill/tool
+apis rest,1.3,0.0,0.0,1.3,skill/tool
+aprendizaje automatico,1.3,0.0,0.0,1.3,skill/tool
+cloud,1.3,0.0,0.0,1.3,skill/tool
+large language models (llms),1.3,0.0,0.0,1.3,skill/tool
+linux,1.3,0.0,0.0,1.3,skill/tool
+microsoft azure,1.3,0.0,0.0,1.3,skill/tool
+automatizacion de procesos,1.3,0.0,0.0,1.3,skill/tool
+next.js,1.3,0.0,0.0,1.3,skill/tool
+motivacion,1.3,0.0,0.0,1.3,skill/tool
+motivation,1.3,0.0,0.0,1.3,skill/tool
+proactive,1.3,0.0,0.0,1.3,skill/tool
+proactivo/a,1.3,0.0,0.0,1.3,skill/tool
+autonomo,1.3,0.0,0.0,1.3,skill/tool
+json,1.3,0.0,0.0,1.3,skill/tool
+strategic thinking,1.3,0.0,0.0,1.3,skill/tool
+strategic planning,1.3,0.0,0.0,1.3,skill/tool
+scrum,1.3,0.0,0.0,1.3,skill/tool
+sql server,1.3,0.0,0.0,1.3,skill/tool
+sip,1.3,0.0,0.0,1.3,skill/tool
+gans,1.3,0.0,0.0,1.3,skill/tool
+crewai,1.3,0.0,0.0,1.3,skill/tool
+seo,1.3,0.0,0.0,1.3,skill/tool
+copilot studio,1.3,0.0,0.0,1.3,skill/tool
+voice ai integration,1.3,0.0,0.0,1.3,skill/tool
+.net,1.3,0.0,0.0,1.3,skill/tool
+databricks,1.3,0.0,0.0,1.3,skill/tool
+curiosidad por la ia,1.3,0.0,0.0,1.3,skill/tool
+time series analysis,1.3,0.0,0.0,1.3,skill/tool
+testing,1.3,0.0,0.0,1.3,skill/tool
+containers,1.3,0.0,0.0,1.3,skill/tool
+google cloud platform,1.3,0.0,0.0,1.3,skill/tool
+github copilot,1.3,0.0,0.0,1.3,skill/tool
+comunicativo/a,1.3,0.0,0.0,1.3,skill/tool
+huggingface,1.3,0.0,0.0,1.3,skill/tool
+gestion de equipos,1.3,0.0,0.0,1.3,skill/tool
+go,1.3,0.0,0.0,1.3,skill/tool
+gitlab ci,1.3,0.0,0.0,1.3,skill/tool
+graphql,1.3,0.0,0.0,1.3,skill/tool
+jenkins,1.3,0.0,0.0,1.3,skill/tool
+innovative mindset,1.3,0.0,0.0,1.3,skill/tool
+influence,1.3,0.0,0.0,1.3,skill/tool
+sagemaker,1.3,0.0,0.0,1.3,skill/tool
+postman,0.8,0.0,0.0,0.8,skill/tool
+power apps,0.8,0.0,0.0,0.8,skill/tool
+power automate,0.8,0.0,0.0,0.8,skill/tool
+version control,0.8,0.0,0.0,0.8,skill/tool
+"product management tools (jira, confluence, aha!)",0.8,0.0,0.0,0.8,skill/tool
+oauth2,0.8,0.0,0.0,0.8,skill/tool
+ocr,0.8,0.0,0.0,0.8,skill/tool
+oidc,0.8,0.0,0.0,0.8,skill/tool
+oop,0.8,0.0,0.0,0.8,skill/tool
+bash,0.8,0.0,0.0,0.8,skill/tool
+big data architectures,0.8,0.0,0.0,0.8,skill/tool
+blockchain,0.8,0.0,0.0,0.8,skill/tool
+organizational skills,0.8,0.0,0.0,0.8,skill/tool
+orientacion a la calidad,0.8,0.0,0.0,0.8,skill/tool
+openrewrite,0.8,0.0,0.0,0.8,skill/tool
+backend development,0.8,0.0,0.0,0.8,skill/tool
+azure machine learning,0.8,0.0,0.0,0.8,skill/tool
+pasion por los videojuegos,0.8,0.0,0.0,0.8,skill/tool
+pasion por la tecnologia,0.8,0.0,0.0,0.8,skill/tool
+ownership,0.8,0.0,0.0,0.8,skill/tool
+pyspark,0.8,0.0,0.0,0.8,skill/tool
+model deployment,0.8,0.0,0.0,0.8,skill/tool
+automation tools,0.8,0.0,0.0,0.8,skill/tool
+pulumi,0.8,0.0,0.0,0.8,skill/tool
+prompting,0.8,0.0,0.0,0.8,skill/tool
+prometheus,0.8,0.0,0.0,0.8,skill/tool
+programacion en python,0.8,0.0,0.0,0.8,skill/tool
+prototyping,0.8,0.0,0.0,0.8,skill/tool
+programacion,0.8,0.0,0.0,0.8,skill/tool
+prefect,0.8,0.0,0.0,0.8,skill/tool
+powerbi,0.8,0.0,0.0,0.8,skill/tool
+power virtual agents,0.8,0.0,0.0,0.8,skill/tool
+negociacion,0.8,0.0,0.0,0.8,skill/tool
+c,0.8,0.0,0.0,0.8,skill/tool
+preocupacion por la calidad,0.8,0.0,0.0,0.8,skill/tool
+presentacion,0.8,0.0,0.0,0.8,skill/tool
+microsoft 365,0.8,0.0,0.0,0.8,skill/tool
+capacidad critica y autocritica,0.8,0.0,0.0,0.8,skill/tool
+capacidad de analisis,0.8,0.0,0.0,0.8,skill/tool
+power platform,0.8,0.0,0.0,0.8,skill/tool
+dermatologia clinica,0.8,0.0,0.0,0.8,skill/tool
+desarrollo de software,0.8,0.0,0.0,0.8,skill/tool
+postgraduate degree or mba,0.8,0.0,0.0,0.8,skill/tool
+azure devops,0.8,0.0,0.0,0.8,skill/tool
+pensamiento estrategico,0.8,0.0,0.0,0.8,skill/tool
+pbx,0.8,0.0,0.0,0.8,skill/tool
+azure openai service,0.8,0.0,0.0,0.8,skill/tool
+azure cognitive services,0.8,0.0,0.0,0.8,skill/tool
+php,0.8,0.0,0.0,0.8,skill/tool
+photoshop,0.8,0.0,0.0,0.8,skill/tool
+pensamiento estructurado,0.8,0.0,0.0,0.8,skill/tool
+pl/sql,0.8,0.0,0.0,0.8,skill/tool
+devsecops,0.8,0.0,0.0,0.8,skill/tool
+diagnostico asistido por ia,0.8,0.0,0.0,0.8,skill/tool
+typescript,0.8,0.0,0.0,0.8,skill/tool
+unity,0.8,0.0,0.0,0.8,skill/tool
+data quality,0.8,0.0,0.0,0.8,skill/tool
+data science,0.8,0.0,0.0,0.8,skill/tool
+data pipelines,0.8,0.0,0.0,0.8,skill/tool
+data visualization,0.8,0.0,0.0,0.8,skill/tool
+data analysis tools,0.8,0.0,0.0,0.8,skill/tool
+design patterns,0.8,0.0,0.0,0.8,skill/tool
+veo 3,0.8,0.0,0.0,0.8,skill/tool
+user research,0.8,0.0,0.0,0.8,skill/tool
+after effects,0.8,0.0,0.0,0.8,skill/tool
+vision estrategica,0.8,0.0,0.0,0.8,skill/tool
+agile methodology,0.8,0.0,0.0,0.8,skill/tool
+"agile methodologies (scrum, kanban)",0.8,0.0,0.0,0.8,skill/tool
+rust,0.8,0.0,0.0,0.8,skill/tool
+kling,0.8,0.0,0.0,0.8,skill/tool
+knowledge of agentic commerce,0.8,0.0,0.0,0.8,skill/tool
+kubeflow,0.8,0.0,0.0,0.8,skill/tool
+client interaction,0.8,0.0,0.0,0.8,skill/tool
+cloud deployment,0.8,0.0,0.0,0.8,skill/tool
+liderazgo tecnico,0.8,0.0,0.0,0.8,skill/tool
+leonardo,0.8,0.0,0.0,0.8,skill/tool
+maven,0.8,0.0,0.0,0.8,skill/tool
+matplotlib,0.8,0.0,0.0,0.8,skill/tool
+looker,0.8,0.0,0.0,0.8,skill/tool
+matlab,0.8,0.0,0.0,0.8,skill/tool
+"certifications in product management or agile (pragmatic institute, pmi-acp, cspo)",0.8,0.0,0.0,0.8,skill/tool
+mentalidad resolutiva,0.8,0.0,0.0,0.8,skill/tool
+cierre de ventas,0.8,0.0,0.0,0.8,skill/tool
+chatbot development,0.8,0.0,0.0,0.8,skill/tool
+microservices,0.8,0.0,0.0,0.8,skill/tool
+metodologias agiles,0.8,0.0,0.0,0.8,skill/tool
+mentoria,0.8,0.0,0.0,0.8,skill/tool
+react.js,0.8,0.0,0.0,0.8,skill/tool
+"regulatory compliance (lgpd, gdpr, pci-dss)",0.8,0.0,0.0,0.8,skill/tool
+resolutiva,0.8,0.0,0.0,0.8,skill/tool
+artificial intelligence,0.8,0.0,0.0,0.8,skill/tool
+aprendizaje rapido,0.8,0.0,0.0,0.8,skill/tool
+mes,0.8,0.0,0.0,0.8,skill/tool
+mistral,0.8,0.0,0.0,0.8,skill/tool
+capacidad de aprender,0.8,0.0,0.0,0.8,skill/tool
+midjourney,0.8,0.0,0.0,0.8,skill/tool
+capacidad de analisis y sintesis,0.8,0.0,0.0,0.8,skill/tool
+cloud services,0.8,0.0,0.0,0.8,skill/tool
+apache,0.8,0.0,0.0,0.8,skill/tool
+runway,0.8,0.0,0.0,0.8,skill/tool
+ibm watsonx.ai,0.8,0.0,0.0,0.8,skill/tool
+illustrator,0.8,0.0,0.0,0.8,skill/tool
+information security,0.8,0.0,0.0,0.8,skill/tool
+ingles,0.8,0.0,0.0,0.8,skill/tool
+collaborative,0.8,0.0,0.0,0.8,skill/tool
+ingles (b2),0.8,0.0,0.0,0.8,skill/tool
+community leadership,0.8,0.0,0.0,0.8,skill/tool
+comunicacion clara,0.8,0.0,0.0,0.8,skill/tool
+jira,0.8,0.0,0.0,0.8,skill/tool
+initiative,0.8,0.0,0.0,0.8,skill/tool
+scada,0.8,0.0,0.0,0.8,skill/tool
+scala,0.8,0.0,0.0,0.8,skill/tool
+amazon q developer,0.8,0.0,0.0,0.8,skill/tool
+sdk development,0.8,0.0,0.0,0.8,skill/tool
+scipy,0.8,0.0,0.0,0.8,skill/tool
+analitica de datos,0.8,0.0,0.0,0.8,skill/tool
+hugging face transformers,0.8,0.0,0.0,0.8,skill/tool
+cloudformation,0.8,0.0,0.0,0.8,skill/tool
+colaboracion interdepartamental,0.8,0.0,0.0,0.8,skill/tool
+interpersonal skills,0.8,0.0,0.0,0.8,skill/tool
+inteligencia artificial generativa,0.8,0.0,0.0,0.8,skill/tool
+integracion de ia,0.8,0.0,0.0,0.8,skill/tool
+apache spark,0.8,0.0,0.0,0.8,skill/tool
+rpc,0.8,0.0,0.0,0.8,skill/tool
+results oriented,0.8,0.0,0.0,0.8,skill/tool
+results orientation,0.8,0.0,0.0,0.8,skill/tool
+result orientation,0.8,0.0,0.0,0.8,skill/tool
+result-oriented,0.8,0.0,0.0,0.8,skill/tool
+jupyter notebooks,0.8,0.0,0.0,0.8,skill/tool
+angular,0.8,0.0,0.0,0.8,skill/tool
+rigor cientifico,0.8,0.0,0.0,0.8,skill/tool
+apache kafka,0.8,0.0,0.0,0.8,skill/tool
+ai voice apis,0.8,0.0,0.0,0.8,skill/tool
+gestion del cambio,0.8,0.0,0.0,0.8,skill/tool
+github actions,0.8,0.0,0.0,0.8,skill/tool
+grafana,0.8,0.0,0.0,0.8,skill/tool
+gpu,0.8,0.0,0.0,0.8,skill/tool
+governance,0.8,0.0,0.0,0.8,skill/tool
+google palm api,0.8,0.0,0.0,0.8,skill/tool
+consultoria,0.8,0.0,0.0,0.8,skill/tool
+herramientas ofimaticas,0.8,0.0,0.0,0.8,skill/tool
+hadoop,0.8,0.0,0.0,0.8,skill/tool
+amazon bedrock,0.8,0.0,0.0,0.8,skill/tool
+salesforce marketing cloud,0.8,0.0,0.0,0.8,skill/tool
+ibm cloud,0.8,0.0,0.0,0.8,skill/tool
+comunicativo,0.8,0.0,0.0,0.8,skill/tool
+comunicacion efectiva,0.8,0.0,0.0,0.8,skill/tool
+spanish,0.8,0.0,0.0,0.8,skill/tool
+continuous improvement,0.8,0.0,0.0,0.8,skill/tool
+coordinacion,0.8,0.0,0.0,0.8,skill/tool
+copilot,0.8,0.0,0.0,0.8,skill/tool
+continuous delivery focus,0.8,0.0,0.0,0.8,skill/tool
+entrepreneurial mindset,0.8,0.0,0.0,0.8,skill/tool
+empathy,0.8,0.0,0.0,0.8,skill/tool
+fine-tuning,0.8,0.0,0.0,0.8,skill/tool
+figma,0.8,0.0,0.0,0.8,skill/tool
+elk,0.8,0.0,0.0,0.8,skill/tool
+elt,0.8,0.0,0.0,0.8,skill/tool
+seaborn,0.8,0.0,0.0,0.8,skill/tool
+genai,0.8,0.0,0.0,0.8,skill/tool
+ganas de innovar,0.8,0.0,0.0,0.8,skill/tool
+semantic kernel,0.8,0.0,0.0,0.8,skill/tool
+snowflake,0.8,0.0,0.0,0.8,skill/tool
+spring boot,0.8,0.0,0.0,0.8,skill/tool
+document ai,0.8,0.0,0.0,0.8,skill/tool
+documentation,0.8,0.0,0.0,0.8,skill/tool
+dvc,0.8,0.0,0.0,0.8,skill/tool
+e-commerce architecture,0.8,0.0,0.0,0.8,skill/tool
+cosmos db,0.8,0.0,0.0,0.8,skill/tool
+crm,0.8,0.0,0.0,0.8,skill/tool
+trabajo colaborativo,0.8,0.0,0.0,0.8,skill/tool
+ai generative,0.8,0.0,0.0,0.8,skill/tool
+technical support,0.8,0.0,0.0,0.8,skill/tool
+systemic vision,0.8,0.0,0.0,0.8,skill/tool
+swagger,0.8,0.0,0.0,0.8,skill/tool
+doctorado,0.8,0.0,0.0,0.8,skill/tool
+toma de decisiones y resolucion de problemas,0.8,0.0,0.0,0.8,skill/tool
+tensorrt,0.8,0.0,0.0,0.8,skill/tool
+tensorflow lite,0.8,0.0,0.0,0.8,skill/tool
+telemedicina,0.8,0.0,0.0,0.8,skill/tool
+customer experience,0.8,0.0,0.0,0.8,skill/tool
+customer focus,0.8,0.0,0.0,0.8,skill/tool
+d3.js,0.8,0.0,0.0,0.8,skill/tool
+data,0.8,0.0,0.0,0.8,skill/tool
+docencia,0.8,0.0,0.0,0.8,skill/tool
+disponibilidad horaria,0.8,0.0,0.0,0.8,skill/tool
+curiosidad tecnologica,0.8,0.0,0.0,0.8,skill/tool
+curiosity for new technologies,0.8,0.0,0.0,0.8,skill/tool
+dbt,0.8,0.0,0.0,0.8,skill/tool
+digital product development,0.8,0.0,0.0,0.8,skill/tool
+datadog,0.8,0.0,0.0,0.8,skill/tool
+voip,0.8,0.0,0.0,0.8,skill/tool
+voice ai services,0.8,0.0,0.0,0.8,skill/tool
+ability to work under tight deadlines,0.8,0.0,0.0,0.8,skill/tool
+a/b testing,0.8,0.0,0.0,0.8,skill/tool
+3d.js,0.8,0.0,0.0,0.8,skill/tool
+.net c#,0.4,0.0,0.0,0.4,skill/tool
+ability to articulate complex concepts,0.4,0.0,0.0,0.4,skill/tool
+ability to explain concepts simply,0.4,0.0,0.0,0.4,skill/tool
+ability to simplify complex concepts,0.4,0.0,0.0,0.4,skill/tool
+ability to work in fast-paced environments,0.4,0.0,0.0,0.4,skill/tool
+accessible design,0.4,0.0,0.0,0.4,skill/tool
+actitud,0.4,0.0,0.0,0.4,skill/tool
+"agile (scrum, kanban)",0.4,0.0,0.0,0.4,skill/tool
+agile,0.4,0.0,0.0,0.4,skill/tool
+agents,0.4,0.0,0.0,0.4,skill/tool
+agentforce,0.4,0.0,0.0,0.4,skill/tool
+agentes inteligentes,0.4,0.0,0.0,0.4,skill/tool
+advisory,0.4,0.0,0.0,0.4,skill/tool
+advanced prompting,0.4,0.0,0.0,0.4,skill/tool
+advanced cognigy,0.4,0.0,0.0,0.4,skill/tool
+adobe premiere,0.4,0.0,0.0,0.4,skill/tool
+administracion de bases de datos sql y nosql,0.4,0.0,0.0,0.4,skill/tool
+adls,0.4,0.0,0.0,0.4,skill/tool
+video editing,0.4,0.0,0.0,0.4,skill/tool
+vertex ai studio,0.4,0.0,0.0,0.4,skill/tool
+versionado con git,0.4,0.0,0.0,0.4,skill/tool
+version control (git),0.4,0.0,0.0,0.4,skill/tool
+verbal communication,0.4,0.0,0.0,0.4,skill/tool
+definicion de roadmaps y business cases,0.4,0.0,0.0,0.4,skill/tool
+definicion de modelos de gobierno en ia,0.4,0.0,0.0,0.4,skill/tool
+"definicion de metodologias, gobernanza y estandares de servicio",0.4,0.0,0.0,0.4,skill/tool
+"deep learning framework (e.g., tensorflow, pytorch)",0.4,0.0,0.0,0.4,skill/tool
+davinci resolve,0.4,0.0,0.0,0.4,skill/tool
+data‐driven testing,0.4,0.0,0.0,0.4,skill/tool
+dataverse,0.4,0.0,0.0,0.4,skill/tool
+dataflow,0.4,0.0,0.0,0.4,skill/tool
+databricks mosaic ai,0.4,0.0,0.0,0.4,skill/tool
+data wrangling / etl,0.4,0.0,0.0,0.4,skill/tool
+data wrangling,0.4,0.0,0.0,0.4,skill/tool
+"data visualization (seaborn, matplotlib)",0.4,0.0,0.0,0.4,skill/tool
+yolo,0.4,0.0,0.0,0.4,skill/tool
+written communication,0.4,0.0,0.0,0.4,skill/tool
+wms,0.4,0.0,0.0,0.4,skill/tool
+data mining,0.4,0.0,0.0,0.4,skill/tool
+data lakes y data warehouses,0.4,0.0,0.0,0.4,skill/tool
+data lake,0.4,0.0,0.0,0.4,skill/tool
+data ethics,0.4,0.0,0.0,0.4,skill/tool
+data analytics,0.4,0.0,0.0,0.4,skill/tool
+data & analytics,0.4,0.0,0.0,0.4,skill/tool
+design systems,0.4,0.0,0.0,0.4,skill/tool
+desarrollo web,0.4,0.0,0.0,0.4,skill/tool
+desarrollo movil multiplataforma,0.4,0.0,0.0,0.4,skill/tool
+desarrollo e integracion de apis y conectores de redes sociales,0.4,0.0,0.0,0.4,skill/tool
+desarrollo de pipelines rag,0.4,0.0,0.0,0.4,skill/tool
+desarrollo de modelos nlp,0.4,0.0,0.0,0.4,skill/tool
+desarrollo de modelos de computer vision,0.4,0.0,0.0,0.4,skill/tool
+desarrollo de flujos de automatizacion,0.4,0.0,0.0,0.4,skill/tool
+desarrollo de agentes conversacionales,0.4,0.0,0.0,0.4,skill/tool
+desarrollo back-end,0.4,0.0,0.0,0.4,skill/tool
+diseno de ontologias,0.4,0.0,0.0,0.4,skill/tool
+diseno de modelos de datos y aseguramiento de calidad de datos,0.4,0.0,0.0,0.4,skill/tool
+diseno de experimentos y evaluacion de impacto,0.4,0.0,0.0,0.4,skill/tool
+diseno de estrategias de ia,0.4,0.0,0.0,0.4,skill/tool
+diseno de data pipelines,0.4,0.0,0.0,0.4,skill/tool
+diseno de arquitecturas de datos,0.4,0.0,0.0,0.4,skill/tool
+diseno de arquitectura de software,0.4,0.0,0.0,0.4,skill/tool
+dino,0.4,0.0,0.0,0.4,skill/tool
+dinamico,0.4,0.0,0.0,0.4,skill/tool
+digital twins,0.4,0.0,0.0,0.4,skill/tool
+digital marketing,0.4,0.0,0.0,0.4,skill/tool
+diffusion,0.4,0.0,0.0,0.4,skill/tool
+dialogflow,0.4,0.0,0.0,0.4,skill/tool
+despliegue de modelos de ia,0.4,0.0,0.0,0.4,skill/tool
+data orchestration,0.4,0.0,0.0,0.4,skill/tool
+data modeling,0.4,0.0,0.0,0.4,skill/tool
+dast,0.4,0.0,0.0,0.4,skill/tool
+dall·e 3,0.4,0.0,0.0,0.4,skill/tool
+cypher,0.4,0.0,0.0,0.4,skill/tool
+customer service,0.4,0.0,0.0,0.4,skill/tool
+customer orientation,0.4,0.0,0.0,0.4,skill/tool
+curious,0.4,0.0,0.0,0.4,skill/tool
+curiositat,0.4,0.0,0.0,0.4,skill/tool
+divulgacion y formacion en ia y automatizacion,0.4,0.0,0.0,0.4,skill/tool
+distributed systems,0.4,0.0,0.0,0.4,skill/tool
+distribucion,0.4,0.0,0.0,0.4,skill/tool
+disponibilidad en las fechas y horarios indicados,0.4,0.0,0.0,0.4,skill/tool
+disponibilidad en horarios,0.4,0.0,0.0,0.4,skill/tool
+diseno y validacion de algoritmos de ia,0.4,0.0,0.0,0.4,skill/tool
+diseno y desarrollo de proyectos de ia,0.4,0.0,0.0,0.4,skill/tool
+diseno de procesos logisticos,0.4,0.0,0.0,0.4,skill/tool
+cross-platform development,0.4,0.0,0.0,0.4,skill/tool
+cross-functional collaboration,0.4,0.0,0.0,0.4,skill/tool
+creative thinking,0.4,0.0,0.0,0.4,skill/tool
+creacion de bots de atencion automatica,0.4,0.0,0.0,0.4,skill/tool
+eidas 2.0,0.4,0.0,0.0,0.4,skill/tool
+efk,0.4,0.0,0.0,0.4,skill/tool
+eficiencia,0.4,0.0,0.0,0.4,skill/tool
+efectividad,0.4,0.0,0.0,0.4,skill/tool
+educational or socio‐educational experience,0.4,0.0,0.0,0.4,skill/tool
+eclipse,0.4,0.0,0.0,0.4,skill/tool
+domo,0.4,0.0,0.0,0.4,skill/tool
+documentacion tecnica,0.4,0.0,0.0,0.4,skill/tool
+documentacion,0.4,0.0,0.0,0.4,skill/tool
+doctorate degree,0.4,0.0,0.0,0.4,skill/tool
+doctorado (phd),0.4,0.0,0.0,0.4,skill/tool
+english (high),0.4,0.0,0.0,0.4,skill/tool
+english (conversational),0.4,0.0,0.0,0.4,skill/tool
+english (b2),0.4,0.0,0.0,0.4,skill/tool
+emr,0.4,0.0,0.0,0.4,skill/tool
+emprendimiento,0.4,0.0,0.0,0.4,skill/tool
+empatia,0.4,0.0,0.0,0.4,skill/tool
+embeddings,0.4,0.0,0.0,0.4,skill/tool
+embedded linux,0.4,0.0,0.0,0.4,skill/tool
+email marketing tools,0.4,0.0,0.0,0.4,skill/tool
+email marketing,0.4,0.0,0.0,0.4,skill/tool
+elasticsearch,0.4,0.0,0.0,0.4,skill/tool
+elaboracion de documentacion,0.4,0.0,0.0,0.4,skill/tool
+ejb,0.4,0.0,0.0,0.4,skill/tool
+cuda,0.4,0.0,0.0,0.4,skill/tool
+css,0.4,0.0,0.0,0.4,skill/tool
+cross‐functional collaboration,0.4,0.0,0.0,0.4,skill/tool
+etica medica,0.4,0.0,0.0,0.4,skill/tool
+ethical responsibility,0.4,0.0,0.0,0.4,skill/tool
+ethical judgment,0.4,0.0,0.0,0.4,skill/tool
+estructuracion de conocimiento,0.4,0.0,0.0,0.4,skill/tool
+espiritu emprendedor,0.4,0.0,0.0,0.4,skill/tool
+esperit pioner,0.4,0.0,0.0,0.4,skill/tool
+erp integration,0.4,0.0,0.0,0.4,skill/tool
+erp,0.4,0.0,0.0,0.4,skill/tool
+er modeling,0.4,0.0,0.0,0.4,skill/tool
+entrepreneurial,0.4,0.0,0.0,0.4,skill/tool
+entrenamiento de modelos de ia,0.4,0.0,0.0,0.4,skill/tool
+"entorno cloud (iaas, paas, caas, saas)",0.4,0.0,0.0,0.4,skill/tool
+enthusiasm,0.4,0.0,0.0,0.4,skill/tool
+entendimiento de procesos de negocio,0.4,0.0,0.0,0.4,skill/tool
+english communication,0.4,0.0,0.0,0.4,skill/tool
+executive storytelling,0.4,0.0,0.0,0.4,skill/tool
+execution orientation,0.4,0.0,0.0,0.4,skill/tool
+execution capability,0.4,0.0,0.0,0.4,skill/tool
+execution,0.4,0.0,0.0,0.4,skill/tool
+exceptional presentation skills,0.4,0.0,0.0,0.4,skill/tool
+excellent verbal and written communication,0.4,0.0,0.0,0.4,skill/tool
+excellent communication,0.4,0.0,0.0,0.4,skill/tool
+excelentes habilidades de comunicacion escrita y verbal,0.4,0.0,0.0,0.4,skill/tool
+excelentes habilidades de comunicacion,0.4,0.0,0.0,0.4,skill/tool
+evaluation of generative ai systems with live data,0.4,0.0,0.0,0.4,skill/tool
+evaluacion de sistemas ia generativa,0.4,0.0,0.0,0.4,skill/tool
+evaluacion de desempeno,0.4,0.0,0.0,0.4,skill/tool
+"european ai regulations (ai act, gdpr, cra)",0.4,0.0,0.0,0.4,skill/tool
+etl/elt pipelines,0.4,0.0,0.0,0.4,skill/tool
+"etl/elt (airflow, talend, apache beam, dbt)",0.4,0.0,0.0,0.4,skill/tool
+experiment design,0.4,0.0,0.0,0.4,skill/tool
+experiencia sector banca,0.4,0.0,0.0,0.4,skill/tool
+experiencia previa en consultoria,0.4,0.0,0.0,0.4,skill/tool
+experiencia en ventas,0.4,0.0,0.0,0.4,skill/tool
+experiencia en startups o proyectos saas,0.4,0.0,0.0,0.4,skill/tool
+experiencia en startups,0.4,0.0,0.0,0.4,skill/tool
+experiencia en seguros,0.4,0.0,0.0,0.4,skill/tool
+experiencia en saas,0.4,0.0,0.0,0.4,skill/tool
+experiencia en oficinas de innovacion,0.4,0.0,0.0,0.4,skill/tool
+experiencia en laboratorios de inteligencia artificial,0.4,0.0,0.0,0.4,skill/tool
+experiencia en entornos de alta demanda y despliegues multi‐site,0.4,0.0,0.0,0.4,skill/tool
+experiencia en banca,0.4,0.0,0.0,0.4,skill/tool
+experiencia davant de camera,0.4,0.0,0.0,0.4,skill/tool
+experiencia con financiacion horizon europe,0.4,0.0,0.0,0.4,skill/tool
+"experience with ai for purchasing automation, autonomous agents, or conversational interfaces",0.4,0.0,0.0,0.4,skill/tool
+experience in global projects or multinational companies,0.4,0.0,0.0,0.4,skill/tool
+fine-tuning en azure,0.4,0.0,0.0,0.4,skill/tool
+financial industry knowledge,0.4,0.0,0.0,0.4,skill/tool
+fhir,0.4,0.0,0.0,0.4,skill/tool
+feedback,0.4,0.0,0.0,0.4,skill/tool
+fastapi,0.4,0.0,0.0,0.4,skill/tool
+fast learner,0.4,0.0,0.0,0.4,skill/tool
+familiaritat amb eines d'ia generativa,0.4,0.0,0.0,0.4,skill/tool
+"familiaridad con itil y marcos de seguridad (iso 27001, nis2)",0.4,0.0,0.0,0.4,skill/tool
+fairness,0.4,0.0,0.0,0.4,skill/tool
+facilitacion de workshops,0.4,0.0,0.0,0.4,skill/tool
+e‐commerce integration,0.4,0.0,0.0,0.4,skill/tool
+extraccion de relaciones con llms,0.4,0.0,0.0,0.4,skill/tool
+extraccion de entidades con llms,0.4,0.0,0.0,0.4,skill/tool
+explainability,0.4,0.0,0.0,0.4,skill/tool
+experimentos con grandes conjuntos de datos,0.4,0.0,0.0,0.4,skill/tool
+experimentation,0.4,0.0,0.0,0.4,skill/tool
+conversational interfaces,0.4,0.0,0.0,0.4,skill/tool
+conversational ai,0.4,0.0,0.0,0.4,skill/tool
+continuous innovation,0.4,0.0,0.0,0.4,skill/tool
+continuous improvement mindset,0.4,0.0,0.0,0.4,skill/tool
+content generation tools,0.4,0.0,0.0,0.4,skill/tool
+content creation,0.4,0.0,0.0,0.4,skill/tool
+formacion superior en datos,0.4,0.0,0.0,0.4,skill/tool
+foreign trade knowledge,0.4,0.0,0.0,0.4,skill/tool
+forecasting,0.4,0.0,0.0,0.4,skill/tool
+flows,0.4,0.0,0.0,0.4,skill/tool
+flink,0.4,0.0,0.0,0.4,skill/tool
+flexibilidad,0.4,0.0,0.0,0.4,skill/tool
+flake8,0.4,0.0,0.0,0.4,skill/tool
+firefly,0.4,0.0,0.0,0.4,skill/tool
+finops,0.4,0.0,0.0,0.4,skill/tool
+gestio de projectes,0.4,0.0,0.0,0.4,skill/tool
+generative tools,0.4,0.0,0.0,0.4,skill/tool
+"generative ai (prompting, embeddings, apis such as openai, anthropic, gemini, huggingface)",0.4,0.0,0.0,0.4,skill/tool
+gemini vision,0.4,0.0,0.0,0.4,skill/tool
+gemini api,0.4,0.0,0.0,0.4,skill/tool
+gdb,0.4,0.0,0.0,0.4,skill/tool
+ganas de aprender,0.4,0.0,0.0,0.4,skill/tool
+gamification,0.4,0.0,0.0,0.4,skill/tool
+fundamentos de ia,0.4,0.0,0.0,0.4,skill/tool
+french language,0.4,0.0,0.0,0.4,skill/tool
+frameworks,0.4,0.0,0.0,0.4,skill/tool
+formacion superior en ia,0.4,0.0,0.0,0.4,skill/tool
+copilot m365,0.4,0.0,0.0,0.4,skill/tool
+coordination,0.4,0.0,0.0,0.4,skill/tool
+coordinacion de proyectos tecnologicos,0.4,0.0,0.0,0.4,skill/tool
+coordinacion de equipos,0.4,0.0,0.0,0.4,skill/tool
+gestion de tiempos,0.4,0.0,0.0,0.4,skill/tool
+gestion de tickets y sla,0.4,0.0,0.0,0.4,skill/tool
+gestion de talento,0.4,0.0,0.0,0.4,skill/tool
+gestion de stakeholders a nivel directivo,0.4,0.0,0.0,0.4,skill/tool
+gestion de stakeholders,0.4,0.0,0.0,0.4,skill/tool
+gestion de servidores mcp,0.4,0.0,0.0,0.4,skill/tool
+gestion de proyectos complejos,0.4,0.0,0.0,0.4,skill/tool
+gestion de propuestas,0.4,0.0,0.0,0.4,skill/tool
+gestion de pipelines de datos,0.4,0.0,0.0,0.4,skill/tool
+gestion de pilotos/proyectos de ia,0.4,0.0,0.0,0.4,skill/tool
+gestion de partes interesadas,0.4,0.0,0.0,0.4,skill/tool
+gestion de memoria y contexto,0.4,0.0,0.0,0.4,skill/tool
+gestion de expectativas,0.4,0.0,0.0,0.4,skill/tool
+gestion de equipos tecnicos,0.4,0.0,0.0,0.4,skill/tool
+gestion de entornos y versiones de modelos,0.4,0.0,0.0,0.4,skill/tool
+gestion,0.4,0.0,0.0,0.4,skill/tool
+google bard,0.4,0.0,0.0,0.4,skill/tool
+google analytics,0.4,0.0,0.0,0.4,skill/tool
+godot,0.4,0.0,0.0,0.4,skill/tool
+"gobernanza, calidad y seguridad de datos",0.4,0.0,0.0,0.4,skill/tool
+goal achievement,0.4,0.0,0.0,0.4,skill/tool
+gnu toolchain,0.4,0.0,0.0,0.4,skill/tool
+global project experience,0.4,0.0,0.0,0.4,skill/tool
+global product strategy definition,0.4,0.0,0.0,0.4,skill/tool
+gitlab ci/cd,0.4,0.0,0.0,0.4,skill/tool
+"git/github (advanced, branching, prs, ci)",0.4,0.0,0.0,0.4,skill/tool
+git (version control),0.4,0.0,0.0,0.4,skill/tool
+git (gitlab),0.4,0.0,0.0,0.4,skill/tool
+gestion ejecutiva y tecnica,0.4,0.0,0.0,0.4,skill/tool
+gestion de wms,0.4,0.0,0.0,0.4,skill/tool
+consulting experience,0.4,0.0,0.0,0.4,skill/tool
+consultative mindset,0.4,0.0,0.0,0.4,skill/tool
+construccion de pipelines (apis/etl/elt),0.4,0.0,0.0,0.4,skill/tool
+conocimientos en ia generativa,0.4,0.0,0.0,0.4,skill/tool
+conocimiento del sector sanitario,0.4,0.0,0.0,0.4,skill/tool
+conocimiento del sector industrial/manufacturing,0.4,0.0,0.0,0.4,skill/tool
+"conocimiento del sector financiero, supply chain o retail",0.4,0.0,0.0,0.4,skill/tool
+conocimiento del reglamento ue de ia,0.4,0.0,0.0,0.4,skill/tool
+conocimiento de salesforce marketing cloud y ecosistema crm,0.4,0.0,0.0,0.4,skill/tool
+conocimiento de realidad virtual,0.4,0.0,0.0,0.4,skill/tool
+conocimiento de mes,0.4,0.0,0.0,0.4,skill/tool
+conocimiento de google cloud,0.4,0.0,0.0,0.4,skill/tool
+conocimiento de erp,0.4,0.0,0.0,0.4,skill/tool
+conocimiento de aws,0.4,0.0,0.0,0.4,skill/tool
+google cloud devops certification,0.4,0.0,0.0,0.4,skill/tool
+google cloud devops,0.4,0.0,0.0,0.4,skill/tool
+grok,0.4,0.0,0.0,0.4,skill/tool
+gremlin,0.4,0.0,0.0,0.4,skill/tool
+graphrag,0.4,0.0,0.0,0.4,skill/tool
+graphql apis,0.4,0.0,0.0,0.4,skill/tool
+gradle,0.4,0.0,0.0,0.4,skill/tool
+gpu utilization,0.4,0.0,0.0,0.4,skill/tool
+gpt-5,0.4,0.0,0.0,0.4,skill/tool
+gpt-4,0.4,0.0,0.0,0.4,skill/tool
+gpt,0.4,0.0,0.0,0.4,skill/tool
+google workspace,0.4,0.0,0.0,0.4,skill/tool
+google vertex ai,0.4,0.0,0.0,0.4,skill/tool
+google search console,0.4,0.0,0.0,0.4,skill/tool
+google professional machine learning engineer,0.4,0.0,0.0,0.4,skill/tool
+google gemini api,0.4,0.0,0.0,0.4,skill/tool
+google cloud storage,0.4,0.0,0.0,0.4,skill/tool
+container architectures,0.4,0.0,0.0,0.4,skill/tool
+high social commitment,0.4,0.0,0.0,0.4,skill/tool
+high english proficiency,0.4,0.0,0.0,0.4,skill/tool
+high documentation traceability,0.4,0.0,0.0,0.4,skill/tool
+heygen,0.4,0.0,0.0,0.4,skill/tool
+herramientas para ciclo de vida seguro de ia,0.4,0.0,0.0,0.4,skill/tool
+herramientas de visualizacion (bi),0.4,0.0,0.0,0.4,skill/tool
+herramientas de ia,0.4,0.0,0.0,0.4,skill/tool
+haystack,0.4,0.0,0.0,0.4,skill/tool
+hablar en publico,0.4,0.0,0.0,0.4,skill/tool
+habilidades organizativas,0.4,0.0,0.0,0.4,skill/tool
+habilidades interpersonales,0.4,0.0,0.0,0.4,skill/tool
+habilidades fisicas,0.4,0.0,0.0,0.4,skill/tool
+habilidades de comunicacion,0.4,0.0,0.0,0.4,skill/tool
+habilidades basicas de manejo del ordenador,0.4,0.0,0.0,0.4,skill/tool
+habilidades analiticas,0.4,0.0,0.0,0.4,skill/tool
+grpc,0.4,0.0,0.0,0.4,skill/tool
+confidencialidad,0.4,0.0,0.0,0.4,skill/tool
+conexion de crms o creacion de bots,0.4,0.0,0.0,0.4,skill/tool
+conexion de apis,0.4,0.0,0.0,0.4,skill/tool
+coneixement profund del llenguatge audiovisual,0.4,0.0,0.0,0.4,skill/tool
+concurrent programming,0.4,0.0,0.0,0.4,skill/tool
+conciencia y competencia digital,0.4,0.0,0.0,0.4,skill/tool
+comunicacion y facilitacion de workshops,0.4,0.0,0.0,0.4,skill/tool
+comunicacion persuasiva,0.4,0.0,0.0,0.4,skill/tool
+comunicacion en ingles,0.4,0.0,0.0,0.4,skill/tool
+comunicacion e influencia,0.4,0.0,0.0,0.4,skill/tool
+i+d project experience,0.4,0.0,0.0,0.4,skill/tool
+html5,0.4,0.0,0.0,0.4,skill/tool
+hl7,0.4,0.0,0.0,0.4,skill/tool
+hiring y onboarding,0.4,0.0,0.0,0.4,skill/tool
+hikvision,0.4,0.0,0.0,0.4,skill/tool
+high standards,0.4,0.0,0.0,0.4,skill/tool
+incident management,0.4,0.0,0.0,0.4,skill/tool
+implementacion de soluciones de ia end-to-end,0.4,0.0,0.0,0.4,skill/tool
+implementacion de soluciones,0.4,0.0,0.0,0.4,skill/tool
+implementacion de modelos llm,0.4,0.0,0.0,0.4,skill/tool
+impact orientation,0.4,0.0,0.0,0.4,skill/tool
+imitation learning,0.4,0.0,0.0,0.4,skill/tool
+iiot,0.4,0.0,0.0,0.4,skill/tool
+iac scanning,0.4,0.0,0.0,0.4,skill/tool
+iaas,0.4,0.0,0.0,0.4,skill/tool
+ia tools,0.4,0.0,0.0,0.4,skill/tool
+ia multimodal,0.4,0.0,0.0,0.4,skill/tool
+ia aplicada a ciberseguridad,0.4,0.0,0.0,0.4,skill/tool
+ia agentes,0.4,0.0,0.0,0.4,skill/tool
+ia agente,0.4,0.0,0.0,0.4,skill/tool
+conocimiento clinico especializado,0.4,0.0,0.0,0.4,skill/tool
+confluence,0.4,0.0,0.0,0.4,skill/tool
+comprension de procesos de negocio,0.4,0.0,0.0,0.4,skill/tool
+composer (airflow),0.4,0.0,0.0,0.4,skill/tool
+complex problem solving,0.4,0.0,0.0,0.4,skill/tool
+community involvement,0.4,0.0,0.0,0.4,skill/tool
+communicacion,0.4,0.0,0.0,0.4,skill/tool
+ingles b2,0.4,0.0,0.0,0.4,skill/tool
+ingles avanzado,0.4,0.0,0.0,0.4,skill/tool
+ingles (intermedio/avanzado),0.4,0.0,0.0,0.4,skill/tool
+ingenieria del prompt,0.4,0.0,0.0,0.4,skill/tool
+influencia,0.4,0.0,0.0,0.4,skill/tool
+industrial generative ai,0.4,0.0,0.0,0.4,skill/tool
+industria 4.0,0.4,0.0,0.0,0.4,skill/tool
+independencia,0.4,0.0,0.0,0.4,skill/tool
+inclusive leadership,0.4,0.0,0.0,0.4,skill/tool
+"integracion de servicios de voz o texto basados en ia (elevenlabs, openai, whisper)",0.4,0.0,0.0,0.4,skill/tool
+integracion de plataformas cctv,0.4,0.0,0.0,0.4,skill/tool
+integracion de crm,0.4,0.0,0.0,0.4,skill/tool
+integracion con apis,0.4,0.0,0.0,0.4,skill/tool
+insurance sector experience,0.4,0.0,0.0,0.4,skill/tool
+insurance domain experience,0.4,0.0,0.0,0.4,skill/tool
+innovative,0.4,0.0,0.0,0.4,skill/tool
+iniciativa y espiritu emprendedor,0.4,0.0,0.0,0.4,skill/tool
+iniciativa,0.4,0.0,0.0,0.4,skill/tool
+ingles tecnico,0.4,0.0,0.0,0.4,skill/tool
+ingles fluido (b2-c1),0.4,0.0,0.0,0.4,skill/tool
+ingles c1,0.4,0.0,0.0,0.4,skill/tool
+comunicacion cientifica,0.4,0.0,0.0,0.4,skill/tool
+compromiso etico,0.4,0.0,0.0,0.4,skill/tool
+compresion de modelos,0.4,0.0,0.0,0.4,skill/tool
+iot,0.4,0.0,0.0,0.4,skill/tool
+introduccion de correctores a maquinas cnc,0.4,0.0,0.0,0.4,skill/tool
+interpretacion de planos tecnicos,0.4,0.0,0.0,0.4,skill/tool
+interpersonal communication,0.4,0.0,0.0,0.4,skill/tool
+interpersonal,0.4,0.0,0.0,0.4,skill/tool
+internal apis,0.4,0.0,0.0,0.4,skill/tool
+interfaz entre area tecnica y negocio,0.4,0.0,0.0,0.4,skill/tool
+"interes por digital, data e ia",0.4,0.0,0.0,0.4,skill/tool
+interes en inteligencia artificial,0.4,0.0,0.0,0.4,skill/tool
+interes en ia aplicada a la salud,0.4,0.0,0.0,0.4,skill/tool
+interes en ia,0.4,0.0,0.0,0.4,skill/tool
+intelligent document processing,0.4,0.0,0.0,0.4,skill/tool
+intelligent automation,0.4,0.0,0.0,0.4,skill/tool
+intelligent agents,0.4,0.0,0.0,0.4,skill/tool
+inteligencia artificial aplicada,0.4,0.0,0.0,0.4,skill/tool
+integrations,0.4,0.0,0.0,0.4,skill/tool
+colaboracion con equipos creativos,0.4,0.0,0.0,0.4,skill/tool
+cognigy,0.4,0.0,0.0,0.4,skill/tool
+cnn,0.4,0.0,0.0,0.4,skill/tool
+cnc,0.4,0.0,0.0,0.4,skill/tool
+cmake,0.4,0.0,0.0,0.4,skill/tool
+cloudera data platform,0.4,0.0,0.0,0.4,skill/tool
+cloudera,0.4,0.0,0.0,0.4,skill/tool
+cloud storage,0.4,0.0,0.0,0.4,skill/tool
+cloud integration,0.4,0.0,0.0,0.4,skill/tool
+cloud governance,0.4,0.0,0.0,0.4,skill/tool
+cloud functions,0.4,0.0,0.0,0.4,skill/tool
+jni,0.4,0.0,0.0,0.4,skill/tool
+javascript visualization (3d.js),0.4,0.0,0.0,0.4,skill/tool
+javascript data visualization (3d.js),0.4,0.0,0.0,0.4,skill/tool
+java web start,0.4,0.0,0.0,0.4,skill/tool
+ip,0.4,0.0,0.0,0.4,skill/tool
+large-scale ml implementation,0.4,0.0,0.0,0.4,skill/tool
+large language models (llms) y retrieval augmented generation (rag),0.4,0.0,0.0,0.4,skill/tool
+large language models,0.4,0.0,0.0,0.4,skill/tool
+laravel,0.4,0.0,0.0,0.4,skill/tool
+language models,0.4,0.0,0.0,0.4,skill/tool
+lambda,0.4,0.0,0.0,0.4,skill/tool
+kpis,0.4,0.0,0.0,0.4,skill/tool
+kpi definition,0.4,0.0,0.0,0.4,skill/tool
+knowledge sharing,0.4,0.0,0.0,0.4,skill/tool
+knowledge of the brazilian payment methods market,0.4,0.0,0.0,0.4,skill/tool
+kiro,0.4,0.0,0.0,0.4,skill/tool
+kinect,0.4,0.0,0.0,0.4,skill/tool
+kanban,0.4,0.0,0.0,0.4,skill/tool
+jwt,0.4,0.0,0.0,0.4,skill/tool
+jupyter notebook,0.4,0.0,0.0,0.4,skill/tool
+colaborador,0.4,0.0,0.0,0.4,skill/tool
+cloud computing,0.4,0.0,0.0,0.4,skill/tool
+cloud architectures,0.4,0.0,0.0,0.4,skill/tool
+cloud architecture,0.4,0.0,0.0,0.4,skill/tool
+"cloud ai (azure ai, vertex ai, aws ai)",0.4,0.0,0.0,0.4,skill/tool
+client communication,0.4,0.0,0.0,0.4,skill/tool
+clear documentation,0.4,0.0,0.0,0.4,skill/tool
+clean code,0.4,0.0,0.0,0.4,skill/tool
+claude api,0.4,0.0,0.0,0.4,skill/tool
+classification,0.4,0.0,0.0,0.4,skill/tool
+legal sector knowledge,0.4,0.0,0.0,0.4,skill/tool
+"legal knowledge (civil, commercial, fiscal)",0.4,0.0,0.0,0.4,skill/tool
+legal drafting,0.4,0.0,0.0,0.4,skill/tool
+legacy modernization experience,0.4,0.0,0.0,0.4,skill/tool
+leadership with empathy,0.4,0.0,0.0,0.4,skill/tool
+leadership and management skills,0.4,0.0,0.0,0.4,skill/tool
+llm apis,0.4,0.0,0.0,0.4,skill/tool
+llm alignment,0.4,0.0,0.0,0.4,skill/tool
+llama 3,0.4,0.0,0.0,0.4,skill/tool
+llama,0.4,0.0,0.0,0.4,skill/tool
+linux server administration,0.4,0.0,0.0,0.4,skill/tool
+linux administration,0.4,0.0,0.0,0.4,skill/tool
+linting,0.4,0.0,0.0,0.4,skill/tool
+lime,0.4,0.0,0.0,0.4,skill/tool
+lightning components,0.4,0.0,0.0,0.4,skill/tool
+liderazgo transversal,0.4,0.0,0.0,0.4,skill/tool
+liderazgo de equipos de analisis de datos/ia,0.4,0.0,0.0,0.4,skill/tool
+lideratge de petits equips,0.4,0.0,0.0,0.4,skill/tool
+lideratge d'equips,0.4,0.0,0.0,0.4,skill/tool
+cloud deployments,0.4,0.0,0.0,0.4,skill/tool
+"cloud computing (iaas, paas, caas, saas)",0.4,0.0,0.0,0.4,skill/tool
+master en inteligencia artificial,0.4,0.0,0.0,0.4,skill/tool
+master en gestion de proyectos tecnologicos,0.4,0.0,0.0,0.4,skill/tool
+master en ciencia de datos,0.4,0.0,0.0,0.4,skill/tool
+master en ciberseguridad industrial,0.4,0.0,0.0,0.4,skill/tool
+marketplace integration,0.4,0.0,0.0,0.4,skill/tool
+marketing,0.4,0.0,0.0,0.4,skill/tool
+manipulacion robotica,0.4,0.0,0.0,0.4,skill/tool
+manejo de stock,0.4,0.0,0.0,0.4,skill/tool
+manejo de grandes volumenes de datos,0.4,0.0,0.0,0.4,skill/tool
+manejo de entornos ci/cd,0.4,0.0,0.0,0.4,skill/tool
+machine learning libraries,0.4,0.0,0.0,0.4,skill/tool
+llvm,0.4,0.0,0.0,0.4,skill/tool
+llm orchestration,0.4,0.0,0.0,0.4,skill/tool
+llm integration,0.4,0.0,0.0,0.4,skill/tool
+llm fine-tuning,0.4,0.0,0.0,0.4,skill/tool
+ciberseguridad,0.4,0.0,0.0,0.4,skill/tool
+ci/cd (basic),0.4,0.0,0.0,0.4,skill/tool
+chroma,0.4,0.0,0.0,0.4,skill/tool
+change management,0.4,0.0,0.0,0.4,skill/tool
+certificaciones en mlops,0.4,0.0,0.0,0.4,skill/tool
+certificaciones en azure,0.4,0.0,0.0,0.4,skill/tool
+"certificaciones cloud (aws, google, azure)",0.4,0.0,0.0,0.4,skill/tool
+"certificaciones axis, hikvision, avigilon, milestone, ccna",0.4,0.0,0.0,0.4,skill/tool
+certificacion pmp,0.4,0.0,0.0,0.4,skill/tool
+causal modeling,0.4,0.0,0.0,0.4,skill/tool
+capcut,0.4,0.0,0.0,0.4,skill/tool
+mejora continua,0.4,0.0,0.0,0.4,skill/tool
+medical imaging,0.4,0.0,0.0,0.4,skill/tool
+"mathematics for ml (statistics, linear algebra, probability)",0.4,0.0,0.0,0.4,skill/tool
+"master's degree in software engineering, data engineering, machine learning, ai, or data science",0.4,0.0,0.0,0.4,skill/tool
+master o doctorado,0.4,0.0,0.0,0.4,skill/tool
+microsoft,0.4,0.0,0.0,0.4,skill/tool
+microservices architecture,0.4,0.0,0.0,0.4,skill/tool
+"metrics definition (kpis, okrs, north star)",0.4,0.0,0.0,0.4,skill/tool
+metricas de rendimiento,0.4,0.0,0.0,0.4,skill/tool
+metodologias y best practices,0.4,0.0,0.0,0.4,skill/tool
+"metodologias agiles (scrum, kanban)",0.4,0.0,0.0,0.4,skill/tool
+meticulosidad,0.4,0.0,0.0,0.4,skill/tool
+metadata management,0.4,0.0,0.0,0.4,skill/tool
+message queues,0.4,0.0,0.0,0.4,skill/tool
+mes/mom,0.4,0.0,0.0,0.4,skill/tool
+mentorship,0.4,0.0,0.0,0.4,skill/tool
+mentalitat exploradora,0.4,0.0,0.0,0.4,skill/tool
+mentalidad startup,0.4,0.0,0.0,0.4,skill/tool
+mentalidad de crecimiento y aprendizaje activo,0.4,0.0,0.0,0.4,skill/tool
+mentalidad de crecimiento,0.4,0.0,0.0,0.4,skill/tool
+mentalidad curiosa,0.4,0.0,0.0,0.4,skill/tool
+capacidad de interlocucion con clientes,0.4,0.0,0.0,0.4,skill/tool
+capacidad de explicar conceptos complejos,0.4,0.0,0.0,0.4,skill/tool
+capacidad de entender procesos de negocio,0.4,0.0,0.0,0.4,skill/tool
+capacidad de aplicar los conocimientos a la practica,0.4,0.0,0.0,0.4,skill/tool
+capacidad comunicativa,0.4,0.0,0.0,0.4,skill/tool
+canva,0.4,0.0,0.0,0.4,skill/tool
+campanas digitales y de redes sociales,0.4,0.0,0.0,0.4,skill/tool
+cambio y calibrado de herramientas,0.4,0.0,0.0,0.4,skill/tool
+microsoft office 365,0.4,0.0,0.0,0.4,skill/tool
+microsoft office,0.4,0.0,0.0,0.4,skill/tool
+microsoft luis,0.4,0.0,0.0,0.4,skill/tool
+microsoft fabric,0.4,0.0,0.0,0.4,skill/tool
+microsoft dynamics 365,0.4,0.0,0.0,0.4,skill/tool
+microsoft copilot studio,0.4,0.0,0.0,0.4,skill/tool
+microsoft copilot,0.4,0.0,0.0,0.4,skill/tool
+model pruning,0.4,0.0,0.0,0.4,skill/tool
+model monitoring,0.4,0.0,0.0,0.4,skill/tool
+"model integration (langchain, semantic kernel)",0.4,0.0,0.0,0.4,skill/tool
+model compression,0.4,0.0,0.0,0.4,skill/tool
+model apis,0.4,0.0,0.0,0.4,skill/tool
+mobile development,0.4,0.0,0.0,0.4,skill/tool
+"mlops basics (venv/conda, dvc, mlflow, tracking)",0.4,0.0,0.0,0.4,skill/tool
+mlir,0.4,0.0,0.0,0.4,skill/tool
+mitre,0.4,0.0,0.0,0.4,skill/tool
+milestone,0.4,0.0,0.0,0.4,skill/tool
+microsoft teams,0.4,0.0,0.0,0.4,skill/tool
+microsoft power platform,0.4,0.0,0.0,0.4,skill/tool
+microsoft planner,0.4,0.0,0.0,0.4,skill/tool
+capacitacion,0.4,0.0,0.0,0.4,skill/tool
+capacidad para conectar negocio y tecnologia,0.4,0.0,0.0,0.4,skill/tool
+capacidad de tutoria,0.4,0.0,0.0,0.4,skill/tool
+multimedia integration,0.4,0.0,0.0,0.4,skill/tool
+multilingual translation,0.4,0.0,0.0,0.4,skill/tool
+"multicloud (azure, aws, gcp)",0.4,0.0,0.0,0.4,skill/tool
+ms power platform,0.4,0.0,0.0,0.4,skill/tool
+mqtt,0.4,0.0,0.0,0.4,skill/tool
+motivada,0.4,0.0,0.0,0.4,skill/tool
+motion design,0.4,0.0,0.0,0.4,skill/tool
+mosaic ai,0.4,0.0,0.0,0.4,skill/tool
+monitoring,0.4,0.0,0.0,0.4,skill/tool
+mom,0.4,0.0,0.0,0.4,skill/tool
+"modelos llm (gpt, llama, mistral)",0.4,0.0,0.0,0.4,skill/tool
+modelos de lenguaje,0.4,0.0,0.0,0.4,skill/tool
+modelado de grafos de conocimiento,0.4,0.0,0.0,0.4,skill/tool
+"modelado de datos (relacional, dimensional, nosql)",0.4,0.0,0.0,0.4,skill/tool
+modelado de aprendizaje automatico,0.4,0.0,0.0,0.4,skill/tool
+modelado causal,0.4,0.0,0.0,0.4,skill/tool
+c/c++,0.4,0.0,0.0,0.4,skill/tool
+business understanding,0.4,0.0,0.0,0.4,skill/tool
+business stakeholder management,0.4,0.0,0.0,0.4,skill/tool
+business orientation,0.4,0.0,0.0,0.4,skill/tool
+buena comunicacion,0.4,0.0,0.0,0.4,skill/tool
+budget management,0.4,0.0,0.0,0.4,skill/tool
+brandwatch,0.4,0.0,0.0,0.4,skill/tool
+branding,0.4,0.0,0.0,0.4,skill/tool
+bots development,0.4,0.0,0.0,0.4,skill/tool
+nat,0.4,0.0,0.0,0.4,skill/tool
+narrativa de valor,0.4,0.0,0.0,0.4,skill/tool
+n8n (or make / integromat / zapier) advanced,0.4,0.0,0.0,0.4,skill/tool
+mypy,0.4,0.0,0.0,0.4,skill/tool
+multitasking,0.4,0.0,0.0,0.4,skill/tool
+multitarea,0.4,0.0,0.0,0.4,skill/tool
+multimodal ai,0.4,0.0,0.0,0.4,skill/tool
+nosql databases,0.4,0.0,0.0,0.4,skill/tool
+nosql (basic),0.4,0.0,0.0,0.4,skill/tool
+normativas y certificacion de dispositivos medicos,0.4,0.0,0.0,0.4,skill/tool
+node.js o javascript,0.4,0.0,0.0,0.4,skill/tool
+no-code tools,0.4,0.0,0.0,0.4,skill/tool
+no-code platforms,0.4,0.0,0.0,0.4,skill/tool
+nivel alto de ingles,0.4,0.0,0.0,0.4,skill/tool
+nist,0.4,0.0,0.0,0.4,skill/tool
+nifi,0.4,0.0,0.0,0.4,skill/tool
+nexus,0.4,0.0,0.0,0.4,skill/tool
+networking,0.4,0.0,0.0,0.4,skill/tool
+neo4j,0.4,0.0,0.0,0.4,skill/tool
+negotiation,0.4,0.0,0.0,0.4,skill/tool
+cacao,0.4,0.0,0.0,0.4,skill/tool
+caas,0.4,0.0,0.0,0.4,skill/tool
+verbal and written communication,0.4,0.0,0.0,0.4,skill/tool
+ventas b2b,0.4,0.0,0.0,0.4,skill/tool
+ventas,0.4,0.0,0.0,0.4,skill/tool
+vector search,0.4,0.0,0.0,0.4,skill/tool
+"vector databases (chroma, weaviate, pinecone)",0.4,0.0,0.0,0.4,skill/tool
+ux/ui design,0.4,0.0,0.0,0.4,skill/tool
+ux design,0.4,0.0,0.0,0.4,skill/tool
+ux,0.4,0.0,0.0,0.4,skill/tool
+uso y conexion de apis,0.4,0.0,0.0,0.4,skill/tool
+uso de tensorflow,0.4,0.0,0.0,0.4,skill/tool
+uso de scikit-learn,0.4,0.0,0.0,0.4,skill/tool
+uso de pytorch,0.4,0.0,0.0,0.4,skill/tool
+uso de langchain,0.4,0.0,0.0,0.4,skill/tool
+uso de gpus,0.4,0.0,0.0,0.4,skill/tool
+uso de equipos de metrologia,0.4,0.0,0.0,0.4,skill/tool
+uso de crewai,0.4,0.0,0.0,0.4,skill/tool
+blazor,0.4,0.0,0.0,0.4,skill/tool
+bitbucket,0.4,0.0,0.0,0.4,skill/tool
+bilingual communication,0.4,0.0,0.0,0.4,skill/tool
+bias mitigation,0.4,0.0,0.0,0.4,skill/tool
+batch processing,0.4,0.0,0.0,0.4,skill/tool
+bases de datos vectoriales,0.4,0.0,0.0,0.4,skill/tool
+onnx,0.4,0.0,0.0,0.4,skill/tool
+on-premise architectures,0.4,0.0,0.0,0.4,skill/tool
+on-premise,0.4,0.0,0.0,0.4,skill/tool
+ollama,0.4,0.0,0.0,0.4,skill/tool
+ofimatica avanzada,0.4,0.0,0.0,0.4,skill/tool
+ofimatica,0.4,0.0,0.0,0.4,skill/tool
+office 365,0.4,0.0,0.0,0.4,skill/tool
+odi,0.4,0.0,0.0,0.4,skill/tool
+observabilidad,0.4,0.0,0.0,0.4,skill/tool
+object-oriented programming,0.4,0.0,0.0,0.4,skill/tool
+organizational,0.4,0.0,0.0,0.4,skill/tool
+organization,0.4,0.0,0.0,0.4,skill/tool
+organizacion de stock,0.4,0.0,0.0,0.4,skill/tool
+order intents,0.4,0.0,0.0,0.4,skill/tool
+oracle,0.4,0.0,0.0,0.4,skill/tool
+optimizacion de rendimiento,0.4,0.0,0.0,0.4,skill/tool
+optimizacion de procesos logisticos,0.4,0.0,0.0,0.4,skill/tool
+optimizacion de procesos,0.4,0.0,0.0,0.4,skill/tool
+optimizacion de inferencia,0.4,0.0,0.0,0.4,skill/tool
+operations management,0.4,0.0,0.0,0.4,skill/tool
+openid,0.4,0.0,0.0,0.4,skill/tool
+openai ecosystem,0.4,0.0,0.0,0.4,skill/tool
+open-source development,0.4,0.0,0.0,0.4,skill/tool
+open source participation,0.4,0.0,0.0,0.4,skill/tool
+bot creation,0.4,0.0,0.0,0.4,skill/tool
+bon criteri visual,0.4,0.0,0.0,0.4,skill/tool
+pasion por tecnologia y videojuegos,0.4,0.0,0.0,0.4,skill/tool
+pasion por tecnologia,0.4,0.0,0.0,0.4,skill/tool
+pasion por la innovacion tecnologica,0.4,0.0,0.0,0.4,skill/tool
+paas,0.4,0.0,0.0,0.4,skill/tool
+outlook,0.4,0.0,0.0,0.4,skill/tool
+other ai knowledge,0.4,0.0,0.0,0.4,skill/tool
+ota,0.4,0.0,0.0,0.4,skill/tool
+orquestacion con prefect,0.4,0.0,0.0,0.4,skill/tool
+orquestacion con airflow,0.4,0.0,0.0,0.4,skill/tool
+orientacion al logro,0.4,0.0,0.0,0.4,skill/tool
+orientacion al detalle,0.4,0.0,0.0,0.4,skill/tool
+orientacion a la solucion,0.4,0.0,0.0,0.4,skill/tool
+orientacion a la mejora continua,0.4,0.0,0.0,0.4,skill/tool
+organized,0.4,0.0,0.0,0.4,skill/tool
+passion for technology and gaming,0.4,0.0,0.0,0.4,skill/tool
+"bases de datos (mysql, airtable, postgresql)",0.4,0.0,0.0,0.4,skill/tool
+bases de datos,0.4,0.0,0.0,0.4,skill/tool
+bare-metal,0.4,0.0,0.0,0.4,skill/tool
+banking sector experience,0.4,0.0,0.0,0.4,skill/tool
+banking knowledge,0.4,0.0,0.0,0.4,skill/tool
+backlog management,0.4,0.0,0.0,0.4,skill/tool
+b2b saas,0.4,0.0,0.0,0.4,skill/tool
+azureml,0.4,0.0,0.0,0.4,skill/tool
+azure synapse,0.4,0.0,0.0,0.4,skill/tool
+azure search,0.4,0.0,0.0,0.4,skill/tool
+azure purview,0.4,0.0,0.0,0.4,skill/tool
+azure openai,0.4,0.0,0.0,0.4,skill/tool
+azure key vault,0.4,0.0,0.0,0.4,skill/tool
+passion,0.4,0.0,0.0,0.4,skill/tool
+pasion por videojuegos,0.4,0.0,0.0,0.4,skill/tool
+pki,0.4,0.0,0.0,0.4,skill/tool
+pipeline design,0.4,0.0,0.0,0.4,skill/tool
+pinecone,0.4,0.0,0.0,0.4,skill/tool
+perplexity,0.4,0.0,0.0,0.4,skill/tool
+performance optimization,0.4,0.0,0.0,0.4,skill/tool
+performance marketing,0.4,0.0,0.0,0.4,skill/tool
+pensamiento sistemico,0.4,0.0,0.0,0.4,skill/tool
+pensamiento innovador,0.4,0.0,0.0,0.4,skill/tool
+pensamiento critico y solucion creativa de problemas,0.4,0.0,0.0,0.4,skill/tool
+pensamiento analitico,0.4,0.0,0.0,0.4,skill/tool
+pedagogia,0.4,0.0,0.0,0.4,skill/tool
+payments,0.4,0.0,0.0,0.4,skill/tool
+payment platforms,0.4,0.0,0.0,0.4,skill/tool
+payment platform integration,0.4,0.0,0.0,0.4,skill/tool
+payment methods market knowledge in brazil,0.4,0.0,0.0,0.4,skill/tool
+passion for technology and innovation,0.4,0.0,0.0,0.4,skill/tool
+azure data lake,0.4,0.0,0.0,0.4,skill/tool
+azure bot services,0.4,0.0,0.0,0.4,skill/tool
+azure bot framework,0.4,0.0,0.0,0.4,skill/tool
+azure app services,0.4,0.0,0.0,0.4,skill/tool
+azure ai search,0.4,0.0,0.0,0.4,skill/tool
+azure ai engineer associate,0.4,0.0,0.0,0.4,skill/tool
+axis,0.4,0.0,0.0,0.4,skill/tool
+aws neptune,0.4,0.0,0.0,0.4,skill/tool
+post-production,0.4,0.0,0.0,0.4,skill/tool
+plm,0.4,0.0,0.0,0.4,skill/tool
+plc,0.4,0.0,0.0,0.4,skill/tool
+plataformas cloud/iot,0.4,0.0,0.0,0.4,skill/tool
+"plataformas cloud (aws, azure, gcp)",0.4,0.0,0.0,0.4,skill/tool
+planificacion,0.4,0.0,0.0,0.4,skill/tool
+plan director it/ot,0.4,0.0,0.0,0.4,skill/tool
+priorizacion,0.4,0.0,0.0,0.4,skill/tool
+presentation skills,0.4,0.0,0.0,0.4,skill/tool
+presentacion de informes,0.4,0.0,0.0,0.4,skill/tool
+premiere pro,0.4,0.0,0.0,0.4,skill/tool
+precision,0.4,0.0,0.0,0.4,skill/tool
+powershell,0.4,0.0,0.0,0.4,skill/tool
+power query,0.4,0.0,0.0,0.4,skill/tool
+power pivot,0.4,0.0,0.0,0.4,skill/tool
+azure functions,0.4,0.0,0.0,0.4,skill/tool
+azure devops certification,0.4,0.0,0.0,0.4,skill/tool
+azure databricks,0.4,0.0,0.0,0.4,skill/tool
+aws emr,0.4,0.0,0.0,0.4,skill/tool
+aws devops engineer certification,0.4,0.0,0.0,0.4,skill/tool
+aws devops engineer,0.4,0.0,0.0,0.4,skill/tool
+aws bedrock,0.4,0.0,0.0,0.4,skill/tool
+aws ai,0.4,0.0,0.0,0.4,skill/tool
+avigilon,0.4,0.0,0.0,0.4,skill/tool
+autonomous work,0.4,0.0,0.0,0.4,skill/tool
+autonomous problem solving,0.4,0.0,0.0,0.4,skill/tool
+autonomous agents,0.4,0.0,0.0,0.4,skill/tool
+autonomous,0.4,0.0,0.0,0.4,skill/tool
+automatizacion industrial,0.4,0.0,0.0,0.4,skill/tool
+procesamiento de lenguaje natural,0.4,0.0,0.0,0.4,skill/tool
+procesamiento de informacion,0.4,0.0,0.0,0.4,skill/tool
+procesamiento de imagen,0.4,0.0,0.0,0.4,skill/tool
+procesamiento de datos no estructurados,0.4,0.0,0.0,0.4,skill/tool
+procesamiento de datos estructurados,0.4,0.0,0.0,0.4,skill/tool
+programacion en go,0.4,0.0,0.0,0.4,skill/tool
+programacion cnc,0.4,0.0,0.0,0.4,skill/tool
+professional english,0.4,0.0,0.0,0.4,skill/tool
+product‐minded attitude,0.4,0.0,0.0,0.4,skill/tool
+product vision,0.4,0.0,0.0,0.4,skill/tool
+product strategy,0.4,0.0,0.0,0.4,skill/tool
+product roadmap planning,0.4,0.0,0.0,0.4,skill/tool
+product launch experience,0.4,0.0,0.0,0.4,skill/tool
+product launch (own or side project),0.4,0.0,0.0,0.4,skill/tool
+product governance,0.4,0.0,0.0,0.4,skill/tool
+product design,0.4,0.0,0.0,0.4,skill/tool
+produccio audiovisual,0.4,0.0,0.0,0.4,skill/tool
+process improvement mindset,0.4,0.0,0.0,0.4,skill/tool
+procesamiento de voz,0.4,0.0,0.0,0.4,skill/tool
+procesamiento de senales biomedicas,0.4,0.0,0.0,0.4,skill/tool
+aws lambda,0.4,0.0,0.0,0.4,skill/tool
+automation flow design,0.4,0.0,0.0,0.4,skill/tool
+autogpt,0.4,0.0,0.0,0.4,skill/tool
+aura components,0.4,0.0,0.0,0.4,skill/tool
+audio processing,0.4,0.0,0.0,0.4,skill/tool
+atencion al cliente,0.4,0.0,0.0,0.4,skill/tool
+asistentes cognitivos,0.4,0.0,0.0,0.4,skill/tool
+public speaking,0.4,0.0,0.0,0.4,skill/tool
+public sector domain knowledge,0.4,0.0,0.0,0.4,skill/tool
+proyectos de inteligencia artificial,0.4,0.0,0.0,0.4,skill/tool
+protocolos industriales,0.4,0.0,0.0,0.4,skill/tool
+project ownership,0.4,0.0,0.0,0.4,skill/tool
+project coordination,0.4,0.0,0.0,0.4,skill/tool
+programacion en r,0.4,0.0,0.0,0.4,skill/tool
+programacion en java,0.4,0.0,0.0,0.4,skill/tool
+quality orientation,0.4,0.0,0.0,0.4,skill/tool
+qliksense,0.4,0.0,0.0,0.4,skill/tool
+qemu,0.4,0.0,0.0,0.4,skill/tool
+python development,0.4,0.0,0.0,0.4,skill/tool
+"python (requests, apis rest)",0.4,0.0,0.0,0.4,skill/tool
+"python (oop, testing, scientific libraries)",0.4,0.0,0.0,0.4,skill/tool
+python (basico),0.4,0.0,0.0,0.4,skill/tool
+python (advanced),0.4,0.0,0.0,0.4,skill/tool
+pytest,0.4,0.0,0.0,0.4,skill/tool
+purpose-driven,0.4,0.0,0.0,0.4,skill/tool
+puntualidad,0.4,0.0,0.0,0.4,skill/tool
+publicidad/analytics connectors,0.4,0.0,0.0,0.4,skill/tool
+publicaciones cientificas,0.4,0.0,0.0,0.4,skill/tool
+automatizacion de procesos logisticos,0.4,0.0,0.0,0.4,skill/tool
+automatizacion,0.4,0.0,0.0,0.4,skill/tool
+regulated finance sector knowledge,0.4,0.0,0.0,0.4,skill/tool
+refactoring,0.4,0.0,0.0,0.4,skill/tool
+reduccion de costos,0.4,0.0,0.0,0.4,skill/tool
+redshift,0.4,0.0,0.0,0.4,skill/tool
+redis,0.4,0.0,0.0,0.4,skill/tool
+redes neuronales,0.4,0.0,0.0,0.4,skill/tool
+"redes ip (vlan, gateways, nat, troubleshooting)",0.4,0.0,0.0,0.4,skill/tool
+redaccion de textos,0.4,0.0,0.0,0.4,skill/tool
+redaccion de clausulas y contratos en ia,0.4,0.0,0.0,0.4,skill/tool
+recommendation systems,0.4,0.0,0.0,0.4,skill/tool
+recepcion,0.4,0.0,0.0,0.4,skill/tool
+realsense,0.4,0.0,0.0,0.4,skill/tool
+realidad virtual,0.4,0.0,0.0,0.4,skill/tool
+rapid hypothesis validation,0.4,0.0,0.0,0.4,skill/tool
+ranking systems,0.4,0.0,0.0,0.4,skill/tool
+random forest,0.4,0.0,0.0,0.4,skill/tool
+arquitecturas distribuidas,0.4,0.0,0.0,0.4,skill/tool
+arquitecturas de agentes de ia,0.4,0.0,0.0,0.4,skill/tool
+arquitecturas cloud,0.4,0.0,0.0,0.4,skill/tool
+arquitectura de soluciones ia/ml,0.4,0.0,0.0,0.4,skill/tool
+arquitectura de soluciones de ia,0.4,0.0,0.0,0.4,skill/tool
+apis restful,0.4,0.0,0.0,0.4,skill/tool
+apis graphql,0.4,0.0,0.0,0.4,skill/tool
+resolutive mindset,0.4,0.0,0.0,0.4,skill/tool
+resolucion de problemas complejos,0.4,0.0,0.0,0.4,skill/tool
+resolucion,0.4,0.0,0.0,0.4,skill/tool
+resnet,0.4,0.0,0.0,0.4,skill/tool
+resilience,0.4,0.0,0.0,0.4,skill/tool
+remote collaboration,0.4,0.0,0.0,0.4,skill/tool
+reliability,0.4,0.0,0.0,0.4,skill/tool
+reinforcement learning,0.4,0.0,0.0,0.4,skill/tool
+apache beam,0.4,0.0,0.0,0.4,skill/tool
+apache airflow,0.4,0.0,0.0,0.4,skill/tool
+anthropic api,0.4,0.0,0.0,0.4,skill/tool
+ant,0.4,0.0,0.0,0.4,skill/tool
+ansible,0.4,0.0,0.0,0.4,skill/tool
+anomaly detection,0.4,0.0,0.0,0.4,skill/tool
+rgpd/pii compliance,0.4,0.0,0.0,0.4,skill/tool
+retrieval-augmented generation,0.4,0.0,0.0,0.4,skill/tool
+retrieval augmented generation (rag),0.4,0.0,0.0,0.4,skill/tool
+restful apis,0.4,0.0,0.0,0.4,skill/tool
+responsible design frameworks,0.4,0.0,0.0,0.4,skill/tool
+responsible ai,0.4,0.0,0.0,0.4,skill/tool
+responsable,0.4,0.0,0.0,0.4,skill/tool
+asesoramiento tecnico y normativo en ia,0.4,0.0,0.0,0.4,skill/tool
+asesoramiento en inteligencia artificial,0.4,0.0,0.0,0.4,skill/tool
+arquitecturas seguras,0.4,0.0,0.0,0.4,skill/tool
+saas product development,0.4,0.0,0.0,0.4,skill/tool
+saas development,0.4,0.0,0.0,0.4,skill/tool
+saas b2b,0.4,0.0,0.0,0.4,skill/tool
+s3,0.4,0.0,0.0,0.4,skill/tool
+rtos,0.4,0.0,0.0,0.4,skill/tool
+ros,0.4,0.0,0.0,0.4,skill/tool
+roadmap planning,0.4,0.0,0.0,0.4,skill/tool
+rnn,0.4,0.0,0.0,0.4,skill/tool
+risk-taking,0.4,0.0,0.0,0.4,skill/tool
+risk assessment,0.4,0.0,0.0,0.4,skill/tool
+risk analysis,0.4,0.0,0.0,0.4,skill/tool
+risc-v,0.4,0.0,0.0,0.4,skill/tool
+api rest,0.4,0.0,0.0,0.4,skill/tool
+api gateway,0.4,0.0,0.0,0.4,skill/tool
+apex,0.4,0.0,0.0,0.4,skill/tool
+apache tomcat,0.4,0.0,0.0,0.4,skill/tool
+analytical skills,0.4,0.0,0.0,0.4,skill/tool
+analytical,0.4,0.0,0.0,0.4,skill/tool
+analiticas avanzadas de video,0.4,0.0,0.0,0.4,skill/tool
+analisis predictivo,0.4,0.0,0.0,0.4,skill/tool
+analisis de riesgos y evaluaciones de impacto,0.4,0.0,0.0,0.4,skill/tool
+analisis de kpis,0.4,0.0,0.0,0.4,skill/tool
+analisis avanzado,0.4,0.0,0.0,0.4,skill/tool
+altas dotes comunicativas,0.4,0.0,0.0,0.4,skill/tool
+sca,0.4,0.0,0.0,0.4,skill/tool
+sbom,0.4,0.0,0.0,0.4,skill/tool
+sast,0.4,0.0,0.0,0.4,skill/tool
+sap,0.4,0.0,0.0,0.4,skill/tool
+sam,0.4,0.0,0.0,0.4,skill/tool
+salesforce lightning,0.4,0.0,0.0,0.4,skill/tool
+salesforce aura,0.4,0.0,0.0,0.4,skill/tool
+saas startup experience,0.4,0.0,0.0,0.4,skill/tool
+shopify,0.4,0.0,0.0,0.4,skill/tool
+sharepoint,0.4,0.0,0.0,0.4,skill/tool
+shap,0.4,0.0,0.0,0.4,skill/tool
+service mesh,0.4,0.0,0.0,0.4,skill/tool
+series temporales,0.4,0.0,0.0,0.4,skill/tool
+semrush,0.4,0.0,0.0,0.4,skill/tool
+self-management,0.4,0.0,0.0,0.4,skill/tool
+seguridad y manejo de datos sensibles,0.4,0.0,0.0,0.4,skill/tool
+security,0.4,0.0,0.0,0.4,skill/tool
+sector inmobiliario,0.4,0.0,0.0,0.4,skill/tool
+sector financiero,0.4,0.0,0.0,0.4,skill/tool
+search engine development,0.4,0.0,0.0,0.4,skill/tool
+"scripting (powershell, python)",0.4,0.0,0.0,0.4,skill/tool
+anchors,0.4,0.0,0.0,0.4,skill/tool
+software engineering,0.4,0.0,0.0,0.4,skill/tool
+software development lifecycle,0.4,0.0,0.0,0.4,skill/tool
+software architecture,0.4,0.0,0.0,0.4,skill/tool
+software applications knowledge,0.4,0.0,0.0,0.4,skill/tool
+social web apis,0.4,0.0,0.0,0.4,skill/tool
+social media content creation,0.4,0.0,0.0,0.4,skill/tool
+social listening y analitica de rrss,0.4,0.0,0.0,0.4,skill/tool
+social listening (youscan),0.4,0.0,0.0,0.4,skill/tool
+social listening (sprout social),0.4,0.0,0.0,0.4,skill/tool
+social listening (sprinklr),0.4,0.0,0.0,0.4,skill/tool
+social listening (brandwatch),0.4,0.0,0.0,0.4,skill/tool
+soap,0.4,0.0,0.0,0.4,skill/tool
+sla management,0.4,0.0,0.0,0.4,skill/tool
+simulink,0.4,0.0,0.0,0.4,skill/tool
+side project development,0.4,0.0,0.0,0.4,skill/tool
+shopify graphql,0.4,0.0,0.0,0.4,skill/tool
+sprout social,0.4,0.0,0.0,0.4,skill/tool
+sprinklr,0.4,0.0,0.0,0.4,skill/tool
+speech-to-text,0.4,0.0,0.0,0.4,skill/tool
+sparql,0.4,0.0,0.0,0.4,skill/tool
+spanish language proficiency,0.4,0.0,0.0,0.4,skill/tool
+spanish communication,0.4,0.0,0.0,0.4,skill/tool
+solutions‐driven,0.4,0.0,0.0,0.4,skill/tool
+solution-oriented mindset,0.4,0.0,0.0,0.4,skill/tool
+soluciones en la nube gcp,0.4,0.0,0.0,0.4,skill/tool
+soluciones en la nube azure,0.4,0.0,0.0,0.4,skill/tool
+soluciones en la nube aws,0.4,0.0,0.0,0.4,skill/tool
+solidos conocimientos de herramientas de gestion de proyectos,0.4,0.0,0.0,0.4,skill/tool
+"solidas habilidades de organizacion, incluyendo atencion al detalle y multitarea",0.4,0.0,0.0,0.4,skill/tool
+software industrial,0.4,0.0,0.0,0.4,skill/tool
+software engineering best practices (solid),0.4,0.0,0.0,0.4,skill/tool
+structured thinking,0.4,0.0,0.0,0.4,skill/tool
+strong communication,0.4,0.0,0.0,0.4,skill/tool
+stress tolerance,0.4,0.0,0.0,0.4,skill/tool
+streaming ingestion,0.4,0.0,0.0,0.4,skill/tool
+strategic consulting,0.4,0.0,0.0,0.4,skill/tool
+storytelling ejecutivo,0.4,0.0,0.0,0.4,skill/tool
+statistics,0.4,0.0,0.0,0.4,skill/tool
+statistical analysis,0.4,0.0,0.0,0.4,skill/tool
+startup mindset,0.4,0.0,0.0,0.4,skill/tool
+stakeholder alignment,0.4,0.0,0.0,0.4,skill/tool
+stable diffusion,0.4,0.0,0.0,0.4,skill/tool
+stability ai api,0.4,0.0,0.0,0.4,skill/tool
+sql developer,0.4,0.0,0.0,0.4,skill/tool
+sql databases,0.4,0.0,0.0,0.4,skill/tool
+sql (advanced),0.4,0.0,0.0,0.4,skill/tool
+uso de autogen,0.4,0.0,0.0,0.4,skill/tool
+user focus,0.4,0.0,0.0,0.4,skill/tool
+user empathy,0.4,0.0,0.0,0.4,skill/tool
+unsupervised learning,0.4,0.0,0.0,0.4,skill/tool
+unreal engine,0.4,0.0,0.0,0.4,skill/tool
+unity catalog,0.4,0.0,0.0,0.4,skill/tool
+unit testing,0.4,0.0,0.0,0.4,skill/tool
+unit test coverage ≥60%,0.4,0.0,0.0,0.4,skill/tool
+unit test coverage >60%,0.4,0.0,0.0,0.4,skill/tool
+uipath,0.4,0.0,0.0,0.4,skill/tool
+ui/ux design,0.4,0.0,0.0,0.4,skill/tool
+typography,0.4,0.0,0.0,0.4,skill/tool
+type hints,0.4,0.0,0.0,0.4,skill/tool
+twilio/asterisk,0.4,0.0,0.0,0.4,skill/tool
+tutoria en teleformacion,0.4,0.0,0.0,0.4,skill/tool
+tutoria,0.4,0.0,0.0,0.4,skill/tool
+stt,0.4,0.0,0.0,0.4,skill/tool
+alta motivacion,0.4,0.0,0.0,0.4,skill/tool
+almacenamiento,0.4,0.0,0.0,0.4,skill/tool
+algoritmia,0.4,0.0,0.0,0.4,skill/tool
+ai-assisted ui,0.4,0.0,0.0,0.4,skill/tool
+ai-900 certification,0.4,0.0,0.0,0.4,skill/tool
+ai-102 certification,0.4,0.0,0.0,0.4,skill/tool
+ai voice/text integration,0.4,0.0,0.0,0.4,skill/tool
+ai tools utilization,0.4,0.0,0.0,0.4,skill/tool
+ai tools,0.4,0.0,0.0,0.4,skill/tool
+ai text apis,0.4,0.0,0.0,0.4,skill/tool
+ai solution design,0.4,0.0,0.0,0.4,skill/tool
+"ai services (elevenlabs, openai, whisper)",0.4,0.0,0.0,0.4,skill/tool
+ai regulation,0.4,0.0,0.0,0.4,skill/tool
+struts,0.4,0.0,0.0,0.4,skill/tool
+technical leadership,0.4,0.0,0.0,0.4,skill/tool
+technical english documentation,0.4,0.0,0.0,0.4,skill/tool
+technical documentation generation,0.4,0.0,0.0,0.4,skill/tool
+"technical documentation (swagger, postman)",0.4,0.0,0.0,0.4,skill/tool
+technical documentation,0.4,0.0,0.0,0.4,skill/tool
+technical analysis,0.4,0.0,0.0,0.4,skill/tool
+tech trend analysis,0.4,0.0,0.0,0.4,skill/tool
+team management,0.4,0.0,0.0,0.4,skill/tool
+team coordination,0.4,0.0,0.0,0.4,skill/tool
+taxonomias,0.4,0.0,0.0,0.4,skill/tool
+task organization,0.4,0.0,0.0,0.4,skill/tool
+talend,0.4,0.0,0.0,0.4,skill/tool
+tailwind css,0.4,0.0,0.0,0.4,skill/tool
+synthesia,0.4,0.0,0.0,0.4,skill/tool
+touchdesigner,0.4,0.0,0.0,0.4,skill/tool
+toma de decisiones estrategicas,0.4,0.0,0.0,0.4,skill/tool
+tfx,0.4,0.0,0.0,0.4,skill/tool
+tfs,0.4,0.0,0.0,0.4,skill/tool
+tflm,0.4,0.0,0.0,0.4,skill/tool
+text ai integration,0.4,0.0,0.0,0.4,skill/tool
+testing (pytest),0.4,0.0,0.0,0.4,skill/tool
+tendencias en ia,0.4,0.0,0.0,0.4,skill/tool
+telefonia ip,0.4,0.0,0.0,0.4,skill/tool
+tecnologias de inteligencia artificial,0.4,0.0,0.0,0.4,skill/tool
+tecnicas de ia predictiva,0.4,0.0,0.0,0.4,skill/tool
+tecnicas de ia generativa,0.4,0.0,0.0,0.4,skill/tool
+technology passion,0.4,0.0,0.0,0.4,skill/tool
+technological curiosity,0.4,0.0,0.0,0.4,skill/tool
+technical reporting,0.4,0.0,0.0,0.4,skill/tool
+trabajo colaborativo con equipos de ia y data,0.4,0.0,0.0,0.4,skill/tool
+ai purchasing automation,0.4,0.0,0.0,0.4,skill/tool
+"ai model development (hugging face, openai, claude)",0.4,0.0,0.0,0.4,skill/tool
+ai libraries (langchain),0.4,0.0,0.0,0.4,skill/tool
+ai knowledge,0.4,0.0,0.0,0.4,skill/tool
+ai governance,0.4,0.0,0.0,0.4,skill/tool
+ai community leadership,0.4,0.0,0.0,0.4,skill/tool
+ai builder,0.4,0.0,0.0,0.4,skill/tool
+ai agents,0.4,0.0,0.0,0.4,skill/tool
+ai agent development,0.4,0.0,0.0,0.4,skill/tool
+ai act knowledge,0.4,0.0,0.0,0.4,skill/tool
+agvs,0.4,0.0,0.0,0.4,skill/tool
+agv,0.4,0.0,0.0,0.4,skill/tool
+agile teamwork,0.4,0.0,0.0,0.4,skill/tool
+agile mindset,0.4,0.0,0.0,0.4,skill/tool
+trabajo autonomo,0.4,0.0,0.0,0.4,skill/tool
+tts,0.4,0.0,0.0,0.4,skill/tool
+trustworthy ai,0.4,0.0,0.0,0.4,skill/tool
+triggers,0.4,0.0,0.0,0.4,skill/tool
+trello,0.4,0.0,0.0,0.4,skill/tool
+trato con publico,0.4,0.0,0.0,0.4,skill/tool
+trato con la gente,0.4,0.0,0.0,0.4,skill/tool
+trato con el publico,0.4,0.0,0.0,0.4,skill/tool
+transferencia de conocimiento,0.4,0.0,0.0,0.4,skill/tool
+traduccion de objetivos de negocio en planes tecnologicos,0.4,0.0,0.0,0.4,skill/tool
+trabajo en equipos multidisciplinarios,0.4,0.0,0.0,0.4,skill/tool
+trabajo en equipo multidisciplinar,0.4,0.0,0.0,0.4,skill/tool
+trabajo en entornos multiculturales,0.4,0.0,0.0,0.4,skill/tool
+trabajo con publico,0.4,0.0,0.0,0.4,skill/tool
+trabajo con ninos,0.4,0.0,0.0,0.4,skill/tool
+trabajo con adolescentes,0.4,0.0,0.0,0.4,skill/tool
+actitud proactiva,0.4,0.0,0.0,0.4,skill/tool
+youscan,0.4,0.0,0.0,0.4,skill/tool
+voice ai,0.4,0.0,0.0,0.4,skill/tool
+vocacion de servicio,0.4,0.0,0.0,0.4,skill/tool
+vlan,0.4,0.0,0.0,0.4,skill/tool
+visualizacion de datos,0.4,0.0,0.0,0.4,skill/tool
+visualizacion con tableau,0.4,0.0,0.0,0.4,skill/tool
+visualizacion con power bi,0.4,0.0,0.0,0.4,skill/tool
+visualizacion con d3.js,0.4,0.0,0.0,0.4,skill/tool
+visual studio code,0.4,0.0,0.0,0.4,skill/tool
+visual studio,0.4,0.0,0.0,0.4,skill/tool
+visual identity design,0.4,0.0,0.0,0.4,skill/tool
+vision de producto,0.4,0.0,0.0,0.4,skill/tool
+vision analitica,0.4,0.0,0.0,0.4,skill/tool
+video game knowledge,0.4,0.0,0.0,0.4,skill/tool
+agile development,0.4,0.0,0.0,0.4,skill/tool
+webhooks,0.4,0.0,0.0,0.4,skill/tool
+web services,0.4,0.0,0.0,0.4,skill/tool
+"web development (rest apis, simple front‐end)",0.4,0.0,0.0,0.4,skill/tool
+web development,0.4,0.0,0.0,0.4,skill/tool
+weaviate,0.4,0.0,0.0,0.4,skill/tool
+waf,0.4,0.0,0.0,0.4,skill/tool
+vulnerability remediation,0.4,0.0,0.0,0.4,skill/tool
+vulnerability identification and resolution,0.4,0.0,0.0,0.4,skill/tool
+vs code,0.4,0.0,0.0,0.4,skill/tool
+voluntat d'aprendre continuament,0.4,0.0,0.0,0.4,skill/tool
+additional languages,0.4,0.0,0.0,0.4,skill/tool
+adaptable,0.4,0.0,0.0,0.4,skill/tool
+adaptability to change,0.4,0.0,0.0,0.4,skill/tool
+adaptabilitat,0.4,0.0,0.0,0.4,skill/tool
+collaboration,23.7,0.0,37.0,-13.3,soft (idioma corregido)
+trabajo en equipo,20.8,37.0,37.0,-16.2,skill/tool
+comunicacion,21.2,42.0,42.0,-20.8,skill/tool
+teamwork,14.4,0.0,37.0,-22.6,soft (idioma corregido)
+communication,16.1,0.0,42.0,-25.9,soft (idioma corregido)
+docker,9.3,39.0,39.0,-29.7,skill/tool
+etl,3.0,33.0,33.0,-30.0,skill/tool
+r,3.8,34.0,34.0,-30.2,skill/tool
+machine learning,13.1,44.0,44.0,-30.9,skill/tool
+sql,11.0,42.0,42.0,-31.0,skill/tool
+proactividad,10.6,42.0,42.0,-31.4,skill/tool
+azure data factory,0.4,32.0,32.0,-31.6,skill/tool
+scikit-learn,6.4,39.0,39.0,-32.6,skill/tool
+git,8.1,41.0,41.0,-32.9,skill/tool
+power bi,3.0,36.0,36.0,-33.0,skill/tool
+pandas,0.8,34.0,34.0,-33.2,skill/tool
+gestion del tiempo,0.8,34.0,34.0,-33.2,skill/tool
+analytical thinking,6.8,0.0,40.0,-33.2,soft (idioma corregido)
+time management,0.4,0.0,34.0,-33.6,soft (idioma corregido)
+orientacion a resultados,5.5,40.0,40.0,-34.5,skill/tool
+liderazgo,6.4,41.0,41.0,-34.6,skill/tool
+problem solving,11.4,0.0,46.0,-34.6,soft (idioma corregido)
+leadership,5.5,0.0,41.0,-35.5,soft (idioma corregido)
+capacidad analitica,1.7,40.0,40.0,-38.3,skill/tool
+proactivity,3.0,0.0,42.0,-39.0,soft (idioma corregido)
+spark,0.8,40.0,40.0,-39.2,skill/tool
+excel avanzado,0.8,40.0,40.0,-39.2,skill/tool
+atencion al detalle,5.5,46.0,46.0,-40.5,skill/tool
+attention to detail,4.7,0.0,46.0,-41.3,soft (idioma corregido)
+airflow,1.7,43.0,43.0,-41.3,skill/tool
+data warehouse,0.4,42.0,42.0,-41.6,skill/tool
+tableau,1.3,43.0,43.0,-41.7,skill/tool
+resolucion de problemas,4.2,46.0,46.0,-41.8,skill/tool
+problem-solving,2.1,0.0,46.0,-43.9,soft (idioma corregido)
+adaptability,2.1,0.0,46.0,-43.9,soft (idioma corregido)
+flexibility,2.1,0.0,46.0,-43.9,soft (idioma corregido)
+adaptabilidad,1.3,46.0,46.0,-44.7,skill/tool
+critical thinking,1.3,0.0,46.0,-44.7,soft (idioma corregido)
+numpy,0.4,46.0,46.0,-45.6,skill/tool

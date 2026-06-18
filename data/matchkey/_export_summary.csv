@@ -1,0 +1,9 @@
+﻿tabla,filas,columnas,archivo
+candidates,100,12,candidates.csv
+candidate_skills,1261,3,candidate_skills.csv
+candidate_education,135,5,candidate_education.csv
+candidate_languages,202,3,candidate_languages.csv
+vacantes,236,25,vacantes.csv
+job_skills,6141,3,job_skills.csv
+courses,5411,8,courses.csv
+companies,82,7,companies.csv

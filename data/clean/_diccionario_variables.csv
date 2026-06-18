@@ -1,0 +1,67 @@
+﻿tabla,columna,dtype,n_nulos,pct_nulos,n_unicos,ejemplo
+candidates,candidate_id,int64,0,0.0,100,1
+candidates,name,object,0,0.0,98,Ana García Ruiz
+candidates,email,object,0,0.0,100,ana.garcia.ruiz0@hotmail.com
+candidates,phone,object,0,0.0,100,+34 632 18 19 60
+candidates,location,object,0,0.0,10,Madrid
+candidates,years_experience,int64,0,0.0,9,1
+candidates,current_role,object,0,0.0,7,Business Analyst
+candidates,desired_role,object,0,0.0,6,Business Intelligence Analyst
+candidates,n_skills_technical,int64,0,0.0,5,9
+candidates,n_skills_soft,int64,0,0.0,4,5
+candidates,n_education,int64,0,0.0,2,2
+candidates,n_languages,int64,0,0.0,3,1
+candidate_skills,candidate_id,int64,0,0.0,100,1
+candidate_skills,skill,object,0,0.0,32,Python
+candidate_skills,skill_type,object,0,0.0,2,technical
+candidate_education,candidate_id,int64,0,0.0,100,1
+candidate_education,degree,object,0,0.0,21,Grado en Estadística
+candidate_education,university,object,0,0.0,20,Universidad de Navarra
+candidate_education,start_year,int64,0,0.0,9,2014
+candidate_education,end_year,int64,0,0.0,12,2018
+candidate_languages,candidate_id,int64,0,0.0,100,1
+candidate_languages,language,object,0,0.0,6,Portugués
+candidate_languages,level,object,0,0.0,5,C2
+vacantes,job_id,int64,0,0.0,236,0
+vacantes,title,object,0,0.0,168,DATA & IA
+vacantes,company,object,17,7.2,91,"NTT America, Inc."
+vacantes,location,object,0,0.0,69,"Pamplona, Navarra"
+vacantes,area,object,0,0.0,69,España > Comunidad Foral de Navarra > Navarra > Pamplona
+vacantes,category_jobs,object,0,0.0,13,Unknown
+vacantes,category_llm,object,2,0.8,8,AI
+vacantes,contract_type,object,226,95.8,1,permanent
+vacantes,contract_time,object,234,99.2,1,full_time
+vacantes,job_type,object,97,41.1,5,Full-time
+vacantes,seniority,object,111,47.0,5,Junior
+vacantes,salary_min,float64,212,89.8,17,40000.0
+vacantes,salary_max,float64,212,89.8,17,55000.0
+vacantes,salary_is_predicted,int64,0,0.0,1,0
+vacantes,experience_required,float64,159,67.4,11,4.0
+vacantes,experience_required_num,float64,159,67.4,11,4.0
+vacantes,education_required,object,170,72.0,62,"Ingeniería Informática, Telecomunicaciones, Matemáticas, Fís..."
+vacantes,n_skills_must,int64,0,0.0,25,2
+vacantes,n_skills_nice,int64,0,0.0,20,3
+vacantes,n_tech_stack,int64,0,0.0,23,4
+vacantes,n_soft_skills,int64,0,0.0,14,6
+vacantes,n_languages,int64,0,0.0,5,0
+vacantes,n_benefits,int64,0,0.0,16,6
+vacantes,description_full,object,0,0.0,176,"Te presentamos al equipo de DATA & IA, un grupo excepcional ..."
+vacantes,redirect_url,object,0,0.0,236,https://www.adzuna.es/details/5144708776?utm_medium=api&utm_...
+job_skills,job_id,int64,0,0.0,233,0
+job_skills,skill,object,0,0.0,2243,Python
+job_skills,importance,object,0,0.0,6,must
+courses,course_id,int64,0,0.0,5411,0
+courses,name,object,0,0.0,5370,Network Security
+courses,category,object,0,0.0,11,Information Technology
+courses,language,object,0,0.0,1,English
+courses,skills,object,0,0.0,5408,"Computer Networking, Network Planning And Design, TCP/IP, Th..."
+courses,what_you_learn,object,2406,44.5,2979,Understand the complexity of systems supplying energy to peo...
+courses,url,object,0,0.0,5411,https://www.coursera.org/learn/-network-security
+courses,content_length,int64,0,0.0,2157,2093
+companies,company_id,int64,0,0.0,82,0
+companies,company,object,0,0.0,82,"NTT America, Inc."
+companies,url_about_us,object,0,0.0,82,https://www.global.ntt/about-us/
+companies,n_values,int64,0,0.0,9,3
+companies,values,object,0,0.0,82,Act with Integrity | Build Trust | Create Connections
+companies,culture_summary,object,0,0.0,82,"NTT fosters a purpose‑driven, collaborative culture that emp..."
+companies,clean_text_length,int64,0,0.0,82,4090

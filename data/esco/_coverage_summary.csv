@@ -1,0 +1,9 @@
+﻿dataset,match_type,n,pct
+skills,exact,38,1.9
+skills,contains,124,6.0
+skills,fuzzy,113,5.5
+skills,none,1777,86.6
+categories,exact,0,0.0
+categories,contains,2,25.0
+categories,fuzzy,2,25.0
+categories,none,4,50.0

@@ -1,0 +1,9 @@
+{
+  "harvested_on": "2026-06-15",
+  "source": "ESCO API (https://ec.europa.eu/esco/api/search)",
+  "language": "en",
+  "method": "search endpoint, full=false, limit=100, paginado por offset (offset=nº de página)",
+  "note": "La API sirve la ultima version publicada de ESCO.",
+  "n_skills": 13485,
+  "n_occupations": 2942
+}

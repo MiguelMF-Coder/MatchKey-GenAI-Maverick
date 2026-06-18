@@ -1,0 +1,6142 @@
+﻿job_id,skill,importance
+0,Python,must
+0,BI tools,must
+0,market research,nice
+0,digital transformation,nice
+0,technology trend analysis,nice
+0,Python,tech_stack
+0,AWS,tech_stack
+0,Google Cloud,tech_stack
+0,Azure,tech_stack
+0,analytical thinking,soft_skill
+0,attention to detail,soft_skill
+0,curiosity,soft_skill
+0,collaboration,soft_skill
+0,communication,soft_skill
+0,flexibility,soft_skill
+0,flexible hours,benefit
+0,teleworking / hybrid model,benefit
+0,internal training,benefit
+0,access to learning platforms,benefit
+0,cloud certifications support,benefit
+0,mentorship,benefit
+1,Python,must
+1,BI tools,must
+1,market research,nice
+1,digital transformation,nice
+1,technology trend analysis,nice
+1,AWS,nice
+1,Google Cloud,nice
+1,Azure,nice
+1,Python,tech_stack
+1,AWS,tech_stack
+1,Google Cloud,tech_stack
+1,Azure,tech_stack
+1,analytical skills,soft_skill
+1,attention to detail,soft_skill
+1,curiosity,soft_skill
+1,collaboration,soft_skill
+1,communication,soft_skill
+1,flexible hours,benefit
+1,remote work,benefit
+1,training programs,benefit
+1,certification support,benefit
+1,mentor assigned,benefit
+2,Python,must
+2,BI tools,must
+2,Investigación de mercado,nice
+2,Transformación digital,nice
+2,Análisis de tendencias tecnológicas,nice
+2,"Interés por Digital, Data e IA",nice
+2,Python,tech_stack
+2,AWS,tech_stack
+2,Google Cloud,tech_stack
+2,Azure,tech_stack
+2,Análisis,soft_skill
+2,Atención al detalle,soft_skill
+2,Curiosidad,soft_skill
+2,Trabajo en equipo,soft_skill
+2,Comunicación,soft_skill
+2,Flexibilidad horaria,benefit
+2,Teletrabajo,benefit
+2,Formación interna,benefit
+2,Acceso a plataformas de aprendizaje,benefit
+2,Horas dedicadas a certificaciones cloud,benefit
+2,Mentoría,benefit
+2,Track formativo,benefit
+3,Python (básico),must
+3,Herramientas de visualización (BI),must
+3,Análisis de datos,must
+3,Atención al detalle,must
+3,Curiosidad,must
+3,Trabajo colaborativo,must
+3,Investigación de mercado,nice
+3,Transformación digital,nice
+3,Análisis de tendencias tecnológicas,nice
+3,Python,tech_stack
+3,AWS,tech_stack
+3,Google Cloud,tech_stack
+3,Azure,tech_stack
+3,Capacidad de análisis,soft_skill
+3,Atención al detalle,soft_skill
+3,Mentalidad curiosa,soft_skill
+3,Trabajo en equipo,soft_skill
+3,Flexibilidad horaria,benefit
+3,Teletrabajo,benefit
+3,Mentoría,benefit
+3,Formación interna,benefit
+3,Acceso a plataformas de aprendizaje,benefit
+3,Horas laborales para certificaciones,benefit
+4,Python,must
+4,BI tools,must
+4,Análisis,must
+4,Atención al detalle,must
+4,Colaboración,must
+4,Investigación de mercado,nice
+4,Transformación digital,nice
+4,Análisis de tendencias tecnológicas,nice
+4,Python,tech_stack
+4,Comunicación,soft_skill
+4,Curiosidad,soft_skill
+4,Trabajo en equipo,soft_skill
+4,Mentoría,soft_skill
+4,Adaptabilidad,soft_skill
+4,Flexibilidad horaria,benefit
+4,Teletrabajo,benefit
+4,Mentor asignado,benefit
+4,Formación interna,benefit
+4,"Certificaciones cloud (AWS, Google Cloud, Azure)",benefit
+4,Publicación de contenidos en hubs y blog,benefit
+5,Python,must
+5,BI tools,must
+5,market research,nice
+5,digital transformation,nice
+5,technology trend analysis,nice
+5,AWS,nice
+5,Google Cloud,nice
+5,Azure,nice
+5,Python,tech_stack
+5,AWS,tech_stack
+5,Google Cloud,tech_stack
+5,Azure,tech_stack
+5,analytical thinking,soft_skill
+5,attention to detail,soft_skill
+5,curiosity,soft_skill
+5,collaboration,soft_skill
+5,communication,soft_skill
+5,flexible schedule,benefit
+5,remote work,benefit
+5,hybrid work,benefit
+5,training and certifications,benefit
+5,mentor program,benefit
+5,content publishing opportunities,benefit
+6,Python,must
+6,BI tools,must
+6,market research,nice
+6,digital transformation,nice
+6,technology trend analysis,nice
+6,Python,tech_stack
+6,AWS,tech_stack
+6,Google Cloud,tech_stack
+6,Azure,tech_stack
+6,analytical thinking,soft_skill
+6,attention to detail,soft_skill
+6,curiosity,soft_skill
+6,collaboration,soft_skill
+6,communication,soft_skill
+6,flexible hours,benefit
+6,remote work,benefit
+6,training programs,benefit
+6,certification support,benefit
+6,mentor program,benefit
+6,content publishing opportunities,benefit
+7,Python,must
+7,Data Visualization,must
+7,Market Research,must
+7,Digital Transformation,nice
+7,Tech Trend Analysis,nice
+7,Python,tech_stack
+7,AWS,tech_stack
+7,Google Cloud,tech_stack
+7,Azure,tech_stack
+7,Analytical thinking,soft_skill
+7,Attention to detail,soft_skill
+7,Curiosity,soft_skill
+7,Collaboration,soft_skill
+7,Communication,soft_skill
+7,Mentorship,benefit
+7,Flexible schedule,benefit
+7,Remote work,benefit
+7,Training programs,benefit
+7,Certification support,benefit
+7,Content publishing opportunities,benefit
+8,Python,must
+8,BI tools,must
+8,Market research,nice
+8,Digital transformation,nice
+8,Technology trend analysis,nice
+8,Python,tech_stack
+8,AWS,tech_stack
+8,Google Cloud,tech_stack
+8,Azure,tech_stack
+8,Analytical thinking,soft_skill
+8,Attention to detail,soft_skill
+8,Curiosity,soft_skill
+8,Collaboration,soft_skill
+8,Communication,soft_skill
+8,Flexible schedule,benefit
+8,Remote work / hybrid model,benefit
+8,Mentorship program,benefit
+8,Internal training,benefit
+8,Access to specialized platforms,benefit
+8,Dedicated hours for cloud certifications,benefit
+9,Python,must
+9,BI tools,must
+9,Investigación de mercado,nice
+9,Transformación digital,nice
+9,Análisis de tendencias tecnológicas,nice
+9,"Certificaciones cloud (AWS, Google, Azure)",nice
+9,Python,tech_stack
+9,AWS,tech_stack
+9,Google Cloud,tech_stack
+9,Azure,tech_stack
+9,Análisis,soft_skill
+9,Atención al detalle,soft_skill
+9,Curiosidad,soft_skill
+9,Trabajo en equipo,soft_skill
+9,Comunicación,soft_skill
+9,Flexibilidad horaria,benefit
+9,Teletrabajo,benefit
+9,Modelo híbrido,benefit
+9,Mentoría,benefit
+9,Formación interna,benefit
+9,Acceso a certificaciones cloud,benefit
+10,Python,must
+10,BI tools,must
+10,Market research,nice
+10,Digital transformation,nice
+10,Technology trend analysis,nice
+10,Python,tech_stack
+10,AWS,tech_stack
+10,Google Cloud,tech_stack
+10,Azure,tech_stack
+10,BI tools,tech_stack
+10,Analytical thinking,soft_skill
+10,Attention to detail,soft_skill
+10,Curiosity,soft_skill
+10,Collaboration,soft_skill
+10,Communication,soft_skill
+10,Flexible schedule,benefit
+10,Remote/hybrid work,benefit
+10,Mentorship,benefit
+10,Training programs,benefit
+10,Certification support,benefit
+10,Content publishing opportunities,benefit
+11,LLMs,must
+11,RAG,must
+11,Transformers,must
+11,LangChain,must
+11,LlamaIndex,must
+11,Haystack,must
+11,Gemini,must
+11,Vertex AI Studio,must
+11,Kubernetes,must
+11,Docker,must
+11,CI/CD,must
+11,MLflow,must
+11,Python,must
+11,TypeScript,must
+11,REST APIs,must
+11,GraphQL APIs,must
+11,prompt engineering,must
+11,microservices architecture,must
+11,high English proficiency,must
+11,Gemini,tech_stack
+11,GPT-4,tech_stack
+11,Claude,tech_stack
+11,LLaMA 3,tech_stack
+11,Mistral,tech_stack
+11,OpenAI ecosystem,tech_stack
+11,Vertex AI,tech_stack
+11,AWS Bedrock,tech_stack
+11,HuggingFace,tech_stack
+11,Stable Diffusion,tech_stack
+11,DALL·E 3,tech_stack
+11,Gemini Vision,tech_stack
+11,AWS,tech_stack
+11,GCP,tech_stack
+11,Azure,tech_stack
+11,Kubernetes,tech_stack
+11,Docker,tech_stack
+11,CI/CD,tech_stack
+11,MLflow,tech_stack
+11,Python,tech_stack
+11,TypeScript,tech_stack
+11,REST,tech_stack
+11,GraphQL,tech_stack
+11,continuous learning,soft_skill
+11,collaboration,soft_skill
+11,flexibility,soft_skill
+11,English,language
+11,Permanent contract,benefit
+11,Competitive salary + bonus,benefit
+11,Flexible schedule,benefit
+11,Digital disconnection policy,benefit
+11,Intensive Friday and summer hours,benefit
+11,Continuous training program,benefit
+11,"Flexible benefits (medical insurance, public transport card, childcare vouchers, restaurant card)",benefit
+12,Python,must
+12,SQL,must
+12,Google Cloud Platform,must
+12,BigQuery,must
+12,DBT,must
+12,Google Cloud Storage,must
+12,Composer (Airflow),must
+12,Vertex AI,must
+12,Jupyter Notebooks,must
+12,GitLab CI/CD,must
+12,Machine Learning,must
+12,LLM,must
+12,IA Generativa,must
+12,Comunicación,must
+12,Gestión de proyectos,must
+12,R,nice
+12,Apache Airflow,nice
+12,Oracle,nice
+12,PL/SQL,nice
+12,ODI,nice
+12,SQL Developer,nice
+12,MLflow,nice
+12,Dataflow,nice
+12,Looker,nice
+12,VS Code,nice
+12,Experiencia en seguros,nice
+12,Experiencia en banca,nice
+12,Python,tech_stack
+12,SQL,tech_stack
+12,Google Cloud Platform,tech_stack
+12,BigQuery,tech_stack
+12,DBT,tech_stack
+12,Google Cloud Storage,tech_stack
+12,Composer (Airflow),tech_stack
+12,Apache Airflow,tech_stack
+12,Vertex AI,tech_stack
+12,Jupyter Notebooks,tech_stack
+12,GitLab,tech_stack
+12,CI/CD,tech_stack
+12,R,tech_stack
+12,Oracle,tech_stack
+12,PL/SQL,tech_stack
+12,ODI,tech_stack
+12,SQL Developer,tech_stack
+12,MLflow,tech_stack
+12,Dataflow,tech_stack
+12,Looker,tech_stack
+12,VS Code,tech_stack
+12,Comunicación,soft_skill
+12,Presentación,soft_skill
+12,Trabajo en equipo,soft_skill
+12,Autonomía,soft_skill
+12,Pensamiento analítico,soft_skill
+12,Resolución de problemas,soft_skill
+12,Gestión de proyectos,soft_skill
+12,Coordinación,soft_skill
+12,Capacidad de explicar conceptos complejos,soft_skill
+12,Contrato indefinido,benefit
+12,Flexibilidad horaria,benefit
+12,Plan de acogida y desarrollo profesional,benefit
+12,Formación online,benefit
+12,Jornadas intensivas viernes,benefit
+12,Jornadas intensivas verano,benefit
+12,Modelo híbrido,benefit
+12,Fruta,benefit
+12,29 días hábiles de vacaciones,benefit
+12,Plan de pensiones,benefit
+12,Seguro de salud,benefit
+12,Seguro de vida,benefit
+12,Ticket restaurante,benefit
+12,Retribución flexible (guardería y/o transporte),benefit
+13,digital product development,must
+13,payments,must
+13,e-commerce architecture,must
+13,API integration,must
+13,SDK development,must
+13,payment platforms,must
+13,generative AI,must
+13,machine learning,must
+13,information security,must
+13,"regulatory compliance (LGPD, GDPR, PCI-DSS)",must
+13,Git,must
+13,Swagger,must
+13,Postman,must
+13,product strategy,must
+13,roadmap planning,must
+13,product governance,must
+13,KPIs,must
+13,English (conversational),must
+13,critical thinking,must
+13,clear communication,must
+13,Postgraduate degree or MBA,nice
+13,Spanish,nice
+13,global project experience,nice
+13,knowledge of Agentic Commerce,nice
+13,order intents,nice
+13,AI purchasing automation,nice
+13,autonomous agents,nice
+13,conversational interfaces,nice
+13,"agile methodologies (Scrum, Kanban)",nice
+13,"product management tools (Jira, Confluence, Aha!)",nice
+13,"certifications in Product Management or Agile (Pragmatic Institute, PMI-ACP, CSPO)",nice
+13,payment methods market knowledge in Brazil,nice
+13,Git,tech_stack
+13,Swagger,tech_stack
+13,Postman,tech_stack
+13,critical thinking,soft_skill
+13,systemic vision,soft_skill
+13,clear communication,soft_skill
+13,English (conversational),language
+13,Spanish,language
+13,Medical insurance,benefit
+13,Dental insurance,benefit
+13,Wellhub,benefit
+13,Life insurance,benefit
+13,Annual healthcare,benefit
+13,Transportation allowance,benefit
+13,Meal voucher/food voucher,benefit
+13,Profit sharing program,benefit
+13,Access to self-development programmes,benefit
+13,Hybrid work model,benefit
+13,Collaborative environment,benefit
+14,Digital product development,must
+14,E-commerce architecture,must
+14,API integration,must
+14,SDK development,must
+14,Payment platform integration,must
+14,Information security,must
+14,"Regulatory compliance (LGPD, GDPR, PCI-DSS)",must
+14,Version control (Git),must
+14,"Technical documentation (Swagger, Postman)",must
+14,Global product strategy definition,must
+14,Product roadmap planning,must
+14,KPI definition,must
+14,Postgraduate degree or MBA,nice
+14,Spanish language proficiency,nice
+14,Experience in global projects or multinational companies,nice
+14,Knowledge of Agentic Commerce,nice
+14,"Experience with AI for purchasing automation, autonomous agents, or conversational interfaces",nice
+14,"Agile methodologies (Scrum, Kanban)",nice
+14,"Product management tools (Jira, Confluence, Aha!)",nice
+14,"Certifications in Product Management or Agile (Pragmatic Institute, PMI-ACP, CSPO)",nice
+14,Knowledge of the Brazilian payment methods market,nice
+14,Git,tech_stack
+14,Swagger,tech_stack
+14,Postman,tech_stack
+14,Critical thinking,soft_skill
+14,Systemic vision,soft_skill
+14,Clear communication,soft_skill
+14,Stakeholder management,soft_skill
+14,Strategic planning,soft_skill
+14,English,language
+14,Spanish,language
+14,Medical insurance,benefit
+14,Dental insurance,benefit
+14,Life insurance (Wellhub),benefit
+14,Annual healthcare,benefit
+14,Transportation allowance,benefit
+14,Meal voucher / food voucher,benefit
+14,Profit sharing program,benefit
+14,Access to self-development programmes,benefit
+14,Hybrid collaborative environment,benefit
+15,Next.js,must
+15,Tailwind CSS,must
+15,TypeScript,must
+15,Node.js,must
+15,PostgreSQL,must
+15,Google Cloud Platform,must
+15,n8n,must
+15,Generative AI,must
+15,Next.js,tech_stack
+15,Tailwind CSS,tech_stack
+15,TypeScript,tech_stack
+15,Node.js,tech_stack
+15,PostgreSQL,tech_stack
+15,Google Cloud Platform,tech_stack
+15,n8n,tech_stack
+15,Growth opportunities,benefit
+15,Collaborative and dynamic environment,benefit
+15,Professional development,benefit
+15,High-impact strategy implementation,benefit
+15,Hybrid working model in Barcelona,benefit
+15,Work flexibility,benefit
+15,Permanent contract,benefit
+16,Customer Experience,must
+16,Technical Support,must
+16,Data Analysis,must
+16,JSON,must
+16,Zapier,must
+16,Communication,must
+16,JSON,tech_stack
+16,Zapier,tech_stack
+16,OpenAI,tech_stack
+16,Verbal communication,soft_skill
+16,Written communication,soft_skill
+16,Teamwork,soft_skill
+16,Adaptability,soft_skill
+16,"Language Classes (English, Portuguese, Spanish)",benefit
+16,OpenAI Premium License,benefit
+16,Paid Time Off (25 days/year),benefit
+16,"Soft Hybrid Work (3 days/month in Co‑Work office, remote otherwise)",benefit
+17,Python,must
+17,Pandas,must
+17,PyTorch,must
+17,Keras,must
+17,TensorFlow,must
+17,Scikit-learn,must
+17,Transformers,must
+17,CUDA,must
+17,Huggingface,must
+17,API development,must
+17,Concurrent programming,must
+17,Statistical analysis,must
+17,Machine Learning,must
+17,Audio processing,must
+17,Random Forest,must
+17,Diffusion models,must
+17,SAM,must
+17,ResNet,must
+17,DINO,must
+17,Prompt engineering,must
+17,Embeddings,must
+17,Fine-tuning,must
+17,LangChain,must
+17,LLM orchestration,must
+17,Python,tech_stack
+17,Pandas,tech_stack
+17,PyTorch,tech_stack
+17,Keras,tech_stack
+17,TensorFlow,tech_stack
+17,Scikit-learn,tech_stack
+17,Transformers,tech_stack
+17,CUDA,tech_stack
+17,Huggingface,tech_stack
+17,LangChain,tech_stack
+17,Collaboration,soft_skill
+17,Communication,soft_skill
+17,Documentation,soft_skill
+17,Seguro médico,benefit
+17,Tarjeta gourmet,benefit
+17,Cheques guardería,benefit
+17,Transporte,benefit
+17,Formación continua (descuento en titulaciones),benefit
+17,Modelo híbrido,benefit
+17,Horario flexible,benefit
+19,Diseño y desarrollo de proyectos de IA,must
+19,Implementación de modelos LLM,must
+19,Bases de datos vectoriales,must
+19,Procesamiento de información,must
+19,Despliegue de modelos de IA,must
+19,Gestión de pilotos/proyectos de IA,must
+19,Interfaz entre área técnica y negocio,must
+19,LLM,tech_stack
+19,Vector databases,tech_stack
+19,Comunicación,soft_skill
+19,Trabajo en equipo,soft_skill
+19,Transferencia de conocimiento,soft_skill
+19,Formación continua,benefit
+19,Beneficios sociales,benefit
+19,Plan de retribución flexible,benefit
+19,Compensación de gastos de teletrabajo,benefit
+19,Plan de carrera,benefit
+20,Python,must
+20,LangChain,must
+20,LangGraph,must
+20,Microservicios,must
+20,IA agentes,must
+20,Gestión de memoria y contexto,must
+20,Inglés,must
+20,Experiencia sector banca,nice
+20,AWS,nice
+20,Python,tech_stack
+20,LangChain,tech_stack
+20,LangGraph,tech_stack
+20,AWS,tech_stack
+20,Microservicios,tech_stack
+20,Inglés,language
+20,Salario competitivo,benefit
+20,Contrato indefinido,benefit
+20,Contrato mercantil,benefit
+20,22 días laborables de vacaciones,benefit
+20,Seguro médico,benefit
+20,Cheques guardería,benefit
+20,Cheques transporte,benefit
+20,Formación en Tecnología y Soft Skills,benefit
+20,Programa de referidos,benefit
+21,"Python (OOP, testing, scientific libraries)",must
+21,"Git/GitHub (advanced, branching, PRs, CI)",must
+21,"Mathematics for ML (statistics, linear algebra, probability)",must
+21,Scikit-learn,must
+21,"Deep learning framework (e.g., TensorFlow, PyTorch)",must
+21,"Generative AI (prompting, embeddings, APIs such as OpenAI, Anthropic, Gemini, HuggingFace)",must
+21,"Cloud AI (Azure AI, Vertex AI, AWS AI)",must
+21,SQL (advanced),must
+21,NoSQL (basic),must
+21,"Web development (REST APIs, simple front‑end)",must
+21,"MLOps basics (venv/conda, DVC, MLflow, tracking)",must
+21,Testing (pytest),must
+21,Linting,must
+21,Type hints,must
+21,RGPD/PII compliance,must
+21,educational or socio‑educational experience,nice
+21,Python,tech_stack
+21,Git,tech_stack
+21,GitHub,tech_stack
+21,Scikit-learn,tech_stack
+21,TensorFlow,tech_stack
+21,PyTorch,tech_stack
+21,OpenAI API,tech_stack
+21,Anthropic API,tech_stack
+21,Google Gemini API,tech_stack
+21,HuggingFace,tech_stack
+21,Azure AI,tech_stack
+21,Google Vertex AI,tech_stack
+21,AWS AI,tech_stack
+21,SQL,tech_stack
+21,NoSQL,tech_stack
+21,REST APIs,tech_stack
+21,DVC,tech_stack
+21,MLflow,tech_stack
+21,pytest,tech_stack
+21,flake8,tech_stack
+21,mypy,tech_stack
+21,leadership with empathy,soft_skill
+21,strategic vision,soft_skill
+21,adaptability to change,soft_skill
+21,clear communication,soft_skill
+21,high social commitment,soft_skill
+21,Spanish (C2),language
+21,English (B2),language
+21,social impact,benefit
+21,professional development in pedagogía Simplon.co,benefit
+21,agile and motivating environment,benefit
+21,diverse collaborative team,benefit
+21,indefinite contract,benefit
+21,full-time schedule (Monday to Friday),benefit
+21,flexible remote work (40-60%),benefit
+21,"competitive salary (35,000‑39,000 EUR gross)",benefit
+21,work‑life balance support,benefit
+22,Backend development,must
+22,API development,must
+22,Cloud integration,must
+22,Microsoft Azure,must
+22,Retrieval-Augmented Generation,must
+22,Large Language Models,must
+22,Speech-to-text,must
+22,Intelligent Document Processing,nice
+22,French language,nice
+22,Azure Functions,tech_stack
+22,Azure App Services,tech_stack
+22,Cosmos DB,tech_stack
+22,Azure Key Vault,tech_stack
+22,Collaboration,soft_skill
+22,Monitoring,soft_skill
+22,Reliability,soft_skill
+22,Security,soft_skill
+22,Performance optimization,soft_skill
+22,English,language
+22,Spanish,language
+22,French,language
+23,Inteligencia Artificial,must
+23,Inglés B2,must
+23,Trabajo en equipo,soft_skill
+23,Aprendizaje rápido,soft_skill
+23,Comunicación,soft_skill
+23,Inglés (B2),language
+23,Contrato indefinido,benefit
+23,Jornada completa,benefit
+23,23 días de vacaciones,benefit
+23,Formación continua,benefit
+23,Acceso a certificaciones y formaciones de partners tecnológicos,benefit
+23,Seguro de vida y accidentes,benefit
+23,"Retribución flexible (seguro médico, cheques guardería, transporte, comida y formación)",benefit
+23,Acceso a Privilege Club,benefit
+23,Onboarding personalizado,benefit
+23,Oficina con espacios de ocio,benefit
+23,Plan de carrera personalizado,benefit
+24,Machine Learning,must
+24,Deep Learning,must
+24,LLMs,must
+24,Transformers,must
+24,RNNs,must
+24,Autoencoders,must
+24,Gradient Boosting,must
+24,Multi-armed Bandits,must
+24,Time Series Analysis,must
+24,Python,must
+24,TensorFlow,must
+24,PyTorch,must
+24,Scikit-learn,must
+24,SciPy,must
+24,Keras,must
+24,Seaborn,must
+24,Matplotlib,must
+24,MLOps,must
+24,DataOps,must
+24,ETL,must
+24,Data Wrangling,must
+24,Cloud Computing,must
+24,Version Control,must
+24,A/B Testing,must
+24,Large-scale ML implementation,must
+24,JavaScript visualization (3D.js),nice
+24,Doctorado,nice
+24,Python,tech_stack
+24,TensorFlow,tech_stack
+24,PyTorch,tech_stack
+24,Scikit-learn,tech_stack
+24,SciPy,tech_stack
+24,Keras,tech_stack
+24,Seaborn,tech_stack
+24,Matplotlib,tech_stack
+24,3D.js,tech_stack
+24,Comunicación,soft_skill
+24,Influencia,soft_skill
+24,Trabajo en equipo,soft_skill
+24,Autonomía,soft_skill
+24,Motivación,soft_skill
+24,Gestión de expectativas,soft_skill
+24,English,language
+24,Trabajo híbrido (hasta 60% remoto),benefit
+24,27 días de vacaciones,benefit
+24,"Programa de wellbeing (descuentos en gimnasios, fisioterapia, torneos deportivos, fruta)",benefit
+24,Programa de retribución flexible,benefit
+24,Ventajas financieras del grupo bancario,benefit
+25,Machine Learning,must
+25,Deep Learning,must
+25,Large Language Models (LLMs),must
+25,Autoencoders,must
+25,Transformers,must
+25,RNNs,must
+25,Gradient Boosting,must
+25,Multi-armed Bandits,must
+25,Time Series Analysis,must
+25,Python,must
+25,TensorFlow,must
+25,PyTorch,must
+25,Scikit-learn,must
+25,Scipy,must
+25,Keras,must
+25,"Data Visualization (Seaborn, Matplotlib)",must
+25,Data Wrangling / ETL,must
+25,MLOps,must
+25,DataOps,must
+25,"Cloud Computing (IaaS, PaaS, CaaS, SaaS)",must
+25,Version Control,must
+25,A/B Testing,must
+25,JavaScript data visualization (3D.js),nice
+25,Doctorate degree,nice
+25,Python,tech_stack
+25,TensorFlow,tech_stack
+25,PyTorch,tech_stack
+25,Scikit-learn,tech_stack
+25,Scipy,tech_stack
+25,Keras,tech_stack
+25,Seaborn,tech_stack
+25,Matplotlib,tech_stack
+25,3D.js,tech_stack
+25,Communication,soft_skill
+25,Influence,soft_skill
+25,Teamwork,soft_skill
+25,Autonomy,soft_skill
+25,Motivation,soft_skill
+25,Agile methodology,soft_skill
+25,Project management,soft_skill
+25,Problem solving,soft_skill
+25,English,language
+25,Hybrid work model (up to 60% remote),benefit
+25,27 vacation days per year,benefit
+25,"Wellbeing program (gym discounts, physiotherapy, sports tournaments, fruit)",benefit
+25,Flexible compensation program,benefit
+25,Training and development initiatives,benefit
+25,Financial advantages as part of a banking group,benefit
+26,Arquitecturas cloud,must
+26,Inteligencia artificial,must
+26,AWS,must
+26,Azure,must
+26,Google Cloud,must
+26,Python,must
+26,Java,must
+26,Bases de datos,must
+26,Análisis de datos,must
+26,Inglés técnico,must
+26,Sector financiero,nice
+26,AWS,tech_stack
+26,Azure,tech_stack
+26,Google Cloud,tech_stack
+26,Python,tech_stack
+26,Java,tech_stack
+26,Trabajo en equipo,soft_skill
+26,Comunicación,soft_skill
+26,Flexibilidad,soft_skill
+26,Documentación técnica,soft_skill
+26,Inglés,language
+26,Formación continua y desarrollo profesional,benefit
+26,Posibilidad de teletrabajo y flexibilidad horaria,benefit
+26,Ambiente laboral colaborativo,benefit
+27,Python,must
+27,Machine Learning,must
+27,Deep Learning,must
+27,Generative AI,must
+27,MLOps,must
+27,Data Ethics,must
+27,Python,tech_stack
+27,Exceptional presentation skills,soft_skill
+27,Excellent communication,soft_skill
+27,Interpersonal skills,soft_skill
+27,Leadership and management skills,soft_skill
+27,Strategic thinking,soft_skill
+27,Proactivity,soft_skill
+27,Curiosity,soft_skill
+27,Spanish,language
+27,English,language
+27,"Medical, Life, and Accident Insurance",benefit
+27,Medical service and wellness programs,benefit
+27,Flexible compensation program and stock purchase plan,benefit
+27,"Flexibility programs (scheduling, days off, vacations)",benefit
+27,Individualized training itinerary,benefit
+27,Sustainability programs and Accenture Foundation,benefit
+27,Employee network for diversity,benefit
+27,Bankinter office with special conditions and profit sharing,benefit
+27,Hybrid work model,benefit
+28,Google Cloud,tech_stack
+28,Gemini,tech_stack
+28,Problem solving,soft_skill
+28,Creativity,soft_skill
+28,Analytical thinking,soft_skill
+28,Contrato indefinido,benefit
+28,Seguro médico gratuito,benefit
+28,Paquete salarial competitivo,benefit
+29,prompting,must
+29,desarrollo de agentes conversacionales,must
+29,liderazgo,must
+29,gestión de equipos técnicos,must
+29,orientación a resultados,must
+29,comunicación,must
+29,liderazgo,soft_skill
+29,comunicación,soft_skill
+29,orientación a resultados,soft_skill
+29,Modalidad híbrida en Madrid,benefit
+29,Salario máximo: 42.000 €/año,benefit
+29,Participación en proyectos innovadores de IA,benefit
+30,Python,must
+30,Machine Learning,must
+30,IA Generativa,nice
+30,Python,tech_stack
+30,Análisis,soft_skill
+30,Resolución de problemas,soft_skill
+30,Comunicación,soft_skill
+30,Trabajo en equipo,soft_skill
+30,Aprendizaje continuo,soft_skill
+30,español,language
+30,inglés,language
+30,"Seguro médico, de vida y accidentes",benefit
+30,Servicio médico y programas de bienestar,benefit
+30,Programa de retribución flexible y compra de acciones,benefit
+30,"Programas de flexibilidad (horaria, días libres, vacaciones)",benefit
+30,Itinerario formativo individualizado,benefit
+30,Programas de sostenibilidad y Fundación Accenture,benefit
+30,Red de empleados por la diversidad,benefit
+30,Oficina Bankinter con condiciones especiales y reparto de beneficios,benefit
+31,Aprendizaje automático,must
+31,Redes neuronales,must
+31,Python,must
+31,R,must
+31,Análisis de datos,must
+31,Manejo de grandes volúmenes de datos,must
+31,Python,tech_stack
+31,R,tech_stack
+31,Resolución de problemas,soft_skill
+31,Pensamiento estructurado,soft_skill
+31,Trabajo colaborativo,soft_skill
+31,Comunicación,soft_skill
+31,6 días de teletrabajo al mes,benefit
+31,Acceso a tecnologías punteras y proyectos innovadores,benefit
+31,Entorno de trabajo colaborativo y dinámico,benefit
+31,Oportunidades de desarrollo profesional,benefit
+32,Python,must
+32,SQL,must
+32,Java,must
+32,English,must
+32,Google Cloud,nice
+32,AWS,nice
+32,Azure,nice
+32,IBM Cloud,nice
+32,LLMs,nice
+32,Machine Learning,nice
+32,Autoencoders,nice
+32,Transformers,nice
+32,RNNs,nice
+32,Time Series Analysis,nice
+32,Gradient Boosting,nice
+32,Multi-armed Bandits,nice
+32,MLOps,nice
+32,DataOps,nice
+32,IaaS,nice
+32,PaaS,nice
+32,CaaS,nice
+32,SaaS,nice
+32,Agile methodologies,nice
+32,Backlog management,nice
+32,Python,tech_stack
+32,SQL,tech_stack
+32,Java,tech_stack
+32,AWS,tech_stack
+32,Google Cloud,tech_stack
+32,Azure,tech_stack
+32,IBM Cloud,tech_stack
+32,Communication,soft_skill
+32,Public speaking,soft_skill
+32,Teamwork,soft_skill
+32,Autonomy,soft_skill
+32,Analytical thinking,soft_skill
+32,Adaptability,soft_skill
+32,Motivation,soft_skill
+32,Risk analysis,soft_skill
+32,English,language
+32,Hybrid work (up to 60% remote),benefit
+32,27 vacation days,benefit
+32,Wellbeing program,benefit
+32,Flexible compensation,benefit
+32,Training and development,benefit
+33,Asistentes cognitivos,must
+33,Procesamiento de lenguaje natural,must
+33,Procesamiento de imagen,must
+33,Procesamiento de voz,must
+33,Google Cloud,nice
+33,AWS,nice
+33,Azure,nice
+33,IBM Cloud,nice
+33,Python,nice
+33,SQL,nice
+33,Java,nice
+33,LLMs,nice
+33,Machine Learning,nice
+33,Autoencoders,nice
+33,Transformers,nice
+33,RNNs,nice
+33,Series temporales,nice
+33,Gradient Boosting,nice
+33,Multi-armed Bandits,nice
+33,MLOps,nice
+33,DataOps,nice
+33,Metodologías ágiles,nice
+33,"Entorno Cloud (IaaS, PaaS, CaaS, SaaS)",nice
+33,Python,tech_stack
+33,SQL,tech_stack
+33,Java,tech_stack
+33,Google Cloud,tech_stack
+33,AWS,tech_stack
+33,Azure,tech_stack
+33,IBM Cloud,tech_stack
+33,LLMs,tech_stack
+33,Autoencoders,tech_stack
+33,Transformers,tech_stack
+33,RNNs,tech_stack
+33,Gradient Boosting,tech_stack
+33,Multi-armed Bandits,tech_stack
+33,MLOps,tech_stack
+33,DataOps,tech_stack
+33,Capacidad de análisis,soft_skill
+33,Comunicación e influencia,soft_skill
+33,Hablar en público,soft_skill
+33,Trabajo en equipo,soft_skill
+33,Alta motivación,soft_skill
+33,Autonomía,soft_skill
+33,Gestión de tiempos,soft_skill
+33,Visión analítica,soft_skill
+33,Inglés,language
+33,Modelo híbrido (hasta 60% remoto),benefit
+33,27 días de vacaciones,benefit
+33,"Programa de Wellbeing (descuentos en gimnasios, fisioterapia, torneos, fruta)",benefit
+33,Formaciones e iniciativas de desarrollo técnico,benefit
+33,Programa de Retribución Flexible,benefit
+34,Python (advanced),must
+34,Git (version control),must
+34,Software engineering best practices (SOLID),must
+34,AI libraries (LangChain),must
+34,Analytical thinking,must
+34,Communication,must
+34,Negotiation,must
+34,Influence,must
+34,Teamwork,must
+34,Project management,must
+34,SQL,nice
+34,C,nice
+34,Java,nice
+34,Rust,nice
+34,QlikSense,nice
+34,PowerBI,nice
+34,Docker,nice
+34,Kubernetes,nice
+34,GCP,nice
+34,AWS,nice
+34,Banking sector experience,nice
+34,Insurance sector experience,nice
+34,Python,tech_stack
+34,Git,tech_stack
+34,Bitbucket,tech_stack
+34,LangChain,tech_stack
+34,SQL,tech_stack
+34,C,tech_stack
+34,Java,tech_stack
+34,Rust,tech_stack
+34,QlikSense,tech_stack
+34,PowerBI,tech_stack
+34,Docker,tech_stack
+34,Kubernetes,tech_stack
+34,GCP,tech_stack
+34,AWS,tech_stack
+34,initiative,soft_skill
+34,organized,soft_skill
+34,result-oriented,soft_skill
+34,analytical,soft_skill
+34,communication,soft_skill
+34,negotiation,soft_skill
+34,influence,soft_skill
+34,teamwork,soft_skill
+34,project management,soft_skill
+34,Contrato indefinido,benefit
+34,Flexibilidad horaria de entrada y comida,benefit
+34,Plan de acogida y seguimiento con evaluaciones 360,benefit
+34,Acceso a plataforma online de formación,benefit
+34,Jornada intensiva los viernes,benefit
+34,Jornada intensiva verano (15 junio - 15 septiembre),benefit
+34,Modelo de trabajo híbrido,benefit
+34,Fruta en oficina,benefit
+34,29 días hábiles de vacaciones,benefit
+34,Plan de pensiones,benefit
+34,Seguro de salud,benefit
+34,Seguro de vida,benefit
+34,Ticket restaurante,benefit
+34,Retribución flexible (guardería y/o transporte),benefit
+35,Python,must
+35,R,must
+35,Java,must
+35,TensorFlow,must
+35,PyTorch,must
+35,Scikit-learn,must
+35,LLM,must
+35,APIs,must
+35,fine-tuning,must
+35,RAG,must
+35,prompt engineering,must
+35,Python,tech_stack
+35,R,tech_stack
+35,Java,tech_stack
+35,TensorFlow,tech_stack
+35,PyTorch,tech_stack
+35,Scikit-learn,tech_stack
+35,Proactividad,soft_skill
+35,Curiosidad tecnológica,soft_skill
+35,Capacidad analítica,soft_skill
+35,English,language
+36,Power Platform,must
+36,Python,must
+36,SQL,must
+36,Ofimática avanzada,must
+36,Python,tech_stack
+36,SQL,tech_stack
+36,Power Platform,tech_stack
+36,Capacidad analítica,soft_skill
+36,Proactividad,soft_skill
+36,Confidencialidad,soft_skill
+36,Trabajo en equipo,soft_skill
+36,Habilidades de comunicación,soft_skill
+36,English,language
+36,German,language
+36,Salario competitivo,benefit
+36,Transporte colectivo a centros de trabajo,benefit
+36,Modelo de trabajo mixto (2 días teletrabajo por semana),benefit
+36,Servicio de comedor subvencionado,benefit
+36,Acceso a la red de centros médicos de SEAT,benefit
+36,Seguro colectivo de vida,benefit
+36,Plan de pensiones a partir del 2.º mes,benefit
+36,Descuentos en compra y leasing de vehículos SEAT,benefit
+36,Posibilidad de préstamo personal a partir del segundo año,benefit
+36,Formación continua a través de plataforma interna de Learning,benefit
+36,Actividades y descuentos para empleados,benefit
+37,Python,must
+37,Machine Learning,must
+37,AI Generative,nice
+37,Python,tech_stack
+37,23 días de vacaciones,benefit
+37,Formación continua,benefit
+37,Acceso a certificaciones y partners tecnológicos,benefit
+37,Seguro de vida y accidentes,benefit
+37,"Retribución flexible (seguro médico, cheques guardería, transporte, comida y formación)",benefit
+37,Acceso a Privilege Club,benefit
+37,Onboarding personalizado,benefit
+37,Oficina con espacios de ocio,benefit
+38,.NET,must
+38,Azure,must
+38,Visual Studio,must
+38,Langchain,must
+38,Azure AI Search,must
+38,TensorFlow,must
+38,Azure Bot Framework,must
+38,Power Virtual Agents,must
+38,Copilot Studio,must
+38,Vector databases,must
+38,"AI model development (Hugging Face, OpenAI, Claude)",must
+38,Python,nice
+38,AI-900 certification,nice
+38,AI-102 certification,nice
+38,.NET,tech_stack
+38,Azure,tech_stack
+38,Visual Studio,tech_stack
+38,Python,tech_stack
+38,Langchain,tech_stack
+38,Azure AI Search,tech_stack
+38,TensorFlow,tech_stack
+38,Azure Bot Framework,tech_stack
+38,Power Virtual Agents,tech_stack
+38,Copilot Studio,tech_stack
+38,Hugging Face,tech_stack
+38,OpenAI,tech_stack
+38,Claude,tech_stack
+38,Vector databases,tech_stack
+38,Leadership,soft_skill
+38,Team management,soft_skill
+38,Communication,soft_skill
+38,Autonomous,soft_skill
+38,Entrepreneurial,soft_skill
+38,Innovative,soft_skill
+38,Results oriented,soft_skill
+38,Contrato indefinido,benefit
+38,Hybrid work,benefit
+38,Tarjeta restaurante,benefit
+38,Smart working budget,benefit
+38,Microsoft certifications,benefit
+38,Plan de Reference Reward,benefit
+38,23 días laborables de vacaciones,benefit
+38,Eventos corporativos anuales,benefit
+38,Acceso al Club de Beneficios,benefit
+38,Comida Healthy en oficina,benefit
+38,Webinars online,benefit
+39,Customer Experience,must
+39,Technical Support,must
+39,Data Analysis,must
+39,JSON,must
+39,Zapier,must
+39,Communication,must
+39,Zapier,tech_stack
+39,OpenAI,tech_stack
+39,Teamwork,soft_skill
+39,Adaptability,soft_skill
+39,Passion for technology and innovation,soft_skill
+39,Excellent verbal and written communication,soft_skill
+39,"Language Classes (English, Portuguese, Spanish)",benefit
+39,OpenAI Premium License,benefit
+39,Paid Time Off: 25 days/year,benefit
+39,Soft Hybrid Work (3 days/month in Co-Work offices),benefit
+40,NLP,must
+40,Azure Cognitive Services,must
+40,Azure Search,must
+40,OpenAI,must
+40,Google Bard,must
+40,Python,must
+40,C#,must
+40,Software Engineering,must
+40,CI/CD,must
+40,On-premise,must
+40,Cloud,must
+40,Python,tech_stack
+40,C#,tech_stack
+40,Azure Cognitive Services,tech_stack
+40,Azure Search,tech_stack
+40,OpenAI,tech_stack
+40,Google Bard,tech_stack
+40,Azure,tech_stack
+40,AWS,tech_stack
+40,Google Cloud,tech_stack
+41,Computer Vision,must
+41,Deep Learning,must
+41,TensorFlow,must
+41,PyTorch,must
+41,OpenCV,must
+41,AWS,must
+41,CI/CD,must
+41,SLA management,must
+41,Project management,must
+41,TensorFlow,tech_stack
+41,PyTorch,tech_stack
+41,OpenCV,tech_stack
+41,AWS,tech_stack
+41,Leadership,soft_skill
+41,Communication,soft_skill
+41,Project management,soft_skill
+41,English (C1),language
+41,Competitive salary,benefit
+41,Equity/stock options,benefit
+41,Flexible hours,benefit
+41,Remote/hybrid work,benefit
+41,Collaborative environment,benefit
+42,Python,must
+42,IA generativa,must
+42,"Modelos LLM (GPT, Llama, Mistral)",must
+42,Ollama,must
+42,vLLM,must
+42,Hugging Face Transformers,must
+42,APIs REST,must
+42,Docker,must
+42,Git,must
+42,Python,tech_stack
+42,GPT,tech_stack
+42,Llama,tech_stack
+42,Mistral,tech_stack
+42,LangChain,tech_stack
+42,Hugging Face,tech_stack
+42,Ollama,tech_stack
+42,vLLM,tech_stack
+42,Docker,tech_stack
+42,Git,tech_stack
+42,REST APIs,tech_stack
+42,Plan de formación continua,benefit
+42,Acceso a plataforma e‑learning,benefit
+42,Plan de carrera con referente de Randstad Digital,benefit
+42,Horario flexible,benefit
+42,23 días de vacaciones,benefit
+42,Salario competitivo,benefit
+42,Plan de retribución flexible (tarjeta restaurante y cheques guardería),benefit
+42,Randstad Care (ofertas y descuentos exclusivos),benefit
+43,Redacción de textos,must
+43,ChatGPT,must
+43,Herramientas de IA,must
+43,LLM,must
+43,Ingeniería del prompt,must
+43,CRM,must
+43,Formación superior en Datos,nice
+43,Formación superior en IA,nice
+43,ChatGPT,tech_stack
+43,LLM,tech_stack
+43,CRM,tech_stack
+43,Vocación de servicio,soft_skill
+43,Altas dotes comunicativas,soft_skill
+43,Creatividad,soft_skill
+43,Trabajo en equipo,soft_skill
+44,Python,must
+44,Generative AI,must
+44,SQL,must
+44,NoSQL,must
+44,Python,tech_stack
+44,LangChain,tech_stack
+44,LlamaIndex,tech_stack
+44,SQL,tech_stack
+44,NoSQL,tech_stack
+44,Hybrid/Remote work,benefit
+44,High impact projects,benefit
+44,Diversity and inclusion,benefit
+45,Python,must
+45,Generative AI,must
+45,LangChain,must
+45,LlamaIndex,must
+45,SQL,must
+45,NoSQL,must
+45,Python,tech_stack
+45,LangChain,tech_stack
+45,LlamaIndex,tech_stack
+45,SQL,tech_stack
+45,NoSQL,tech_stack
+46,Python,must
+46,IA Generativa,must
+46,SQL,must
+46,NoSQL,must
+46,Python,tech_stack
+46,LangChain,tech_stack
+46,LlamaIndex,tech_stack
+46,SQL,tech_stack
+46,NoSQL,tech_stack
+46,Trabajo híbrido,benefit
+46,Trabajo remoto,benefit
+47,Python,must
+47,IA Generativa,must
+47,SQL,must
+47,NoSQL,must
+47,LangChain,must
+47,LlamaIndex,must
+47,Python,tech_stack
+47,LangChain,tech_stack
+47,LlamaIndex,tech_stack
+47,SQL,tech_stack
+47,NoSQL,tech_stack
+47,modalidad híbrida,benefit
+47,modalidad remota,benefit
+47,Top Employer,benefit
+48,Python,must
+48,IA Generativa,must
+48,SQL,must
+48,NoSQL,must
+48,LangChain,must
+48,LlamaIndex,must
+48,Python,tech_stack
+48,LangChain,tech_stack
+48,LlamaIndex,tech_stack
+48,SQL,tech_stack
+48,NoSQL,tech_stack
+48,Trabajo híbrido,benefit
+48,Trabajo remoto,benefit
+48,Diversidad e inclusión,benefit
+48,Top Employer,benefit
+49,Python,must
+49,Generative AI,must
+49,SQL,must
+49,NoSQL,must
+49,LangChain,must
+49,LlamaIndex,must
+49,Python,tech_stack
+49,LangChain,tech_stack
+49,LlamaIndex,tech_stack
+49,SQL,tech_stack
+49,NoSQL,tech_stack
+49,Trabajo híbrido o remoto,benefit
+49,Ambiente diverso e inclusivo,benefit
+49,Proyectos de alto impacto,benefit
+50,Inteligencia Artificial,must
+50,Aprendizaje automático,must
+50,Analítica de datos,must
+50,Automatización de procesos,must
+50,Diseño de estrategias de IA,must
+50,Asesoramiento técnico y normativo en IA,must
+50,Comunicación,must
+50,Liderazgo,must
+50,Gestión del cambio,must
+50,Experiencia en oficinas de innovación,nice
+50,Experiencia en laboratorios de inteligencia artificial,nice
+50,Comunicación,soft_skill
+50,Liderazgo,soft_skill
+50,Gestión del cambio,soft_skill
+50,Trabajo en equipo,soft_skill
+50,Capacitación,soft_skill
+50,Flexibilidad laboral,benefit
+50,Teletrabajo,benefit
+50,Vacaciones por puntos,benefit
+50,Seguro médico privado,benefit
+50,Seguro de vida,benefit
+50,Entrenador personal,benefit
+50,Programa de wellbeing,benefit
+50,Actividades en la naturaleza,benefit
+50,Campeonatos deportivos,benefit
+50,Suscripción a plataforma streaming (Netflix),benefit
+50,Bono de beneficios,benefit
+51,Python,must
+51,Docker,must
+51,Git,must
+51,GitHub,must
+51,GitLab,must
+51,Metodologías ágiles,must
+51,Liderazgo,must
+51,Comunicación,must
+51,Gestión de proyectos,must
+51,TensorRT,nice
+51,vLLM,nice
+51,Compresión de modelos,nice
+51,Optimización de inferencia,nice
+51,Evaluación de sistemas IA Generativa,nice
+51,RAG,nice
+51,IA Agente,nice
+51,Python,tech_stack
+51,Docker,tech_stack
+51,Git,tech_stack
+51,GitHub,tech_stack
+51,GitLab,tech_stack
+51,LLM,tech_stack
+51,RAG,tech_stack
+51,TensorRT,tech_stack
+51,vLLM,tech_stack
+51,Liderazgo,soft_skill
+51,Comunicación,soft_skill
+51,Trabajo en equipo,soft_skill
+51,Gestión del tiempo,soft_skill
+51,Atención al detalle,soft_skill
+51,Motivación,soft_skill
+51,Organización,soft_skill
+51,Español,language
+51,Inglés,language
+51,Plan de carrera y desarrollo profesional,benefit
+51,Modalidad de trabajo híbrida,benefit
+51,Salario competitivo,benefit
+51,Variable anual vinculado a la consecución de objetivos,benefit
+52,Python,must
+52,Docker,must
+52,Git,must
+52,GitHub,must
+52,GitLab,must
+52,Agile methodologies,must
+52,Deep learning,must
+52,Generative AI,must
+52,Retrieval Augmented Generation (RAG),must
+52,AI Agent development,must
+52,LLM fine-tuning,must
+52,LLM alignment,must
+52,Model pruning,must
+52,Model compression,must
+52,Cloud deployment,must
+52,TensorRT,nice
+52,vLLM,nice
+52,Evaluation of generative AI systems with live data,nice
+52,Python,tech_stack
+52,Docker,tech_stack
+52,Git,tech_stack
+52,GitHub,tech_stack
+52,GitLab,tech_stack
+52,TensorRT,tech_stack
+52,vLLM,tech_stack
+52,Leadership,soft_skill
+52,Communication,soft_skill
+52,Interpersonal,soft_skill
+52,Organizational,soft_skill
+52,Time management,soft_skill
+52,Attention to detail,soft_skill
+52,Collaboration,soft_skill
+52,Spanish,language
+52,English,language
+52,Plan de carrera y desarrollo profesional,benefit
+52,Modalidad de trabajo híbrida,benefit
+52,Salario competitivo,benefit
+52,Variable anual vinculado a la consecución de objetivos,benefit
+53,Java,must
+53,Python,must
+53,Hadoop,must
+53,Cloudera,must
+53,Kubernetes,must
+53,Ansible,must
+53,Linux administration,nice
+53,Open Source participation,nice
+53,Docker,nice
+53,Azure,nice
+53,AWS,nice
+53,Apache,nice
+53,Apache Tomcat,nice
+53,MySQL,nice
+53,Eclipse,nice
+53,Gitlab,nice
+53,Jenkins,nice
+53,Ant,nice
+53,Maven,nice
+53,Nexus,nice
+53,Agile methodologies,nice
+53,English,nice
+53,Java,tech_stack
+53,Python,tech_stack
+53,Hadoop,tech_stack
+53,Cloudera Data Platform,tech_stack
+53,Kubernetes,tech_stack
+53,Docker,tech_stack
+53,Ansible,tech_stack
+53,Terraform,tech_stack
+53,NiFi,tech_stack
+53,Flink,tech_stack
+53,Spark,tech_stack
+53,PyTorch,tech_stack
+53,TensorFlow,tech_stack
+53,MySQL,tech_stack
+53,Apache,tech_stack
+53,Apache Tomcat,tech_stack
+53,Azure,tech_stack
+53,AWS,tech_stack
+53,Linux,tech_stack
+53,Gitlab,tech_stack
+53,Jenkins,tech_stack
+53,Maven,tech_stack
+53,Ant,tech_stack
+53,Nexus,tech_stack
+53,Problem solving,soft_skill
+53,Business understanding,soft_skill
+53,Technical analysis,soft_skill
+53,Team collaboration,soft_skill
+53,Agile mindset,soft_skill
+53,Communication,soft_skill
+53,English,language
+53,Certification and training program,benefit
+53,Masterclasses,benefit
+53,Conference and event attendance,benefit
+53,Flexible working hours,benefit
+53,Remote or hybrid work option,benefit
+53,Intensive Fridays,benefit
+53,Summer intensive schedule,benefit
+53,Flexible lunch break,benefit
+53,Performance and salary reviews every 6 months,benefit
+53,Medical insurance after first year,benefit
+53,23 vacation days,benefit
+53,Inclusion support for persons with disability,benefit
+54,Python,must
+54,AWS,must
+54,GCP,must
+54,Azure,must
+54,Docker,nice
+54,Kubernetes,nice
+54,VoIP,nice
+54,Python,tech_stack
+54,AWS,tech_stack
+54,GCP,tech_stack
+54,Azure,tech_stack
+54,Docker,tech_stack
+54,Kubernetes,tech_stack
+54,VoIP,tech_stack
+54,PBX,tech_stack
+54,SIP,tech_stack
+54,RPC,tech_stack
+55,Python,must
+55,Microservices,must
+55,LangChain,must
+55,LangGraph,must
+55,AWS,nice
+55,Python,tech_stack
+55,LangChain,tech_stack
+55,LangGraph,tech_stack
+55,AWS,tech_stack
+55,English,language
+55,Remote work (100% remote),benefit
+55,Indefinite contract,benefit
+55,"Salary 38,000-45,000 EUR per year",benefit
+55,Full-time schedule,benefit
+55,Collaborative work environment,benefit
+55,Continuous training,benefit
+55,Employee benefits club,benefit
+55,23 vacation days,benefit
+56,Python,must
+56,SQL,must
+56,NLP,must
+56,English,must
+56,Computer Vision,must
+56,TensorFlow,nice
+56,PyTorch,nice
+56,Big Data,nice
+56,RESTful APIs,nice
+56,Docker,nice
+56,CI/CD,nice
+56,Git,nice
+56,Azure,nice
+56,Azure Machine Learning,nice
+56,TensorFlow Lite,nice
+56,gRPC,nice
+56,Unit Testing,nice
+56,Object-Oriented Programming,nice
+56,Recommendation Systems,nice
+56,Unsupervised Learning,nice
+56,Ranking Systems,nice
+56,Python,tech_stack
+56,SQL,tech_stack
+56,TensorFlow,tech_stack
+56,PyTorch,tech_stack
+56,Azure,tech_stack
+56,Docker,tech_stack
+56,Git,tech_stack
+56,CI/CD,tech_stack
+56,gRPC,tech_stack
+56,TensorFlow Lite,tech_stack
+56,RESTful APIs,tech_stack
+56,Agile,soft_skill
+56,Teamwork,soft_skill
+56,Project Ownership,soft_skill
+56,Communication,soft_skill
+56,English,language
+56,Flexible schedule,benefit
+56,Remote work (optional),benefit
+56,35 hours per week,benefit
+56,Medical and dental insurance,benefit
+56,Training and equipment budget,benefit
+56,Microsoft certifications,benefit
+56,English lessons,benefit
+56,Birthday day off,benefit
+56,Monthly utility bonus,benefit
+56,Gym discount,benefit
+56,Team building events,benefit
+56,"Additional perks (events, welcome pack, baby basket, Christmas basket, discount portal)",benefit
+57,Python,must
+57,Azure,must
+57,AWS,must
+57,Git,must
+57,SQL,must
+57,Elasticsearch,must
+57,MongoDB,must
+57,Redis,must
+57,TensorFlow,must
+57,PyTorch,must
+57,Hugging Face,must
+57,NLP,must
+57,Computer Vision,must
+57,CNN,must
+57,RNN,must
+57,Transformers,must
+57,LLMs,must
+57,Generative AI,must
+57,Statistics,must
+57,Data Mining,must
+57,Machine Learning,must
+57,Deep Learning,must
+57,Spanish,must
+57,English,must
+57,Docker,nice
+57,Kubernetes,nice
+57,Software development lifecycle,nice
+57,Industrial generative AI,nice
+57,Search engine development,nice
+57,Anomaly detection,nice
+57,SHAP,nice
+57,Lime,nice
+57,Anchors,nice
+57,Python,tech_stack
+57,Azure,tech_stack
+57,AWS,tech_stack
+57,Git,tech_stack
+57,SQL,tech_stack
+57,Elasticsearch,tech_stack
+57,MongoDB,tech_stack
+57,Redis,tech_stack
+57,TensorFlow,tech_stack
+57,PyTorch,tech_stack
+57,Hugging Face,tech_stack
+57,Docker,tech_stack
+57,Kubernetes,tech_stack
+57,SHAP,tech_stack
+57,Lime,tech_stack
+57,Anchors,tech_stack
+57,Interpersonal communication,soft_skill
+57,Customer orientation,soft_skill
+57,Goal achievement,soft_skill
+57,Teamwork,soft_skill
+57,Precision,soft_skill
+57,Stress tolerance,soft_skill
+57,Spanish,language
+57,English,language
+59,Python,must
+59,C++,must
+59,Rust,must
+59,Jupyter Notebooks,must
+59,TensorFlow,must
+59,PyTorch,must
+59,Keras,must
+59,scikit-learn,must
+59,MITRE,must
+59,NIST,must
+59,CACAO,must
+59,Máster en ciberseguridad industrial,nice
+59,Doctorado,nice
+59,Publicaciones científicas,nice
+59,Técnicas de IA predictiva,nice
+59,Técnicas de IA generativa,nice
+59,Python,tech_stack
+59,C++,tech_stack
+59,Rust,tech_stack
+59,Jupyter Notebooks,tech_stack
+59,TensorFlow,tech_stack
+59,PyTorch,tech_stack
+59,Keras,tech_stack
+59,scikit-learn,tech_stack
+59,MITRE,tech_stack
+59,NIST,tech_stack
+59,CACAO,tech_stack
+59,Creatividad,soft_skill
+59,Proactividad,soft_skill
+59,Responsabilidad,soft_skill
+59,Meticulosidad,soft_skill
+59,Resolución,soft_skill
+59,Trabajo en equipo,soft_skill
+59,Habilidades interpersonales,soft_skill
+59,Capacidad de interlocución con clientes,soft_skill
+59,Inglés,language
+59,Castellano,language
+59,Medidas de conciliación vida personal y profesional,benefit
+59,Ambiente multicultural,benefit
+59,Desarrollo profesional,benefit
+60,Liderazgo de equipos de análisis de datos/IA,must
+60,"Definición de metodologías, gobernanza y estándares de servicio",must
+60,Social Listening y analítica de RRSS,must
+60,Conocimiento de Salesforce Marketing Cloud y ecosistema CRM,must
+60,Administración de bases de datos SQL y NoSQL,must
+60,Diseño de modelos de datos y aseguramiento de calidad de datos,must
+60,Desarrollo e integración de APIs y conectores de redes sociales,must
+60,Implementación de soluciones de IA end-to-end,must
+60,Seguridad y manejo de datos sensibles,must
+60,Programación en Python,nice
+60,Programación en R,nice
+60,Construcción de pipelines (APIs/ETL/ELT),nice
+60,Orquestación con Airflow,nice
+60,Orquestación con Prefect,nice
+60,Versionado con Git,nice
+60,Soluciones en la nube AWS,nice
+60,Soluciones en la nube GCP,nice
+60,Soluciones en la nube Azure,nice
+60,Visualización con Tableau,nice
+60,Visualización con Power BI,nice
+60,Visualización con D3.js,nice
+60,Modelado causal,nice
+60,Diseño de experimentos y evaluación de impacto,nice
+60,Python,tech_stack
+60,R,tech_stack
+60,SQL,tech_stack
+60,NoSQL,tech_stack
+60,Salesforce Marketing Cloud,tech_stack
+60,AWS,tech_stack
+60,GCP,tech_stack
+60,Azure,tech_stack
+60,Airflow,tech_stack
+60,Prefect,tech_stack
+60,Git,tech_stack
+60,Tableau,tech_stack
+60,Power BI,tech_stack
+60,D3.js,tech_stack
+60,APIs,tech_stack
+60,ETL,tech_stack
+60,ELT,tech_stack
+60,Data Lake,tech_stack
+60,Data Warehouse,tech_stack
+60,Storytelling ejecutivo,soft_skill
+60,Comunicación clara,soft_skill
+60,Gestión de talento,soft_skill
+60,Mentoring,soft_skill
+60,Hiring y onboarding,soft_skill
+60,Evaluación de desempeño,soft_skill
+60,Trabajo en equipos multidisciplinarios,soft_skill
+60,Orientación a resultados,soft_skill
+60,Análisis avanzado,soft_skill
+60,Gestión de proyectos complejos,soft_skill
+61,Microsoft 365,must
+61,Office 365,must
+61,Copilot M365,must
+61,MS Power Platform,must
+61,Copilot Studio,must
+61,Change Management,must
+61,Microsoft 365,tech_stack
+61,Office 365,tech_stack
+61,Copilot M365,tech_stack
+61,MS Power Platform,tech_stack
+61,Copilot Studio,tech_stack
+61,Buena comunicación,soft_skill
+62,Power Automate,must
+62,Power Apps,must
+62,AI Builder,must
+62,Copilot Studio,must
+62,Dataverse,must
+62,Azure AI,must
+62,SharePoint,must
+62,SQL Server,must
+62,SAP,must
+62,Azure DevOps,must
+62,UiPath,nice
+62,Power Automate,tech_stack
+62,Power Apps,tech_stack
+62,AI Builder,tech_stack
+62,Copilot Studio,tech_stack
+62,Dataverse,tech_stack
+62,Azure AI,tech_stack
+62,SharePoint,tech_stack
+62,SQL Server,tech_stack
+62,SAP,tech_stack
+62,Azure DevOps,tech_stack
+62,colaboración,soft_skill
+62,comunicación,soft_skill
+62,aprendizaje continuo,soft_skill
+62,trabajo en equipo,soft_skill
+62,mentoría,soft_skill
+62,Formación continua y certificaciones oficiales,benefit
+62,Flexibilidad y trabajo por objetivos,benefit
+62,Entorno colaborativo,benefit
+62,Proyectos de impacto,benefit
+63,Integración de plataformas CCTV,must
+63,Analíticas avanzadas de video,must
+63,"Redes IP (VLAN, gateways, NAT, troubleshooting)",must
+63,Gestión de tickets y SLA,must
+63,Comunicación,must
+63,Organización,must
+63,Atención al detalle,must
+63,"Certificaciones Axis, Hikvision, Avigilon, Milestone, CCNA",nice
+63,"Scripting (PowerShell, Python)",nice
+63,"Familiaridad con ITIL y marcos de seguridad (ISO 27001, NIS2)",nice
+63,Experiencia en entornos de alta demanda y despliegues multi‑site,nice
+63,Milestone,tech_stack
+63,Hikvision,tech_stack
+63,Avigilon,tech_stack
+63,Axis,tech_stack
+63,Python,tech_stack
+63,PowerShell,tech_stack
+63,IP,tech_stack
+63,VLAN,tech_stack
+63,NAT,tech_stack
+63,Comunicación,soft_skill
+63,Organización,soft_skill
+63,Atención al detalle,soft_skill
+63,Liderazgo,soft_skill
+63,Planificación,soft_skill
+63,Priorización,soft_skill
+63,Español,language
+63,Inglés,language
+63,Entorno innovador y dinámico,benefit
+63,Formación y apoyo en certificaciones técnicas,benefit
+63,"Proyecto con impacto real en clientes industriales, logísticos y de retail",benefit
+63,Oportunidad de liderar estándares y escalar la operación,benefit
+64,pasión por la tecnología y los videojuegos,must
+64,proactivo,must
+64,comunicativo,must
+64,orientado a resultados,must
+64,disponibilidad en fechas y horarios,must
+64,proactivo,soft_skill
+64,comunicativo,soft_skill
+64,orientado a resultados,soft_skill
+64,Formación completa en producto y técnicas de venta,benefit
+64,Posibilidad de seguir en campañas tecnológicas de primer nivel,benefit
+64,"Ambiente dinámico, innovador y con contacto directo con público gamer y tech",benefit
+65,pasión por tecnología y videojuegos,must
+65,proactivo/a,must
+65,comunicativo/a,must
+65,orientado/a a resultados,must
+65,proactivo,soft_skill
+65,comunicativo,soft_skill
+65,orientado a resultados,soft_skill
+65,Formación completa en producto y técnicas de venta,benefit
+65,Posibilidad de seguir en campañas tecnológicas de primer nivel,benefit
+65,Ambiente dinámico e innovador con contacto directo con público gamer y tech,benefit
+65,Salario 9€/hora bruto + incentivos por objetivos,benefit
+66,Proactivo/a,soft_skill
+66,Comunicativo/a,soft_skill
+66,Orientado/a a resultados,soft_skill
+66,Trabajo con público,soft_skill
+66,Formación completa en producto y técnicas de venta,benefit
+66,Posibilidad de seguir en campañas tecnológicas de primer nivel,benefit
+66,Ambiente dinámico e innovador,benefit
+66,Salario 9€/hora + incentivos,benefit
+67,proactividad,must
+67,comunicación,must
+67,orientación a resultados,must
+67,ventas,must
+67,Realidad Virtual,tech_stack
+67,proactividad,soft_skill
+67,comunicación,soft_skill
+67,orientación a resultados,soft_skill
+67,Formación remunerada,benefit
+67,Formación en producto y técnicas de venta,benefit
+67,Posibilidad de seguir en campañas,benefit
+67,Ambiente dinámico e innovador,benefit
+68,Comunicación,soft_skill
+68,Proactividad,soft_skill
+68,Orientación a resultados,soft_skill
+68,Pasión por la tecnología,soft_skill
+68,Pasión por los videojuegos,soft_skill
+68,Disponibilidad horaria,soft_skill
+68,Formación completa en producto y técnicas de venta,benefit
+68,Oportunidad de continuar en campañas tecnológicas de primer nivel,benefit
+68,"Ambiente dinámico, innovador y lleno de energía gamer",benefit
+69,proactiva,soft_skill
+69,comunicativa,soft_skill
+69,orientada a resultados,soft_skill
+69,pasión por la tecnología y los videojuegos,soft_skill
+69,Formación completa en producto y técnicas de venta,benefit
+69,Oportunidad de continuar en campañas tecnológicas de primer nivel,benefit
+69,"Ambiente dinámico, innovador y lleno de energía gamer",benefit
+70,Comunicación,soft_skill
+70,Proactividad,soft_skill
+70,Orientación a resultados,soft_skill
+70,Formación completa en producto y técnicas de venta,benefit
+70,Oportunidad de continuar en campañas tecnológicas de primer nivel,benefit
+70,"Ambiente dinámico, innovador y lleno de energía gamer",benefit
+71,pasión por tecnología,must
+71,pasión por videojuegos,must
+71,proactiva,must
+71,comunicativa,must
+71,orientada a resultados,must
+71,disponibilidad en fechas y horarios,must
+71,proactividad,soft_skill
+71,comunicación,soft_skill
+71,orientación a resultados,soft_skill
+71,trato con el público,soft_skill
+71,Formación completa en producto y técnicas de venta,benefit
+71,Posibilidad de seguir en campañas tecnológicas de primer nivel,benefit
+71,Ambiente dinámico e innovador,benefit
+72,Cloud,must
+72,Data,must
+72,Artificial Intelligence,must
+72,Machine Learning,must
+72,DevOps,must
+72,CI/CD,must
+72,ETL,must
+72,Cloud Governance,must
+72,Data Governance,must
+72,Comunicación,soft_skill
+72,Presentación,soft_skill
+72,Orientación al cliente,soft_skill
+72,Organización,soft_skill
+72,Creatividad,soft_skill
+72,Compromiso,soft_skill
+72,Inglés,language
+72,Flexibilidad horaria,benefit
+72,Trabajo remoto,benefit
+72,"Plan retributivo flexible (tarjeta de comida, seguro médico privado, tickets guardería)",benefit
+72,Seguro de vida y accidentes,benefit
+72,Programa de bienestar físico y emocional,benefit
+72,Formación y desarrollo profesional,benefit
+72,"Igualdad de oportunidades, diversidad e inclusión",benefit
+73,docencia,must
+73,tutoría en teleformación,must
+73,conocimientos en IA generativa,must
+73,ChatGPT,tech_stack
+73,Inteligencia Artificial Generativa,tech_stack
+73,comunicación,soft_skill
+73,trabajo en equipo,soft_skill
+73,organización,soft_skill
+73,Spanish,language
+74,Python,must
+74,AWS,must
+74,GCP,must
+74,Azure,must
+74,Docker,nice
+74,Kubernetes,nice
+74,VoIP,nice
+74,PBX,nice
+74,SIP,nice
+74,RPC,nice
+74,Python,tech_stack
+74,AWS,tech_stack
+74,GCP,tech_stack
+74,Azure,tech_stack
+74,Docker,tech_stack
+74,Kubernetes,tech_stack
+74,VoIP,tech_stack
+74,PBX,tech_stack
+74,SIP,tech_stack
+74,RPC,tech_stack
+74,Comunicación,soft_skill
+74,Liderazgo,soft_skill
+74,Trabajo en equipo,soft_skill
+74,Feedback,soft_skill
+74,Aprendizaje continuo,soft_skill
+74,Salario competitivo,benefit
+74,Trabajo flexible,benefit
+74,Cultura de feedback y aprendizaje continuo,benefit
+74,Contrato indefinido,benefit
+75,HTML5,must
+75,JavaScript,must
+75,CSS,must
+75,React,must
+75,C#,must
+75,APIs RESTful,nice
+75,Microsoft Azure,nice
+75,Git,nice
+75,TFS,nice
+75,SQL Server,nice
+75,MongoDB,nice
+75,Python,nice
+75,Java,nice
+75,HTML5,tech_stack
+75,JavaScript,tech_stack
+75,CSS,tech_stack
+75,React,tech_stack
+75,C#,tech_stack
+75,Microsoft Azure,tech_stack
+75,Git,tech_stack
+75,TFS,tech_stack
+75,SQL Server,tech_stack
+75,MongoDB,tech_stack
+75,Python,tech_stack
+75,Java,tech_stack
+75,English,language
+75,Spanish,language
+75,Catalan,language
+75,Contrato indefinido a jornada completa,benefit
+75,Horario y condiciones laborales flexibles,benefit
+75,Desarrollo de habilidades técnicas dentro de un entorno innovador y creativo,benefit
+75,Buen ambiente de trabajo,benefit
+75,Formación continua,benefit
+76,Interpretación de planos técnicos,must
+76,Uso de equipos de metrología,must
+76,Cambio y calibrado de herramientas,must
+76,Introducción de correctores a máquinas CNC,must
+76,Programación CNC,nice
+76,CNC,tech_stack
+76,Resolutiva,soft_skill
+76,Motivada,soft_skill
+76,Compromiso,soft_skill
+76,Organización,soft_skill
+77,Diseño de arquitectura de software,must
+77,Integración de IA,must
+77,Desarrollo de pipelines RAG,must
+77,Uso de LangChain,must
+77,Uso de CrewAI,must
+77,Uso de AutoGen,must
+77,Integración con APIs,must
+77,Gestión de servidores MCP,must
+77,LLM,tech_stack
+77,LangChain,tech_stack
+77,CrewAI,tech_stack
+77,AutoGen,tech_stack
+77,APIs,tech_stack
+77,Liderazgo,soft_skill
+77,Coordinación de equipos,soft_skill
+77,Aprendizaje continuo,soft_skill
+78,HL7,must
+78,FHIR,must
+78,eIDAS 2.0,must
+78,OIDC,must
+78,HL7,tech_stack
+78,FHIR,tech_stack
+78,eIDAS 2.0,tech_stack
+78,OIDC,tech_stack
+78,coordination,soft_skill
+78,collaboration,soft_skill
+78,communication,soft_skill
+78,documentation,soft_skill
+79,Python,must
+79,SQL,must
+79,Machine Learning,must
+79,Scikit-learn,must
+79,TensorFlow,must
+79,Keras,must
+79,PyTorch,must
+79,Autogen,must
+79,CrewAi,must
+79,GCP,must
+79,AWS,must
+79,Azure,must
+79,MLOps,must
+79,CI/CD,must
+79,Containers,must
+79,Kubernetes,must
+79,Git,must
+79,R,nice
+79,Scala,nice
+79,Java,nice
+79,Python,tech_stack
+79,SQL,tech_stack
+79,Scikit-learn,tech_stack
+79,TensorFlow,tech_stack
+79,Keras,tech_stack
+79,PyTorch,tech_stack
+79,Autogen,tech_stack
+79,CrewAi,tech_stack
+79,GCP,tech_stack
+79,AWS,tech_stack
+79,Azure,tech_stack
+79,Kubernetes,tech_stack
+79,Git,tech_stack
+79,CI/CD,tech_stack
+79,Containers,tech_stack
+79,Communication,soft_skill
+79,Collaboration,soft_skill
+79,Knowledge sharing,soft_skill
+79,Ability to simplify complex concepts,soft_skill
+79,Variable pay 6%,benefit
+79,Profit sharing,benefit
+79,Holiday bonus 1%,benefit
+79,Vehicle purchase discounts,benefit
+79,Gift vouchers (200-400€),benefit
+79,Remote work (2 days office),benefit
+79,IT equipment + internet allowance,benefit
+79,Training plan,benefit
+79,Career development plan,benefit
+79,Internal mobility every 3 years,benefit
+79,Meal tickets (10€),benefit
+79,10 RTT days,benefit
+80,n8n,must
+80,Make,must
+80,Integromat,must
+80,Zapier,must
+80,Python,must
+80,REST APIs,must
+80,AI voice APIs,must
+80,AI text APIs,must
+80,Twilio,must
+80,Asterisk,must
+80,MySQL,nice
+80,Airtable,nice
+80,PostgreSQL,nice
+80,Node.js,nice
+80,JavaScript,nice
+80,Startup experience,nice
+80,SaaS,nice
+80,CRM integration,nice
+80,Bot development,nice
+80,Python,tech_stack
+80,n8n,tech_stack
+80,Make,tech_stack
+80,Integromat,tech_stack
+80,Zapier,tech_stack
+80,OpenAI API,tech_stack
+80,ElevenLabs,tech_stack
+80,Whisper,tech_stack
+80,Twilio,tech_stack
+80,Asterisk,tech_stack
+80,MySQL,tech_stack
+80,Airtable,tech_stack
+80,PostgreSQL,tech_stack
+80,Node.js,tech_stack
+80,JavaScript,tech_stack
+80,Problem‑solving,soft_skill
+80,Curiosity,soft_skill
+80,Innovation mindset,soft_skill
+80,Business process understanding,soft_skill
+80,Collaboration,soft_skill
+80,Flexibility,soft_skill
+80,Flexibilidad horaria,benefit
+80,Entorno creativo,benefit
+80,Participación en desarrollo de productos innovadores,benefit
+80,Oportunidad de crecimiento a largo plazo,benefit
+81,n8n,must
+81,Make,must
+81,Integromat,must
+81,Zapier,must
+81,Python,must
+81,REST APIs,must
+81,API integration,must
+81,Voice AI,must
+81,ElevenLabs,must
+81,OpenAI API,must
+81,Whisper,must
+81,Twilio,must
+81,Asterisk,must
+81,MySQL,nice
+81,Airtable,nice
+81,PostgreSQL,nice
+81,Node.js,nice
+81,JavaScript,nice
+81,CRM integration,nice
+81,Bots,nice
+81,Startup experience,nice
+81,SaaS experience,nice
+81,Python,tech_stack
+81,n8n,tech_stack
+81,Make,tech_stack
+81,Integromat,tech_stack
+81,Zapier,tech_stack
+81,OpenAI API,tech_stack
+81,ElevenLabs,tech_stack
+81,Whisper,tech_stack
+81,Twilio,tech_stack
+81,Asterisk,tech_stack
+81,MySQL,tech_stack
+81,Airtable,tech_stack
+81,PostgreSQL,tech_stack
+81,Node.js,tech_stack
+81,JavaScript,tech_stack
+81,Problem‑solving,soft_skill
+81,Curiosity,soft_skill
+81,Innovation mindset,soft_skill
+81,Business process understanding,soft_skill
+81,Collaboration,soft_skill
+81,Creativity,soft_skill
+81,Flexible hours,benefit
+81,Creative environment,benefit
+81,Long‑term collaboration,benefit
+81,Growth opportunities,benefit
+82,Python,must
+82,REST APIs,must
+82,n8n,must
+82,Make,must
+82,Integromat,must
+82,Zapier,must
+82,ElevenLabs,must
+82,OpenAI,must
+82,Whisper,must
+82,Twilio,must
+82,Asterisk,must
+82,MySQL,nice
+82,PostgreSQL,nice
+82,Airtable,nice
+82,Node.js,nice
+82,JavaScript,nice
+82,CRM integration,nice
+82,bot development,nice
+82,startup experience,nice
+82,SaaS,nice
+82,Python,tech_stack
+82,n8n,tech_stack
+82,Make,tech_stack
+82,Integromat,tech_stack
+82,Zapier,tech_stack
+82,ElevenLabs,tech_stack
+82,OpenAI,tech_stack
+82,Whisper,tech_stack
+82,Twilio,tech_stack
+82,Asterisk,tech_stack
+82,MySQL,tech_stack
+82,PostgreSQL,tech_stack
+82,Airtable,tech_stack
+82,Node.js,tech_stack
+82,JavaScript,tech_stack
+82,problem‑solving,soft_skill
+82,curiosity,soft_skill
+82,innovation,soft_skill
+82,collaboration,soft_skill
+82,flexibility,soft_skill
+82,creativity,soft_skill
+82,flexibilidad horaria,benefit
+82,entorno creativo,benefit
+82,participación en desarrollo de productos innovadores,benefit
+82,posibilidad de colaboración a largo plazo,benefit
+82,crecimiento dentro del equipo,benefit
+83,Python,must
+83,APIs REST,must
+83,Automatización de procesos,must
+83,Integración de CRM,must
+83,Twilio,must
+83,Asterisk,must
+83,ElevenLabs,must
+83,OpenAI,must
+83,Whisper,must
+83,Zapier,must
+83,Make (Integromat),must
+83,Conexión de APIs,must
+83,MySQL,nice
+83,PostgreSQL,nice
+83,Airtable,nice
+83,Node.js,nice
+83,JavaScript,nice
+83,Experiencia en startups,nice
+83,Experiencia en SaaS,nice
+83,Creación de bots de atención automática,nice
+83,Python,tech_stack
+83,APIs REST,tech_stack
+83,Twilio,tech_stack
+83,Asterisk,tech_stack
+83,ElevenLabs,tech_stack
+83,OpenAI,tech_stack
+83,Whisper,tech_stack
+83,Zapier,tech_stack
+83,Make (Integromat),tech_stack
+83,MySQL,tech_stack
+83,PostgreSQL,tech_stack
+83,Airtable,tech_stack
+83,Node.js,tech_stack
+83,JavaScript,tech_stack
+83,Resolución de problemas,soft_skill
+83,Curiosidad por la IA,soft_skill
+83,Innovación,soft_skill
+83,Entendimiento de procesos de negocio,soft_skill
+83,Trabajo en equipo,soft_skill
+83,Español,language
+83,Flexibilidad horaria,benefit
+83,Entorno creativo,benefit
+83,Participación directa en desarrollo de productos innovadores,benefit
+83,Oportunidad de crecimiento dentro del equipo,benefit
+83,Colaboración a largo plazo,benefit
+84,Python,must
+84,n8n,must
+84,Make,must
+84,Integromat,must
+84,Zapier,must
+84,API integration,must
+84,ElevenLabs,must
+84,OpenAI API,must
+84,Whisper,must
+84,Twilio,must
+84,Asterisk,must
+84,MySQL,nice
+84,Airtable,nice
+84,PostgreSQL,nice
+84,Node.js,nice
+84,JavaScript,nice
+84,Startup experience,nice
+84,CRM integration,nice
+84,Bot development,nice
+84,Python,tech_stack
+84,n8n,tech_stack
+84,Make,tech_stack
+84,Integromat,tech_stack
+84,Zapier,tech_stack
+84,ElevenLabs,tech_stack
+84,OpenAI API,tech_stack
+84,Whisper,tech_stack
+84,Twilio,tech_stack
+84,Asterisk,tech_stack
+84,MySQL,tech_stack
+84,Airtable,tech_stack
+84,PostgreSQL,tech_stack
+84,Node.js,tech_stack
+84,JavaScript,tech_stack
+84,Problem‑solving,soft_skill
+84,Curiosity about AI,soft_skill
+84,Innovative mindset,soft_skill
+84,Business process understanding,soft_skill
+84,Collaboration,soft_skill
+84,Flexible hours,benefit
+84,Creative environment,benefit
+84,Long‑term collaboration opportunities,benefit
+84,Growth within the team,benefit
+85,n8n,must
+85,Make,must
+85,Integromat,must
+85,Zapier,must
+85,Python,must
+85,REST APIs,must
+85,ElevenLabs,must
+85,OpenAI API,must
+85,Whisper,must
+85,Twilio,must
+85,Asterisk,must
+85,MySQL,nice
+85,PostgreSQL,nice
+85,Airtable,nice
+85,Node.js,nice
+85,JavaScript,nice
+85,SaaS startup experience,nice
+85,CRM integration,nice
+85,Bot development,nice
+85,Python,tech_stack
+85,n8n,tech_stack
+85,Make,tech_stack
+85,Integromat,tech_stack
+85,Zapier,tech_stack
+85,OpenAI API,tech_stack
+85,ElevenLabs,tech_stack
+85,Whisper,tech_stack
+85,Twilio,tech_stack
+85,Asterisk,tech_stack
+85,MySQL,tech_stack
+85,PostgreSQL,tech_stack
+85,Airtable,tech_stack
+85,Node.js,tech_stack
+85,JavaScript,tech_stack
+85,problem‑solving,soft_skill
+85,curiosity,soft_skill
+85,innovation,soft_skill
+85,business process understanding,soft_skill
+85,teamwork,soft_skill
+85,flexibilidad horaria,benefit
+85,entorno creativo,benefit
+85,crecimiento profesional,benefit
+85,participación en proyectos de IA aplicada,benefit
+86,Python,must
+86,n8n,must
+86,API development,must
+86,Automation,must
+86,Voice AI integration,must
+86,Twilio,must
+86,Asterisk,must
+86,MySQL,nice
+86,PostgreSQL,nice
+86,Airtable,nice
+86,Node.js,nice
+86,JavaScript,nice
+86,CRM integration,nice
+86,Startup experience,nice
+86,SaaS product development,nice
+86,Python,tech_stack
+86,n8n,tech_stack
+86,Make,tech_stack
+86,Integromat,tech_stack
+86,Zapier,tech_stack
+86,ElevenLabs,tech_stack
+86,OpenAI,tech_stack
+86,Whisper,tech_stack
+86,Twilio,tech_stack
+86,Asterisk,tech_stack
+86,MySQL,tech_stack
+86,PostgreSQL,tech_stack
+86,Airtable,tech_stack
+86,Node.js,tech_stack
+86,JavaScript,tech_stack
+86,Problem solving,soft_skill
+86,Curiosity,soft_skill
+86,Innovative mindset,soft_skill
+86,Collaboration,soft_skill
+86,Business process understanding,soft_skill
+86,Spanish,language
+86,Flexible schedule,benefit
+86,Creative work environment,benefit
+86,Growth opportunities,benefit
+86,Direct involvement in product development,benefit
+87,n8n,must
+87,Make,must
+87,Integromat,must
+87,Zapier,must
+87,Python,must
+87,REST APIs,must
+87,ElevenLabs,must
+87,OpenAI,must
+87,Whisper,must
+87,Twilio,must
+87,Asterisk,must
+87,MySQL,nice
+87,Airtable,nice
+87,PostgreSQL,nice
+87,Node.js,nice
+87,JavaScript,nice
+87,CRM integration,nice
+87,Bots,nice
+87,Startup experience,nice
+87,n8n,tech_stack
+87,Make,tech_stack
+87,Integromat,tech_stack
+87,Zapier,tech_stack
+87,Python,tech_stack
+87,OpenAI API,tech_stack
+87,ElevenLabs,tech_stack
+87,Whisper,tech_stack
+87,Twilio,tech_stack
+87,Asterisk,tech_stack
+87,MySQL,tech_stack
+87,Airtable,tech_stack
+87,PostgreSQL,tech_stack
+87,Node.js,tech_stack
+87,JavaScript,tech_stack
+87,Problem solving,soft_skill
+87,Curiosity,soft_skill
+87,Innovation,soft_skill
+87,Collaboration,soft_skill
+87,Creativity,soft_skill
+87,Flexible schedule,benefit
+87,Creative environment,benefit
+87,Participation in real AI projects,benefit
+87,Long-term collaboration,benefit
+87,Growth opportunities,benefit
+88,Python,must
+88,n8n,must
+88,Make,must
+88,Integromat,must
+88,Zapier,must
+88,REST APIs,must
+88,API integration,must
+88,ElevenLabs,must
+88,OpenAI API,must
+88,Whisper,must
+88,Twilio,must
+88,Asterisk,must
+88,MySQL,nice
+88,Airtable,nice
+88,PostgreSQL,nice
+88,Node.js,nice
+88,JavaScript,nice
+88,CRM integration,nice
+88,Bot development,nice
+88,Startup experience,nice
+88,SaaS experience,nice
+88,Python,tech_stack
+88,n8n,tech_stack
+88,Make,tech_stack
+88,Integromat,tech_stack
+88,Zapier,tech_stack
+88,OpenAI API,tech_stack
+88,ElevenLabs,tech_stack
+88,Whisper,tech_stack
+88,Twilio,tech_stack
+88,Asterisk,tech_stack
+88,MySQL,tech_stack
+88,Airtable,tech_stack
+88,PostgreSQL,tech_stack
+88,Problem solving,soft_skill
+88,Curiosity,soft_skill
+88,Innovation mindset,soft_skill
+88,Collaboration,soft_skill
+88,Business process analysis,soft_skill
+88,Flexible schedule,benefit
+88,Creative environment,benefit
+88,Long-term collaboration,benefit
+88,Growth opportunities,benefit
+89,n8n,must
+89,Make (Integromat),must
+89,Zapier,must
+89,Python,must
+89,REST APIs,must
+89,OpenAI API,must
+89,ElevenLabs,must
+89,Twilio,must
+89,Asterisk,must
+89,MySQL,nice
+89,PostgreSQL,nice
+89,Airtable,nice
+89,Node.js,nice
+89,JavaScript,nice
+89,CRM integration,nice
+89,SaaS experience,nice
+89,Python,tech_stack
+89,n8n,tech_stack
+89,Make (Integromat),tech_stack
+89,Zapier,tech_stack
+89,OpenAI,tech_stack
+89,ElevenLabs,tech_stack
+89,Whisper,tech_stack
+89,Twilio,tech_stack
+89,Asterisk,tech_stack
+89,MySQL,tech_stack
+89,PostgreSQL,tech_stack
+89,Airtable,tech_stack
+89,Node.js,tech_stack
+89,JavaScript,tech_stack
+89,Problem solving,soft_skill
+89,Curiosity,soft_skill
+89,Innovative mindset,soft_skill
+89,Teamwork,soft_skill
+89,Business process analysis,soft_skill
+89,Flexible hours,benefit
+89,Creative environment,benefit
+89,Long‑term collaboration opportunities,benefit
+89,Career growth,benefit
+89,Participation in innovative AI projects,benefit
+90,Python,must
+90,REST APIs,must
+90,n8n,must
+90,Make,must
+90,Integromat,must
+90,Zapier,must
+90,ElevenLabs,must
+90,OpenAI,must
+90,Whisper,must
+90,Twilio,must
+90,Asterisk,must
+90,Automation flow design,must
+90,MySQL,nice
+90,Airtable,nice
+90,PostgreSQL,nice
+90,Node.js,nice
+90,JavaScript,nice
+90,CRM integration,nice
+90,Startup experience,nice
+90,Bot development,nice
+90,Python,tech_stack
+90,n8n,tech_stack
+90,Make,tech_stack
+90,Integromat,tech_stack
+90,Zapier,tech_stack
+90,OpenAI API,tech_stack
+90,ElevenLabs,tech_stack
+90,Whisper,tech_stack
+90,Twilio,tech_stack
+90,Asterisk,tech_stack
+90,MySQL,tech_stack
+90,Airtable,tech_stack
+90,PostgreSQL,tech_stack
+90,Node.js,tech_stack
+90,JavaScript,tech_stack
+90,Problem-solving,soft_skill
+90,Curiosity,soft_skill
+90,Innovation mindset,soft_skill
+90,Teamwork,soft_skill
+90,Flexible schedule,benefit
+90,Creative environment,benefit
+90,Growth opportunities,benefit
+90,Long-term collaboration,benefit
+91,Python,must
+91,n8n,must
+91,Make,must
+91,Integromat,must
+91,Zapier,must
+91,REST APIs,must
+91,OpenAI API,must
+91,ElevenLabs,must
+91,Whisper,must
+91,Twilio,must
+91,Asterisk,must
+91,MySQL,nice
+91,PostgreSQL,nice
+91,Airtable,nice
+91,Node.js,nice
+91,JavaScript,nice
+91,CRM integration,nice
+91,Bot development,nice
+91,SaaS experience,nice
+91,Python,tech_stack
+91,n8n,tech_stack
+91,Make,tech_stack
+91,Integromat,tech_stack
+91,Zapier,tech_stack
+91,OpenAI API,tech_stack
+91,ElevenLabs,tech_stack
+91,Whisper,tech_stack
+91,Twilio,tech_stack
+91,Asterisk,tech_stack
+91,MySQL,tech_stack
+91,PostgreSQL,tech_stack
+91,Airtable,tech_stack
+91,Node.js,tech_stack
+91,JavaScript,tech_stack
+91,Problem solving,soft_skill
+91,Curiosity,soft_skill
+91,Innovation,soft_skill
+91,Business process understanding,soft_skill
+91,Collaboration,soft_skill
+91,Flexibilidad horaria,benefit
+91,Entorno creativo,benefit
+91,Participación directa en desarrollo de productos innovadores,benefit
+91,Posibilidad de colaboración a largo plazo y crecimiento,benefit
+92,Python,must
+92,REST APIs,must
+92,Make,must
+92,Integromat,must
+92,Zapier,must
+92,ElevenLabs,must
+92,OpenAI,must
+92,Whisper,must
+92,Twilio,must
+92,Asterisk,must
+92,Business process analysis,must
+92,MySQL,nice
+92,Airtable,nice
+92,PostgreSQL,nice
+92,Node.js,nice
+92,JavaScript,nice
+92,Startup experience,nice
+92,SaaS projects,nice
+92,CRM integration,nice
+92,Bot development,nice
+92,Python,tech_stack
+92,Make,tech_stack
+92,Integromat,tech_stack
+92,Zapier,tech_stack
+92,ElevenLabs,tech_stack
+92,OpenAI,tech_stack
+92,Whisper,tech_stack
+92,Twilio,tech_stack
+92,Asterisk,tech_stack
+92,MySQL,tech_stack
+92,Airtable,tech_stack
+92,PostgreSQL,tech_stack
+92,Node.js,tech_stack
+92,JavaScript,tech_stack
+92,Problem‑solving,soft_skill
+92,Curiosity,soft_skill
+92,Innovation,soft_skill
+92,Business process understanding,soft_skill
+92,Teamwork,soft_skill
+92,Spanish,language
+92,Flexible hours,benefit
+92,Creative environment,benefit
+92,Long‑term collaboration,benefit
+92,Growth opportunities,benefit
+93,n8n,must
+93,Make,must
+93,Integromat,must
+93,Zapier,must
+93,Python,must
+93,REST APIs,must
+93,"AI services (ElevenLabs, OpenAI, Whisper)",must
+93,Twilio,must
+93,Asterisk,must
+93,MySQL,nice
+93,PostgreSQL,nice
+93,Airtable,nice
+93,Node.js,nice
+93,JavaScript,nice
+93,CRM integration,nice
+93,Chatbot development,nice
+93,Python,tech_stack
+93,n8n,tech_stack
+93,Make,tech_stack
+93,Integromat,tech_stack
+93,Zapier,tech_stack
+93,OpenAI API,tech_stack
+93,ElevenLabs,tech_stack
+93,Whisper,tech_stack
+93,Twilio,tech_stack
+93,Asterisk,tech_stack
+93,MySQL,tech_stack
+93,PostgreSQL,tech_stack
+93,Airtable,tech_stack
+93,Node.js,tech_stack
+93,JavaScript,tech_stack
+93,problem‑solving,soft_skill
+93,curiosity about AI,soft_skill
+93,innovation mindset,soft_skill
+93,business process understanding,soft_skill
+93,collaboration,soft_skill
+93,flexible hours,benefit
+93,creative work environment,benefit
+93,long‑term collaboration opportunities,benefit
+93,growth within the team,benefit
+94,Python,must
+94,REST APIs,must
+94,Make (Integromat),must
+94,Zapier,must
+94,ElevenLabs,must
+94,OpenAI,must
+94,Whisper,must
+94,Twilio,must
+94,Asterisk,must
+94,MySQL,nice
+94,Airtable,nice
+94,PostgreSQL,nice
+94,Node.js,nice
+94,JavaScript,nice
+94,CRM integration,nice
+94,Python,tech_stack
+94,Make,tech_stack
+94,Integromat,tech_stack
+94,Zapier,tech_stack
+94,ElevenLabs,tech_stack
+94,OpenAI,tech_stack
+94,Whisper,tech_stack
+94,Twilio,tech_stack
+94,Asterisk,tech_stack
+94,MySQL,tech_stack
+94,Airtable,tech_stack
+94,PostgreSQL,tech_stack
+94,Node.js,tech_stack
+94,Problem solving,soft_skill
+94,Curiosity,soft_skill
+94,Innovation,soft_skill
+94,Team collaboration,soft_skill
+94,Flexible schedule,benefit
+94,Creative environment,benefit
+94,Long-term collaboration opportunities,benefit
+94,Growth within the team,benefit
+94,Participation in innovative AI product development,benefit
+95,Python,must
+95,n8n,must
+95,Make (Integromat),must
+95,Zapier,must
+95,OpenAI API,must
+95,ElevenLabs,must
+95,Twilio,must
+95,REST APIs,must
+95,MySQL,nice
+95,PostgreSQL,nice
+95,Airtable,nice
+95,Node.js,nice
+95,JavaScript,nice
+95,CRM integration,nice
+95,SaaS experience,nice
+95,Python,tech_stack
+95,n8n,tech_stack
+95,Make,tech_stack
+95,Integromat,tech_stack
+95,Zapier,tech_stack
+95,OpenAI,tech_stack
+95,ElevenLabs,tech_stack
+95,Whisper,tech_stack
+95,Twilio,tech_stack
+95,Asterisk,tech_stack
+95,MySQL,tech_stack
+95,PostgreSQL,tech_stack
+95,Airtable,tech_stack
+95,Node.js,tech_stack
+95,JavaScript,tech_stack
+95,problem solving,soft_skill
+95,curiosity,soft_skill
+95,teamwork,soft_skill
+95,creativity,soft_skill
+95,flexible hours,benefit
+95,creative work environment,benefit
+95,long‑term collaboration opportunities,benefit
+95,growth within the team,benefit
+95,startup expansion,benefit
+96,Python,must
+96,REST APIs,must
+96,n8n,must
+96,Make,must
+96,Zapier,must
+96,AI voice APIs,must
+96,OpenAI API,must
+96,ElevenLabs,must
+96,Twilio,must
+96,Asterisk,must
+96,MySQL,nice
+96,PostgreSQL,nice
+96,Airtable,nice
+96,Node.js,nice
+96,JavaScript,nice
+96,CRM integration,nice
+96,startup experience,nice
+96,Python,tech_stack
+96,n8n,tech_stack
+96,Make (Integromat),tech_stack
+96,Zapier,tech_stack
+96,OpenAI,tech_stack
+96,ElevenLabs,tech_stack
+96,Whisper,tech_stack
+96,Twilio,tech_stack
+96,Asterisk,tech_stack
+96,MySQL,tech_stack
+96,PostgreSQL,tech_stack
+96,Airtable,tech_stack
+96,Node.js,tech_stack
+96,JavaScript,tech_stack
+96,Resolutiva,soft_skill
+96,Curiosidad,soft_skill
+96,Innovación,soft_skill
+96,Comprensión de procesos de negocio,soft_skill
+96,Flexibilidad horaria,benefit
+96,Entorno creativo,benefit
+96,Participación en desarrollo de productos,benefit
+96,Oportunidad de crecimiento,benefit
+97,Python,must
+97,REST APIs,must
+97,n8n,must
+97,Make,must
+97,Integromat,must
+97,Zapier,must
+97,ElevenLabs,must
+97,OpenAI API,must
+97,Whisper,must
+97,Twilio,must
+97,Asterisk,must
+97,MySQL,nice
+97,Airtable,nice
+97,PostgreSQL,nice
+97,Node.js,nice
+97,JavaScript,nice
+97,CRM integration,nice
+97,bot development,nice
+97,startup experience,nice
+97,SaaS projects,nice
+97,Python,tech_stack
+97,REST APIs,tech_stack
+97,n8n,tech_stack
+97,Make,tech_stack
+97,Integromat,tech_stack
+97,Zapier,tech_stack
+97,ElevenLabs,tech_stack
+97,OpenAI,tech_stack
+97,Whisper,tech_stack
+97,Twilio,tech_stack
+97,Asterisk,tech_stack
+97,MySQL,tech_stack
+97,Airtable,tech_stack
+97,PostgreSQL,tech_stack
+97,Node.js,tech_stack
+97,JavaScript,tech_stack
+97,problem-solving,soft_skill
+97,curiosity,soft_skill
+97,innovation mindset,soft_skill
+97,business process understanding,soft_skill
+97,collaboration,soft_skill
+97,creativity,soft_skill
+97,flexible hours,benefit
+97,creative environment,benefit
+97,growth opportunities,benefit
+97,long-term collaboration,benefit
+98,Python,must
+98,n8n,must
+98,API integration,must
+98,REST APIs,must
+98,Twilio,must
+98,Asterisk,must
+98,ElevenLabs,must
+98,OpenAI,must
+98,Whisper,must
+98,Zapier,must
+98,Make,must
+98,Integromat,must
+98,MySQL,nice
+98,PostgreSQL,nice
+98,Airtable,nice
+98,Node.js,nice
+98,JavaScript,nice
+98,CRM integration,nice
+98,SaaS,nice
+98,Startup experience,nice
+98,Python,tech_stack
+98,n8n,tech_stack
+98,Make,tech_stack
+98,Integromat,tech_stack
+98,Zapier,tech_stack
+98,ElevenLabs,tech_stack
+98,OpenAI,tech_stack
+98,Whisper,tech_stack
+98,Twilio,tech_stack
+98,Asterisk,tech_stack
+98,MySQL,tech_stack
+98,PostgreSQL,tech_stack
+98,Airtable,tech_stack
+98,Node.js,tech_stack
+98,JavaScript,tech_stack
+98,Problem-solving,soft_skill
+98,Curiosity,soft_skill
+98,Innovation,soft_skill
+98,Collaboration,soft_skill
+98,Business process understanding,soft_skill
+98,Flexible schedule,benefit
+98,Creative environment,benefit
+98,Direct involvement in product development,benefit
+98,Growth opportunities,benefit
+99,n8n,must
+99,Python,must
+99,API integration,must
+99,REST APIs,must
+99,Voice AI services,must
+99,Twilio,must
+99,Asterisk,must
+99,MySQL,nice
+99,Airtable,nice
+99,PostgreSQL,nice
+99,Node.js,nice
+99,JavaScript,nice
+99,CRM integration,nice
+99,Bot development,nice
+99,Startup experience,nice
+99,n8n,tech_stack
+99,Python,tech_stack
+99,OpenAI API,tech_stack
+99,ElevenLabs,tech_stack
+99,Whisper,tech_stack
+99,Twilio,tech_stack
+99,Asterisk,tech_stack
+99,MySQL,tech_stack
+99,Airtable,tech_stack
+99,PostgreSQL,tech_stack
+99,Zapier,tech_stack
+99,Make,tech_stack
+99,Integromat,tech_stack
+99,problem solving,soft_skill
+99,curiosity,soft_skill
+99,innovation mindset,soft_skill
+99,collaboration,soft_skill
+99,flexibilidad horaria,benefit
+99,entorno creativo,benefit
+99,participación en proyectos reales de IA,benefit
+99,crecimiento dentro del equipo,benefit
+100,n8n,must
+100,Python,must
+100,API integration,must
+100,REST APIs,must
+100,voice AI integration,must
+100,text AI integration,must
+100,Twilio,must
+100,Asterisk,must
+100,MySQL,nice
+100,PostgreSQL,nice
+100,Airtable,nice
+100,startup experience,nice
+100,SaaS experience,nice
+100,Node.js,nice
+100,JavaScript,nice
+100,CRM integration,nice
+100,bot development,nice
+100,n8n,tech_stack
+100,Make,tech_stack
+100,Integromat,tech_stack
+100,Zapier,tech_stack
+100,Python,tech_stack
+100,OpenAI API,tech_stack
+100,ElevenLabs,tech_stack
+100,Whisper,tech_stack
+100,Twilio,tech_stack
+100,Asterisk,tech_stack
+100,MySQL,tech_stack
+100,PostgreSQL,tech_stack
+100,Airtable,tech_stack
+100,Node.js,tech_stack
+100,JavaScript,tech_stack
+100,problem solving,soft_skill
+100,curiosity,soft_skill
+100,innovation mindset,soft_skill
+100,collaboration,soft_skill
+100,flexible schedule,benefit
+100,creative environment,benefit
+100,growth opportunities,benefit
+100,participation in innovative product development,benefit
+100,long-term collaboration,benefit
+101,n8n,must
+101,Python,must
+101,REST APIs,must
+101,ElevenLabs,must
+101,OpenAI API,must
+101,Twilio,must
+101,Asterisk,must
+101,MySQL,nice
+101,Airtable,nice
+101,PostgreSQL,nice
+101,Node.js,nice
+101,JavaScript,nice
+101,CRM integration,nice
+101,Bots development,nice
+101,Python,tech_stack
+101,n8n,tech_stack
+101,Make,tech_stack
+101,Integromat,tech_stack
+101,Zapier,tech_stack
+101,ElevenLabs,tech_stack
+101,OpenAI,tech_stack
+101,Whisper,tech_stack
+101,Twilio,tech_stack
+101,Asterisk,tech_stack
+101,MySQL,tech_stack
+101,Airtable,tech_stack
+101,PostgreSQL,tech_stack
+101,Problem‑solving,soft_skill
+101,Curiosity,soft_skill
+101,Innovation,soft_skill
+101,Collaboration,soft_skill
+101,Flexibilidad horaria,benefit
+101,Entorno creativo,benefit
+101,Posibilidad de colaboración a largo plazo,benefit
+101,Crecimiento dentro del equipo,benefit
+101,Participación en proyectos reales de IA,benefit
+102,n8n,must
+102,Python,must
+102,API integration,must
+102,OpenAI,must
+102,ElevenLabs,must
+102,Twilio,must
+102,Asterisk,must
+102,MySQL,nice
+102,PostgreSQL,nice
+102,Airtable,nice
+102,Node.js,nice
+102,JavaScript,nice
+102,CRM integration,nice
+102,startup experience,nice
+102,Python,tech_stack
+102,n8n,tech_stack
+102,OpenAI,tech_stack
+102,ElevenLabs,tech_stack
+102,Twilio,tech_stack
+102,Airtable,tech_stack
+102,Zapier,tech_stack
+102,Make,tech_stack
+102,Integromat,tech_stack
+102,MySQL,tech_stack
+102,PostgreSQL,tech_stack
+102,Node.js,tech_stack
+102,JavaScript,tech_stack
+102,Asterisk,tech_stack
+102,problem‑solving,soft_skill
+102,curiosity,soft_skill
+102,innovation,soft_skill
+102,business process analysis,soft_skill
+102,teamwork,soft_skill
+102,flexibilidad horario,benefit
+102,entorno creativo,benefit
+102,participación en productos innovadores,benefit
+102,crecimiento profesional,benefit
+102,colaboración a largo plazo,benefit
+103,n8n,must
+103,Python,must
+103,REST APIs,must
+103,AI voice/text integration,must
+103,Twilio,must
+103,Asterisk,must
+103,MySQL,nice
+103,Airtable,nice
+103,PostgreSQL,nice
+103,Node.js,nice
+103,JavaScript,nice
+103,CRM integration,nice
+103,bot creation,nice
+103,startup experience,nice
+103,Python,tech_stack
+103,n8n,tech_stack
+103,Make,tech_stack
+103,Integromat,tech_stack
+103,Zapier,tech_stack
+103,ElevenLabs,tech_stack
+103,OpenAI,tech_stack
+103,Whisper,tech_stack
+103,Twilio,tech_stack
+103,Asterisk,tech_stack
+103,MySQL,tech_stack
+103,Airtable,tech_stack
+103,PostgreSQL,tech_stack
+103,Node.js,tech_stack
+103,JavaScript,tech_stack
+103,problem‑solving,soft_skill
+103,curiosity,soft_skill
+103,innovation,soft_skill
+103,team collaboration,soft_skill
+103,flexibilidad horaria,benefit
+103,entorno creativo,benefit
+103,participación en desarrollo de productos,benefit
+103,colaboración a largo plazo,benefit
+103,crecimiento dentro del equipo,benefit
+104,Python,must
+104,n8n,must
+104,API integration,must
+104,REST APIs,must
+104,Twilio,must
+104,Asterisk,must
+104,ElevenLabs,must
+104,OpenAI,must
+104,Whisper,must
+104,MySQL,nice
+104,Airtable,nice
+104,PostgreSQL,nice
+104,Node.js,nice
+104,JavaScript,nice
+104,CRM integration,nice
+104,Startup experience,nice
+104,Bot development,nice
+104,Python,tech_stack
+104,n8n,tech_stack
+104,Make,tech_stack
+104,Integromat,tech_stack
+104,Zapier,tech_stack
+104,ElevenLabs,tech_stack
+104,OpenAI,tech_stack
+104,Whisper,tech_stack
+104,Twilio,tech_stack
+104,Asterisk,tech_stack
+104,MySQL,tech_stack
+104,Airtable,tech_stack
+104,PostgreSQL,tech_stack
+104,Node.js,tech_stack
+104,JavaScript,tech_stack
+104,Problem solving,soft_skill
+104,Curiosity,soft_skill
+104,Innovation mindset,soft_skill
+104,Collaboration,soft_skill
+104,Flexibilidad horaria,benefit
+104,Entorno creativo,benefit
+104,Crecimiento dentro del equipo,benefit
+104,Colaboración a largo plazo,benefit
+104,Participación en proyectos reales de IA,benefit
+104,Formar parte de una startup en expansión,benefit
+105,n8n (or Make / Integromat / Zapier) advanced,must
+105,"Python (requests, APIs REST)",must
+105,"Integración de servicios de voz o texto basados en IA (ElevenLabs, OpenAI, Whisper)",must
+105,Uso y conexión de APIs,must
+105,Desarrollo de flujos de automatización,must
+105,Twilio/Asterisk,must
+105,"Bases de datos (MySQL, Airtable, PostgreSQL)",nice
+105,Node.js o JavaScript,nice
+105,Experiencia en startups o proyectos SaaS,nice
+105,Conexión de CRMs o creación de bots,nice
+105,Python,tech_stack
+105,n8n,tech_stack
+105,Make,tech_stack
+105,Integromat,tech_stack
+105,Zapier,tech_stack
+105,OpenAI API,tech_stack
+105,ElevenLabs,tech_stack
+105,Whisper,tech_stack
+105,Twilio,tech_stack
+105,Asterisk,tech_stack
+105,MySQL,tech_stack
+105,Airtable,tech_stack
+105,PostgreSQL,tech_stack
+105,Node.js,tech_stack
+105,JavaScript,tech_stack
+105,Mentalidad resolutiva,soft_skill
+105,Curiosidad por la IA,soft_skill
+105,Ganas de innovar,soft_skill
+105,Trabajo en equipo,soft_skill
+105,Creatividad,soft_skill
+105,Flexibilidad horaria,benefit
+105,Entorno creativo,benefit
+105,Participación directa en el desarrollo de productos innovadores,benefit
+105,Posibilidad de colaboración a largo plazo y crecimiento dentro del equipo,benefit
+106,n8n,must
+106,Make,must
+106,Integromat,must
+106,Zapier,must
+106,Python,must
+106,REST APIs,must
+106,API integration,must
+106,OpenAI,must
+106,ElevenLabs,must
+106,Whisper,must
+106,Twilio,must
+106,Asterisk,must
+106,MySQL,nice
+106,PostgreSQL,nice
+106,Airtable,nice
+106,Node.js,nice
+106,JavaScript,nice
+106,Python,tech_stack
+106,n8n,tech_stack
+106,Make,tech_stack
+106,Integromat,tech_stack
+106,Zapier,tech_stack
+106,OpenAI,tech_stack
+106,ElevenLabs,tech_stack
+106,Whisper,tech_stack
+106,Twilio,tech_stack
+106,Asterisk,tech_stack
+106,MySQL,tech_stack
+106,PostgreSQL,tech_stack
+106,Airtable,tech_stack
+106,Node.js,tech_stack
+106,JavaScript,tech_stack
+106,problem‑solving,soft_skill
+106,curiosity about AI,soft_skill
+106,innovation mindset,soft_skill
+106,team collaboration,soft_skill
+106,business process understanding,soft_skill
+106,flexibilidad horaria,benefit
+106,entorno creativo,benefit
+106,oportunidad de crecimiento a largo plazo,benefit
+106,participación directa en proyectos de IA,benefit
+107,n8n,must
+107,Make,must
+107,Integromat,must
+107,Zapier,must
+107,Python,must
+107,REST APIs,must
+107,ElevenLabs,must
+107,OpenAI API,must
+107,Whisper,must
+107,Twilio,must
+107,Asterisk,must
+107,MySQL,nice
+107,Airtable,nice
+107,PostgreSQL,nice
+107,Node.js,nice
+107,JavaScript,nice
+107,Startup experience,nice
+107,SaaS projects,nice
+107,CRM integration,nice
+107,Bot development,nice
+107,Python,tech_stack
+107,n8n,tech_stack
+107,Make,tech_stack
+107,Integromat,tech_stack
+107,Zapier,tech_stack
+107,ElevenLabs,tech_stack
+107,OpenAI,tech_stack
+107,Whisper,tech_stack
+107,Twilio,tech_stack
+107,Asterisk,tech_stack
+107,MySQL,tech_stack
+107,Airtable,tech_stack
+107,PostgreSQL,tech_stack
+107,Node.js,tech_stack
+107,JavaScript,tech_stack
+107,Problem solving,soft_skill
+107,Curiosity about AI,soft_skill
+107,Innovation,soft_skill
+107,Business process understanding,soft_skill
+107,Collaboration,soft_skill
+107,Flexible schedule,benefit
+107,Creative environment,benefit
+107,Long‑term collaboration,benefit
+107,Growth opportunities,benefit
+107,Direct involvement in innovative AI products,benefit
+107,Startup expansion,benefit
+108,n8n,must
+108,Python,must
+108,REST APIs,must
+108,Voice AI services,must
+108,Twilio,must
+108,Asterisk,must
+108,MySQL,nice
+108,PostgreSQL,nice
+108,Airtable,nice
+108,Node.js,nice
+108,JavaScript,nice
+108,CRM integration,nice
+108,Startup experience,nice
+108,SaaS projects,nice
+108,n8n,tech_stack
+108,Python,tech_stack
+108,OpenAI API,tech_stack
+108,ElevenLabs,tech_stack
+108,Whisper,tech_stack
+108,Twilio,tech_stack
+108,Asterisk,tech_stack
+108,MySQL,tech_stack
+108,PostgreSQL,tech_stack
+108,Airtable,tech_stack
+108,Resolutive mindset,soft_skill
+108,Curiosity about AI,soft_skill
+108,Innovation,soft_skill
+108,Collaboration,soft_skill
+108,Business process understanding,soft_skill
+108,Flexible schedule,benefit
+108,Creative environment,benefit
+108,Direct involvement in product development,benefit
+108,Long-term growth opportunities,benefit
+109,n8n,must
+109,Python,must
+109,REST APIs,must
+109,Twilio,must
+109,ElevenLabs,must
+109,OpenAI,must
+109,Whisper,must
+109,MySQL,nice
+109,Airtable,nice
+109,PostgreSQL,nice
+109,Node.js,nice
+109,JavaScript,nice
+109,CRM integration,nice
+109,SaaS,nice
+109,Python,tech_stack
+109,n8n,tech_stack
+109,Twilio,tech_stack
+109,OpenAI API,tech_stack
+109,ElevenLabs,tech_stack
+109,Whisper,tech_stack
+109,MySQL,tech_stack
+109,Airtable,tech_stack
+109,PostgreSQL,tech_stack
+109,Node.js,tech_stack
+109,JavaScript,tech_stack
+109,Zapier,tech_stack
+109,Problem-solving,soft_skill
+109,Curiosity,soft_skill
+109,Innovation,soft_skill
+109,Collaboration,soft_skill
+109,Flexible schedule,benefit
+109,Creative environment,benefit
+109,Long-term collaboration,benefit
+109,Growth opportunities,benefit
+110,n8n,must
+110,Python,must
+110,API integration,must
+110,Twilio,must
+110,Asterisk,must
+110,MySQL,nice
+110,PostgreSQL,nice
+110,Airtable,nice
+110,Node.js,nice
+110,JavaScript,nice
+110,CRM integration,nice
+110,startup experience,nice
+110,Python,tech_stack
+110,n8n,tech_stack
+110,Make,tech_stack
+110,Integromat,tech_stack
+110,Zapier,tech_stack
+110,ElevenLabs,tech_stack
+110,OpenAI API,tech_stack
+110,Whisper,tech_stack
+110,Twilio,tech_stack
+110,Asterisk,tech_stack
+110,MySQL,tech_stack
+110,PostgreSQL,tech_stack
+110,Airtable,tech_stack
+110,Node.js,tech_stack
+110,JavaScript,tech_stack
+110,mentalidad resolutiva,soft_skill
+110,curiosidad por la IA,soft_skill
+110,ganas de innovar,soft_skill
+110,colaboración,soft_skill
+110,capacidad de entender procesos de negocio,soft_skill
+110,flexibilidad horaria,benefit
+110,entorno creativo,benefit
+110,participación directa en desarrollo de productos,benefit
+110,oportunidad de crecimiento a largo plazo,benefit
+111,Python,must
+111,API integration,must
+111,REST APIs,must
+111,automation,must
+111,Make,must
+111,Zapier,must
+111,Integromat,must
+111,Twilio,must
+111,ElevenLabs,must
+111,OpenAI,must
+111,Whisper,must
+111,MySQL,nice
+111,PostgreSQL,nice
+111,Airtable,nice
+111,Node.js,nice
+111,JavaScript,nice
+111,startup experience,nice
+111,SaaS,nice
+111,Python,tech_stack
+111,Make,tech_stack
+111,Zapier,tech_stack
+111,Integromat,tech_stack
+111,Twilio,tech_stack
+111,ElevenLabs,tech_stack
+111,OpenAI,tech_stack
+111,Whisper,tech_stack
+111,MySQL,tech_stack
+111,PostgreSQL,tech_stack
+111,Airtable,tech_stack
+111,Node.js,tech_stack
+111,JavaScript,tech_stack
+111,problem solving,soft_skill
+111,curiosity,soft_skill
+111,business process understanding,soft_skill
+111,teamwork,soft_skill
+111,creativity,soft_skill
+111,flexible schedule,benefit
+111,creative environment,benefit
+111,long-term collaboration,benefit
+111,growth opportunities,benefit
+111,direct participation in product development,benefit
+112,n8n,must
+112,Python,must
+112,REST APIs,must
+112,Twilio,must
+112,OpenAI API,must
+112,ElevenLabs,must
+112,Whisper,must
+112,MySQL,nice
+112,Airtable,nice
+112,PostgreSQL,nice
+112,Node.js,nice
+112,JavaScript,nice
+112,CRM integration,nice
+112,startup experience,nice
+112,Python,tech_stack
+112,n8n,tech_stack
+112,Make,tech_stack
+112,Integromat,tech_stack
+112,Zapier,tech_stack
+112,OpenAI API,tech_stack
+112,ElevenLabs,tech_stack
+112,Whisper,tech_stack
+112,Twilio,tech_stack
+112,Asterisk,tech_stack
+112,MySQL,tech_stack
+112,Airtable,tech_stack
+112,PostgreSQL,tech_stack
+112,Node.js,tech_stack
+112,JavaScript,tech_stack
+112,problem-solving,soft_skill
+112,curiosity,soft_skill
+112,innovation,soft_skill
+112,teamwork,soft_skill
+112,communication,soft_skill
+112,flexible hours,benefit
+112,creative environment,benefit
+112,long-term collaboration,benefit
+112,growth opportunities,benefit
+113,Python,must
+113,n8n,must
+113,REST APIs,must
+113,Twilio,must
+113,Asterisk,must
+113,ElevenLabs,must
+113,OpenAI,must
+113,Whisper,must
+113,MySQL,nice
+113,PostgreSQL,nice
+113,Airtable,nice
+113,Node.js,nice
+113,JavaScript,nice
+113,CRM integration,nice
+113,Bots,nice
+113,Startup experience,nice
+113,SaaS projects,nice
+113,Python,tech_stack
+113,n8n,tech_stack
+113,OpenAI,tech_stack
+113,ElevenLabs,tech_stack
+113,Twilio,tech_stack
+113,Asterisk,tech_stack
+113,Zapier,tech_stack
+113,Make,tech_stack
+113,Integromat,tech_stack
+113,Airtable,tech_stack
+113,MySQL,tech_stack
+113,PostgreSQL,tech_stack
+113,Node.js,tech_stack
+113,JavaScript,tech_stack
+113,Problem solving,soft_skill
+113,Curiosity,soft_skill
+113,Innovation,soft_skill
+113,Business process understanding,soft_skill
+113,Teamwork,soft_skill
+113,Collaboration,soft_skill
+113,Flexibilidad horaria,benefit
+113,Entorno creativo,benefit
+113,Participación directa en desarrollo de productos innovadores,benefit
+113,Posibilidad de colaboración a largo plazo,benefit
+113,Crecimiento dentro del equipo,benefit
+114,n8n,must
+114,Python,must
+114,REST APIs,must
+114,Twilio,must
+114,OpenAI API,must
+114,ElevenLabs,must
+114,Whisper,must
+114,MySQL,nice
+114,PostgreSQL,nice
+114,Airtable,nice
+114,Node.js,nice
+114,JavaScript,nice
+114,CRM integration,nice
+114,Python,tech_stack
+114,n8n,tech_stack
+114,REST APIs,tech_stack
+114,OpenAI,tech_stack
+114,ElevenLabs,tech_stack
+114,Whisper,tech_stack
+114,Twilio,tech_stack
+114,Airtable,tech_stack
+114,Zapier,tech_stack
+114,Make,tech_stack
+114,Integromat,tech_stack
+114,MySQL,tech_stack
+114,PostgreSQL,tech_stack
+114,problem‑solving,soft_skill
+114,curiosity,soft_skill
+114,business process analysis,soft_skill
+114,teamwork,soft_skill
+114,flexible hours,benefit
+114,creative environment,benefit
+114,long‑term collaboration,benefit
+114,growth opportunities,benefit
+115,Python,must
+115,N8N,must
+115,Microsoft Copilot Studio,must
+115,Azure Bot Services,must
+115,OpenAI,must
+115,LLM APIs,must
+115,SQL,must
+115,NoSQL,must
+115,API REST,nice
+115,JSON,nice
+115,Web Services,nice
+115,Python,tech_stack
+115,N8N,tech_stack
+115,Microsoft Copilot Studio,tech_stack
+115,Azure Bot Services,tech_stack
+115,OpenAI,tech_stack
+115,LLM APIs,tech_stack
+115,SQL,tech_stack
+115,NoSQL,tech_stack
+115,REST APIs,tech_stack
+115,JSON,tech_stack
+115,Web Services,tech_stack
+115,Azure,tech_stack
+115,Capacidad analítica,soft_skill
+115,Orientación a la solución,soft_skill
+115,Ganas de aprender,soft_skill
+115,Documentación,soft_skill
+115,Comunicación,soft_skill
+115,Trabajo en equipo,soft_skill
+115,Contrato indefinido,benefit
+115,Remuneración según experiencia,benefit
+116,Prompting,must
+116,Microsoft 365,must
+116,Microsoft Teams,must
+116,Microsoft Planner,must
+116,Outlook,must
+116,Microsoft 365,tech_stack
+116,Microsoft Teams,tech_stack
+116,Microsoft Planner,tech_stack
+116,Outlook,tech_stack
+116,Organizational skills,soft_skill
+116,Technological curiosity,soft_skill
+116,Ability to explain concepts simply,soft_skill
+116,Problem solving,soft_skill
+116,Collaboration,soft_skill
+116,English (Advanced),language
+117,OpenCV,must
+117,YOLO,must
+117,Docker,must
+117,Git,must
+117,REST APIs,must
+117,MQTT,must
+117,MLflow,nice
+117,TFX,nice
+117,OpenCV,tech_stack
+117,YOLO,tech_stack
+117,Docker,tech_stack
+117,Git,tech_stack
+117,REST APIs,tech_stack
+117,MQTT,tech_stack
+117,AWS,tech_stack
+117,Azure,tech_stack
+117,PLC,tech_stack
+117,SCADA,tech_stack
+117,English (B2),language
+117,Seguro médico,benefit
+117,Trabajo híbrido (presencial al menos 1 día a la semana),benefit
+117,Entorno de trabajo vanguardista,benefit
+117,Campus abierto 24h,benefit
+117,Transversalidad de proyectos,benefit
+117,Colaboración con grandes partners fabricantes,benefit
+118,Node.js,must
+118,JavaScript,must
+118,Python,must
+118,Spring Boot,must
+118,PostgreSQL,must
+118,MongoDB,must
+118,AWS,must
+118,Liderazgo,must
+118,Desarrollo back-end,must
+118,Docker,nice
+118,Kubernetes,nice
+118,Microservicios,nice
+118,Machine Learning,nice
+118,Scrum,nice
+118,Kanban,nice
+118,Jira,nice
+118,Trello,nice
+118,Node.js,tech_stack
+118,JavaScript,tech_stack
+118,Python,tech_stack
+118,Spring Boot,tech_stack
+118,PostgreSQL,tech_stack
+118,MongoDB,tech_stack
+118,AWS,tech_stack
+118,React.js,tech_stack
+118,OpenAI API,tech_stack
+118,Liderazgo,soft_skill
+118,Toma de decisiones estratégicas,soft_skill
+118,Gestión de equipos,soft_skill
+118,Comunicación,soft_skill
+118,Coordinación,soft_skill
+118,Ambiente de trabajo dinámico e innovador,benefit
+118,Oportunidades de crecimiento y desarrollo profesional,benefit
+118,Posibilidad de asumir rol de CTO,benefit
+118,Trabajo remoto,benefit
+119,PHP,must
+119,Go,must
+119,APIs,must
+119,Microservices,must
+119,SQL,must
+119,Cloud,must
+119,Inglés,must
+119,STT,nice
+119,TTS,nice
+119,LLMs,nice
+119,Google Cloud,nice
+119,AWS,nice
+119,Azure,nice
+119,OpenAI,nice
+119,telefonía IP,nice
+119,SIP,nice
+119,Docker,nice
+119,Kubernetes,nice
+119,métricas de rendimiento,nice
+119,observabilidad,nice
+119,Go,tech_stack
+119,PHP,tech_stack
+119,SQL,tech_stack
+119,AWS,tech_stack
+119,Google Cloud,tech_stack
+119,Azure,tech_stack
+119,OpenAI,tech_stack
+119,Docker,tech_stack
+119,Kubernetes,tech_stack
+119,iniciativa,soft_skill
+119,aprendizaje continuo,soft_skill
+119,trabajo en equipo,soft_skill
+119,comunicación,soft_skill
+119,resolución de problemas,soft_skill
+119,autonomía,soft_skill
+119,Español,language
+119,Inglés,language
+119,Contrato indefinido,benefit
+119,Salario competitivo,benefit
+119,Seguro médico privado,benefit
+119,Participación en proyectos de IA generativa y Voice AI,benefit
+119,Acceso a comunidad tecnológica de Everfield,benefit
+119,Carrera profesional definida,benefit
+119,Cultura de ingeniería moderna basada en calidad y autonomía,benefit
+120,proactividad,must
+120,comunicación,must
+120,orientación a resultados,must
+120,proactividad,soft_skill
+120,comunicación,soft_skill
+120,orientación a resultados,soft_skill
+120,Formación completa en producto y técnicas de venta,benefit
+120,Oportunidad de continuar en campañas tecnológicas de primer nivel,benefit
+120,"Ambiente dinámico, innovador y lleno de energía gamer",benefit
+121,proactiva,soft_skill
+121,comunicativa,soft_skill
+121,orientada a resultados,soft_skill
+121,trato con la gente,soft_skill
+121,Formación completa en producto y técnicas de venta,benefit
+121,Oportunidad de continuar en campañas tecnológicas de primer nivel,benefit
+121,"Ambiente dinámico, innovador y lleno de energía gamer",benefit
+122,proactividad,must
+122,comunicación,must
+122,orientación a resultados,must
+122,disponibilidad en horarios,must
+122,proactividad,soft_skill
+122,comunicación,soft_skill
+122,orientación a resultados,soft_skill
+122,Formación completa en producto y técnicas de venta,benefit
+122,Posibilidad de seguir en campañas tecnológicas de primer nivel,benefit
+122,Ambiente dinámico e innovador,benefit
+123,technology passion,must
+123,video game knowledge,must
+123,proactive,must
+123,communication,must
+123,results oriented,must
+123,proactive,soft_skill
+123,communication,soft_skill
+123,results oriented,soft_skill
+123,product and sales training,benefit
+123,opportunity to continue in top tech campaigns,benefit
+123,dynamic innovative environment,benefit
+124,pasión por la tecnología y los videojuegos,soft_skill
+124,proactiva,soft_skill
+124,comunicativa,soft_skill
+124,orientada a resultados,soft_skill
+124,disponibilidad en fechas y horarios,soft_skill
+124,Formación completa en producto y técnicas de venta,benefit
+124,Posibilidad de seguir en campañas tecnológicas de primer nivel,benefit
+124,"Ambiente dinámico, innovador y con contacto directo con público gamer y tech",benefit
+125,pasión por la tecnología y los videojuegos,must
+125,proactividad,must
+125,comunicación,must
+125,orientación a resultados,must
+125,disponibilidad en fechas y horarios,must
+125,proactividad,soft_skill
+125,comunicación,soft_skill
+125,orientación a resultados,soft_skill
+125,Formación completa en producto y técnicas de venta,benefit
+125,Posibilidad de seguir en campañas tecnológicas de primer nivel,benefit
+125,Ambiente dinámico e innovador,benefit
+125,Salario 9€/hora + incentivos por objetivos,benefit
+126,pasión por la tecnología y los videojuegos,must
+126,proactiva,must
+126,comunicativa,must
+126,orientada a resultados,must
+126,disponibilidad en las fechas y horarios indicados,must
+126,proactiva,soft_skill
+126,comunicativa,soft_skill
+126,orientada a resultados,soft_skill
+126,Formación completa en producto y técnicas de venta,benefit
+126,Oportunidad de continuar en campañas tecnológicas de primer nivel,benefit
+126,"Ambiente dinámico, innovador y lleno de energía gamer",benefit
+127,comunicativa,soft_skill
+127,orientada a resultados,soft_skill
+127,proactiva,soft_skill
+127,Formación completa en producto y técnicas de venta,benefit
+127,Oportunidad de continuar en campañas tecnológicas de primer nivel,benefit
+127,"Ambiente dinámico, innovador y lleno de energía gamer",benefit
+128,Comunicación,must
+128,Proactividad,must
+128,Orientación a resultados,must
+128,Comunicación,soft_skill
+128,Proactividad,soft_skill
+128,Orientación a resultados,soft_skill
+128,Formación completa en producto y técnicas de venta,benefit
+128,Oportunidad de continuar en campañas tecnológicas de primer nivel,benefit
+128,"Ambiente dinámico, innovador y lleno de energía gamer",benefit
+129,proactiva,soft_skill
+129,comunicativa,soft_skill
+129,orientada a resultados,soft_skill
+129,pasión por la tecnología y los videojuegos,soft_skill
+129,Formación completa en producto y técnicas de venta,benefit
+129,Oportunidad de continuar en campañas tecnológicas de primer nivel,benefit
+129,"Ambiente dinámico, innovador y lleno de energía gamer",benefit
+130,Python,must
+130,TensorFlow,must
+130,PyTorch,must
+130,Conocimiento del sector industrial/manufacturing,nice
+130,Python,tech_stack
+130,TensorFlow,tech_stack
+130,PyTorch,tech_stack
+130,Trabajo en equipo,soft_skill
+130,Colaboración,soft_skill
+130,Resolución de problemas,soft_skill
+130,English,language
+130,Seguro médico,benefit
+130,Días extra de vacaciones,benefit
+130,Formación continua,benefit
+130,Desarrollo profesional,benefit
+130,Horario flexible,benefit
+131,Cloud services,must
+131,AI,must
+131,Data & Analytics,must
+131,AWS,must
+131,Google Cloud,must
+131,English (high),must
+131,communication,must
+131,teamwork,must
+131,entrepreneurial mindset,must
+131,AWS,tech_stack
+131,Google Cloud,tech_stack
+131,verbal and written communication,soft_skill
+131,team collaboration,soft_skill
+131,ability to articulate complex concepts,soft_skill
+131,customer focus,soft_skill
+131,entrepreneurial mindset,soft_skill
+131,English,language
+132,.NET,must
+132,LangChain,must
+132,CrewAI,must
+132,AutoGen,must
+132,API integration,must
+132,LLM integration,must
+132,.NET,tech_stack
+132,LangChain,tech_stack
+132,CrewAI,tech_stack
+132,AutoGen,tech_stack
+132,Leadership,soft_skill
+132,Strategic thinking,soft_skill
+132,Continuous learning,soft_skill
+133,liderazgo técnico,soft_skill
+133,colaboración,soft_skill
+134,IA generativa,must
+134,RPA,must
+134,APIs,must
+134,automatización de procesos,must
+134,agentes inteligentes,must
+134,analítica de datos,must
+134,IA generativa,tech_stack
+134,RPA,tech_stack
+134,APIs,tech_stack
+134,Microsoft,tech_stack
+134,Visión estratégica,soft_skill
+134,Orientación a resultados,soft_skill
+134,Capacidad para conectar negocio y tecnología,soft_skill
+134,Comunicación persuasiva,soft_skill
+134,Narrativa de valor,soft_skill
+134,Liderazgo transversal,soft_skill
+134,Colaboración interdepartamental,soft_skill
+134,Espíritu emprendedor,soft_skill
+134,Pensamiento sistémico,soft_skill
+134,Contrato indefinido,benefit
+134,Hybrid work / teletrabajo,benefit
+134,Tarjeta restaurante,benefit
+134,Budget para equipamiento tecnológico,benefit
+134,Certificaciones oficiales de Microsoft,benefit
+134,Plan de Reference Reward,benefit
+134,23 días laborables de vacaciones,benefit
+134,Eventos corporativos anuales,benefit
+134,Acceso al Club de Beneficios,benefit
+134,Comida Healthy en oficina,benefit
+134,Webinars Online,benefit
+135,Java,must
+135,Maven,must
+135,Gradle,must
+135,Spring Boot,must
+135,GitHub Copilot,must
+135,Amazon Q Developer,must
+135,OpenRewrite,must
+135,CI/CD,must
+135,Vulnerability remediation,must
+135,Unit test coverage >60%,must
+135,Refactoring,must
+135,Technical documentation,must
+135,Struts,nice
+135,EJB,nice
+135,JNI,nice
+135,Java Web Start,nice
+135,Internal APIs,nice
+135,High documentation traceability,nice
+135,Java,tech_stack
+135,Maven,tech_stack
+135,Gradle,tech_stack
+135,Spring Boot,tech_stack
+135,GitHub Copilot,tech_stack
+135,Amazon Q Developer,tech_stack
+135,OpenRewrite,tech_stack
+135,Git,tech_stack
+135,Analytical thinking,soft_skill
+135,Autonomy,soft_skill
+135,Clear communication,soft_skill
+135,Adaptability,soft_skill
+135,Collaboration,soft_skill
+135,Professional development,benefit
+135,Flexibility and work-life balance,benefit
+135,DXC Learning and certifications,benefit
+135,Social benefits,benefit
+135,Stable employment,benefit
+136,Machine Learning,must
+136,Python,must
+136,IA Generativa,nice
+136,frameworks,nice
+136,Python,tech_stack
+136,Análisis,soft_skill
+136,Resolución de problemas,soft_skill
+136,Comunicación,soft_skill
+136,Trabajo en equipo,soft_skill
+136,Español,language
+136,Inglés,language
+136,Seguro médico,benefit
+136,Seguro de vida,benefit
+136,Seguro de accidentes,benefit
+136,Servicio médico,benefit
+136,Programas de bienestar,benefit
+136,Programa de retribución flexible,benefit
+136,Compra de acciones,benefit
+136,"Programas de flexibilidad (horaria, días libres, vacaciones)",benefit
+136,Itinerario formativo individualizado,benefit
+136,Programas de sostenibilidad,benefit
+136,Fundación Accenture,benefit
+136,Red de empleados por la diversidad,benefit
+136,Oficina Bankinter con condiciones especiales,benefit
+136,Reparto de beneficios,benefit
+137,proactivity,must
+137,communication,must
+137,results orientation,must
+137,proactivity,soft_skill
+137,communication,soft_skill
+137,results orientation,soft_skill
+137,passion for technology and gaming,soft_skill
+137,Complete product and sales training,benefit
+137,Opportunity to continue in top technological campaigns,benefit
+137,Dynamic and innovative gaming-oriented environment,benefit
+138,proactivo/a,soft_skill
+138,comunicativo/a,soft_skill
+138,orientado/a a resultados,soft_skill
+138,trato con público,soft_skill
+138,Formación completa en producto y técnicas de venta,benefit
+138,Posibilidad de seguir en campañas tecnológicas de primer nivel,benefit
+138,Ambiente dinámico e innovador,benefit
+139,pasión por la tecnología,must
+139,pasión por los videojuegos,must
+139,comunicación,must
+139,proactividad,must
+139,orientación a resultados,must
+139,disponibilidad horaria,must
+139,conocimiento de realidad virtual,nice
+139,experiencia en ventas,nice
+139,atención al cliente,nice
+139,comunicación,soft_skill
+139,proactividad,soft_skill
+139,orientación a resultados,soft_skill
+139,trabajo en equipo,soft_skill
+139,Spanish,language
+139,formación completa en producto y técnicas de venta,benefit
+139,oportunidad de continuar en campañas tecnológicas,benefit
+139,ambiente dinámico e innovador,benefit
+140,responsabilidad,soft_skill
+140,compromiso,soft_skill
+140,dinámico,soft_skill
+140,resolutivo,soft_skill
+140,Inglés (alto),language
+140,Seguro médico,benefit
+140,Vale de comida/restaurante,benefit
+140,Transporte,benefit
+140,Guardería,benefit
+140,23 días de vacaciones,benefit
+140,Formación tecnológica,benefit
+140,Club de beneficios,benefit
+141,Diseño de procesos logísticos,must
+141,Automatización de procesos logísticos,must
+141,Optimización de procesos logísticos,must
+141,Análisis de datos,must
+141,Excel avanzado,must
+141,Power BI,must
+141,Integración de IA,must
+141,Big Data,must
+141,Gestión de WMS,must
+141,AGVs,must
+141,Conocimiento de ERP,must
+141,Conocimiento de MES,must
+141,Análisis de KPIs,must
+141,Mejora continua,must
+141,Reducción de costos,must
+141,Excel,tech_stack
+141,Power BI,tech_stack
+141,IA,tech_stack
+141,Big Data,tech_stack
+141,WMS,tech_stack
+141,AGV,tech_stack
+141,ERP,tech_stack
+141,MES,tech_stack
+141,Actitud,soft_skill
+141,Compromiso,soft_skill
+141,Trabajo en equipo,soft_skill
+141,Colaboración,soft_skill
+141,Orientación a la mejora continua,soft_skill
+141,Inglés B2,language
+142,Social Listening (Sprinklr),must
+142,Social Listening (Youscan),must
+142,Social Listening (Brandwatch),must
+142,Social Listening (Sprout Social),must
+142,Campañas digitales y de redes sociales,must
+142,Performance marketing,must
+142,Salesforce Marketing Cloud,must
+142,SQL databases,must
+142,NoSQL databases,must
+142,Data modeling,must
+142,Data quality,must
+142,Social Web APIs,must
+142,Publicidad/analytics connectors,must
+142,DOMO,must
+142,Gemini,must
+142,GPT-5,must
+142,Perplexity,must
+142,Claude,must
+142,Python,nice
+142,R,nice
+142,API development,nice
+142,ETL/ELT pipelines,nice
+142,Airflow,nice
+142,Prefect,nice
+142,Git,nice
+142,AWS,nice
+142,GCP,nice
+142,Azure,nice
+142,Tableau,nice
+142,Power BI,nice
+142,D3.js,nice
+142,Causal modeling,nice
+142,Experiment design,nice
+142,Python,tech_stack
+142,R,tech_stack
+142,SQL,tech_stack
+142,NoSQL,tech_stack
+142,Sprinklr,tech_stack
+142,Youscan,tech_stack
+142,Brandwatch,tech_stack
+142,Sprout Social,tech_stack
+142,Salesforce Marketing Cloud,tech_stack
+142,DOMO,tech_stack
+142,Gemini,tech_stack
+142,GPT-5,tech_stack
+142,Perplexity,tech_stack
+142,Claude,tech_stack
+142,Airflow,tech_stack
+142,Prefect,tech_stack
+142,Git,tech_stack
+142,AWS,tech_stack
+142,GCP,tech_stack
+142,Azure,tech_stack
+142,Tableau,tech_stack
+142,Power BI,tech_stack
+142,D3.js,tech_stack
+142,Leadership,soft_skill
+142,Stakeholder management,soft_skill
+142,Executive storytelling,soft_skill
+142,Structured thinking,soft_skill
+142,Impact orientation,soft_skill
+142,Proactivity,soft_skill
+142,Continuous improvement,soft_skill
+142,Cross‑functional collaboration,soft_skill
+142,Mentoring,soft_skill
+142,Strategic planning,soft_skill
+142,Budget management,soft_skill
+142,Governance,soft_skill
+142,Communication,soft_skill
+142,English,language
+142,Contrato indefinido,benefit
+142,23 días hábiles de vacaciones + día libre por cumpleaños,benefit
+142,Seguro médico y dental privado,benefit
+142,Compensación teletrabajo 66 € brutos mensuales,benefit
+142,"Tarjetas restaurante, transporte y guardería (Cobee)",benefit
+142,Modelo híbrido de trabajo (remoto y presencial),benefit
+142,Posibilidad de llevar mascota a la oficina,benefit
+142,Flexibilidad horaria,benefit
+142,Movilidad interna dentro de la empresa,benefit
+142,Programa de voluntariado (40 h al año),benefit
+143,Adobe Premiere,must
+143,Figma,must
+143,Photoshop,must
+143,Illustrator,must
+143,Canva,must
+143,Generative AI,must
+143,After Effects,nice
+143,CapCut,nice
+143,Advanced prompting,nice
+143,Adobe Premiere,tech_stack
+143,Figma,tech_stack
+143,Photoshop,tech_stack
+143,Illustrator,tech_stack
+143,Canva,tech_stack
+143,After Effects,tech_stack
+143,CapCut,tech_stack
+143,Generative AI,tech_stack
+143,Proactive,soft_skill
+143,Solutions‑driven,soft_skill
+143,Fast learner,soft_skill
+143,Strong communication,soft_skill
+143,Project management,soft_skill
+143,Ability to work under tight deadlines,soft_skill
+143,Collaborative,soft_skill
+143,Creative thinking,soft_skill
+143,Curiosity,soft_skill
+143,Data‑driven testing,soft_skill
+143,Spanish,language
+143,English,language
+143,International company with presence in 40+ countries,benefit
+143,Mentorship and guidance,benefit
+143,Dynamic work environment,benefit
+143,40% discount on Fever events,benefit
+143,Madrid office with travel opportunities,benefit
+143,Home office friendly and flexible schedule,benefit
+143,Young international team,benefit
+143,Health insurance,benefit
+143,Flexible remuneration with tax exemption via Cobee,benefit
+143,English and Spanish lessons,benefit
+143,Gympass membership,benefit
+143,"Free food, drink and fruit",benefit
+143,Advance salary option through Payflow,benefit
+144,Apache Spark,must
+144,Apache Kafka,must
+144,SQL,must
+144,SCRUM,must
+144,Machine Learning,must
+144,Big Data Architectures,must
+144,Java,must
+144,Python,must
+144,Apache Spark,tech_stack
+144,Apache Kafka,tech_stack
+144,SQL,tech_stack
+144,Java,tech_stack
+144,Python,tech_stack
+144,Horario flexible,benefit
+144,Jornada intensiva en verano,benefit
+144,Teletrabajo,benefit
+144,Seguro médico privado con póliza dental y seguro de accidentes,benefit
+144,"Plan de retribución flexible (tickets restaurante, tickets guardería, seguro médico para familiar)",benefit
+144,"Actividades de equipo, eventos y competiciones deportivas",benefit
+144,Acceso a la plataforma Gympass,benefit
+144,Dress code casual,benefit
+144,Relocation package,benefit
+144,Fruta y café en el comedor,benefit
+145,Python,must
+145,C#,must
+145,TouchDesigner,must
+145,Unreal Engine,must
+145,Unity,must
+145,OpenAI API,must
+145,Stability AI API,must
+145,OpenCV,must
+145,Kinect,must
+145,RealSense,must
+145,Python,tech_stack
+145,C#,tech_stack
+145,TouchDesigner,tech_stack
+145,Unreal Engine,tech_stack
+145,Unity,tech_stack
+145,OpenAI API,tech_stack
+145,Stability AI API,tech_stack
+145,OpenCV,tech_stack
+145,Kinect,tech_stack
+145,RealSense,tech_stack
+145,Curiosidad tecnológica,soft_skill
+145,Resolución de problemas,soft_skill
+145,Pensamiento estructurado,soft_skill
+145,Colaboración con equipos creativos,soft_skill
+145,Proactividad,soft_skill
+145,Español,language
+145,Inglés,language
+146,PHP,must
+146,MySQL,must
+146,Apache,must
+146,Laravel,must
+146,SOAP,must
+146,REST,must
+146,OAuth2,must
+146,OpenID,must
+146,JWT,must
+146,GitHub Copilot,must
+146,Amazon Q Developer,must
+146,Kiro,must
+146,OpenRewrite,must
+146,CI/CD (basic),must
+146,Vulnerability identification and resolution,must
+146,Unit test coverage ≥60%,must
+146,Technical documentation generation,must
+146,React.js,nice
+146,Python,nice
+146,autogen,nice
+146,langchain,nice
+146,langgraph,nice
+146,API integration,nice
+146,Legacy modernization experience,nice
+146,PHP,tech_stack
+146,MySQL,tech_stack
+146,Apache,tech_stack
+146,Laravel,tech_stack
+146,SOAP,tech_stack
+146,REST,tech_stack
+146,OAuth2,tech_stack
+146,OpenID,tech_stack
+146,JWT,tech_stack
+146,GitHub Copilot,tech_stack
+146,Amazon Q Developer,tech_stack
+146,Kiro,tech_stack
+146,OpenRewrite,tech_stack
+146,CI/CD,tech_stack
+146,Analytical thinking,soft_skill
+146,Autonomy,soft_skill
+146,Clear communication,soft_skill
+146,Adaptability,soft_skill
+146,Collaboration,soft_skill
+146,Professional development,benefit
+146,Cutting-edge projects,benefit
+146,Excellent work environment,benefit
+146,Flexibility and work-life balance,benefit
+146,Access to DXC Learning and official certifications,benefit
+146,Social responsibility initiatives,benefit
+146,Stable employment,benefit
+148,proactiva,soft_skill
+148,comunicativa,soft_skill
+148,orientada a resultados,soft_skill
+148,Formación completa en producto y técnicas de venta,benefit
+148,Oportunidad de continuar en campañas tecnológicas de primer nivel,benefit
+148,"Ambiente dinámico, innovador y lleno de energía gamer",benefit
+148,Salario: 9 €/hora brutos + incentivos por objetivos,benefit
+149,Pyspark,must
+149,SQL,must
+149,PL/SQL,must
+149,Python,must
+149,ETL,must
+149,ER modeling,must
+149,AWS EMR,must
+149,AWS Lambda,must
+149,AI agents,must
+149,Python,tech_stack
+149,Pyspark,tech_stack
+149,SQL,tech_stack
+149,PL/SQL,tech_stack
+149,AWS,tech_stack
+149,EMR,tech_stack
+149,Lambda,tech_stack
+149,Collaboration,soft_skill
+149,Innovation,soft_skill
+149,Spanish,language
+149,English,language
+149,Flexible schedule,benefit
+149,Partial remote work (3 days/week),benefit
+149,Continuous training,benefit
+149,Variable compensation,benefit
+150,Inteligencia Artificial Generativa,must
+150,ChatGPT,must
+150,Modelado de aprendizaje automático,must
+150,Docencia,must
+150,Tutoría,must
+150,ChatGPT,tech_stack
+150,Inteligencia Artificial Generativa,tech_stack
+150,Aprendizaje Automático,tech_stack
+150,Comunicación,soft_skill
+150,Pedagogía,soft_skill
+150,Capacidad de tutoría,soft_skill
+151,Familiaritat amb eines d'IA generativa,must
+151,Producció audiovisual,must
+151,Gestió de projectes,must
+151,Lideratge de petits equips,must
+151,Coneixement profund del llenguatge audiovisual,must
+151,Experiència davant de càmera,nice
+151,Midjourney,tech_stack
+151,Leonardo,tech_stack
+151,Firefly,tech_stack
+151,Runway,tech_stack
+151,Veo 3,tech_stack
+151,Kling,tech_stack
+151,Synthesia,tech_stack
+151,Curiositat,soft_skill
+151,Mentalitat exploradora,soft_skill
+151,Esperit pioner,soft_skill
+151,Bon criteri visual,soft_skill
+151,Adaptabilitat,soft_skill
+151,Voluntat d'aprendre continuament,soft_skill
+151,Lideratge d'equips,soft_skill
+151,Castellà (avançat),language
+151,Català (avançat),language
+151,Anglès (avançat),language
+151,Contracte indefinit,benefit
+151,40 hores setmanals,benefit
+151,Salari brut anual 20.000 €,benefit
+152,Microsoft Office,must
+152,Microsoft Office,tech_stack
+152,Motivation,soft_skill
+152,Enthusiasm,soft_skill
+152,English,language
+152,French,language
+152,600 € brutos remuneration,benefit
+152,Plan de desarrollo,benefit
+152,Jornada completa,benefit
+153,Gestión de propuestas,must
+153,Data,must
+153,IA,must
+153,Innovación,soft_skill
+153,Compromiso,soft_skill
+153,Proactividad,soft_skill
+153,Trabajo en equipo,soft_skill
+153,English,language
+154,Python,must
+154,C++,must
+154,Manipulación robótica,must
+154,Imitation Learning,must
+154,Reinforcement Learning,must
+154,Large Language Models (LLMs),must
+154,ROS,must
+154,Máster o Doctorado,nice
+154,Experiencia con financiación Horizon Europe,nice
+154,Python,tech_stack
+154,C++,tech_stack
+154,ROS,tech_stack
+154,Proactivo,soft_skill
+154,Autónomo,soft_skill
+154,Responsable,soft_skill
+154,Resolutivo,soft_skill
+154,Adaptable,soft_skill
+154,Trabajo en equipo,soft_skill
+154,Comunicación,soft_skill
+154,Organización,soft_skill
+154,English,language
+154,Spanish,language
+154,Medidas de conciliación vida personal y profesional,benefit
+154,Oportunidades de desarrollo y crecimiento profesional,benefit
+154,Proyectos de alto impacto,benefit
+154,Autonomía técnica,benefit
+154,Colaboración con universidades y centros de investigación líderes,benefit
+155,Python,must
+155,LangChain,must
+155,LlamaIndex,must
+155,AutoGPT,must
+155,Gemini API,must
+155,Claude API,must
+155,OpenAI API,must
+155,software architecture,must
+155,API integration,must
+155,backend development,must
+155,automation,must
+155,AWS,nice
+155,GCP,nice
+155,Azure,nice
+155,Docker,nice
+155,Kubernetes,nice
+155,SQL,nice
+155,distributed systems,nice
+155,CI/CD,nice
+155,Git,nice
+155,RPA,nice
+155,Python,tech_stack
+155,LangChain,tech_stack
+155,LlamaIndex,tech_stack
+155,AutoGPT,tech_stack
+155,Gemini,tech_stack
+155,Claude,tech_stack
+155,OpenAI,tech_stack
+155,AWS,tech_stack
+155,GCP,tech_stack
+155,Azure,tech_stack
+155,Docker,tech_stack
+155,Kubernetes,tech_stack
+155,SQL,tech_stack
+155,Git,tech_stack
+155,CI/CD,tech_stack
+155,collaboration,soft_skill
+155,communication,soft_skill
+155,problem solving,soft_skill
+155,competitive salary,benefit
+155,professional growth plan,benefit
+155,hybrid work model,benefit
+155,continuous training in generative AI,benefit
+156,Inglés (intermedio/avanzado),must
+156,Ofimática,must
+156,Diseño y validación de algoritmos de IA,nice
+156,Machine learning,nice
+156,Deep learning,nice
+156,Procesamiento de señales biomédicas,nice
+156,Python,nice
+156,MATLAB,nice
+156,TensorFlow,nice
+156,PyTorch,nice
+156,Normativas y certificación de dispositivos médicos,nice
+156,Liderazgo,nice
+156,Comunicación,nice
+156,Gestión de equipos,nice
+156,Python,tech_stack
+156,MATLAB,tech_stack
+156,TensorFlow,tech_stack
+156,PyTorch,tech_stack
+156,Liderazgo,soft_skill
+156,Comunicación,soft_skill
+156,Gestión de equipos,soft_skill
+156,Gestión de proyectos,soft_skill
+156,Inglés,language
+157,Machine Learning,must
+157,Deep Learning,must
+157,"Model integration (LangChain, Semantic Kernel)",must
+157,Pipeline design,must
+157,MLOps,must
+157,Git (GitLab),must
+157,"Master's degree in Software Engineering, Data Engineering, Machine Learning, AI, or Data Science",nice
+157,Jupyter Notebook,nice
+157,DVC,nice
+157,MLflow,nice
+157,Python development,nice
+157,Scikit-Learn,nice
+157,TensorFlow,nice
+157,PyTorch,nice
+157,Pandas,nice
+157,NumPy,nice
+157,"Vector databases (Chroma, Weaviate, Pinecone)",nice
+157,Databricks,nice
+157,SageMaker,nice
+157,AzureML,nice
+157,Linux server administration,nice
+157,Docker,nice
+157,GitLab CI,nice
+157,"European AI regulations (AI Act, GDPR, CRA)",nice
+157,Technical English documentation,nice
+157,I+D project experience,nice
+157,Technical reporting,nice
+157,Python,tech_stack
+157,LangChain,tech_stack
+157,Semantic Kernel,tech_stack
+157,GitLab,tech_stack
+157,Scikit-Learn,tech_stack
+157,TensorFlow,tech_stack
+157,PyTorch,tech_stack
+157,Pandas,tech_stack
+157,NumPy,tech_stack
+157,DVC,tech_stack
+157,MLflow,tech_stack
+157,Chroma,tech_stack
+157,Weaviate,tech_stack
+157,Pinecone,tech_stack
+157,Databricks,tech_stack
+157,SageMaker,tech_stack
+157,AzureML,tech_stack
+157,Docker,tech_stack
+157,Linux,tech_stack
+157,Autonomous problem solving,soft_skill
+157,Teamwork,soft_skill
+157,Initiative,soft_skill
+157,Presentation skills,soft_skill
+157,Continuous learning,soft_skill
+157,Critical thinking,soft_skill
+157,Solution-oriented mindset,soft_skill
+157,Community involvement,soft_skill
+157,English,language
+157,Continuous training,benefit
+157,Long-term employment,benefit
+157,Career growth opportunities,benefit
+157,Flexible working hours,benefit
+157,Hybrid work (on-site and remote),benefit
+157,Equality and non-discrimination policy,benefit
+158,Programación,must
+158,Inteligencia Artificial,must
+158,Herramientas ofimáticas,must
+158,Inglés (B2),must
+158,Preocupación por la calidad,soft_skill
+158,Iniciativa y espíritu emprendedor,soft_skill
+158,Trabajo en equipo,soft_skill
+158,Toma de decisiones y resolución de problemas,soft_skill
+158,Capacidad de aprender,soft_skill
+158,Habilidades básicas de manejo del ordenador,soft_skill
+158,Capacidad de análisis y síntesis,soft_skill
+158,Capacidad crítica y autocrítica,soft_skill
+158,Orientación a la calidad,soft_skill
+158,Mentalidad de crecimiento y aprendizaje activo,soft_skill
+158,Conciencia y competencia digital,soft_skill
+158,Inglés (B2),language
+158,"Bolsa de ayuda de 550,00€ brutos mensuales",benefit
+158,Jornada de 5h diarias en la mañana,benefit
+158,Telepráctica semi-presencial,benefit
+158,Programa START,benefit
+159,Apache Spark,must
+159,Apache Kafka,must
+159,SQL,must
+159,Java,must
+159,Python,must
+159,Scrum,must
+159,Machine learning,must
+159,Big Data Architectures,must
+159,Apache Spark,tech_stack
+159,Apache Kafka,tech_stack
+159,SQL,tech_stack
+159,Java,tech_stack
+159,Python,tech_stack
+159,Horario flexible,benefit
+159,Jornada intensiva en verano,benefit
+159,Teletrabajo,benefit
+159,Seguro médico privado con póliza dental y de accidentes,benefit
+159,"Plan de retribución flexible (tickets restaurante, tickets guardería, seguro médico familiar)",benefit
+159,"Actividades de equipo, eventos y competiciones deportivas",benefit
+159,Acceso a Gympass,benefit
+159,No dress code,benefit
+159,Relocation package,benefit
+159,Fruta y café en el comedor,benefit
+160,Programación,must
+160,Tecnologías de Inteligencia Artificial,must
+160,Herramientas ofimáticas,must
+160,Inglés (B2),must
+160,Capacidad de aplicar los conocimientos a la práctica,soft_skill
+160,Orientación al logro,soft_skill
+160,Preocupación por la calidad,soft_skill
+160,Compromiso ético,soft_skill
+160,Trabajo en equipo,soft_skill
+160,Toma de decisiones y resolución de problemas,soft_skill
+160,Capacidad crítica y autocrítica,soft_skill
+160,Capacidad de aprender,soft_skill
+160,Capacidad de análisis y síntesis,soft_skill
+160,Mentalidad de crecimiento,soft_skill
+160,Pensamiento crítico y solución creativa de problemas,soft_skill
+160,English (B2),language
+160,"Bolsa de ayuda de 550,00€ brutos mensuales",benefit
+160,Jornada de 5 horas diarias en la mañana,benefit
+160,Telepráctica semi-presencial,benefit
+161,Azure,must
+161,Microsoft Fabric,must
+161,Azure Databricks,must
+161,Azure Data Factory,must
+161,Azure Purview,must
+161,Unity Catalog,must
+161,Power BI,must
+161,DataOps,must
+161,DevSecOps,must
+161,FinOps,must
+161,Data Architecture,must
+161,Data Governance,must
+161,APIs,nice
+161,Digital twins,nice
+161,Streaming ingestion,nice
+161,Batch processing,nice
+161,Azure,tech_stack
+161,Microsoft Fabric,tech_stack
+161,Azure Databricks,tech_stack
+161,Azure Data Factory,tech_stack
+161,Azure Purview,tech_stack
+161,Unity Catalog,tech_stack
+161,Power BI,tech_stack
+161,Technical leadership,soft_skill
+161,Consultative mindset,soft_skill
+161,Clear communication,soft_skill
+161,Teamwork,soft_skill
+161,Mentoring,soft_skill
+161,Task organization,soft_skill
+161,Incident management,soft_skill
+161,Bilingual communication,soft_skill
+161,Spanish,language
+161,English,language
+161,Continuous training,benefit
+161,"Hybrid work model (2 days office, 3 remote)",benefit
+161,Inclusive culture,benefit
+161,Career development opportunities,benefit
+162,Python,must
+162,Matlab,must
+162,Simulink,must
+162,Python,tech_stack
+162,Matlab,tech_stack
+162,Simulink,tech_stack
+162,proactivo,soft_skill
+162,colaborador,soft_skill
+162,autónomo,soft_skill
+162,contrato indefinido,benefit
+162,horario flexible,benefit
+162,teletrabajo,benefit
+162,equipo de trabajo joven y colaborador,benefit
+162,laboratorios con equipamiento de última generación,benefit
+162,proyecto con impacto social,benefit
+163,dermatología clínica,must
+163,diagnóstico asistido por IA,must
+163,telemedicina,must
+163,communicación,soft_skill
+163,rigor científico,soft_skill
+163,liderazgo,soft_skill
+163,estructuración de conocimiento,soft_skill
+163,royalties,benefit
+163,visibilidad internacional,benefit
+163,soporte técnico y científico,benefit
+163,acceso al panel de innovación,benefit
+164,Dermatología clínica,must
+164,Diagnóstico asistido por IA,must
+164,Telemedicina,must
+164,Comunicación científica,must
+164,Comunicación efectiva,soft_skill
+164,Rigor científico,soft_skill
+164,Liderazgo,soft_skill
+164,Royalties,benefit
+164,Visibilidad internacional,benefit
+164,Soporte técnico y científico,benefit
+164,Acceso al Panel Global de Innovación,benefit
+165,Video editing,must
+165,Post-production,must
+165,Premiere Pro,must
+165,After Effects,must
+165,Davinci Resolve,must
+165,Runway,must
+165,Kling,must
+165,Veo 3,must
+165,Midjourney,must
+165,Leonardo,must
+165,ElevenLabs,must
+165,Heygen,must
+165,Motion design,nice
+165,Typography,nice
+165,Multimedia integration,nice
+165,Premiere Pro,tech_stack
+165,After Effects,tech_stack
+165,Davinci Resolve,tech_stack
+165,Runway,tech_stack
+165,Kling,tech_stack
+165,Veo 3,tech_stack
+165,Midjourney,tech_stack
+165,Leonardo,tech_stack
+165,ElevenLabs,tech_stack
+165,Heygen,tech_stack
+165,Proactive,soft_skill
+165,Curious,soft_skill
+165,Attention to detail,soft_skill
+165,Ability to work under tight deadlines,soft_skill
+165,Collaborative,soft_skill
+165,Continuous learning,soft_skill
+165,Catalan,language
+165,English,language
+165,Spanish,language
+166,Python,must
+166,C#,must
+166,AI,must
+166,Data Science,must
+166,Comunicación,must
+166,Trabajo con niños,nice
+166,Trabajo con adolescentes,nice
+166,Python,tech_stack
+166,C#,tech_stack
+166,Unity,tech_stack
+166,Godot,tech_stack
+166,Creatividad,soft_skill
+166,Responsabilidad,soft_skill
+166,Puntualidad,soft_skill
+166,Motivación,soft_skill
+166,Capacidad comunicativa,soft_skill
+166,Experiencia laboral en una marca educativa innovadora y en expansión,benefit
+166,Formación inicial remunerada y acceso al manual pedagógico de Logiscool,benefit
+166,Acceso completo a la plataforma educativa y contenido predefinido,benefit
+166,Acompañamiento continuo del equipo Logiscool,benefit
+166,Comunidad internacional de instructores a través de Discord,benefit
+166,Contratos fijos discontinuos o freelance,benefit
+166,Sueldo según convenio,benefit
+167,Databricks Mosaic AI,must
+167,Model APIs,must
+167,MLflow,must
+167,Azure,must
+167,Python,must
+167,SQL,must
+167,Terraform,must
+167,CI/CD,must
+167,AI governance,must
+167,Model deployment,must
+167,Vector search,must
+167,"Multicloud (Azure, AWS, GCP)",must
+167,Databricks,tech_stack
+167,Mosaic AI,tech_stack
+167,MLflow,tech_stack
+167,Azure,tech_stack
+167,Python,tech_stack
+167,SQL,tech_stack
+167,Terraform,tech_stack
+167,CI/CD,tech_stack
+167,AWS,tech_stack
+167,GCP,tech_stack
+167,English,language
+167,Seguro médico,benefit
+167,Ayuda al remoto,benefit
+167,Ticket restaurant,benefit
+167,Transporte,benefit
+167,26 días de vacaciones,benefit
+167,Flexibilidad y teletrabajo,benefit
+167,Formación continua,benefit
+167,Plan de carrera,benefit
+168,entrenamiento de modelos de IA,must
+168,fine-tuning en Azure,must
+168,MLOps,must
+168,uso de TensorFlow,must
+168,uso de PyTorch,must
+168,uso de Scikit-Learn,must
+168,gestión de pipelines de datos,must
+168,gestión de entornos y versiones de modelos,must
+168,comunicación,must
+168,trabajo en equipo,must
+168,resolución de problemas complejos,must
+168,certificaciones en Azure,nice
+168,certificaciones en MLOps,nice
+168,desarrollo de modelos NLP,nice
+168,desarrollo de modelos de Computer Vision,nice
+168,conocimiento de AWS,nice
+168,conocimiento de Google Cloud,nice
+168,Azure,tech_stack
+168,TensorFlow,tech_stack
+168,PyTorch,tech_stack
+168,Scikit-Learn,tech_stack
+168,AWS,tech_stack
+168,Google Cloud,tech_stack
+168,Scala,tech_stack
+168,comunicación,soft_skill
+168,trabajo en equipo,soft_skill
+168,resolución de problemas,soft_skill
+168,independencia,soft_skill
+168,eficiencia,soft_skill
+168,trabajo remoto,benefit
+168,desarrollo profesional,benefit
+168,oportunidades de crecimiento,benefit
+168,modalidad de trabajo flexible,benefit
+168,entorno dinámico,benefit
+169,Arquitectura de soluciones de IA,must
+169,Diseño de data pipelines,must
+169,MLOps,must
+169,Governance,must
+169,Microsoft Azure,tech_stack
+169,Azure Machine Learning,tech_stack
+169,Azure Cognitive Services,tech_stack
+169,Azure OpenAI,tech_stack
+169,Azure Synapse,tech_stack
+169,Azure Data Lake,tech_stack
+169,Docker,tech_stack
+169,Kubernetes,tech_stack
+169,CI/CD,tech_stack
+169,Leadership,soft_skill
+169,Collaboration,soft_skill
+169,Stakeholder management,soft_skill
+169,Mentoring,soft_skill
+169,Communication,soft_skill
+170,Machine Learning,must
+170,Data Analytics,must
+170,Automation,must
+170,SaaS development,must
+170,Communication,must
+170,Leadership,must
+170,Networking,must
+170,Machine Learning,tech_stack
+170,Data Analytics,tech_stack
+170,Automation,tech_stack
+170,SaaS,tech_stack
+170,Entrepreneurial mindset,soft_skill
+170,Resilience,soft_skill
+170,Execution orientation,soft_skill
+170,Communication,soft_skill
+170,Leadership,soft_skill
+170,Networking,soft_skill
+170,Equity participation,benefit
+170,"Integrated support (strategy, marketing, technology development, mentor network)",benefit
+170,Initial funding for MVP validation and construction,benefit
+170,Collaborative workspace with other entrepreneurs and startups,benefit
+170,Opportunity to create a company from scratch with venture fund backing,benefit
+171,Project Management,must
+171,Strategic Consulting,must
+171,Operations Management,must
+171,Data Analysis,must
+171,AI Knowledge,must
+171,Leadership,must
+171,Communication,must
+171,SaaS B2B,nice
+171,Leadership,soft_skill
+171,Communication,soft_skill
+171,Stakeholder Management,soft_skill
+171,Strategic Thinking,soft_skill
+171,Analytical Thinking,soft_skill
+171,Premium health insurance,benefit
+171,Stimulating work environment,benefit
+171,Remote work flexibility,benefit
+172,Product Management,must
+172,UX Design,must
+172,User Research,must
+172,Prototyping,must
+172,Strategic Planning,must
+172,Data Analysis,must
+172,AI tools,must
+172,Startup experience,nice
+172,Product launch (own or side project),nice
+172,Curiosity for new technologies,nice
+172,ChatGPT,tech_stack
+172,Copilot,tech_stack
+172,LLMs,tech_stack
+172,APIs,tech_stack
+172,Automation tools,tech_stack
+172,Content generation tools,tech_stack
+172,Data analysis tools,tech_stack
+172,Strategic vision,soft_skill
+172,Creativity,soft_skill
+172,Analytical thinking,soft_skill
+172,Result orientation,soft_skill
+172,Communication,soft_skill
+172,Collaboration,soft_skill
+172,User empathy,soft_skill
+172,Contrato indefinido,benefit
+172,Salario según experiencia,benefit
+172,Mejoras de convenio,benefit
+172,1778 horas anuales de convenio,benefit
+172,Día de cumpleaños libre,benefit
+172,25% teletrabajo,benefit
+172,Flexibilidad horaria,benefit
+172,Jornada intensiva viernes y en julio/agosto,benefit
+172,Plan de desarrollo profesional,benefit
+172,Revisión salarial periódica,benefit
+172,Formación continua,benefit
+172,Entorno profesional de alto nivel,benefit
+172,Equipo colaborativo,benefit
+172,Proyectos reales y variados,benefit
+172,Buen ambiente,benefit
+173,Machine Learning,must
+173,Deep Learning,must
+173,Generative AI,must
+173,Cloud architectures,must
+173,On-premise architectures,must
+173,Data architecture,must
+173,Data governance,must
+173,Data quality,must
+173,Metadata management,must
+173,Public sector domain knowledge,nice
+173,Strategic vision,soft_skill
+173,Execution capability,soft_skill
+173,Collaboration,soft_skill
+173,Curiosity,soft_skill
+173,Purpose-driven,soft_skill
+173,Hybrid work (1 day on-site),benefit
+173,Maximum flexibility,benefit
+173,Continuous training and development,benefit
+173,Career development with purpose,benefit
+173,"Diversity, inclusion and wellbeing programs",benefit
+173,Access to unique technological initiatives,benefit
+174,UX/UI design,must
+174,visual identity design,must
+174,social media content creation,must
+174,prototyping,must
+174,AI tools utilization,must
+174,product launch experience,nice
+174,side project development,nice
+174,rapid hypothesis validation,nice
+174,curiosity for new technologies,nice
+174,ChatGPT,tech_stack
+174,Copilot,tech_stack
+174,LLMs,tech_stack
+174,APIs,tech_stack
+174,automation tools,tech_stack
+174,creativity,soft_skill
+174,analytical thinking,soft_skill
+174,results orientation,soft_skill
+174,strategic vision,soft_skill
+174,execution,soft_skill
+174,curiosity,soft_skill
+174,collaboration,soft_skill
+174,autonomy,soft_skill
+174,Contrato indefinido,benefit
+174,Salario según experiencia,benefit
+174,Mejoras de convenio,benefit
+174,1778 horas anuales de convenio,benefit
+174,Más vacaciones + día de cumpleaños libre,benefit
+174,25% teletrabajo,benefit
+174,Flexibilidad horaria,benefit
+174,Jornada intensiva los viernes y en julio/agosto,benefit
+174,Plan de desarrollo profesional y revisión salarial periódica,benefit
+174,Formación continua y especializada,benefit
+174,Entorno profesional de alto nivel y equipo colaborativo,benefit
+174,Ecosistema de proyectos reales y variados,benefit
+174,Buen ambiente con valoración de autonomía y colaboración,benefit
+175,React,must
+175,Next.js,must
+175,Node.js,must
+175,Python,must
+175,OOP,must
+175,Design patterns,must
+175,Testing,must
+175,CI/CD,must
+175,API development,must
+175,ETL,must
+175,Data pipelines,must
+175,LLMs,must
+175,Agents,must
+175,RAG,must
+175,Vector databases,must
+175,OCR,must
+175,Document AI,must
+175,DevOps,must
+175,GCP,must
+175,AWS,must
+175,Containers,must
+175,Comunicación clara,must
+175,Trabajo en equipo,must
+175,React,tech_stack
+175,Next.js,tech_stack
+175,Node.js,tech_stack
+175,Python,tech_stack
+175,LLMs,tech_stack
+175,Agents,tech_stack
+175,RAG,tech_stack
+175,Vector databases,tech_stack
+175,OCR,tech_stack
+175,Document AI,tech_stack
+175,GCP,tech_stack
+175,AWS,tech_stack
+175,Containers,tech_stack
+175,CI/CD,tech_stack
+175,Comunicación clara,soft_skill
+175,Trabajo en equipo,soft_skill
+175,Colaboración,soft_skill
+175,Orientación a la calidad,soft_skill
+175,Flexibilidad,benefit
+175,Crecimiento real,benefit
+175,Retribución acorde a experiencia,benefit
+176,Python,must
+176,PyTorch,must
+176,TensorFlow,must
+176,scikit-learn,must
+176,Hugging Face Transformers,must
+176,Model deployment,must
+176,Model monitoring,must
+176,Bias mitigation,must
+176,Explainability,must
+176,Fairness,must
+176,Generative AI,nice
+176,Large Language Models (LLMs),nice
+176,Diffusion models,nice
+176,Cloud deployments,nice
+176,MLOps,nice
+176,Financial industry knowledge,nice
+176,Open-source contributions,nice
+176,AI community leadership,nice
+176,Python,tech_stack
+176,PyTorch,tech_stack
+176,TensorFlow,tech_stack
+176,scikit-learn,tech_stack
+176,Hugging Face Transformers,tech_stack
+176,Collaboration,soft_skill
+176,Communication,soft_skill
+176,Agile methodology,soft_skill
+176,Responsible AI,soft_skill
+176,Problem solving,soft_skill
+176,English (B2/C1),language
+177,C/C++,must
+177,LLVM,must
+177,MLIR,must
+177,RISC-V,must
+177,Bare-metal,must
+177,RTOS,must
+177,Embedded Linux,must
+177,Git,must
+177,CMake,must
+177,TensorFlow,nice
+177,PyTorch,nice
+177,ONNX,nice
+177,TensorFlow Lite,nice
+177,TFLM,nice
+177,GNU toolchain,nice
+177,GDB,nice
+177,QEMU,nice
+177,CI/CD,nice
+177,Python,nice
+177,Open-source development,nice
+177,C,tech_stack
+177,C++,tech_stack
+177,LLVM,tech_stack
+177,MLIR,tech_stack
+177,RISC-V,tech_stack
+177,TensorFlow,tech_stack
+177,PyTorch,tech_stack
+177,ONNX,tech_stack
+177,TensorFlow Lite,tech_stack
+177,TFLM,tech_stack
+177,GNU toolchain,tech_stack
+177,GDB,tech_stack
+177,QEMU,tech_stack
+177,Linux,tech_stack
+177,Git,tech_stack
+177,CMake,tech_stack
+177,CI/CD,tech_stack
+177,Python,tech_stack
+177,communication,soft_skill
+177,teamwork,soft_skill
+177,collaboration,soft_skill
+178,Python,must
+178,R,must
+178,Java,must
+178,C++,must
+178,TensorFlow,must
+178,Keras,must
+178,PyTorch,must
+178,Scikit-learn,must
+178,deep learning,must
+178,machine learning,must
+178,AI solution design,must
+178,communication,must
+178,problem solving,must
+178,teamwork,must
+178,Azure OpenAI Service,nice
+178,Google PaLM API,nice
+178,Amazon Bedrock,nice
+178,IBM Watsonx.ai,nice
+178,Hugging Face,nice
+178,Python,tech_stack
+178,R,tech_stack
+178,Java,tech_stack
+178,C++,tech_stack
+178,TensorFlow,tech_stack
+178,Keras,tech_stack
+178,PyTorch,tech_stack
+178,Scikit-learn,tech_stack
+178,Azure OpenAI Service,tech_stack
+178,Google PaLM API,tech_stack
+178,Amazon Bedrock,tech_stack
+178,IBM Watsonx.ai,tech_stack
+178,Hugging Face,tech_stack
+178,communication,soft_skill
+178,problem solving,soft_skill
+178,teamwork,soft_skill
+178,client interaction,soft_skill
+178,leadership,soft_skill
+179,React,must
+179,Next.js,must
+179,Node.js,must
+179,Python,must
+179,OOP,must
+179,Design patterns,must
+179,Testing,must
+179,LLMs,must
+179,RAG,must
+179,Vector databases,must
+179,OCR,must
+179,Document AI,must
+179,DevOps,must
+179,GCP,must
+179,AWS,must
+179,Containers,must
+179,CI/CD,must
+179,Clear communication,must
+179,Teamwork,must
+179,"Legal knowledge (civil, commercial, fiscal)",must
+179,React,tech_stack
+179,Next.js,tech_stack
+179,Node.js,tech_stack
+179,Python,tech_stack
+179,GCP,tech_stack
+179,AWS,tech_stack
+179,Docker,tech_stack
+179,CI/CD,tech_stack
+179,LLMs,tech_stack
+179,RAG,tech_stack
+179,Vector databases,tech_stack
+179,OCR,tech_stack
+179,Document AI,tech_stack
+179,Clear communication,soft_skill
+179,Teamwork,soft_skill
+179,Quality orientation,soft_skill
+179,Collaboration,soft_skill
+179,Flexibility,benefit
+179,Growth opportunities,benefit
+179,Multidisciplinary team,benefit
+179,Impactful project,benefit
+179,Potential stable employment,benefit
+179,Competitive compensation,benefit
+180,C#,must
+180,.NET,must
+180,Arquitecturas de agentes de IA,must
+180,LLMs,must
+180,GitHub Copilot,must
+180,APIs REST,must
+180,APIs GraphQL,must
+180,Azure,must
+180,Trabajo en equipo,must
+180,PostgreSQL,nice
+180,MongoDB,nice
+180,Arquitecturas distribuidas,nice
+180,Microservicios,nice
+180,Tendencias en IA,nice
+180,C#,tech_stack
+180,.NET,tech_stack
+180,Azure,tech_stack
+180,GitHub Copilot,tech_stack
+180,REST,tech_stack
+180,GraphQL,tech_stack
+180,PostgreSQL,tech_stack
+180,MongoDB,tech_stack
+180,LangChain,tech_stack
+180,Semantic Kernel,tech_stack
+180,AutoGen,tech_stack
+180,Trabajo en equipo,soft_skill
+180,Adaptabilidad,soft_skill
+180,Pensamiento innovador,soft_skill
+180,Trabajo presencial híbrido,benefit
+180,Horarios flexibles,benefit
+180,Retribución competitiva,benefit
+180,Posibilidad de crecimiento a largo plazo,benefit
+181,no-code tools,must
+181,email marketing,must
+181,additional languages,nice
+181,foreign trade knowledge,nice
+181,AI,tech_stack
+181,Blockchain,tech_stack
+181,no-code platforms,tech_stack
+181,email marketing tools,tech_stack
+181,English (medium),language
+181,Media jornada,benefit
+181,Prácticas virtuales,benefit
+181,Teletrabajo,benefit
+181,Participación en proyectos internos,benefit
+182,Inteligencia Artificial aplicada,must
+182,Intelligent Automation,must
+182,Definición de roadmaps y business cases,must
+182,Comunicación y facilitación de workshops,must
+182,Gestión de stakeholders a nivel directivo,must
+182,Traducción de objetivos de negocio en planes tecnológicos,must
+182,RPA,nice
+182,Power Automate,nice
+182,Power Apps,nice
+182,Power Virtual Agents,nice
+182,Power BI,nice
+182,Azure AI,nice
+182,Microsoft Copilot,nice
+182,"Conocimiento del sector financiero, supply chain o retail",nice
+182,Divulgación y formación en IA y automatización,nice
+182,Microsoft Dynamics 365,tech_stack
+182,Power Platform,tech_stack
+182,Power Automate,tech_stack
+182,Power Apps,tech_stack
+182,Power Virtual Agents,tech_stack
+182,Power BI,tech_stack
+182,Azure,tech_stack
+182,Azure AI,tech_stack
+182,Microsoft Copilot,tech_stack
+182,RPA,tech_stack
+182,Comunicación,soft_skill
+182,Facilitación de workshops,soft_skill
+182,Gestión de stakeholders,soft_skill
+182,Pensamiento estratégico,soft_skill
+182,Gestión del cambio,soft_skill
+182,Trabajo en equipo,soft_skill
+182,Inglés (nivel profesional),language
+182,Formación y aprendizaje continuos,benefit
+182,Trabajo remoto,benefit
+182,Flexibilidad horaria,benefit
+182,Jornadas intensivas los viernes,benefit
+182,Tardes libres en julio y agosto,benefit
+182,Retribución flexible,benefit
+182,Descuentos para empleados,benefit
+182,Eventos de empresa,benefit
+182,Participación en eventos Microsoft,benefit
+182,Ambiente de trabajo dinámico e inclusivo,benefit
+183,Product design,must
+183,UI/UX design,must
+183,Figma,must
+183,Design Systems,must
+183,AI-assisted UI,must
+183,Generative tools,must
+183,LLMs,must
+183,Responsible design frameworks,must
+183,Accessible design,must
+183,Clear documentation,must
+183,Professional English,must
+183,Remote collaboration,must
+183,Figma,tech_stack
+183,LLM,tech_stack
+183,Generative AI,tech_stack
+183,Leadership,soft_skill
+183,Mentorship,soft_skill
+183,Cross-functional collaboration,soft_skill
+183,Clear documentation,soft_skill
+183,Empathy,soft_skill
+183,Passion,soft_skill
+183,Risk-taking,soft_skill
+183,High standards,soft_skill
+183,English,language
+184,Scikit-learn,must
+184,TensorFlow,must
+184,PyTorch,must
+184,Keras,must
+184,Transformers,must
+184,GANs,must
+184,Autoencoders,must
+184,Language models,must
+184,GPU utilization,must
+184,Multimodal AI,nice
+184,Docker,nice
+184,Container architectures,nice
+184,Python,tech_stack
+184,Scikit-learn,tech_stack
+184,TensorFlow,tech_stack
+184,PyTorch,tech_stack
+184,Keras,tech_stack
+184,Docker,tech_stack
+184,GPU,tech_stack
+184,Creativity,soft_skill
+184,Problem solving,soft_skill
+184,Innovation,soft_skill
+184,Communication,soft_skill
+184,Project management,soft_skill
+184,Teamwork,soft_skill
+184,Autonomy,soft_skill
+184,English,language
+184,Indefinite contract,benefit
+184,Flexible schedule,benefit
+184,Remote work up to 2 days per week (possible 3),benefit
+184,Young technology environment,benefit
+184,Professional development support,benefit
+184,Participation in decision making,benefit
+184,Team spirit,benefit
+185,SciKit-learn,must
+185,TensorFlow,must
+185,PyTorch,must
+185,Keras,must
+185,Transformers,must
+185,GANs,must
+185,autoencoders,must
+185,Modelos de lenguaje,must
+185,Desarrollo de software,must
+185,Experimentos con grandes conjuntos de datos,must
+185,Uso de GPUs,must
+185,IA multimodal,nice
+185,Docker,nice
+185,Python,tech_stack
+185,SciKit-learn,tech_stack
+185,TensorFlow,tech_stack
+185,PyTorch,tech_stack
+185,Keras,tech_stack
+185,Transformers,tech_stack
+185,GANs,tech_stack
+185,autoencoders,tech_stack
+185,Docker,tech_stack
+185,GPU,tech_stack
+185,Comunicación en inglés,soft_skill
+185,Creatividad,soft_skill
+185,Resolutivo,soft_skill
+185,Pasión por la innovación tecnológica,soft_skill
+185,Trabajo en equipo,soft_skill
+185,Gestión de proyectos,soft_skill
+185,Inglés,language
+185,Contrato indefinido,benefit
+185,Horario flexible,benefit
+185,"Trabajo híbrido (2 días en oficina, 2 días teletrabajo, 1 día de equipo)",benefit
+185,Participación en la toma de decisiones,benefit
+185,Ambiente de trabajo joven y tecnológico,benefit
+185,Compañerismo,benefit
+186,habilidades físicas,must
+186,atención al detalle,must
+186,actitud proactiva,must
+186,recepción,must
+186,almacenamiento,must
+186,distribución,must
+186,colaboración,soft_skill
+186,efectividad,soft_skill
+187,Excelentes habilidades de comunicación,must
+187,Excelentes habilidades de comunicación escrita y verbal,must
+187,Sólidos conocimientos de herramientas de gestión de proyectos,must
+187,"Sólidas habilidades de organización, incluyendo atención al detalle y multitarea",must
+187,Certificación PMP,nice
+187,Comunicación,soft_skill
+187,Organización,soft_skill
+187,Atención al detalle,soft_skill
+187,Multitarea,soft_skill
+187,Gestión de partes interesadas,soft_skill
+187,Elaboración de documentación,soft_skill
+187,Presentación de informes,soft_skill
+188,Fundamentos de IA,must
+188,Machine Learning,must
+188,Análisis predictivo,must
+188,SQL,must
+188,Python,must
+188,TensorFlow,must
+188,PyTorch,must
+188,Scikit-Learn,must
+188,Power BI,must
+188,Tableau,must
+188,Looker,must
+188,BigQuery,must
+188,Snowflake,must
+188,"Metodologías ágiles (Scrum, Kanban)",must
+188,Máster en Ciencia de Datos,nice
+188,Máster en Inteligencia Artificial,nice
+188,Máster en Gestión de Proyectos Tecnológicos,nice
+188,Gestión de equipos,nice
+188,Coordinación de proyectos tecnológicos,nice
+188,Python,tech_stack
+188,SQL,tech_stack
+188,TensorFlow,tech_stack
+188,PyTorch,tech_stack
+188,Scikit-Learn,tech_stack
+188,Power BI,tech_stack
+188,Tableau,tech_stack
+188,Looker,tech_stack
+188,BigQuery,tech_stack
+188,Snowflake,tech_stack
+188,liderazgo,soft_skill
+188,comunicación,soft_skill
+188,trabajo en equipo,soft_skill
+188,colaboración interdepartamental,soft_skill
+188,gestión de proyectos,soft_skill
+188,proactividad,soft_skill
+188,Entorno dinámico y colaborativo,benefit
+188,Oportunidades de desarrollo profesional y formación continua,benefit
+188,Flexibilidad laboral,benefit
+189,Comunicación,soft_skill
+189,Empatía,soft_skill
+189,Trabajo en equipo,soft_skill
+190,Atención al detalle,soft_skill
+190,Habilidades analíticas,soft_skill
+191,Comunicación,must
+191,Servicio al cliente,must
+191,Gestión de inventario,must
+191,Proactividad,must
+191,Trabajo en equipo,soft_skill
+191,Orientación al cliente,soft_skill
+191,Español,language
+192,proactivo,soft_skill
+192,comunicación,soft_skill
+192,servicio al cliente,soft_skill
+192,gestión de inventario,soft_skill
+193,proactivo,must
+193,comunicación,must
+193,servicio al cliente,must
+193,gestión de inventario,must
+193,comunicación,soft_skill
+193,proactividad,soft_skill
+193,orientación al cliente,soft_skill
+193,trabajo en equipo,soft_skill
+194,gestión de inventario,must
+194,proactivo,soft_skill
+194,comunicación,soft_skill
+194,orientación al cliente,soft_skill
+195,comunicación,must
+195,servicio al cliente,must
+195,gestión de inventario,must
+195,proactivo,must
+195,proactividad,soft_skill
+195,orientación al cliente,soft_skill
+195,comunicación,soft_skill
+196,comunicación,soft_skill
+196,proactividad,soft_skill
+196,orientación al cliente,soft_skill
+196,gestión de inventario,soft_skill
+197,Python,must
+197,PySpark,must
+197,Machine Learning,must
+197,Deep Learning,must
+197,MLOps,must
+197,Data pipelines,must
+197,Inglés C1,must
+197,Algoritmia,must
+197,IA generativa,nice
+197,Visualización de datos,nice
+197,Python,tech_stack
+197,PySpark,tech_stack
+197,Liderazgo técnico,soft_skill
+197,Autonomía,soft_skill
+197,Capacidad analítica,soft_skill
+197,Comunicación efectiva,soft_skill
+197,Inglés,language
+197,Descuentos exclusivos y opciones de financiación,benefit
+197,Seguro de vida,benefit
+197,Universidad Corporativa,benefit
+197,Formación continua para el desarrollo profesional,benefit
+197,Ayudas al estudio para hijos e hijas de empleados,benefit
+197,Servicio Médico propio,benefit
+197,Ayudas para circunstancias personales o familiares concretas,benefit
+197,Plan de retribución flexible,benefit
+198,SEO,must
+198,Content creation,must
+198,Digital marketing,must
+198,AI generative,must
+198,Chatbot development,must
+198,Automation,must
+198,Google Analytics,must
+198,Google Search Console,must
+198,Semrush,must
+198,Photoshop,must
+198,Illustrator,must
+198,Branding,nice
+198,Project coordination,nice
+198,Multilingual translation,nice
+198,ChatGPT,tech_stack
+198,Gemini,tech_stack
+198,Grok,tech_stack
+198,Claude,tech_stack
+198,Google Analytics,tech_stack
+198,Google Search Console,tech_stack
+198,Semrush,tech_stack
+198,Photoshop,tech_stack
+198,Illustrator,tech_stack
+198,Organization,soft_skill
+198,Autonomy,soft_skill
+198,Multitasking,soft_skill
+198,Attention to detail,soft_skill
+198,Innovation,soft_skill
+198,Collaboration,soft_skill
+198,Result-oriented,soft_skill
+198,Spanish,language
+198,English,language
+198,French,language
+198,Italian,language
+198,Professional development opportunities,benefit
+198,Flexible collaborative environment,benefit
+198,High autonomy,benefit
+198,Participation in decision making,benefit
+199,interpersonal skills,soft_skill
+199,teamwork,soft_skill
+199,customer service,soft_skill
+200,AI regulation,must
+200,Risk assessment,must
+200,Legal drafting,must
+200,Consulting experience,nice
+200,Advisory,soft_skill
+200,Communication,soft_skill
+200,Collaboration,soft_skill
+200,Problem solving,soft_skill
+200,23 days of vacation per year,benefit
+200,Professional development,benefit
+200,Continuous training,benefit
+200,Corporate benefits platform,benefit
+200,Excellent collaborative work environment,benefit
+201,proactiva,soft_skill
+201,organización,soft_skill
+201,atención al detalle,soft_skill
+201,trabajo en equipo,soft_skill
+201,dedicación al cliente,soft_skill
+202,organizational skills,must
+202,attention to detail,must
+202,proactivity,must
+202,teamwork,soft_skill
+202,customer focus,soft_skill
+203,organización,must
+203,atención al detalle,must
+203,proactividad,must
+203,trabajo en equipo,soft_skill
+203,dedicación al cliente,soft_skill
+203,orientación al detalle,soft_skill
+203,proactividad,soft_skill
+204,proactividad,soft_skill
+204,organización,soft_skill
+204,atención al detalle,soft_skill
+204,trabajo en equipo,soft_skill
+205,organización de stock,must
+205,manejo de stock,must
+205,habilidades organizativas,must
+205,atención al detalle,must
+205,trabajo en equipo,must
+205,dedicación al cliente,must
+205,proactividad,soft_skill
+205,trabajo en equipo,soft_skill
+205,atención al detalle,soft_skill
+205,organización,soft_skill
+206,Big Data,must
+206,Inteligencia Artificial,must
+206,Excel Avanzado,must
+206,Power BI,must
+206,Power Query,must
+206,Power Pivot,must
+206,IA Generativa,must
+206,Power BI,tech_stack
+206,Excel,tech_stack
+206,Power Query,tech_stack
+206,Power Pivot,tech_stack
+206,Formación gratuita,benefit
+206,Orientación laboral personalizada,benefit
+206,Acompañamiento de expertos,benefit
+206,Conexión directa con empresas,benefit
+207,Conversational AI,must
+207,Dialogflow,must
+207,Microsoft LUIS,must
+207,Azure AI,must
+207,Cognigy,must
+207,JavaScript,must
+207,Node.js,must
+207,React,must
+207,Angular,must
+207,Python,must
+207,Java,must
+207,English (B2),must
+207,Advanced Cognigy,nice
+207,Insurance domain experience,nice
+207,Dialogflow,tech_stack
+207,Microsoft LUIS,tech_stack
+207,Azure AI,tech_stack
+207,Cognigy,tech_stack
+207,JavaScript,tech_stack
+207,Node.js,tech_stack
+207,React,tech_stack
+207,Angular,tech_stack
+207,Python,tech_stack
+207,Java,tech_stack
+207,English (B2),language
+207,Indefinite contract,benefit
+207,Collaborative environment,benefit
+207,Dynamic and flexible work environment,benefit
+207,Flexible modality,benefit
+208,Python,must
+208,R,must
+208,Java,must
+208,C++,must
+208,TensorFlow,must
+208,Keras,must
+208,PyTorch,must
+208,Scikit-learn,must
+208,Machine Learning,must
+208,Deep Learning,must
+208,Azure OpenAI Service,nice
+208,Google PaLM API,nice
+208,Amazon Bedrock,nice
+208,IBM Watsonx.ai,nice
+208,Hugging Face,nice
+208,Azure AI Engineer Associate,nice
+208,Google Professional Machine Learning Engineer,nice
+208,Python,tech_stack
+208,R,tech_stack
+208,Java,tech_stack
+208,C++,tech_stack
+208,TensorFlow,tech_stack
+208,Keras,tech_stack
+208,PyTorch,tech_stack
+208,Scikit-learn,tech_stack
+208,Azure OpenAI Service,tech_stack
+208,Google PaLM API,tech_stack
+208,Amazon Bedrock,tech_stack
+208,IBM Watsonx.ai,tech_stack
+208,Hugging Face,tech_stack
+208,Azure,tech_stack
+208,Google Cloud,tech_stack
+208,AWS,tech_stack
+208,Problem solving,soft_skill
+208,Teamwork,soft_skill
+208,Communication,soft_skill
+208,Client interaction,soft_skill
+208,Collaboration,soft_skill
+209,asesoramiento en inteligencia artificial,must
+209,conocimiento del Reglamento UE de IA,must
+209,redacción de cláusulas y contratos en IA,must
+209,definición de modelos de gobierno en IA,must
+209,análisis de riesgos y evaluaciones de impacto,must
+209,experiencia previa en consultoría,nice
+209,23 días hábiles de vacaciones al año,benefit
+209,desarrollo profesional,benefit
+209,formación continua,benefit
+209,plataforma de beneficios corporativos,benefit
+209,excelente ambiente de trabajo,benefit
+209,diversidad e inclusión,benefit
+210,Product Management,must
+210,Generative AI,must
+210,B2B SaaS,must
+210,User Research,must
+210,"Metrics definition (KPIs, OKRs, North Star)",must
+210,English communication,must
+210,Spanish communication,must
+210,Autonomy,must
+210,Strategic vision,must
+210,Legal sector knowledge,nice
+210,Creativity,soft_skill
+210,Empathy,soft_skill
+210,User focus,soft_skill
+210,Collaboration,soft_skill
+210,Experimentation,soft_skill
+210,Continuous improvement,soft_skill
+210,Ability to work in fast-paced environments,soft_skill
+210,English,language
+210,Spanish,language
+210,Horario flexible,benefit
+210,Jornada intensiva los viernes y en verano,benefit
+210,Modalidad híbrida: 2 días de teletrabajo a la semana,benefit
+210,"Compensación por teletrabajo (gastos de luz, internet, etc.)",benefit
+210,Formación continua,benefit
+210,Permisos ampliados,benefit
+210,Entorno saludable,benefit
+210,Salario competitivo,benefit
+210,Retribución flexible,benefit
+211,Docker,must
+211,Kubernetes,must
+211,AWS,must
+211,Azure,must
+211,GCP,must
+211,Jenkins,must
+211,GitHub Actions,must
+211,GitLab CI,must
+211,MLflow,must
+211,Kubeflow,must
+211,SageMaker,must
+211,Vertex AI,must
+211,Python,must
+211,Bash,must
+211,AWS DevOps Engineer certification,nice
+211,Azure DevOps certification,nice
+211,Google Cloud DevOps certification,nice
+211,GenAI,nice
+211,LLMs,nice
+211,Diffusion models,nice
+211,Regulated finance sector knowledge,nice
+211,Open-source contributions,nice
+211,Community leadership,nice
+211,Go,nice
+211,Python,tech_stack
+211,Bash,tech_stack
+211,Docker,tech_stack
+211,Kubernetes,tech_stack
+211,AWS,tech_stack
+211,Azure,tech_stack
+211,GCP,tech_stack
+211,Terraform,tech_stack
+211,CloudFormation,tech_stack
+211,Pulumi,tech_stack
+211,Jenkins,tech_stack
+211,GitHub Actions,tech_stack
+211,GitLab CI,tech_stack
+211,MLflow,tech_stack
+211,Kubeflow,tech_stack
+211,SageMaker,tech_stack
+211,Vertex AI,tech_stack
+211,Prometheus,tech_stack
+211,Grafana,tech_stack
+211,ELK,tech_stack
+211,Datadog,tech_stack
+211,teamwork,soft_skill
+211,agile development,soft_skill
+211,continuous delivery focus,soft_skill
+211,ownership,soft_skill
+211,problem solving,soft_skill
+211,clear communication,soft_skill
+211,English (B2+),language
+212,GraphRAG,must
+212,Modelado de grafos de conocimiento,must
+212,Diseño de ontologías,must
+212,Taxonomías,must
+212,Neo4j,must
+212,AWS Neptune,must
+212,Cosmos DB,must
+212,ETL,must
+212,ELT,must
+212,Procesamiento de datos estructurados,must
+212,Procesamiento de datos no estructurados,must
+212,Extracción de entidades con LLMs,must
+212,Extracción de relaciones con LLMs,must
+212,Cypher,must
+212,Gremlin,must
+212,SPARQL,must
+212,Optimización de rendimiento,must
+212,LangChain,must
+212,LlamaIndex,must
+212,LangGraph,must
+212,Trabajo colaborativo con equipos de IA y Data,must
+212,Neo4j,tech_stack
+212,AWS Neptune,tech_stack
+212,Cosmos DB,tech_stack
+212,Cypher,tech_stack
+212,Gremlin,tech_stack
+212,SPARQL,tech_stack
+212,LangChain,tech_stack
+212,LlamaIndex,tech_stack
+212,LangGraph,tech_stack
+212,GraphRAG,tech_stack
+212,Innovación,soft_skill
+212,Compromiso,soft_skill
+212,Proactividad,soft_skill
+212,Trabajo en equipo,soft_skill
+212,English,language
+213,Python,must
+213,Machine Learning libraries,must
+213,LLMs,must
+213,Intelligent agents,must
+213,Cloud services,must
+213,Data architecture,must
+213,Microsoft Power Platform,nice
+213,RPA,nice
+213,Python,tech_stack
+213,Machine Learning libraries,tech_stack
+213,LLMs,tech_stack
+213,Cloud services,tech_stack
+213,Analytical thinking,soft_skill
+213,Result orientation,soft_skill
+213,Complex problem solving,soft_skill
+213,Clear communication,soft_skill
+213,Creativity,soft_skill
+213,Innovation,soft_skill
+213,Continuous improvement mindset,soft_skill
+213,Continuous learning,soft_skill
+213,Collaboration,soft_skill
+213,Inclusive leadership,soft_skill
+213,Teamwork,soft_skill
+213,Proactivity,soft_skill
+213,Autonomy,soft_skill
+213,Strategic vision,soft_skill
+213,Ethical responsibility,soft_skill
+213,Innovative digital projects with direct impact,benefit
+213,"Collaborative, creative and diverse work environment",benefit
+213,Continuous development and learning plan,benefit
+213,Access to specialized training and certifications,benefit
+213,"Commitment to equity, diversity and inclusion",benefit
+214,negociación,must
+214,cierre de ventas,must
+214,proactivo,must
+214,autónomo,must
+214,orientado a resultados,must
+214,interés en IA,must
+214,proactivo,soft_skill
+214,orientado a resultados,soft_skill
+214,negociación,soft_skill
+214,cierre de ventas,soft_skill
+214,comisiones atractivas,benefit
+214,exclusividad provincial,benefit
+214,soporte técnico y comercial,benefit
+214,oportunidad de crecimiento en IA,benefit
+215,Negociación,must
+215,Cierre de ventas,must
+215,Ventas B2B,must
+215,Proactividad,must
+215,Orientación a resultados,must
+215,Conocimiento del sector sanitario,nice
+215,Interés en inteligencia artificial,nice
+215,Comunicación,soft_skill
+215,Trabajo en equipo,soft_skill
+215,Gestión del tiempo,soft_skill
+215,Comisiones altas,benefit
+215,Soporte técnico y comercial,benefit
+215,Exclusividad provincial,benefit
+215,Colaboración a largo plazo,benefit
+216,Product Management,must
+216,Project Management,must
+216,Data Science,must
+216,Machine Learning,must
+216,Generative AI,must
+216,"Agile (Scrum, Kanban)",must
+216,Jira,must
+216,Confluence,must
+216,Communication,must
+216,Collaboration,must
+216,Analytical Thinking,must
+216,Trustworthy AI,must
+216,AI Act Knowledge,must
+216,Jira,tech_stack
+216,Confluence,tech_stack
+216,Proactivity,soft_skill
+216,Autonomy,soft_skill
+216,Curiosity,soft_skill
+216,Stakeholder Alignment,soft_skill
+216,Influence,soft_skill
+216,Base Salary,benefit
+216,Annual Bonus (Short-Term Incentive plan),benefit
+216,Work From Anywhere (up to 20 days per year),benefit
+216,24/7 Employee Assistance Program,benefit
+217,IA,must
+217,Machine Learning,must
+217,SEO,must
+217,SaaS,must
+217,desarrollo web,must
+217,desarrollo móvil multiplataforma,must
+217,Trabajo autónomo,soft_skill
+217,Visión de producto,soft_skill
+217,Mentalidad startup,soft_skill
+217,Liderazgo,soft_skill
+217,20% equity como socio tecnológico principal,benefit
+217,20% de los ingresos Premium (pago diferido),benefit
+217,Participación en futuras rondas y escalado internacional,benefit
+218,AI,must
+218,Machine Learning,must
+218,SEO,must
+218,SaaS,must
+218,Web Development,must
+218,Mobile Development,must
+218,Cross-platform Development,must
+218,Leadership,must
+218,Autonomous work,soft_skill
+218,Product vision,soft_skill
+218,Startup mindset,soft_skill
+218,Leadership,soft_skill
+218,20% equity,benefit
+218,20% of Premium revenue (deferred payment),benefit
+218,Participation in future funding rounds,benefit
+219,Python,must
+219,API development,must
+219,Automation,must
+219,n8n,must
+219,Make,must
+219,Integromat,must
+219,Zapier,must
+219,Voice AI integration,must
+219,OpenAI API,must
+219,ElevenLabs,must
+219,Twilio,must
+219,MySQL,must
+219,PostgreSQL,must
+219,Airtable,must
+219,Node.js,nice
+219,JavaScript,nice
+219,CRM integration,nice
+219,Startup experience,nice
+219,SaaS,nice
+219,Python,tech_stack
+219,n8n,tech_stack
+219,Make,tech_stack
+219,Integromat,tech_stack
+219,Zapier,tech_stack
+219,OpenAI,tech_stack
+219,ElevenLabs,tech_stack
+219,Whisper,tech_stack
+219,Twilio,tech_stack
+219,Asterisk,tech_stack
+219,MySQL,tech_stack
+219,PostgreSQL,tech_stack
+219,Airtable,tech_stack
+219,Node.js,tech_stack
+219,JavaScript,tech_stack
+219,Collaboration,soft_skill
+219,Creativity,soft_skill
+219,Flexibility,soft_skill
+219,Problem solving,soft_skill
+219,Innovation,soft_skill
+219,Spanish,language
+219,Flexibilidad horaria,benefit
+219,Entorno creativo,benefit
+219,Colaboración a largo plazo,benefit
+219,Crecimiento dentro del equipo,benefit
+220,Inglés fluido (B2-C1),must
+220,Organización,must
+220,Comunicación,must
+220,Trabajo en equipo,must
+220,Google Workspace,must
+220,CRM,must
+220,Excel,must
+220,Emprendimiento,nice
+220,Consultoría,nice
+220,Marketing,nice
+220,Gestión,nice
+220,Automatización,nice
+220,Inteligencia Artificial,nice
+220,Sector inmobiliario,nice
+220,Proactividad,soft_skill
+220,Organización,soft_skill
+220,Comunicación,soft_skill
+220,Trabajo en equipo,soft_skill
+220,Aprendizaje rápido,soft_skill
+220,Inglés (B2-C1),language
+220,"Formación continua en project management, ventas y herramientas digitales",benefit
+220,Mentoring directo del equipo fundador,benefit
+220,Posibilidad de incorporación tras prácticas,benefit
+220,Horario de mañanas,benefit
+220,Modalidad híbrida,benefit
+220,Ayuda económica de 500€ netos mensuales,benefit
+221,Python,must
+221,SQL Server,must
+221,Angular,must
+221,React,must
+221,REST APIs,must
+221,GraphQL,must
+221,WebHooks,must
+221,ETL,must
+221,Git,must
+221,Testing,must
+221,CI/CD,must
+221,Clean code,must
+221,.NET C#,nice
+221,Blazor,nice
+221,ERP integration,nice
+221,E‑commerce integration,nice
+221,Marketplace integration,nice
+221,Machine Learning,nice
+221,Forecasting,nice
+221,Classification,nice
+221,Computer vision,nice
+221,NLP,nice
+221,Airflow,nice
+221,Data orchestration,nice
+221,Message queues,nice
+221,Cloud deployment,nice
+221,Shopify GraphQL,nice
+221,Python,tech_stack
+221,SQL Server,tech_stack
+221,Angular,tech_stack
+221,React,tech_stack
+221,REST,tech_stack
+221,GraphQL,tech_stack
+221,Git,tech_stack
+221,CI/CD,tech_stack
+221,.NET C#,tech_stack
+221,Blazor,tech_stack
+221,Airflow,tech_stack
+221,Shopify,tech_stack
+221,Process improvement mindset,soft_skill
+221,Business orientation,soft_skill
+221,Clear communication,soft_skill
+221,Teamwork,soft_skill
+221,Product‑minded attitude,soft_skill
+221,Contrato indefinido,benefit
+221,Salario 22.000‑27.000 € brutos anuales,benefit
+221,Incentivos por proyectos,benefit
+221,4 días de teletrabajo,benefit
+221,Coworking en Mataró,benefit
+222,Project Management,must
+222,Azure,must
+222,AWS,must
+222,Microsoft Office 365,must
+222,Software applications knowledge,must
+222,Business stakeholder management,must
+222,Team collaboration,must
+222,Azure,tech_stack
+222,AWS,tech_stack
+222,Microsoft Office 365,tech_stack
+222,Leadership,soft_skill
+222,Communication,soft_skill
+222,Teamwork,soft_skill
+222,Stakeholder management,soft_skill
+222,Spanish (fluent),language
+222,English (advanced/native),language
+222,Remote work (100% teletrabajo),benefit
+223,Docker,must
+223,Kubernetes,must
+223,AWS,must
+223,Azure,must
+223,GCP,must
+223,Terraform,must
+223,CloudFormation,must
+223,Pulumi,must
+223,Jenkins,must
+223,GitHub Actions,must
+223,GitLab CI,must
+223,MLflow,must
+223,Kubeflow,must
+223,SageMaker,must
+223,Vertex AI,must
+223,Python,must
+223,Bash,must
+223,Go,nice
+223,AWS DevOps Engineer,nice
+223,Azure DevOps,nice
+223,Google Cloud DevOps,nice
+223,GenAI,nice
+223,LLM,nice
+223,diffusion,nice
+223,open-source contributions,nice
+223,community leadership,nice
+223,Python,tech_stack
+223,Bash,tech_stack
+223,Docker,tech_stack
+223,Kubernetes,tech_stack
+223,AWS,tech_stack
+223,Azure,tech_stack
+223,GCP,tech_stack
+223,Terraform,tech_stack
+223,CloudFormation,tech_stack
+223,Pulumi,tech_stack
+223,Jenkins,tech_stack
+223,GitHub Actions,tech_stack
+223,GitLab CI,tech_stack
+223,MLflow,tech_stack
+223,Kubeflow,tech_stack
+223,SageMaker,tech_stack
+223,Vertex AI,tech_stack
+223,Prometheus,tech_stack
+223,Grafana,tech_stack
+223,ELK,tech_stack
+223,EFK,tech_stack
+223,Datadog,tech_stack
+223,Ownership,soft_skill
+223,Problem solving,soft_skill
+223,Clear communication,soft_skill
+223,Agile teamwork,soft_skill
+223,Continuous delivery focus,soft_skill
+223,English,language
+224,Python,must
+224,Machine Learning,must
+224,SQL,nice
+224,Docker,nice
+224,Git,nice
+224,Vertex AI,nice
+224,BigQuery,nice
+224,Cloud Storage,nice
+224,Cloud Functions,nice
+224,Python,tech_stack
+224,Vertex AI,tech_stack
+224,BigQuery,tech_stack
+224,Cloud Storage,tech_stack
+224,Cloud Functions,tech_stack
+224,SQL,tech_stack
+224,Docker,tech_stack
+224,Git,tech_stack
+224,Curiosity,soft_skill
+224,Proactivity,soft_skill
+224,Collaboration,soft_skill
+224,Teamwork,soft_skill
+224,"Flexible compensation (transport, meal, childcare, health insurance)",benefit
+224,Training with Google,benefit
+224,"Certification support (Associate Cloud Engineer, ML Engineer)",benefit
+224,Access to OCA Campus,benefit
+224,Happyforce participation,benefit
+224,LOCAL Initiative,benefit
+225,Cloud Architecture,must
+225,AWS,must
+225,Azure,must
+225,Generative AI,must
+225,Project Management,must
+225,Team Coordination,must
+225,Strategic Vision,must
+225,English,must
+225,AWS,tech_stack
+225,Azure,tech_stack
+225,Generative AI,tech_stack
+225,Collaboration,soft_skill
+225,Strategic Vision,soft_skill
+225,Project Management,soft_skill
+225,Team Coordination,soft_skill
+225,Continuous Innovation,soft_skill
+225,English,language
+225,Spanish,language
+225,Flexible hours,benefit
+225,Competitive compensation,benefit
+225,Career development plans,benefit
+225,International projects,benefit
+225,English program,benefit
+225,Fitness program with Total Pass,benefit
+226,LLMs,must
+226,Machine Learning,must
+226,Generative AI,must
+226,Python,must
+226,R,must
+226,Data analysis tools,must
+226,Data visualization,must
+226,Python,tech_stack
+226,R,tech_stack
+226,Creativity,soft_skill
+226,Collaboration,soft_skill
+226,Problem solving,soft_skill
+226,Spanish,language
+226,English,language
+226,1 día de teletrabajo a la semana,benefit
+226,7 semanas 100% remoto,benefit
+226,Clases de inglés,benefit
+226,Seguro de salud,benefit
+226,Ticket restaurante,benefit
+226,Oficina petfriendly,benefit
+226,Eventos internos,benefit
+226,Coaching,benefit
+226,Teambuilding,benefit
+226,Pack de bienvenida,benefit
+227,Excel,must
+227,PowerBI,must
+227,IA tools,must
+227,Excel,tech_stack
+227,PowerBI,tech_stack
+227,Artificial Intelligence,tech_stack
+228,ciberseguridad,must
+228,arquitecturas seguras,must
+228,DevSecOps,must
+228,plataformas cloud/IoT,must
+228,programación en Python,must
+228,programación en Go,must
+228,programación en Java,must
+228,manejo de entornos CI/CD,must
+228,nivel alto de inglés,must
+228,trabajo en equipo multidisciplinar,must
+228,IA aplicada a ciberseguridad,nice
+228,IA generativa,nice
+228,herramientas para ciclo de vida seguro de IA,nice
+228,doctorado (PhD),nice
+228,PKI,tech_stack
+228,OTA,tech_stack
+228,OAuth2,tech_stack
+228,OIDC,tech_stack
+228,service mesh,tech_stack
+228,API Gateway,tech_stack
+228,WAF,tech_stack
+228,CI/CD,tech_stack
+228,SAST,tech_stack
+228,DAST,tech_stack
+228,SCA,tech_stack
+228,IaC scanning,tech_stack
+228,SBOM,tech_stack
+228,LLMs,tech_stack
+228,aprendizaje continuo,soft_skill
+228,autonomía,soft_skill
+228,responsabilidad,soft_skill
+228,trabajo en equipo,soft_skill
+228,adaptabilidad,soft_skill
+228,Inglés,language
+228,contrato indefinido,benefit
+228,horario flexible,benefit
+228,calendario atractivo,benefit
+228,teletrabajo hasta 2 días a la semana (posible tercer día en sede),benefit
+228,formación técnica permanente,benefit
+228,proyecto de desarrollo profesional individualizado,benefit
+228,equipamiento especializado en laboratorio de ciberseguridad,benefit
+229,Conocimiento clínico especializado,must
+229,Interés en IA aplicada a la salud,must
+229,Ética médica,must
+229,Liderazgo,soft_skill
+229,Trabajo en equipo,soft_skill
+229,Comunicación,soft_skill
+229,Visión estratégica,soft_skill
+229,Royalties,benefit
+229,Reconocimiento internacional,benefit
+229,Soporte técnico y científico,benefit
+229,Visibilidad en eventos,benefit
+229,Contrato de autor,benefit
+230,leadership,soft_skill
+230,collaboration,soft_skill
+230,ethical judgment,soft_skill
+230,Royalties,benefit
+230,International recognition,benefit
+230,Technical and scientific support,benefit
+230,Inclusion in Global Authors Panel,benefit
+230,Exposure at high‑level medical‑AI events,benefit
+231,Python,must
+231,TensorFlow,must
+231,PyTorch,must
+231,FastAPI,must
+231,LLMs,must
+231,GANs,must
+231,Diffusion models,must
+231,NLP,must
+231,Medical imaging,nice
+231,Blockchain,nice
+231,Gamification,nice
+231,UX,nice
+231,Python,tech_stack
+231,TensorFlow,tech_stack
+231,PyTorch,tech_stack
+231,FastAPI,tech_stack
+231,Teamwork,soft_skill
+231,Clear communication,soft_skill
+231,Collaboration,soft_skill
+231,English (Advanced),language
+231,Spanish (Advanced),language
+231,Flexible schedule,benefit
+231,Remote work,benefit
+231,Agile collaborative environment,benefit
+231,Continuous training,benefit
+231,Professional growth,benefit
+231,Participation in pioneering digital health projects,benefit
+232,Apex,must
+232,Triggers,must
+232,Flows,must
+232,Visual Studio Code,must
+232,Integrations,must
+232,Lightning components,must
+232,Aura components,must
+232,GitHub,must
+232,Agentforce,must
+232,Banking knowledge,nice
+232,Other AI knowledge,nice
+232,Apex,tech_stack
+232,Visual Studio Code,tech_stack
+232,Salesforce Lightning,tech_stack
+232,Salesforce Aura,tech_stack
+232,GitHub,tech_stack
+232,Agentforce,tech_stack
+232,Teamwork,soft_skill
+232,Self-management,soft_skill
+232,Client communication,soft_skill
+232,Tickets restaurant,benefit
+232,Medical insurance,benefit
+232,Childcare tickets,benefit
+232,Unlimited access to cutting‑edge tech training,benefit
+232,Employee benefits club with discounts,benefit
+232,Flexible hours,benefit
+232,Remote work 90% (1 day on‑site in Madrid),benefit
+232,Salary up to 36k,benefit
+233,Diseño de arquitecturas de datos,must
+233,Arquitectura de soluciones IA/ML,must
+233,"Plataformas cloud (AWS, Azure, GCP)",must
+233,Large Language Models (LLMs) y Retrieval Augmented Generation (RAG),must
+233,Data Lakes y Data Warehouses,must
+233,"ETL/ELT (Airflow, Talend, Apache Beam, DBT)",must
+233,"Modelado de datos (relacional, dimensional, NoSQL)",must
+233,"Gobernanza, calidad y seguridad de datos",must
+233,Proyectos de Inteligencia Artificial,must
+233,Hadoop,must
+233,Spark,must
+233,Inglés avanzado,must
+233,AWS,tech_stack
+233,Azure,tech_stack
+233,Google Cloud Platform,tech_stack
+233,S3,tech_stack
+233,ADLS,tech_stack
+233,Redshift,tech_stack
+233,Snowflake,tech_stack
+233,BigQuery,tech_stack
+233,Databricks,tech_stack
+233,Hadoop,tech_stack
+233,Spark,tech_stack
+233,Airflow,tech_stack
+233,Talend,tech_stack
+233,Apache Beam,tech_stack
+233,DBT,tech_stack
+233,LLMs,tech_stack
+233,RAG,tech_stack
+233,Prompt Engineering,tech_stack
+233,Liderazgo,soft_skill
+233,Resolución de problemas,soft_skill
+233,Pensamiento estratégico,soft_skill
+233,Comunicación,soft_skill
+233,Gestión de proyectos,soft_skill
+233,English,language
+233,Remuneración competitiva,benefit
+233,Entorno colaborativo,benefit
+233,Acceso a últimas tecnologías,benefit
+233,Formación continua,benefit
+233,Desarrollo profesional,benefit
+233,Flexibilidad horaria,benefit
+233,Trabajo híbrido,benefit
+233,Beneficios sociales adicionales,benefit
+234,Gestión de proyectos,must
+234,Consultoría,must
+234,Software industrial,must
+234,Industria 4.0,must
+234,Plan Director IT/OT,must
+234,Implementación de soluciones,must
+234,Gestión ejecutiva y técnica,must
+234,Metodologías y best practices,must
+234,SCADA,tech_stack
+234,IIOT,tech_stack
+234,PLM,tech_stack
+235,automatización industrial,must
+235,desarrollo de software,must
+235,gestión de proyectos,must
+235,transformación digital,must
+235,optimización de procesos,must
+235,IA,must
+235,MES/MOM,must
+235,IoT,must
+235,protocolos industriales,must
+235,MES,tech_stack
+235,MOM,tech_stack
+235,IoT,tech_stack
+235,liderazgo,soft_skill
+235,trabajo en entornos multiculturales,soft_skill
+235,gestión de proyectos,soft_skill

@@ -1,0 +1,10 @@
+﻿id,area,hallazgo_dato,insight_negocio,prioridad,oe,modelo
+BI-01,Demanda de skills,"python: must-have en 105/236 vacantes (44,5%); demanda concentrada en cloud/automatización-IA","El mercado pide un stack concreto, no perfiles genéricos",Alta,OE1,Gap analysis (nb05)
+BI-02,Desajuste oferta-demanda,"Cada candidato carece de 16-20 de las 20 skills más demandadas (media 18,33/20)",El pool no cubre la demanda de cloud/automatización-IA,Alta,OE1,Gap analysis (nb05)
+BI-03,Calidad de datos/taxonomía,category_jobs vacía o Unknown en 165/236 vacantes (70%),La categorización nativa de vacantes es inservible para segmentar la oferta,Media,OE3,EDA (nb01)
+BI-04,Matching (IR),"Heurístico de baja resolución (values_fit/team_fit constantes=60); TF-IDF vs heurístico Spearman 0,4293 (competencias) / 0,2921 (texto completo)",El ranking heurístico tiene baja resolución; TF-IDF aporta discriminación,Media,OE2,Modelo 2 (nb03)
+BI-05,Taxonomía de roles,"Clasificador macro-F1 0,415 vs. 0,151 trivial (CV 5-fold); ML y Data Science F1=0 (absorbidas por AI)",Las categorías AI/ML/Data Science solapan vocabulario: la taxonomía es ambigua,Media,OE3,Modelo 3 (nb04)
+BI-06,Homogeneidad del pool,"Silhouette 0.104 (<0,2) en las 3 representaciones; co-teaching poco viable (solape medio 42,5% sobre 4.950 parejas)",Los candidatos son muy parecidos; emparejarlos aporta poco,Media,OE4,Modelo 1 (nb02)
+BI-07,Completitud de vacantes,"Salario ausente en 212/236 (89,8%); contrato ausente en >95% de las vacantes",La información administrativa es pobre y limita el filtrado por candidato,Baja,OE1,EDA (nb01)
+BI-08,Activos infrautilizados,"82 empresas con values/culture_summary en BD; values_fit usa bool(interviews), no esos datos",Activo de cultura/valores cargado pero desconectado del cálculo de encaje,Media,OE2,Auditoría backend (nb01/nb03)
+BI-09,Cierre del bucle gap→curso,Cada gap de tool se conecta con un curso real del catálogo (nombre + URL); 6/15 con curso disponible,El sistema detecta el gap Y lo conecta con formación concreta y accionable,Alta,OE5,Gap→cursos (nb05)

@@ -1,0 +1,1262 @@
+﻿candidate_id,skill,skill_type
+1,Python,technical
+1,R,technical
+1,Estadística,technical
+1,Docker,technical
+1,Azure Data Factory,technical
+1,Tableau,technical
+1,Power BI,technical
+1,Machine Learning,technical
+1,Numpy,technical
+1,Comunicación,soft
+1,Atención al detalle,soft
+1,Gestión del tiempo,soft
+1,Adaptabilidad,soft
+1,Pensamiento crítico,soft
+2,Scikit-learn,technical
+2,Excel avanzado,technical
+2,R,technical
+2,Modelado de datos,technical
+2,Google BigQuery,technical
+2,Pandas,technical
+2,Data Warehouse,technical
+2,Gestión del tiempo,soft
+2,Proactividad,soft
+2,Capacidad analítica,soft
+2,Orientación a resultados,soft
+2,Liderazgo,soft
+3,Excel avanzado,technical
+3,SQL,technical
+3,Power BI,technical
+3,Tableau,technical
+3,R,technical
+3,Estadística,technical
+3,Git,technical
+3,Numpy,technical
+3,Spark,technical
+3,Machine Learning,technical
+3,Adaptabilidad,soft
+3,Resolución de problemas,soft
+3,Capacidad analítica,soft
+3,Proactividad,soft
+3,Atención al detalle,soft
+3,Trabajo en equipo,soft
+4,SQL,technical
+4,Google BigQuery,technical
+4,Pandas,technical
+4,Excel avanzado,technical
+4,Modelado de datos,technical
+4,Storytelling con datos,technical
+4,Estadística,technical
+4,Scikit-learn,technical
+4,Capacidad analítica,soft
+4,Pensamiento crítico,soft
+4,Adaptabilidad,soft
+4,Resolución de problemas,soft
+5,Data Warehouse,technical
+5,Google BigQuery,technical
+5,Azure Data Factory,technical
+5,Storytelling con datos,technical
+5,Spark,technical
+5,Tableau,technical
+5,Airflow,technical
+5,Git,technical
+5,Adaptabilidad,soft
+5,Resolución de problemas,soft
+5,Orientación a resultados,soft
+6,Modelado de datos,technical
+6,Power BI,technical
+6,SQL,technical
+6,Scikit-learn,technical
+6,Python,technical
+6,Excel avanzado,technical
+6,Orientación a resultados,soft
+6,Pensamiento crítico,soft
+6,Gestión del tiempo,soft
+6,Resolución de problemas,soft
+6,Atención al detalle,soft
+6,Comunicación,soft
+7,Numpy,technical
+7,Excel avanzado,technical
+7,Google BigQuery,technical
+7,Machine Learning,technical
+7,Power BI,technical
+7,Pandas,technical
+7,Git,technical
+7,Adaptabilidad,soft
+7,Trabajo en equipo,soft
+7,Comunicación,soft
+8,Modelado de datos,technical
+8,Git,technical
+8,Data Warehouse,technical
+8,Python,technical
+8,Numpy,technical
+8,Power BI,technical
+8,ETL,technical
+8,Pensamiento crítico,soft
+8,Proactividad,soft
+8,Comunicación,soft
+8,Capacidad analítica,soft
+8,Liderazgo,soft
+8,Adaptabilidad,soft
+9,Tableau,technical
+9,SQL,technical
+9,Git,technical
+9,Airflow,technical
+9,Numpy,technical
+9,Modelado de datos,technical
+9,Power BI,technical
+9,Atención al detalle,soft
+9,Orientación a resultados,soft
+9,Comunicación,soft
+9,Liderazgo,soft
+9,Gestión del tiempo,soft
+9,Proactividad,soft
+10,Azure Data Factory,technical
+10,Airflow,technical
+10,Data Warehouse,technical
+10,Machine Learning,technical
+10,Docker,technical
+10,Python,technical
+10,SQL,technical
+10,Tableau,technical
+10,Pensamiento crítico,soft
+10,Adaptabilidad,soft
+10,Proactividad,soft
+11,Spark,technical
+11,Estadística,technical
+11,Machine Learning,technical
+11,R,technical
+11,Git,technical
+11,Pandas,technical
+11,Azure Data Factory,technical
+11,Numpy,technical
+11,Trabajo en equipo,soft
+11,Proactividad,soft
+11,Adaptabilidad,soft
+11,Orientación a resultados,soft
+12,Machine Learning,technical
+12,Google BigQuery,technical
+12,Tableau,technical
+12,Python,technical
+12,Power BI,technical
+12,Estadística,technical
+12,Data Warehouse,technical
+12,Excel avanzado,technical
+12,Scikit-learn,technical
+12,Capacidad analítica,soft
+12,Resolución de problemas,soft
+12,Trabajo en equipo,soft
+12,Orientación a resultados,soft
+12,Gestión del tiempo,soft
+12,Atención al detalle,soft
+13,Tableau,technical
+13,Scikit-learn,technical
+13,Google BigQuery,technical
+13,Machine Learning,technical
+13,Numpy,technical
+13,Spark,technical
+13,SQL,technical
+13,Storytelling con datos,technical
+13,Gestión del tiempo,soft
+13,Liderazgo,soft
+13,Capacidad analítica,soft
+14,ETL,technical
+14,Tableau,technical
+14,Modelado de datos,technical
+14,Python,technical
+14,Machine Learning,technical
+14,Pandas,technical
+14,SQL,technical
+14,Docker,technical
+14,Spark,technical
+14,Pensamiento crítico,soft
+14,Resolución de problemas,soft
+14,Atención al detalle,soft
+14,Trabajo en equipo,soft
+15,Airflow,technical
+15,R,technical
+15,Power BI,technical
+15,Numpy,technical
+15,Git,technical
+15,Pandas,technical
+15,Data Warehouse,technical
+15,Python,technical
+15,Tableau,technical
+15,Adaptabilidad,soft
+15,Gestión del tiempo,soft
+15,Atención al detalle,soft
+15,Orientación a resultados,soft
+15,Trabajo en equipo,soft
+16,Docker,technical
+16,Google BigQuery,technical
+16,Excel avanzado,technical
+16,Azure Data Factory,technical
+16,ETL,technical
+16,Numpy,technical
+16,Machine Learning,technical
+16,Storytelling con datos,technical
+16,Git,technical
+16,Data Warehouse,technical
+16,Atención al detalle,soft
+16,Gestión del tiempo,soft
+16,Liderazgo,soft
+16,Trabajo en equipo,soft
+16,Orientación a resultados,soft
+17,Pandas,technical
+17,Airflow,technical
+17,Storytelling con datos,technical
+17,Modelado de datos,technical
+17,Data Warehouse,technical
+17,Numpy,technical
+17,Spark,technical
+17,Capacidad analítica,soft
+17,Liderazgo,soft
+17,Adaptabilidad,soft
+17,Resolución de problemas,soft
+17,Pensamiento crítico,soft
+18,Modelado de datos,technical
+18,Git,technical
+18,Tableau,technical
+18,Storytelling con datos,technical
+18,Power BI,technical
+18,Python,technical
+18,Adaptabilidad,soft
+18,Proactividad,soft
+18,Resolución de problemas,soft
+19,Git,technical
+19,Pandas,technical
+19,SQL,technical
+19,Power BI,technical
+19,Spark,technical
+19,Data Warehouse,technical
+19,Tableau,technical
+19,Docker,technical
+19,Numpy,technical
+19,Excel avanzado,technical
+19,Orientación a resultados,soft
+19,Pensamiento crítico,soft
+19,Capacidad analítica,soft
+19,Comunicación,soft
+19,Resolución de problemas,soft
+19,Trabajo en equipo,soft
+20,ETL,technical
+20,Excel avanzado,technical
+20,SQL,technical
+20,Estadística,technical
+20,Docker,technical
+20,Azure Data Factory,technical
+20,Python,technical
+20,Pandas,technical
+20,Orientación a resultados,soft
+20,Adaptabilidad,soft
+20,Trabajo en equipo,soft
+20,Proactividad,soft
+20,Resolución de problemas,soft
+20,Capacidad analítica,soft
+21,Modelado de datos,technical
+21,ETL,technical
+21,Estadística,technical
+21,SQL,technical
+21,Spark,technical
+21,Airflow,technical
+21,Git,technical
+21,Machine Learning,technical
+21,Google BigQuery,technical
+21,Docker,technical
+21,Resolución de problemas,soft
+21,Trabajo en equipo,soft
+21,Orientación a resultados,soft
+22,Machine Learning,technical
+22,Spark,technical
+22,Data Warehouse,technical
+22,Tableau,technical
+22,Excel avanzado,technical
+22,Azure Data Factory,technical
+22,Scikit-learn,technical
+22,ETL,technical
+22,Numpy,technical
+22,Liderazgo,soft
+22,Capacidad analítica,soft
+22,Proactividad,soft
+22,Trabajo en equipo,soft
+23,Power BI,technical
+23,ETL,technical
+23,Scikit-learn,technical
+23,Data Warehouse,technical
+23,Numpy,technical
+23,Python,technical
+23,Airflow,technical
+23,Excel avanzado,technical
+23,Spark,technical
+23,Docker,technical
+23,Pensamiento crítico,soft
+23,Comunicación,soft
+23,Resolución de problemas,soft
+23,Proactividad,soft
+23,Atención al detalle,soft
+24,Data Warehouse,technical
+24,Estadística,technical
+24,Pandas,technical
+24,R,technical
+24,Modelado de datos,technical
+24,Scikit-learn,technical
+24,SQL,technical
+24,Adaptabilidad,soft
+24,Gestión del tiempo,soft
+24,Orientación a resultados,soft
+24,Resolución de problemas,soft
+25,Git,technical
+25,Python,technical
+25,Machine Learning,technical
+25,Azure Data Factory,technical
+25,Numpy,technical
+25,SQL,technical
+25,ETL,technical
+25,Scikit-learn,technical
+25,Airflow,technical
+25,Google BigQuery,technical
+25,Proactividad,soft
+25,Orientación a resultados,soft
+25,Liderazgo,soft
+25,Adaptabilidad,soft
+25,Capacidad analítica,soft
+26,Machine Learning,technical
+26,Modelado de datos,technical
+26,Airflow,technical
+26,Excel avanzado,technical
+26,Scikit-learn,technical
+26,Python,technical
+26,Tableau,technical
+26,Capacidad analítica,soft
+26,Comunicación,soft
+26,Resolución de problemas,soft
+26,Liderazgo,soft
+27,Pandas,technical
+27,Tableau,technical
+27,Estadística,technical
+27,Power BI,technical
+27,Storytelling con datos,technical
+27,Scikit-learn,technical
+27,Numpy,technical
+27,Python,technical
+27,Airflow,technical
+27,R,technical
+27,Orientación a resultados,soft
+27,Resolución de problemas,soft
+27,Adaptabilidad,soft
+27,Atención al detalle,soft
+27,Gestión del tiempo,soft
+27,Pensamiento crítico,soft
+28,Tableau,technical
+28,Modelado de datos,technical
+28,Azure Data Factory,technical
+28,R,technical
+28,Power BI,technical
+28,Python,technical
+28,Excel avanzado,technical
+28,Storytelling con datos,technical
+28,Liderazgo,soft
+28,Orientación a resultados,soft
+28,Atención al detalle,soft
+28,Trabajo en equipo,soft
+29,ETL,technical
+29,Excel avanzado,technical
+29,Numpy,technical
+29,Docker,technical
+29,Tableau,technical
+29,Pandas,technical
+29,Pensamiento crítico,soft
+29,Proactividad,soft
+29,Capacidad analítica,soft
+29,Liderazgo,soft
+29,Orientación a resultados,soft
+29,Adaptabilidad,soft
+30,Modelado de datos,technical
+30,SQL,technical
+30,Pandas,technical
+30,Scikit-learn,technical
+30,Docker,technical
+30,Power BI,technical
+30,Spark,technical
+30,R,technical
+30,Atención al detalle,soft
+30,Gestión del tiempo,soft
+30,Trabajo en equipo,soft
+30,Proactividad,soft
+31,Tableau,technical
+31,Python,technical
+31,Excel avanzado,technical
+31,Data Warehouse,technical
+31,Spark,technical
+31,Machine Learning,technical
+31,Modelado de datos,technical
+31,Google BigQuery,technical
+31,R,technical
+31,Pensamiento crítico,soft
+31,Liderazgo,soft
+31,Proactividad,soft
+32,Python,technical
+32,Spark,technical
+32,Git,technical
+32,Numpy,technical
+32,Tableau,technical
+32,Azure Data Factory,technical
+32,Data Warehouse,technical
+32,R,technical
+32,SQL,technical
+32,Scikit-learn,technical
+32,Resolución de problemas,soft
+32,Gestión del tiempo,soft
+32,Pensamiento crítico,soft
+33,Data Warehouse,technical
+33,Excel avanzado,technical
+33,Machine Learning,technical
+33,Git,technical
+33,Docker,technical
+33,Google BigQuery,technical
+33,R,technical
+33,Pandas,technical
+33,Numpy,technical
+33,Comunicación,soft
+33,Capacidad analítica,soft
+33,Atención al detalle,soft
+33,Orientación a resultados,soft
+33,Gestión del tiempo,soft
+33,Pensamiento crítico,soft
+34,Data Warehouse,technical
+34,Excel avanzado,technical
+34,Git,technical
+34,ETL,technical
+34,Modelado de datos,technical
+34,SQL,technical
+34,Trabajo en equipo,soft
+34,Liderazgo,soft
+34,Proactividad,soft
+34,Comunicación,soft
+34,Adaptabilidad,soft
+35,Scikit-learn,technical
+35,Docker,technical
+35,Excel avanzado,technical
+35,Numpy,technical
+35,Power BI,technical
+35,Machine Learning,technical
+35,Tableau,technical
+35,ETL,technical
+35,Atención al detalle,soft
+35,Adaptabilidad,soft
+35,Pensamiento crítico,soft
+36,Data Warehouse,technical
+36,Modelado de datos,technical
+36,Scikit-learn,technical
+36,SQL,technical
+36,Docker,technical
+36,Tableau,technical
+36,Git,technical
+36,Spark,technical
+36,Pensamiento crítico,soft
+36,Atención al detalle,soft
+36,Adaptabilidad,soft
+37,Scikit-learn,technical
+37,Storytelling con datos,technical
+37,Airflow,technical
+37,Modelado de datos,technical
+37,Power BI,technical
+37,Data Warehouse,technical
+37,Tableau,technical
+37,SQL,technical
+37,Pensamiento crítico,soft
+37,Proactividad,soft
+37,Resolución de problemas,soft
+38,ETL,technical
+38,Numpy,technical
+38,Python,technical
+38,Excel avanzado,technical
+38,Pandas,technical
+38,Azure Data Factory,technical
+38,Power BI,technical
+38,Pensamiento crítico,soft
+38,Capacidad analítica,soft
+38,Adaptabilidad,soft
+38,Gestión del tiempo,soft
+38,Trabajo en equipo,soft
+38,Atención al detalle,soft
+39,Machine Learning,technical
+39,Storytelling con datos,technical
+39,SQL,technical
+39,Scikit-learn,technical
+39,Airflow,technical
+39,Azure Data Factory,technical
+39,Trabajo en equipo,soft
+39,Liderazgo,soft
+39,Comunicación,soft
+40,Airflow,technical
+40,SQL,technical
+40,Docker,technical
+40,Azure Data Factory,technical
+40,Power BI,technical
+40,Scikit-learn,technical
+40,Spark,technical
+40,Gestión del tiempo,soft
+40,Resolución de problemas,soft
+40,Atención al detalle,soft
+40,Liderazgo,soft
+40,Comunicación,soft
+41,Azure Data Factory,technical
+41,SQL,technical
+41,Excel avanzado,technical
+41,Machine Learning,technical
+41,Airflow,technical
+41,R,technical
+41,Python,technical
+41,Pandas,technical
+41,Adaptabilidad,soft
+41,Resolución de problemas,soft
+41,Trabajo en equipo,soft
+41,Pensamiento crítico,soft
+41,Capacidad analítica,soft
+41,Comunicación,soft
+42,Spark,technical
+42,Power BI,technical
+42,Tableau,technical
+42,Excel avanzado,technical
+42,ETL,technical
+42,R,technical
+42,Data Warehouse,technical
+42,Airflow,technical
+42,Resolución de problemas,soft
+42,Comunicación,soft
+42,Liderazgo,soft
+42,Capacidad analítica,soft
+42,Atención al detalle,soft
+42,Trabajo en equipo,soft
+43,Scikit-learn,technical
+43,Excel avanzado,technical
+43,ETL,technical
+43,Pandas,technical
+43,Data Warehouse,technical
+43,Airflow,technical
+43,Numpy,technical
+43,Capacidad analítica,soft
+43,Adaptabilidad,soft
+43,Pensamiento crítico,soft
+43,Atención al detalle,soft
+43,Orientación a resultados,soft
+44,Scikit-learn,technical
+44,Spark,technical
+44,Pandas,technical
+44,Estadística,technical
+44,Python,technical
+44,Storytelling con datos,technical
+44,ETL,technical
+44,Docker,technical
+44,Azure Data Factory,technical
+44,Tableau,technical
+44,Atención al detalle,soft
+44,Proactividad,soft
+44,Resolución de problemas,soft
+44,Orientación a resultados,soft
+44,Gestión del tiempo,soft
+45,Tableau,technical
+45,Power BI,technical
+45,SQL,technical
+45,Git,technical
+45,Machine Learning,technical
+45,Estadística,technical
+45,Numpy,technical
+45,Storytelling con datos,technical
+45,Excel avanzado,technical
+45,Liderazgo,soft
+45,Adaptabilidad,soft
+45,Atención al detalle,soft
+45,Orientación a resultados,soft
+46,SQL,technical
+46,Machine Learning,technical
+46,Scikit-learn,technical
+46,Modelado de datos,technical
+46,Spark,technical
+46,Airflow,technical
+46,Azure Data Factory,technical
+46,Tableau,technical
+46,Pandas,technical
+46,Gestión del tiempo,soft
+46,Capacidad analítica,soft
+46,Resolución de problemas,soft
+46,Proactividad,soft
+46,Atención al detalle,soft
+47,Pandas,technical
+47,Git,technical
+47,Storytelling con datos,technical
+47,Python,technical
+47,Airflow,technical
+47,Docker,technical
+47,Scikit-learn,technical
+47,SQL,technical
+47,Spark,technical
+47,Numpy,technical
+47,Proactividad,soft
+47,Trabajo en equipo,soft
+47,Resolución de problemas,soft
+47,Atención al detalle,soft
+47,Liderazgo,soft
+47,Capacidad analítica,soft
+48,Modelado de datos,technical
+48,Docker,technical
+48,Scikit-learn,technical
+48,Airflow,technical
+48,Azure Data Factory,technical
+48,Storytelling con datos,technical
+48,Power BI,technical
+48,Orientación a resultados,soft
+48,Proactividad,soft
+48,Capacidad analítica,soft
+48,Adaptabilidad,soft
+48,Comunicación,soft
+48,Pensamiento crítico,soft
+49,Power BI,technical
+49,Numpy,technical
+49,Pandas,technical
+49,Google BigQuery,technical
+49,Modelado de datos,technical
+49,SQL,technical
+49,Docker,technical
+49,Azure Data Factory,technical
+49,Orientación a resultados,soft
+49,Atención al detalle,soft
+49,Trabajo en equipo,soft
+49,Comunicación,soft
+50,Python,technical
+50,Git,technical
+50,Pandas,technical
+50,Power BI,technical
+50,Docker,technical
+50,Numpy,technical
+50,Google BigQuery,technical
+50,Data Warehouse,technical
+50,Capacidad analítica,soft
+50,Atención al detalle,soft
+50,Resolución de problemas,soft
+51,Google BigQuery,technical
+51,ETL,technical
+51,Azure Data Factory,technical
+51,Docker,technical
+51,Git,technical
+51,Python,technical
+51,Tableau,technical
+51,Modelado de datos,technical
+51,Liderazgo,soft
+51,Orientación a resultados,soft
+51,Trabajo en equipo,soft
+51,Comunicación,soft
+51,Adaptabilidad,soft
+51,Pensamiento crítico,soft
+52,R,technical
+52,Docker,technical
+52,Data Warehouse,technical
+52,ETL,technical
+52,Power BI,technical
+52,Spark,technical
+52,Airflow,technical
+52,Adaptabilidad,soft
+52,Resolución de problemas,soft
+52,Comunicación,soft
+52,Atención al detalle,soft
+53,Airflow,technical
+53,Machine Learning,technical
+53,ETL,technical
+53,Numpy,technical
+53,Modelado de datos,technical
+53,Excel avanzado,technical
+53,Docker,technical
+53,Atención al detalle,soft
+53,Capacidad analítica,soft
+53,Pensamiento crítico,soft
+53,Liderazgo,soft
+53,Trabajo en equipo,soft
+53,Comunicación,soft
+54,ETL,technical
+54,Numpy,technical
+54,SQL,technical
+54,Google BigQuery,technical
+54,Pandas,technical
+54,Machine Learning,technical
+54,Resolución de problemas,soft
+54,Orientación a resultados,soft
+54,Capacidad analítica,soft
+55,R,technical
+55,Modelado de datos,technical
+55,Storytelling con datos,technical
+55,Google BigQuery,technical
+55,Numpy,technical
+55,Git,technical
+55,Estadística,technical
+55,Airflow,technical
+55,Pensamiento crítico,soft
+55,Resolución de problemas,soft
+55,Trabajo en equipo,soft
+55,Gestión del tiempo,soft
+55,Orientación a resultados,soft
+55,Proactividad,soft
+56,Google BigQuery,technical
+56,Numpy,technical
+56,Spark,technical
+56,Machine Learning,technical
+56,Scikit-learn,technical
+56,Docker,technical
+56,Proactividad,soft
+56,Gestión del tiempo,soft
+56,Resolución de problemas,soft
+56,Liderazgo,soft
+56,Pensamiento crítico,soft
+56,Adaptabilidad,soft
+57,Storytelling con datos,technical
+57,Scikit-learn,technical
+57,ETL,technical
+57,R,technical
+57,Airflow,technical
+57,Modelado de datos,technical
+57,Excel avanzado,technical
+57,Data Warehouse,technical
+57,Capacidad analítica,soft
+57,Resolución de problemas,soft
+57,Pensamiento crítico,soft
+57,Trabajo en equipo,soft
+57,Proactividad,soft
+58,Power BI,technical
+58,Scikit-learn,technical
+58,Data Warehouse,technical
+58,Tableau,technical
+58,Google BigQuery,technical
+58,Spark,technical
+58,Git,technical
+58,Azure Data Factory,technical
+58,Modelado de datos,technical
+58,Liderazgo,soft
+58,Proactividad,soft
+58,Gestión del tiempo,soft
+58,Comunicación,soft
+59,Docker,technical
+59,Python,technical
+59,Spark,technical
+59,Tableau,technical
+59,Machine Learning,technical
+59,Excel avanzado,technical
+59,Proactividad,soft
+59,Pensamiento crítico,soft
+59,Orientación a resultados,soft
+59,Gestión del tiempo,soft
+60,Google BigQuery,technical
+60,Excel avanzado,technical
+60,Numpy,technical
+60,Azure Data Factory,technical
+60,Tableau,technical
+60,Machine Learning,technical
+60,Atención al detalle,soft
+60,Pensamiento crítico,soft
+60,Gestión del tiempo,soft
+60,Liderazgo,soft
+60,Adaptabilidad,soft
+61,Pandas,technical
+61,Data Warehouse,technical
+61,R,technical
+61,Machine Learning,technical
+61,Scikit-learn,technical
+61,Tableau,technical
+61,Proactividad,soft
+61,Atención al detalle,soft
+61,Adaptabilidad,soft
+61,Resolución de problemas,soft
+62,Docker,technical
+62,Numpy,technical
+62,Spark,technical
+62,Storytelling con datos,technical
+62,Scikit-learn,technical
+62,R,technical
+62,Pandas,technical
+62,Liderazgo,soft
+62,Proactividad,soft
+62,Resolución de problemas,soft
+62,Orientación a resultados,soft
+62,Pensamiento crítico,soft
+63,Modelado de datos,technical
+63,Data Warehouse,technical
+63,Estadística,technical
+63,Scikit-learn,technical
+63,SQL,technical
+63,Airflow,technical
+63,Storytelling con datos,technical
+63,Machine Learning,technical
+63,Azure Data Factory,technical
+63,Git,technical
+63,Atención al detalle,soft
+63,Comunicación,soft
+63,Adaptabilidad,soft
+63,Orientación a resultados,soft
+63,Liderazgo,soft
+63,Gestión del tiempo,soft
+64,Airflow,technical
+64,Git,technical
+64,Docker,technical
+64,ETL,technical
+64,Spark,technical
+64,Storytelling con datos,technical
+64,Liderazgo,soft
+64,Resolución de problemas,soft
+64,Comunicación,soft
+64,Adaptabilidad,soft
+65,ETL,technical
+65,Pandas,technical
+65,Estadística,technical
+65,Machine Learning,technical
+65,Python,technical
+65,Spark,technical
+65,Power BI,technical
+65,Tableau,technical
+65,Modelado de datos,technical
+65,Airflow,technical
+65,Comunicación,soft
+65,Adaptabilidad,soft
+65,Atención al detalle,soft
+65,Pensamiento crítico,soft
+66,Tableau,technical
+66,Data Warehouse,technical
+66,Machine Learning,technical
+66,Estadística,technical
+66,Scikit-learn,technical
+66,Pandas,technical
+66,Spark,technical
+66,Pensamiento crítico,soft
+66,Resolución de problemas,soft
+66,Capacidad analítica,soft
+66,Atención al detalle,soft
+66,Proactividad,soft
+67,Modelado de datos,technical
+67,Git,technical
+67,R,technical
+67,ETL,technical
+67,Storytelling con datos,technical
+67,Power BI,technical
+67,Numpy,technical
+67,SQL,technical
+67,Proactividad,soft
+67,Capacidad analítica,soft
+67,Liderazgo,soft
+67,Trabajo en equipo,soft
+68,Docker,technical
+68,Git,technical
+68,Numpy,technical
+68,Azure Data Factory,technical
+68,Data Warehouse,technical
+68,Power BI,technical
+68,Excel avanzado,technical
+68,Machine Learning,technical
+68,Estadística,technical
+68,Spark,technical
+68,Trabajo en equipo,soft
+68,Proactividad,soft
+68,Pensamiento crítico,soft
+68,Capacidad analítica,soft
+69,Spark,technical
+69,Estadística,technical
+69,Scikit-learn,technical
+69,Storytelling con datos,technical
+69,Azure Data Factory,technical
+69,Docker,technical
+69,Numpy,technical
+69,Tableau,technical
+69,R,technical
+69,Data Warehouse,technical
+69,Adaptabilidad,soft
+69,Pensamiento crítico,soft
+69,Resolución de problemas,soft
+69,Liderazgo,soft
+69,Capacidad analítica,soft
+69,Trabajo en equipo,soft
+70,Spark,technical
+70,Storytelling con datos,technical
+70,Excel avanzado,technical
+70,Tableau,technical
+70,Google BigQuery,technical
+70,ETL,technical
+70,Trabajo en equipo,soft
+70,Atención al detalle,soft
+70,Liderazgo,soft
+71,Excel avanzado,technical
+71,Power BI,technical
+71,Tableau,technical
+71,Numpy,technical
+71,Machine Learning,technical
+71,Airflow,technical
+71,Spark,technical
+71,R,technical
+71,Data Warehouse,technical
+71,Pensamiento crítico,soft
+71,Orientación a resultados,soft
+71,Proactividad,soft
+71,Comunicación,soft
+72,SQL,technical
+72,Scikit-learn,technical
+72,Machine Learning,technical
+72,Data Warehouse,technical
+72,Git,technical
+72,Estadística,technical
+72,Spark,technical
+72,Airflow,technical
+72,Gestión del tiempo,soft
+72,Comunicación,soft
+72,Capacidad analítica,soft
+72,Pensamiento crítico,soft
+73,Airflow,technical
+73,Data Warehouse,technical
+73,Numpy,technical
+73,Azure Data Factory,technical
+73,R,technical
+73,Scikit-learn,technical
+73,Excel avanzado,technical
+73,Proactividad,soft
+73,Comunicación,soft
+73,Trabajo en equipo,soft
+73,Liderazgo,soft
+73,Gestión del tiempo,soft
+73,Orientación a resultados,soft
+74,SQL,technical
+74,Modelado de datos,technical
+74,Estadística,technical
+74,Google BigQuery,technical
+74,Docker,technical
+74,Numpy,technical
+74,Spark,technical
+74,Liderazgo,soft
+74,Proactividad,soft
+74,Comunicación,soft
+74,Atención al detalle,soft
+75,Tableau,technical
+75,Python,technical
+75,Estadística,technical
+75,Numpy,technical
+75,Google BigQuery,technical
+75,Airflow,technical
+75,Docker,technical
+75,Trabajo en equipo,soft
+75,Liderazgo,soft
+75,Atención al detalle,soft
+75,Gestión del tiempo,soft
+76,Git,technical
+76,Azure Data Factory,technical
+76,Docker,technical
+76,Machine Learning,technical
+76,Pandas,technical
+76,Data Warehouse,technical
+76,Google BigQuery,technical
+76,Proactividad,soft
+76,Orientación a resultados,soft
+76,Comunicación,soft
+76,Adaptabilidad,soft
+77,Data Warehouse,technical
+77,SQL,technical
+77,Git,technical
+77,Azure Data Factory,technical
+77,R,technical
+77,Python,technical
+77,Spark,technical
+77,Estadística,technical
+77,Resolución de problemas,soft
+77,Capacidad analítica,soft
+77,Adaptabilidad,soft
+77,Orientación a resultados,soft
+77,Trabajo en equipo,soft
+77,Atención al detalle,soft
+78,Machine Learning,technical
+78,Storytelling con datos,technical
+78,Python,technical
+78,Scikit-learn,technical
+78,Estadística,technical
+78,R,technical
+78,Numpy,technical
+78,Power BI,technical
+78,Excel avanzado,technical
+78,Tableau,technical
+78,Proactividad,soft
+78,Resolución de problemas,soft
+78,Pensamiento crítico,soft
+78,Trabajo en equipo,soft
+78,Atención al detalle,soft
+78,Gestión del tiempo,soft
+79,Python,technical
+79,Azure Data Factory,technical
+79,SQL,technical
+79,Storytelling con datos,technical
+79,Data Warehouse,technical
+79,Airflow,technical
+79,Machine Learning,technical
+79,Git,technical
+79,Orientación a resultados,soft
+79,Pensamiento crítico,soft
+79,Comunicación,soft
+79,Atención al detalle,soft
+80,Python,technical
+80,Docker,technical
+80,Spark,technical
+80,Tableau,technical
+80,Numpy,technical
+80,R,technical
+80,Liderazgo,soft
+80,Trabajo en equipo,soft
+80,Adaptabilidad,soft
+80,Pensamiento crítico,soft
+80,Proactividad,soft
+80,Atención al detalle,soft
+81,R,technical
+81,Numpy,technical
+81,Docker,technical
+81,Google BigQuery,technical
+81,Power BI,technical
+81,Storytelling con datos,technical
+81,Excel avanzado,technical
+81,Scikit-learn,technical
+81,Airflow,technical
+81,Comunicación,soft
+81,Orientación a resultados,soft
+81,Liderazgo,soft
+82,R,technical
+82,ETL,technical
+82,Excel avanzado,technical
+82,SQL,technical
+82,Git,technical
+82,Python,technical
+82,Scikit-learn,technical
+82,Tableau,technical
+82,Modelado de datos,technical
+82,Machine Learning,technical
+82,Liderazgo,soft
+82,Pensamiento crítico,soft
+82,Gestión del tiempo,soft
+82,Adaptabilidad,soft
+83,SQL,technical
+83,Airflow,technical
+83,Python,technical
+83,Estadística,technical
+83,Excel avanzado,technical
+83,Git,technical
+83,Modelado de datos,technical
+83,Docker,technical
+83,ETL,technical
+83,Adaptabilidad,soft
+83,Resolución de problemas,soft
+83,Orientación a resultados,soft
+83,Comunicación,soft
+84,Airflow,technical
+84,Modelado de datos,technical
+84,Estadística,technical
+84,Google BigQuery,technical
+84,SQL,technical
+84,Machine Learning,technical
+84,Capacidad analítica,soft
+84,Gestión del tiempo,soft
+84,Atención al detalle,soft
+85,Azure Data Factory,technical
+85,Data Warehouse,technical
+85,ETL,technical
+85,Python,technical
+85,Numpy,technical
+85,Estadística,technical
+85,SQL,technical
+85,Spark,technical
+85,Excel avanzado,technical
+85,Machine Learning,technical
+85,Adaptabilidad,soft
+85,Atención al detalle,soft
+85,Comunicación,soft
+85,Capacidad analítica,soft
+85,Proactividad,soft
+86,Google BigQuery,technical
+86,Tableau,technical
+86,Git,technical
+86,ETL,technical
+86,Docker,technical
+86,Azure Data Factory,technical
+86,Airflow,technical
+86,Spark,technical
+86,Pandas,technical
+86,Atención al detalle,soft
+86,Comunicación,soft
+86,Orientación a resultados,soft
+87,Scikit-learn,technical
+87,Power BI,technical
+87,Python,technical
+87,Google BigQuery,technical
+87,Airflow,technical
+87,Storytelling con datos,technical
+87,Git,technical
+87,Modelado de datos,technical
+87,Excel avanzado,technical
+87,Resolución de problemas,soft
+87,Adaptabilidad,soft
+87,Capacidad analítica,soft
+87,Liderazgo,soft
+87,Pensamiento crítico,soft
+87,Comunicación,soft
+88,Git,technical
+88,Data Warehouse,technical
+88,Machine Learning,technical
+88,Power BI,technical
+88,Python,technical
+88,Airflow,technical
+88,Azure Data Factory,technical
+88,Atención al detalle,soft
+88,Adaptabilidad,soft
+88,Proactividad,soft
+88,Capacidad analítica,soft
+88,Liderazgo,soft
+88,Trabajo en equipo,soft
+89,Airflow,technical
+89,Data Warehouse,technical
+89,Git,technical
+89,R,technical
+89,Modelado de datos,technical
+89,Pandas,technical
+89,SQL,technical
+89,Resolución de problemas,soft
+89,Pensamiento crítico,soft
+89,Proactividad,soft
+89,Adaptabilidad,soft
+89,Liderazgo,soft
+89,Atención al detalle,soft
+90,Spark,technical
+90,Docker,technical
+90,Estadística,technical
+90,ETL,technical
+90,Tableau,technical
+90,Numpy,technical
+90,Pandas,technical
+90,Pensamiento crítico,soft
+90,Comunicación,soft
+90,Resolución de problemas,soft
+90,Liderazgo,soft
+91,Tableau,technical
+91,Power BI,technical
+91,Machine Learning,technical
+91,Data Warehouse,technical
+91,Git,technical
+91,R,technical
+91,SQL,technical
+91,Estadística,technical
+91,Trabajo en equipo,soft
+91,Proactividad,soft
+91,Adaptabilidad,soft
+91,Resolución de problemas,soft
+91,Liderazgo,soft
+92,SQL,technical
+92,Power BI,technical
+92,Estadística,technical
+92,ETL,technical
+92,Machine Learning,technical
+92,Numpy,technical
+92,Capacidad analítica,soft
+92,Proactividad,soft
+92,Resolución de problemas,soft
+93,Spark,technical
+93,Storytelling con datos,technical
+93,Docker,technical
+93,Google BigQuery,technical
+93,Python,technical
+93,Data Warehouse,technical
+93,Pandas,technical
+93,SQL,technical
+93,Estadística,technical
+93,Git,technical
+93,Atención al detalle,soft
+93,Resolución de problemas,soft
+93,Pensamiento crítico,soft
+93,Comunicación,soft
+93,Gestión del tiempo,soft
+93,Proactividad,soft
+94,Machine Learning,technical
+94,Storytelling con datos,technical
+94,Estadística,technical
+94,R,technical
+94,Power BI,technical
+94,Tableau,technical
+94,Airflow,technical
+94,ETL,technical
+94,Python,technical
+94,Pensamiento crítico,soft
+94,Comunicación,soft
+94,Gestión del tiempo,soft
+94,Resolución de problemas,soft
+94,Capacidad analítica,soft
+95,Modelado de datos,technical
+95,Numpy,technical
+95,SQL,technical
+95,Python,technical
+95,R,technical
+95,Storytelling con datos,technical
+95,Estadística,technical
+95,Google BigQuery,technical
+95,Excel avanzado,technical
+95,Comunicación,soft
+95,Resolución de problemas,soft
+95,Liderazgo,soft
+95,Orientación a resultados,soft
+96,Airflow,technical
+96,SQL,technical
+96,Google BigQuery,technical
+96,ETL,technical
+96,Docker,technical
+96,Storytelling con datos,technical
+96,Scikit-learn,technical
+96,Data Warehouse,technical
+96,R,technical
+96,Resolución de problemas,soft
+96,Comunicación,soft
+96,Adaptabilidad,soft
+96,Orientación a resultados,soft
+96,Trabajo en equipo,soft
+97,Data Warehouse,technical
+97,SQL,technical
+97,Modelado de datos,technical
+97,Estadística,technical
+97,Storytelling con datos,technical
+97,R,technical
+97,Airflow,technical
+97,Git,technical
+97,Excel avanzado,technical
+97,Pensamiento crítico,soft
+97,Comunicación,soft
+97,Gestión del tiempo,soft
+98,Pandas,technical
+98,Scikit-learn,technical
+98,Estadística,technical
+98,Modelado de datos,technical
+98,Git,technical
+98,Numpy,technical
+98,Machine Learning,technical
+98,Python,technical
+98,Capacidad analítica,soft
+98,Comunicación,soft
+98,Trabajo en equipo,soft
+98,Gestión del tiempo,soft
+98,Adaptabilidad,soft
+98,Atención al detalle,soft
+99,Python,technical
+99,Azure Data Factory,technical
+99,Spark,technical
+99,ETL,technical
+99,Google BigQuery,technical
+99,Airflow,technical
+99,Machine Learning,technical
+99,Git,technical
+99,Capacidad analítica,soft
+99,Adaptabilidad,soft
+99,Orientación a resultados,soft
+100,Storytelling con datos,technical
+100,Pandas,technical
+100,Modelado de datos,technical
+100,Airflow,technical
+100,Excel avanzado,technical
+100,Docker,technical
+100,Capacidad analítica,soft
+100,Orientación a resultados,soft
+100,Pensamiento crítico,soft
+100,Comunicación,soft
+100,Gestión del tiempo,soft

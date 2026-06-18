@@ -1,0 +1,21 @@
+# Capa analítica del TFG (offline) — entorno Python 3.12
+# Instalar en el venv:  .venv\Scripts\python.exe -m pip install -r requirements-analytics.txt
+# NO afecta a backend/ ni frontend/ (tienen sus propios requirements.txt).
+
+# Núcleo de datos
+numpy==2.2.1
+pandas==2.2.3
+scipy==1.15.1
+
+# Machine learning / NLP clásico (TF-IDF, KMeans, LogisticRegression, métricas, PCA)
+scikit-learn==1.6.1
+
+# Visualización
+matplotlib==3.10.0
+seaborn==0.13.2
+plotly==5.24.1
+
+# Notebooks
+jupyter==1.1.1
+ipykernel==6.29.5
+notebook==7.3.2

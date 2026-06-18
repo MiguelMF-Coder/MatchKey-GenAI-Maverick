@@ -1,2 +1,12 @@
 .venv/
 *:Zone.Identifier
+
+# === Datos personales de candidatos (RGPD): NO publicar ===
+data/matchkey/candidates.csv
+data/matchkey/candidate_education.csv
+data/matchkey/candidate_languages.csv
+data/clean/candidates_clean.csv
+# CVs OCR (datos personales)
+backend/app/services/ocr/data/
+**/cv_ocr_analizados_100.json
+**/cv_ocr*.json

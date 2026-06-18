@@ -1,0 +1,9 @@
+﻿category_llm,n_vacantes,match_type,esco_occupation_uri,esco_occupation_label,similarity,best_candidate_below_threshold,esco_isco_code
+AI,137,none,,,0.1618,air force officer,
+Other,43,contains,http://data.europa.eu/esco/occupation/933a0762-1201-4855-909c-94403f6867a9,wholesale merchant in china and other glassware,0.1429,,3324.4.5
+Software Engineering,27,fuzzy,http://data.europa.eu/esco/occupation/f31f487b-4ce2-40f3-90e8-7d0011b4ef1d,software manager,0.705,,1330.5.1
+Machine Learning,10,none,,,0.6508,learning mentor,
+Data Science,9,none,,,0.6413,data scientist,
+Cloud,4,none,,,0.1977,clothing shop manager,
+Business Intelligence,2,contains,http://data.europa.eu/esco/occupation/207d7b18-6540-432e-8aa6-785ed434572f,business intelligence manager,0.6667,,2421.3
+Cybersecurity,2,fuzzy,http://data.europa.eu/esco/occupation/e9507d34-c70f-474f-a4a3-d2cbfe50f6e9,security manager,0.7032,,1219.1.2
